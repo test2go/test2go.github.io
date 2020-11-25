@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/9/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/9/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-02-05/move-on-to-python-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-02-05/move-on-to-python-3/" class="post-title-link" itemprop="url">Move on to Python 3</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-02-06 00:00:00" itemprop="dateCreated datePublished" datetime="2017-02-06T00:00:00+08:00">2017-02-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Do we want to move on to Python 3? Well, what is your concerns? Here is a slide made by me probably can help you out.  <em>(Use the <strong>left/right</strong> arrow key to navigate <strong>back/forward</strong>.)</em></p>
+<h3 id="Slides"><a href="#Slides" class="headerlink" title="Slides"></a>Slides</h3><iframe src="/files/slides/move-on-to-python-3.html" width="100%" height="440px" frameborder="0" scrolling="no"> </iframe>
+
+<h3 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h3><ul>
+<li>View the slide in full screen: <a href="/files/slides/move-on-to-python-3.html">Move on to python 3</a></li>
+<li>Download the mindmap file: <a href="/files/Move-on-to-python3.xmind">move on to python 3.xmind</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-12-03/Python-exception-handling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-12-03/Python-exception-handling/" class="post-title-link" itemprop="url">总结：Python中的异常处理</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-04 00:00:00" itemprop="dateCreated datePublished" datetime="2016-12-04T00:00:00+08:00">2016-12-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>异常处理在任何一门编程语言里都是值得关注的一个话题，良好的异常处理可以让你的程序更加健壮，清晰的错误信息更能帮助你快速修复问题。在Python中，和不部分高级语言一样，使用了try/except/finally语句块来处理异常，如果你有其他编程语言的经验，实践起来并不难。</p>
+<h2 id="异常处理语句-try…excpet…finally"><a href="#异常处理语句-try…excpet…finally" class="headerlink" title="异常处理语句 try…excpet…finally"></a>异常处理语句 try…excpet…finally</h2><h3 id="实例代码"><a href="#实例代码" class="headerlink" title="实例代码"></a>实例代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">div</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        print(a / b)</span><br><span class="line">    <span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">        print(<span class="string">"Error: b should not be 0 !!"</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        print(<span class="string">"Unexpected Error: &#123;&#125;"</span>.format(e))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'Run into else only when everything goes well'</span>)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        print(<span class="string">'Always run into finally block.'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># tests</span></span><br><span class="line">div(<span class="number">2</span>, <span class="number">0</span>)</span><br><span class="line">div(<span class="number">2</span>, <span class="string">'bad type'</span>)</span><br><span class="line">div(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Mutiple exception in one line</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    print(a / b)</span><br><span class="line"><span class="keyword">except</span> (ZeroDivisionError, TypeError) <span class="keyword">as</span> e:</span><br><span class="line">    print(e)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Except block is optional when there is finally</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    open(database)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    close(database)</span><br><span class="line"></span><br><span class="line"><span class="comment"># catch all errors and log it</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    do_work()</span><br><span class="line"><span class="keyword">except</span>:    </span><br><span class="line">    <span class="comment"># get detail from logging module</span></span><br><span class="line">    logging.exception(<span class="string">'Exception caught!'</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># get detail from sys.exc_info() method</span></span><br><span class="line">    error_type, error_value, trace_back = sys.exc_info()</span><br><span class="line">    print(error_value)</span><br><span class="line">    <span class="keyword">raise</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下"></a>总结如下</h3><ol>
+<li><code>except</code>语句不是必须的，<code>finally</code>语句也不是必须的，但是二者必须要有一个，否则就没有<code>try</code>的意义了。</li>
+<li><code>except</code>语句可以有多个，Python会按<code>except</code>语句的顺序依次匹配你指定的异常，如果异常已经处理就不会再进入后面的<code>except</code>语句。</li>
+<li><code>except</code>语句可以以元组形式同时指定多个异常，参见实例代码。</li>
+<li><code>except</code>语句后面如果不指定异常类型，则默认捕获所有异常，你可以通过logging或者sys模块获取当前异常。</li>
+<li>如果要捕获异常后要重复抛出，请使用<code>raise</code>，后面不要带任何参数或信息。</li>
+<li>不建议捕获并抛出同一个异常，请考虑重构你的代码。</li>
+<li>不建议在不清楚逻辑的情况下捕获所有异常，有可能你隐藏了很严重的问题。</li>
+<li>尽量使用内置的异常处理语句来 替换try/except语句，比如<code>with</code>语句，<code>getattr()</code>方法。</li>
+</ol>
+<h2 id="抛出异常-raise"><a href="#抛出异常-raise" class="headerlink" title="抛出异常 raise"></a>抛出异常 raise</h2><p>如果你需要自主抛出异常一个异常，可以使用<code>raise</code>关键字，等同于C#和Java中的<code>throw</code>语句，其语法规则如下。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">raise</span> NameError(<span class="string">"bad name!"</span>)</span><br></pre></td></tr></table></figure>
+
+<p><code>raise</code>关键字后面需要指定你抛出的异常类型，一般来说抛出的异常越详细越好，Python在<code>exceptions</code>模块内建了很多的异常类型，通过使用<code>dir()</code>函数来查看<code>exceptions</code>中的异常类型，如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> exceptions</span><br><span class="line"></span><br><span class="line"><span class="comment"># ['ArithmeticError', 'AssertionError'.....]</span></span><br><span class="line"><span class="keyword">print</span> dir(exceptions)</span><br></pre></td></tr></table></figure>
+
+<p>当然你也可以查阅Python的文档库进行更详细的了解。</p>
+<ul>
+<li><a href="https://docs.python.org/2.7/library/exceptions.html#bltin-exceptions" target="_blank" rel="noopener">https://docs.python.org/2.7/library/exceptions.html#bltin-exceptions</a></li>
+</ul>
+<h2 id="自定义异常类型"><a href="#自定义异常类型" class="headerlink" title="自定义异常类型"></a>自定义异常类型</h2><p>Python中也可以自定义自己的特殊类型的异常，只需要要从<code>Exception</code>类继承(直接或间接)即可：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeCustomException</span><span class="params">(Exception)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>一般你在自定义异常类型时，需要考虑的问题应该是这个异常所应用的场景。如果内置异常已经包括了你需要的异常，建议考虑使用内置 的异常类型。比如你希望在函数参数错误时抛出一个异常，你可能并不需要定义一个<code>InvalidArgumentError</code>，使用内置的<code>ValueError</code>即可。</p>
+<h2 id="经验案例"><a href="#经验案例" class="headerlink" title="经验案例"></a>经验案例</h2><h3 id="传递异常-re-raise-Exception"><a href="#传递异常-re-raise-Exception" class="headerlink" title="传递异常 re-raise Exception"></a>传递异常 re-raise Exception</h3><p>捕捉到了异常，但是又想重新引发它（传递异常），使用不带参数的<code>raise</code>语句即可：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f1</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="number">1</span>/<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f2</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        f1()</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">raise</span>  <span class="comment"># don't raise e !!!</span></span><br><span class="line"></span><br><span class="line">f2()</span><br></pre></td></tr></table></figure>
+
+<p>在Python2中，为了保持异常的完整信息，那么你捕获后再次抛出时千万不能在<code>raise</code>后面加上异常对象，否则你的<strong><code>trace</code>信息就会从此处截断</strong>。以上是最简单的重新抛出异常的做法。</p>
+<p>还有一些技巧可以考虑，比如抛出异常前对异常的信息进行更新。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f2</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        f1()</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        e.args += (<span class="string">'more info'</span>,)</span><br><span class="line">        <span class="keyword">raise</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你有兴趣了解更多，建议阅读这篇博客。</p>
+<ul>
+<li><a href="http://www.ianbicking.org/blog/2007/09/re-raising-exceptions.html" target="_blank" rel="noopener">http://www.ianbicking.org/blog/2007/09/re-raising-exceptions.html</a></li>
+</ul>
+<p>Python3对重复传递异常有所改进，你可以自己尝试一下，不过建议还是同上。</p>
+<h3 id="Exception-和-BaseException"><a href="#Exception-和-BaseException" class="headerlink" title="Exception 和 BaseException"></a>Exception 和 BaseException</h3><p>当我们要捕获一个通用异常时，应该用<code>Exception</code>还是<code>BaseException</code>？我建议你还是看一下<a href="https://docs.python.org/2.7/library/exceptions.html#bltin-exceptions" target="_blank" rel="noopener"> 官方文档说明</a>，这两个异常到底有啥区别呢？ 请看它们之间的继承关系。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">BaseException</span><br><span class="line"> +-- SystemExit</span><br><span class="line"> +-- KeyboardInterrupt</span><br><span class="line"> +-- GeneratorExit</span><br><span class="line"> +-- Exception</span><br><span class="line">      +-- StopIteration...</span><br><span class="line">      +-- StandardError...</span><br><span class="line">      +-- Warning...</span><br></pre></td></tr></table></figure>
+
+<p>从<code>Exception</code>的层级结构来看，<code>BaseException</code>是最基础的异常类，<code>Exception</code>继承了它。<code>BaseException</code>除了包含所有的<code>Exception</code>外还包含了<code>SystemExit</code>，<code>KeyboardInterrupt</code>和<code>GeneratorExit</code>三个异常。</p>
+<p>有此看来你的程序在捕获所有异常时更应该使用<code>Exception</code>而不是<code>BaseException</code>，因为另外三个异常属于更高级别的异常，合理的做法应该是交给Python的解释器处理。</p>
+<h3 id="except-Exception-as-e和-except-Exception-e"><a href="#except-Exception-as-e和-except-Exception-e" class="headerlink" title="except Exception as e和 except Exception, e"></a>except Exception as e和 except Exception, e</h3><p>代码示例如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    do_something()</span><br><span class="line"><span class="keyword">except</span> NameError <span class="keyword">as</span> e:  <span class="comment"># should</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="keyword">except</span> KeyError, e:  <span class="comment"># should not</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>在Python2的时代，你可以使用以上两种写法中的任意一种。在Python3中你只能使用第一种写法，第二种写法被废弃掉了。第一个种写法可读性更好，而且为了程序的兼容性和后期移植的成本，请你也抛弃第二种写法。</p>
+<h3 id="raise-“Exception-string”"><a href="#raise-“Exception-string”" class="headerlink" title="raise “Exception string”"></a>raise “Exception string”</h3><p>把字符串当成异常抛出看上去是一个非常简洁的办法，但其实是一个非常不好的习惯。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> is_work_done():</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">raise</span> <span class="string">"Work is not done!"</span> <span class="comment"># not cool</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的语句如果抛出异常，那么会是这样的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"/demo/exception_hanlding.py"</span>, line <span class="number">48</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    <span class="keyword">raise</span> <span class="string">"Work is not done!"</span></span><br><span class="line">TypeError: exceptions must be old-style classes <span class="keyword">or</span> derived <span class="keyword">from</span> BaseException, <span class="keyword">not</span> str</span><br></pre></td></tr></table></figure>
+
+<p>这在Python2.4以前是可以接受的做法，但是没有指定异常类型有可能会让下游没办法正确捕获并处理这个异常，从而导致你的程序挂掉。简单说，这种写法是是封建时代的陋习，应该扔了。</p>
+<h3 id="使用内置的语法范式代替try-except"><a href="#使用内置的语法范式代替try-except" class="headerlink" title="使用内置的语法范式代替try/except"></a>使用内置的语法范式代替try/except</h3><p>Python 本身提供了很多的语法范式简化了异常的处理，比如<code>for</code>语句就处理的<code>StopIteration</code>异常，让你很流畅地写出一个循环。</p>
+<p><code>with</code>语句在打开文件后会自动调用<code>finally</code>中的关闭文件操作。我们在写Python代码时应该尽量避免在遇到这种情况时还使用try/except/finally的思维来处理。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># should not</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    f = open(a_file)</span><br><span class="line">    do_something(f)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    f.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># should </span></span><br><span class="line"><span class="keyword">with</span> open(a_file) <span class="keyword">as</span> f:</span><br><span class="line">    do_something(f)</span><br></pre></td></tr></table></figure>
+
+<p>再比如，当我们需要访问一个不确定的属性时，有可能你会写出这样的代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    test = Test()</span><br><span class="line">    name = test.name  <span class="comment"># not sure if we can get its name</span></span><br><span class="line"><span class="keyword">except</span> AttributeError:</span><br><span class="line">    name = <span class="string">'default'</span></span><br></pre></td></tr></table></figure>
+
+<p>其实你可以使用更简单的<code>getattr()</code>来达到你的目的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = getattr(test, <span class="string">'name'</span>, <span class="string">'default'</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><p>最佳实践不限于编程语言，只是一些规则和填坑后的收获。</p>
+<ol>
+<li>只处理你知道的异常，避免捕获所有 异常然后吞掉它们。</li>
+<li>抛出的异常应该说明原因，有时候你知道异常类型也猜不出所以然的。</li>
+<li>避免在catch语句块中干一些没意义的事情。</li>
+<li>不要使用异常来控制流程，那样你的程序会无比难懂和难维护。</li>
+<li>如果有需要，切记使用finally来释放资源。</li>
+<li>如果有需要，请不要忘记在处理异常后做清理工作或者回滚操作。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-11-22/gif-screenshot-tool-gifcam/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-11-22/gif-screenshot-tool-gifcam/" class="post-title-link" itemprop="url">Gif截屏工具 - GifCam</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-11-23 00:00:00" itemprop="dateCreated datePublished" datetime="2016-11-23T00:00:00+08:00">2016-11-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如果你需要录制截屏并保存成gif图片格式，那么你一定不能错过GifCam这个神奇的小工具。它虽然只有600K，但功能不可小觑。</p>
+<p>GifCam (Gif相机) 是一款免费且非常优秀的视频录制/剪辑的GIF动画制作软件，它的使用非常简单直观，譬如想要将某一小段视频录制成Gif图片，你只需将其窗口的<strong>取景框</strong>拖放到视频播放的区域，然后按下录制按钮即开始录制。它就像一个摄像机一样能将<strong>取景框</strong>拍摄下来并保存成GIF图片。</p>
+<p><img src="https://tobyqin.github.io/images/demo.gif" alt="demo"></p>
+<p>借助GifCam你可以快速方便地制作演示教程或者将视频一些搞笑经典片段制作成动画图片。你也可以将录制的屏幕导出成avi的视频格式，并根据指定的码率做压缩。</p>
+<p>GifCam官网：<a href="http://blog.bahraniapps.com/gifcam/#download" target="_blank" rel="noopener">http://blog.bahraniapps.com/gifcam/#download</a><br>从本站下载：<a href="/files/GifCam.zip">/files/GifCam.zip</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-29/python-decorator-more/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-29/python-decorator-more/" class="post-title-link" itemprop="url">Python装饰器的另类用法</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-30T00:00:00+08:00">2016-10-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>之前有比较系统介绍过Python的装饰器（请查阅《<a href="https://betacat.online/posts/2016-10-27/python-decorator/">详解Python装饰器</a>》），本文算是一个补充。今天我们一起探讨一下装饰器的另类用法。</p>
+<h2 id="语法回顾"><a href="#语法回顾" class="headerlink" title="语法回顾"></a>语法回顾</h2><p>开始之前我们再将Python装饰器的语法回顾一下。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decorate</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(...)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>等同于:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(...)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">f = decorate(f)</span><br></pre></td></tr></table></figure>
+
+<p>@语法的好处在于：</p>
+<ul>
+<li>相同的函数名只出现一次，避免了<code>f = decorate(f)</code>这样的语句。</li>
+<li>可读性更高，让读代码的人一眼就明白这个函数被装饰了哪些功能。</li>
+</ul>
+<h2 id="call-装饰器"><a href="#call-装饰器" class="headerlink" title="@call()装饰器"></a>@call()装饰器</h2><p>假设你要创建一个整数平方的列表，你可以这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>table = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>len(table), table[<span class="number">3</span>]</span><br><span class="line">(<span class="number">5</span>, <span class="number">9</span>)</span><br></pre></td></tr></table></figure>
+
+<p>也可以使用列表表达式，因为比较简单。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>table = [i * i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>)]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>len(table), table[<span class="number">3</span>]</span><br><span class="line">(<span class="number">5</span>, <span class="number">9</span>)</span><br></pre></td></tr></table></figure>
+
+<p>但是假如这个列表的逻辑比较复杂的时候，最好是写成一个方法，这样会更好维护。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">table</span><span class="params">(n)</span>:</span></span><br><span class="line"><span class="meta">... </span>    value = []</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line"><span class="meta">... </span>        value.append(i*i)</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">return</span> value</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>table = table(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+
+<p>注意看最后一句，是不是很符合装饰器的语法规则？什么情况下你会写这样的代码呢？</p>
+<ol>
+<li>你需要把相对复杂业务写成一个方法。</li>
+<li>这个方法和返回值可以同名，而且你不希望对外公开此方法，只公开结果。</li>
+<li>你想尽量使用装饰器。（无厘头的理由）</li>
+</ol>
+<p>那么这时候<code>@call()</code>装饰器就登场了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">call_fn</span><span class="params">(fn)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> fn(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> call_fn</span><br></pre></td></tr></table></figure>
+
+<p>这个装饰器会把你传入的参数送给目标函数然后直接执行。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@call(5)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">table</span><span class="params">(n)</span>:</span></span><br><span class="line">    value = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        value.append(i*i)</span><br><span class="line">    <span class="keyword">return</span> value</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> len(table), table[<span class="number">3</span>]  <span class="comment"># 5 9</span></span><br></pre></td></tr></table></figure>
+
+<p><code>@call()</code>装饰器适用于任何函数，你传入的参数会被直接使用然后结果赋值给同名函数。这样避免了你重新定义一个变量来存储结果。</p>
+<h2 id="list-装饰器"><a href="#list-装饰器" class="headerlink" title="@list 装饰器"></a>@list 装饰器</h2><p>假如你有一个这样一个生成器函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">table</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">yield</span> i</span><br></pre></td></tr></table></figure>
+
+<p>当你要生成<code>n=5</code>的序列时，可以直接调用。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">table = table(<span class="number">5</span>)</span><br><span class="line"><span class="keyword">print</span> table  <span class="comment"># &lt;generator object table at 0x027DAC10&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>使用<code>@call()</code>装饰器，也能得到一样的结果。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@call(5)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">table</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">yield</span> i</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> table  <span class="comment"># &lt;generator object table at 0x0340AC10&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>你还可以直接将其转换成列表。（使用<code>list(generator_object)</code>函数）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@list</span></span><br><span class="line"><span class="meta">@call(5)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">table</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">yield</span> i</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> table  <span class="comment"># [0, 1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+
+<p>这等同于列表表达式，但是可读性也许差了不少。例子本身只是演示了装饰器的一种用法，但不是推荐你就这样使用装饰器。你这样用也许会被其他同事拖到墙角里打死。</p>
+<h2 id="类装饰器"><a href="#类装饰器" class="headerlink" title="类装饰器"></a>类装饰器</h2><p>在Python 2.6以前，还不支持类装饰器。也就是说，你不能使用这样的写法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decorator</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>你必须这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">MyClass = decorator(MyClass)</span><br></pre></td></tr></table></figure>
+
+<p>也就是说，@语法对类是做了特殊处理的，类不一定是一个callable对象（尽管它有构造函数），但是也允许使用装饰器。那么基于以上语法，你觉得类装饰器能实现什么功能呢？</p>
+<p>举一个例子，<a href="https://pypi.python.org/pypi/ptest" target="_blank" rel="noopener">ptest</a>中的<code>@TestClass()</code>用于声明一个测试类，其源代码大致如此。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">TestClass</span><span class="params">(enabled=True, run_mode=<span class="string">"singleline"</span>)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tracer</span><span class="params">(cls)</span>:</span></span><br><span class="line">        cls.__pd_type__ =<span class="string">'test'</span></span><br><span class="line">        cls.__enabled__ = enabled</span><br><span class="line">        cls.__run_mode__ = run_mode.lower()</span><br><span class="line">        <span class="keyword">return</span> cls</span><br><span class="line">    <span class="keyword">return</span> tracer</span><br></pre></td></tr></table></figure>
+
+<p>当我们在写一个测试类时，发生了什么？</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@TestClass()</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestCases</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="comment"># your test case ...</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> TestCases.__dict__  <span class="comment"># &#123;'__module__': '__main__', '__enabled__': True, '__pd_type__': 'test', '__run_mode__': 'singleline', ...&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>居然装饰器的参数全都变成了变成这个类的属性，好神奇！我们把语法糖一一展开。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestCases</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">decorator = TestClass()</span><br><span class="line"><span class="keyword">print</span> decorator  <span class="comment"># &lt;function tracer at 0x033128F0&gt;</span></span><br><span class="line"></span><br><span class="line">TestCases = decorator(TestCases)</span><br><span class="line"><span class="keyword">print</span> TestCases  <span class="comment"># &lt;class '__main__.TestCases'&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> TestCases.__dict__  <span class="comment"># &#123;'__module__': '__main__', '__enabled__': True, '__pd_type__': 'test', '__run_mode__': 'singleline', ...&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>当装饰器在被使用时，<code>TestClass()</code>函数会马上被执行并返回一个装饰器函数，这个函数是一个闭包函数，保存了<code>enabled</code>和<code>run_mode</code>两个变量。另外它还接受一个类作为参数，并使用之前保存的变量为这个类添加属性，最后返回。所以经过<code>@TestClass()</code>装饰过的类都会带上<code>__enabled__</code>、<code>__pd_type__</code>以及<code>__run_mode__</code>的属性。</p>
+<p>由此可见，类装饰器可以完成和Java类似的注解功能，而且要比注解强大的多。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>装饰器就是一个语法糖，当你看不懂一个装饰器时，可以考虑将其依次展开，分别带入。这个语法糖给了我们不少方便，但是也要慎用。毕竟可维护的代码才是高质量的代码。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-26/python-decorator/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-26/python-decorator/" class="post-title-link" itemprop="url">详解Python的装饰器</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-27 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-27T00:00:00+08:00">2016-10-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python中的装饰器是你进入Python大门的一道坎，不管你跨不跨过去它都在那里。</p>
+<h2 id="为什么需要装饰器"><a href="#为什么需要装饰器" class="headerlink" title="为什么需要装饰器"></a>为什么需要装饰器</h2><p>我们假设你的程序实现了<code>say_hello()</code>和<code>say_goodbye()</code>两个函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_goodbye</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span>  <span class="comment"># bug here</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say_hello()</span><br><span class="line">    say_goodbye()</span><br></pre></td></tr></table></figure>
+
+<p>但是在实际调用中，我们发现程序出错了，上面的代码打印了两个hello。经过调试你发现是<code>say_goodbye()</code>出错了。老板要求调用每个方法前都要记录进入函数的时间和名称，比如这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[DEBUG] 2016-10-27 11:11:11 - Enter say_hello()</span><br><span class="line">Hello!</span><br><span class="line">[DEBUG] 2016-10-27 11:11:11 - Enter say_goodbye()</span><br><span class="line">Goodbye!</span><br></pre></td></tr></table></figure>
+
+<p>好，小A是个毕业生，他是这样实现的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG]: enter say_hello()"</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_goodbye</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG]: enter say_goodbye()"</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say_hello()</span><br><span class="line">    say_goodbye()</span><br></pre></td></tr></table></figure>
+
+<p>很low吧？ 嗯是的。小B工作有一段时间了，他告诉小A应该这样写。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">import</span> inspect</span><br><span class="line">    caller_name = inspect.stack()[<span class="number">1</span>][<span class="number">3</span>]</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(caller_name)   </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">()</span>:</span></span><br><span class="line">    debug()</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_goodbye</span><span class="params">()</span>:</span></span><br><span class="line">    debug()</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"goodbye!"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say_hello()</span><br><span class="line">    say_goodbye()</span><br></pre></td></tr></table></figure>
+
+<p>是不是好一点？那当然，但是每个业务函数里都要调用一下<code>debug()</code>函数，是不是很难受？万一老板说say相关的函数不用debug，do相关的才需要呢？</p>
+<p>那么装饰器这时候应该登场了。</p>
+<blockquote>
+<p>装饰器本质上是一个Python函数，它可以让其他函数在不需要做任何代码变动的前提下增加额外功能，装饰器的返回值也是一个函数对象。它经常用于有切面需求的场景，比如：插入日志、性能测试、事务处理、缓存、权限校验等场景。装饰器是解决这类问题的绝佳设计，有了装饰器，我们就可以抽离出大量与函数功能本身无关的雷同代码并继续重用。</p>
+</blockquote>
+<p>概括的讲，装饰器的作用就是<strong>为已经存在的函数或对象添加额外的功能</strong>。</p>
+<h2 id="怎么写一个装饰器"><a href="#怎么写一个装饰器" class="headerlink" title="怎么写一个装饰器"></a>怎么写一个装饰器</h2><p>在早些时候 (Python Version &lt; 2.4，2004年以前)，为一个函数添加额外功能的写法是这样的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(func.__name__)</span><br><span class="line">        <span class="keyword">return</span> func()</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br><span class="line"></span><br><span class="line">say_hello = debug(say_hello)  <span class="comment"># 添加功能并保持原函数名不变</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的debug函数其实已经是一个装饰器了，它对原函数做了包装并返回了另外一个函数，额外添加了一些功能。因为这样写实在不太优雅，在后面版本的Python中支持了@语法糖，下面代码等同于早期的写法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(func.__name__)</span><br><span class="line">        <span class="keyword">return</span> func()</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@debug</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello!"</span></span><br></pre></td></tr></table></figure>
+
+<p>这是最简单的装饰器，但是有一个问题，如果被装饰的函数需要传入参数，那么这个装饰器就坏了。因为返回的函数并不能接受参数，你可以指定装饰器函数<code>wrapper</code>接受和原函数一样的参数，比如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(something)</span>:</span>  <span class="comment"># 指定一毛一样的参数</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(func.__name__)</span><br><span class="line">        <span class="keyword">return</span> func(something)</span><br><span class="line">    <span class="keyword">return</span> wrapper  <span class="comment"># 返回包装过函数</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@debug</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello &#123;&#125;!"</span>.format(something)</span><br></pre></td></tr></table></figure>
+
+<p>这样你就解决了一个问题，但又多了N个问题。因为函数有千千万，你只管你自己的函数，别人的函数参数是什么样子，鬼知道？还好Python提供了可变参数<code>*args</code>和关键字参数<code>**kwargs</code>，有了这两个参数，装饰器就可以用于任意目标函数了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span>  <span class="comment"># 指定宇宙无敌参数</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(func.__name__)</span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Prepare and say...'</span>,</span><br><span class="line">        <span class="keyword">return</span> func(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapper  <span class="comment"># 返回</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@debug</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello &#123;&#125;!"</span>.format(something)</span><br></pre></td></tr></table></figure>
+
+<p>至此，你已完全掌握初级的装饰器写法。</p>
+<h2 id="高级一点的装饰器"><a href="#高级一点的装饰器" class="headerlink" title="高级一点的装饰器"></a>高级一点的装饰器</h2><p>带参数的装饰器和类装饰器属于进阶的内容。在理解这些装饰器之前，最好对函数的闭包和装饰器的接口约定有一定了解。(参见 <a href="https://betacat.online/posts/2016-10-23/python-closure/">https://betacat.online/posts/2016-10-23/python-closure/</a>)</p>
+<h3 id="带参数的装饰器"><a href="#带参数的装饰器" class="headerlink" title="带参数的装饰器"></a>带参数的装饰器</h3><p>假设我们前文的装饰器需要完成的功能不仅仅是能在进入某个函数后打出log信息，而且还需指定log的级别，那么装饰器就会是这样的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(level)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(func)</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">inner_wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            <span class="keyword">print</span> <span class="string">"[&#123;level&#125;]: enter function &#123;func&#125;()"</span>.format(</span><br><span class="line">                level=level,</span><br><span class="line">                func=func.__name__)</span><br><span class="line">            <span class="keyword">return</span> func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> inner_wrapper</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@logging(level='INFO')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"say &#123;&#125;!"</span>.format(something)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果没有使用@语法，等同于</span></span><br><span class="line"><span class="comment"># say = logging(level='INFO')(say)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@logging(level='DEBUG')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"do &#123;&#125;..."</span>.format(something)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say(<span class="string">'hello'</span>)</span><br><span class="line">    do(<span class="string">"my work"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>是不是有一些晕？你可以这么理解，当带参数的装饰器被打在某个函数上时，比如<code>@logging(level=&#39;DEBUG&#39;)</code>，它其实是一个函数，会马上被执行，只要这个它返回的结果是一个装饰器时，那就没问题。细细再体会一下。</p>
+<h3 id="基于类实现的装饰器"><a href="#基于类实现的装饰器" class="headerlink" title="基于类实现的装饰器"></a>基于类实现的装饰器</h3><p>装饰器函数其实是这样一个接口约束，它必须接受一个callable对象作为参数，然后返回一个callable对象。在Python中一般callable对象都是函数，但也有例外。只要某个对象重载了<code>__call__()</code>方法，那么这个对象就是callable的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'call me!'</span></span><br><span class="line"></span><br><span class="line">t = Test()</span><br><span class="line">t()  <span class="comment"># call me</span></span><br></pre></td></tr></table></figure>
+
+<p>像<code>__call__</code>这样前后都带下划线的方法在Python中被称为内置方法，有时候也被称为魔法方法。重载这些魔法方法一般会改变对象的内部行为。上面这个例子就让一个类对象拥有了被调用的行为。</p>
+<p>回到装饰器上的概念上来，装饰器要求接受一个callable对象，并返回一个callable对象（不太严谨，详见后文）。那么用类来实现也是也可以的。我们可以让类的构造函数<code>__init__()</code>接受一个函数，然后重载<code>__call__()</code>并返回一个函数，也可以达到装饰器函数的效果。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">logging</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, func)</span>:</span></span><br><span class="line">        self.func = func</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG]: enter function &#123;func&#125;()"</span>.format(</span><br><span class="line">            func=self.func.__name__)</span><br><span class="line">        <span class="keyword">return</span> self.func(*args, **kwargs)</span><br><span class="line"><span class="meta">@logging</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"say &#123;&#125;!"</span>.format(something)</span><br></pre></td></tr></table></figure>
+
+<h3 id="带参数的类装饰器"><a href="#带参数的类装饰器" class="headerlink" title="带参数的类装饰器"></a>带参数的类装饰器</h3><p>如果需要通过类形式实现带参数的装饰器，那么会比前面的例子稍微复杂一点。那么在构造函数里接受的就不是一个函数，而是传入的参数。通过类把这些参数保存起来。然后在重载<code>__call__</code>方法是就需要接受一个函数并返回一个函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">logging</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, level=<span class="string">'INFO'</span>)</span>:</span></span><br><span class="line">        self.level = level</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, func)</span>:</span> <span class="comment"># 接受函数</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            <span class="keyword">print</span> <span class="string">"[&#123;level&#125;]: enter function &#123;func&#125;()"</span>.format(</span><br><span class="line">                level=self.level,</span><br><span class="line">                func=func.__name__)</span><br><span class="line">            func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> wrapper  <span class="comment">#返回函数</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@logging(level='INFO')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"say &#123;&#125;!"</span>.format(something)</span><br></pre></td></tr></table></figure>
+
+<h3 id="内置的装饰器"><a href="#内置的装饰器" class="headerlink" title="内置的装饰器"></a>内置的装饰器</h3><p>内置的装饰器和普通的装饰器原理是一样的，只不过返回的不是函数，而是类对象，所以更难理解一些。</p>
+<h4 id="property"><a href="#property" class="headerlink" title="@property"></a>@property</h4><p>在了解这个装饰器前，你需要知道在不使用装饰器怎么写一个属性。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getx</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> self._x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">setx</span><span class="params">(self, value)</span>:</span></span><br><span class="line">    self._x = value</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delx</span><span class="params">(self)</span>:</span></span><br><span class="line">   <span class="keyword">del</span> self._x</span><br><span class="line"></span><br><span class="line"><span class="comment"># create a property</span></span><br><span class="line">x = property(getx, setx, delx, <span class="string">"I am doc for x property"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>以上就是一个Python属性的标准写法，其实和Java挺像的，但是太罗嗦。有了@语法糖，能达到一样的效果但看起来更简单。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@property</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">x</span><span class="params">(self)</span>:</span> ...</span><br><span class="line"></span><br><span class="line"><span class="comment"># 等同于</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">x</span><span class="params">(self)</span>:</span> ...</span><br><span class="line">x = property(x)</span><br></pre></td></tr></table></figure>
+
+<p>属性有三个装饰器：<code>setter</code>, <code>getter</code>, <code>deleter</code> ，都是在<code>property()</code>的基础上做了一些封装，因为<code>setter</code>和<code>deleter</code>是<code>property()</code>的第二和第三个参数，不能直接套用@语法。<code>getter</code>装饰器和不带<code>getter</code>的属性装饰器效果是一样的，估计只是为了凑数，本身没有任何存在的意义。经过<code>@property</code>装饰过的函数返回的不再是一个函数，而是一个<code>property</code>对象。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>property()</span><br><span class="line">&lt;property object at <span class="number">0x10ff07940</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="staticmethod，-classmethod"><a href="#staticmethod，-classmethod" class="headerlink" title="@staticmethod，@classmethod"></a>@staticmethod，@classmethod</h4><p>有了<code>@property</code>装饰器的了解，这两个装饰器的原理是差不多的。<code>@staticmethod</code>返回的是一个<code>staticmethod</code>类对象，而<code>@classmethod</code>返回的是一个<code>classmethod</code>类对象。他们都是调用的是各自的<code>__init__()</code>构造函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">classmethod</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    classmethod(function) -&gt; method</span></span><br><span class="line"><span class="string">    """</span>    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, function)</span>:</span> <span class="comment"># for @classmethod decorator</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">staticmethod</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    staticmethod(function) -&gt; method</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, function)</span>:</span> <span class="comment"># for @staticmethod decorator</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># ...</span></span><br></pre></td></tr></table></figure>
+
+<p>装饰器的@语法就等同调用了这两个类的构造函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">bar</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 等同于 bar = staticmethod(bar)</span></span><br></pre></td></tr></table></figure>
+
+<p>至此，我们上文提到的装饰器接口定义可以更加明确一些，装饰器必须接受一个callable对象，其实它并不关心你返回什么，可以是另外一个callable对象（大部分情况），也可以是其他类对象，比如property。</p>
+<h2 id="装饰器里的那些坑"><a href="#装饰器里的那些坑" class="headerlink" title="装饰器里的那些坑"></a>装饰器里的那些坑</h2><p>装饰器可以让你代码更加优雅，减少重复，但也不全是优点，也会带来一些问题。</p>
+<h3 id="位置错误的代码"><a href="#位置错误的代码" class="headerlink" title="位置错误的代码"></a>位置错误的代码</h3><p>让我们直接看示例代码。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">html_tags</span><span class="params">(tag_name)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'begin outer function.'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper_</span><span class="params">(func)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"begin of inner wrapper function."</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            content = func(*args, **kwargs)</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"&lt;&#123;tag&#125;&gt;&#123;content&#125;&lt;/&#123;tag&#125;&gt;"</span>.format(tag=tag_name, content=content)</span><br><span class="line">        <span class="keyword">print</span> <span class="string">'end of inner wrapper function.'</span></span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'end of outer function'</span></span><br><span class="line">    <span class="keyword">return</span> wrapper_</span><br><span class="line"></span><br><span class="line"><span class="meta">@html_tags('b')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(name=<span class="string">'Toby'</span>)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello &#123;&#125;!'</span>.format(name)</span><br><span class="line"></span><br><span class="line">hello()</span><br><span class="line">hello()</span><br></pre></td></tr></table></figure>
+
+<p>在装饰器中我在各个可能的位置都加上了print语句，用于记录被调用的情况。你知道他们最后打印出来的顺序吗？如果你心里没底，那么最好不要在装饰器函数之外添加逻辑功能，否则这个装饰器就不受你控制了。以下是输出结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">begin outer function.</span><br><span class="line">end of outer function</span><br><span class="line">begin of inner wrapper function.</span><br><span class="line">end of inner wrapper function.</span><br><span class="line">&lt;b&gt;Hello Toby!&lt;&#x2F;b&gt;</span><br><span class="line">&lt;b&gt;Hello Toby!&lt;&#x2F;b&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="错误的函数签名和文档"><a href="#错误的函数签名和文档" class="headerlink" title="错误的函数签名和文档"></a>错误的函数签名和文档</h3><p>装饰器装饰过的函数看上去名字没变，其实已经变了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="string">"""print log before a function."""</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG] &#123;&#125;: enter &#123;&#125;()"</span>.format(datetime.now(), func.__name__)</span><br><span class="line">        <span class="keyword">return</span> func(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@logging</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="string">"""say something"""</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"say &#123;&#125;!"</span>.format(something)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> say.__name__  <span class="comment"># wrapper</span></span><br></pre></td></tr></table></figure>
+
+<p>为什么会这样呢？只要你想想装饰器的语法糖@代替的东西就明白了。@等同于这样的写法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">say = logging(say)</span><br></pre></td></tr></table></figure>
+
+<p><code>logging</code>其实返回的函数名字刚好是<code>wrapper</code>，那么上面的这个语句刚好就是把这个结果赋值给<code>say</code>，<code>say</code>的<code>__name__</code>自然也就是<code>wrapper</code>了，不仅仅是<code>name</code>，其他属性也都是来自<code>wrapper</code>，比如<code>doc</code>，<code>source</code>等等。</p>
+<p>使用标准库里的<code>functools.wraps</code>，可以<strong>基本</strong>解决这个问题。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> wraps</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(func)</span>:</span></span><br><span class="line"><span class="meta">    @wraps(func)</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="string">"""print log before a function."""</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[DEBUG] &#123;&#125;: enter &#123;&#125;()"</span>.format(datetime.now(), func.__name__)</span><br><span class="line">        <span class="keyword">return</span> func(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@logging</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span></span><br><span class="line">    <span class="string">"""say something"""</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"say &#123;&#125;!"</span>.format(something)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> say.__name__  <span class="comment"># say</span></span><br><span class="line"><span class="keyword">print</span> say.__doc__ <span class="comment"># say something</span></span><br></pre></td></tr></table></figure>
+
+<p>看上去不错！主要问题解决了，但其实还不太完美。因为函数的签名和源码还是拿不到的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> inspect</span><br><span class="line"><span class="keyword">print</span> inspect.getargspec(say)  <span class="comment"># failed</span></span><br><span class="line"><span class="keyword">print</span> inspect.getsource(say)  <span class="comment"># failed</span></span><br></pre></td></tr></table></figure>
+
+<p>如果要彻底解决这个问题可以借用第三方包，比如<code>wrapt</code>。后文有介绍。</p>
+<h3 id="不能装饰-staticmethod-或者-classmethod"><a href="#不能装饰-staticmethod-或者-classmethod" class="headerlink" title="不能装饰@staticmethod 或者 @classmethod"></a>不能装饰@staticmethod 或者 @classmethod</h3><p>当你想把装饰器用在一个静态方法或者类方法时，不好意思，报错了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, model)</span>:</span></span><br><span class="line">        self.model = model</span><br><span class="line"></span><br><span class="line"><span class="meta">    @logging  # 装饰实例方法，OK</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"&#123;&#125; is running!"</span>.format(self.model)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @logging  # 装饰静态方法，Failed</span></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">check_model_for</span><span class="params">(obj)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> isinstance(obj, Car):</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"The model of your car is &#123;&#125;"</span>.format(obj.model)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"&#123;&#125; is not a car!"</span>.format(obj)</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Traceback (most recent call last):</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">  File "example_4.py", line 10, in logging</span></span><br><span class="line"><span class="string">    @wraps(func)</span></span><br><span class="line"><span class="string">  File "C:\Python27\lib\functools.py", line 33, in update_wrapper</span></span><br><span class="line"><span class="string">    setattr(wrapper, attr, getattr(wrapped, attr))</span></span><br><span class="line"><span class="string">AttributeError: 'staticmethod' object has no attribute '__module__'</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<p>前面已经解释了<code>@staticmethod</code>这个装饰器，其实它返回的并不是一个callable对象，而是一个<code>staticmethod</code>对象，那么它是不符合装饰器要求的（比如传入一个callable对象），你自然不能在它之上再加别的装饰器。要解决这个问题很简单，只要把你的装饰器放在<code>@staticmethod</code>之前就好了，因为你的装饰器返回的还是一个正常的函数，然后再加上一个<code>@staticmethod</code>是不会出问题的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, model)</span>:</span></span><br><span class="line">        self.model = model</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line"><span class="meta">    @logging  # 在@staticmethod之前装饰，OK</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">check_model_for</span><span class="params">(obj)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="如何优化你的装饰器"><a href="#如何优化你的装饰器" class="headerlink" title="如何优化你的装饰器"></a>如何优化你的装饰器</h2><p>嵌套的装饰函数不太直观，我们可以使用第三方包类改进这样的情况，让装饰器函数可读性更好。</p>
+<h3 id="decorator-py"><a href="#decorator-py" class="headerlink" title="decorator.py"></a>decorator.py</h3><p><a href="http://pythonhosted.org/decorator/documentation.html" target="_blank" rel="noopener">decorator.py</a> 是一个非常简单的装饰器加强包。你可以很直观的先定义包装函数<code>wrapper()</code>，再使用<code>decorate(func, wrapper)</code>方法就可以完成一个装饰器。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> decorator <span class="keyword">import</span> decorate</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(func, *args, **kwargs)</span>:</span></span><br><span class="line">    <span class="string">"""print log before a function."""</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG] &#123;&#125;: enter &#123;&#125;()"</span>.format(datetime.now(), func.__name__)</span><br><span class="line">    <span class="keyword">return</span> func(*args, **kwargs)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> decorate(func, wrapper)  <span class="comment"># 用wrapper装饰func</span></span><br></pre></td></tr></table></figure>
+
+<p>你也可以使用它自带的<code>@decorator</code>装饰器来完成你的装饰器。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> decorator <span class="keyword">import</span> decorator</span><br><span class="line"></span><br><span class="line"><span class="meta">@decorator</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(func, *args, **kwargs)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG] &#123;&#125;: enter &#123;&#125;()"</span>.format(datetime.now(), func.__name__)</span><br><span class="line">    <span class="keyword">return</span> func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p><code>decorator.py</code>实现的装饰器能完整保留原函数的<code>name</code>，<code>doc</code>和<code>args</code>，唯一有问题的就是<code>inspect.getsource(func)</code>返回的还是装饰器的源代码，你需要改成<code>inspect.getsource(func.__wrapped__)</code>。</p>
+<h3 id="wrapt"><a href="#wrapt" class="headerlink" title="wrapt"></a>wrapt</h3><p><a href="http://wrapt.readthedocs.io/en/latest/quick-start.html" target="_blank" rel="noopener">wrapt</a>是一个功能非常完善的包，用于实现各种你想到或者你没想到的装饰器。使用wrapt实现的装饰器你不需要担心之前inspect中遇到的所有问题，因为它都帮你处理了，甚至<code>inspect.getsource(func)</code>也准确无误。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> wrapt</span><br><span class="line"></span><br><span class="line"><span class="comment"># without argument in decorator</span></span><br><span class="line"><span class="meta">@wrapt.decorator</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(wrapped, instance, args, kwargs)</span>:</span>  <span class="comment"># instance is must</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"[DEBUG]: enter &#123;&#125;()"</span>.format(wrapped.__name__)</span><br><span class="line">    <span class="keyword">return</span> wrapped(*args, **kwargs)</span><br><span class="line"></span><br><span class="line"><span class="meta">@logging</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(something)</span>:</span> <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>使用wrapt你只需要定义一个装饰器函数，但是函数签名是固定的，必须是<code>(wrapped, instance, args, kwargs)</code>，注意第二个参数<code>instance</code>是必须的，就算你不用它。当装饰器装饰在不同位置时它将得到不同的值，比如装饰在类实例方法时你可以拿到这个类实例。根据<code>instance</code>的值你能够更加灵活的调整你的装饰器。另外，<code>args</code>和<code>kwargs</code>也是固定的，注意前面<strong>没有星号</strong>。在装饰器内部调用原函数时才带星号。</p>
+<p>如果你需要使用wrapt写一个带参数的装饰器，可以这样写。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logging</span><span class="params">(level)</span>:</span></span><br><span class="line"><span class="meta">    @wrapt.decorator</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(wrapped, instance, args, kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"[&#123;&#125;]: enter &#123;&#125;()"</span>.format(level, wrapped.__name__)</span><br><span class="line">        <span class="keyword">return</span> wrapped(*args, **kwargs)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@logging(level="INFO")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do</span><span class="params">(work)</span>:</span> <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>关于wrapt的使用，建议查阅官方文档，在此不在赘述。</p>
+<ul>
+<li><a href="http://wrapt.readthedocs.io/en/latest/quick-start.html" target="_blank" rel="noopener">http://wrapt.readthedocs.io/en/latest/quick-start.html</a></li>
+</ul>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>Python的装饰器和Java的注解（Annotation）并不是同一回事，和C#中的特性（Attribute）也不一样，完全是两个概念。</p>
+<p>装饰器的理念是对原函数、对象的加强，相当于重新封装，所以一般装饰器函数都被命名为<code>wrapper()</code>，意义在于包装。函数只有在被调用时才会发挥其作用。比如<code>@logging</code>装饰器可以在函数执行时额外输出日志，<code>@cache</code>装饰过的函数可以缓存计算结果等等。</p>
+<p>而注解和特性则是对目标函数或对象添加一些属性，相当于将其分类。这些属性可以通过反射拿到，在程序运行时对不同的特性函数或对象加以干预。比如带有<code>Setup</code>的函数就当成准备步骤执行，或者找到所有带有<code>TestMethod</code>的函数依次执行等等。</p>
+<p>至此我所了解的装饰器已经讲完，但是还有一些内容没有提到，比如装饰类的装饰器。有机会再补充。谢谢观看。</p>
+<blockquote>
+<p>本文源码 <a href="https://github.com/tobyqin/python_decorator" target="_blank" rel="noopener">https://github.com/tobyqin/python_decorator</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-22/python-closure/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-22/python-closure/" class="post-title-link" itemprop="url">说说Python中的闭包 - Closure</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-23 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-23T00:00:00+08:00">2016-10-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python中的闭包不是一个一说就能明白的概念，但是随着你往学习的深入，无论如何你都需要去了解这么一个东西。</p>
+<h2 id="闭包的概念"><a href="#闭包的概念" class="headerlink" title="闭包的概念"></a>闭包的概念</h2><p>我们尝试从概念上去理解一下闭包。</p>
+<blockquote>
+<p>在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。<br>—— <a href="https://zh.wikipedia.org/wiki/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)" target="_blank" rel="noopener">维基百科</a></p>
+</blockquote>
+<p>用比较容易懂的人话说，就是当某个<strong>函数</strong>被当成对象返回时，<strong>夹带了外部变量</strong>，就形成了一个闭包。看例子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">make_printer</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">printer</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">print</span> msg  <span class="comment"># 夹带私货（外部变量）</span></span><br><span class="line">    <span class="keyword">return</span> printer  <span class="comment"># 返回的是函数，带私货的函数</span></span><br><span class="line"></span><br><span class="line">printer = make_printer(<span class="string">'Foo!'</span>)</span><br><span class="line">printer()</span><br></pre></td></tr></table></figure>
+
+<p>支持将函数当成对象使用的编程语言，一般都支持闭包。比如Python, JavaScript。</p>
+<h2 id="如何理解闭包"><a href="#如何理解闭包" class="headerlink" title="如何理解闭包"></a>如何理解闭包</h2><p>闭包存在有什么意义呢？为什么需要闭包？</p>
+<p>我个人认为，闭包存在的意义就是它夹带了外部变量（私货），如果它不夹带私货，它和普通的函数就没有任何区别。<strong>同一个的函数</strong>夹带了<strong>不同的私货</strong>，就实现了不同的功能。其实你也可以这么理解，闭包和面向接口编程的概念很像，可以把闭包理解成轻量级的接口封装。</p>
+<blockquote>
+<p>接口定义了一套对方法签名的约束规则。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tag</span><span class="params">(tag_name)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">add_tag</span><span class="params">(content)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"&lt;&#123;0&#125;&gt;&#123;1&#125;&lt;/&#123;0&#125;&gt;"</span>.format(tag_name, content)</span><br><span class="line">    <span class="keyword">return</span> add_tag</span><br><span class="line"></span><br><span class="line">content = <span class="string">'Hello'</span></span><br><span class="line"></span><br><span class="line">add_tag = tag(<span class="string">'a'</span>)</span><br><span class="line"><span class="keyword">print</span> add_tag(content)</span><br><span class="line"><span class="comment"># &lt;a&gt;Hello&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">add_tag = tag(<span class="string">'b'</span>)</span><br><span class="line"><span class="keyword">print</span> add_tag(content)</span><br><span class="line"><span class="comment"># &lt;b&gt;Hello&lt;/b&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个例子里，我们想要一个给<code>content</code>加<code>tag</code>的功能，但是具体的<code>tag_name</code>是什么样子的要根据实际需求来定，对外部调用的接口已经确定，就是<code>add_tag(content)</code>。如果按照面向接口方式实现，我们会先把<code>add_tag</code>写成接口，指定其参数和返回类型，然后分别去实现a和b的<code>add_tag</code>。</p>
+<p>但是在闭包的概念中，<code>add_tag</code>就是一个函数，它需要<code>tag_name</code>和<code>content</code>两个参数，只不过<code>tag_name</code>这个参数是打包带走的。所以一开始时就可以告诉我怎么打包，然后带走就行。</p>
+<p>上面的例子不太生动，其实在我们生活和工作中，闭包的概念也很常见。比如说手机拨号，你只关心电话打给谁，而不会去纠结每个品牌的手机是怎么实现的，用到了哪些模块。再比如去餐馆吃饭，你只要付钱就可以享受到服务，你并不知道那桌饭菜用了多少地沟油。这些都可以看成闭包，返回来的是一些功能或者服务（打电话，用餐），但是这些功能使用了外部变量（天线，地沟油等等）。</p>
+<p>你也可以把一个类实例看成闭包，当你在构造这个类时，使用了不同的参数，这些参数就是闭包里的包，这个类对外提供的方法就是闭包的功能。但是类远远大于闭包，因为闭包只是一个可以执行的函数，但是类实例则有可能提供很多方法。</p>
+<h2 id="何时使用闭包"><a href="#何时使用闭包" class="headerlink" title="何时使用闭包"></a>何时使用闭包</h2><p>其实闭包在Python中很常见，只不过你没特别注意这就是一个闭包。比如Python中的装饰器Decorator，假如你需要写一个带参数的装饰器，那么一般都会生成闭包。</p>
+<p>为什么？因为Python的装饰器是一个固定的函数接口形式。它要求你的装饰器函数（或装饰器类）必须接受一个函数并返回一个函数：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># how to define</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(func1)</span>:</span>  <span class="comment"># 接受一个callable对象</span></span><br><span class="line">    <span class="keyword">return</span> func2  <span class="comment"># 返回一个对象，一般为函数</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># how to use</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">target_func</span><span class="params">(args)</span>:</span> <span class="comment"># 目标函数</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用方式一，直接包裹</span></span><br><span class="line">result = wrapper(target_func)(args)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用方式二，使用@语法，等同于方式一</span></span><br><span class="line"><span class="meta">@wrapper</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">target_func</span><span class="params">(args)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">result = target_func()</span><br></pre></td></tr></table></figure>
+
+<p>那么如果你的装饰器如果带参数呢？那么你就需要在原来的装饰器上再包一层，用于接收这些参数。这些参数（私货）传递到内层的装饰器里后，闭包就形成了。所以说当你的装饰器需要自定义参数时，一般都会形成闭包。（类装饰器例外）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">html_tags</span><span class="params">(tag_name)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper_</span><span class="params">(func)</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            content = func(*args, **kwargs)</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"&lt;&#123;tag&#125;&gt;&#123;content&#125;&lt;/&#123;tag&#125;&gt;"</span>.format(tag=tag_name, content=content)</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> wrapper_</span><br><span class="line"></span><br><span class="line"><span class="meta">@html_tags('b')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(name=<span class="string">'Toby'</span>)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello &#123;&#125;!'</span>.format(name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不用@的写法如下</span></span><br><span class="line"><span class="comment"># hello = html_tag('b')(hello)</span></span><br><span class="line"><span class="comment"># html_tag('b') 是一个闭包，它接受一个函数，并返回一个函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> hello()  <span class="comment"># &lt;b&gt;Hello Toby!&lt;/b&gt;</span></span><br><span class="line"><span class="keyword">print</span> hello(<span class="string">'world'</span>)  <span class="comment"># &lt;b&gt;Hello world!&lt;/b&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>关于装饰器的更深入剖析，可以看我写的另外一篇博客。</p>
+<h2 id="再深入一点"><a href="#再深入一点" class="headerlink" title="再深入一点"></a>再深入一点</h2><p>其实也不必太深入，理解这上面的概念，很多看起来头疼的代码也不过如此。</p>
+<p>下面让我们来了解一下闭包的包到底长什么样子。其实闭包函数相对与普通函数会多出一个<code>__closure__</code>的属性，里面定义了一个元组用于存放所有的<code>cell</code>对象，每个<code>cell</code>对象一一保存了这个闭包中所有的外部变量。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">make_printer</span><span class="params">(msg1, msg2)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">printer</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">print</span> msg1, msg2</span><br><span class="line">    <span class="keyword">return</span> printer</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>printer = make_printer(<span class="string">'Foo'</span>, <span class="string">'Bar'</span>)  <span class="comment"># 形成闭包</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>printer.__closure__   <span class="comment"># 返回cell元组</span></span><br><span class="line">(&lt;cell at <span class="number">0x03A10930</span>: str object at <span class="number">0x039DA218</span>&gt;, &lt;cell at <span class="number">0x03A10910</span>: str object at <span class="number">0x039DA488</span>&gt;)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>printer.__closure__[<span class="number">0</span>].cell_contents  <span class="comment"># 第一个外部变量</span></span><br><span class="line"><span class="string">'Foo'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>printer.__closure__[<span class="number">1</span>].cell_contents  <span class="comment"># 第二个外部变量</span></span><br><span class="line"><span class="string">'Bar'</span></span><br></pre></td></tr></table></figure>
+
+<p>原理就是这么简单。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://www.the5fire.com/closure-in-python.html" target="_blank" rel="noopener">https://www.the5fire.com/closure-in-python.html</a></li>
+<li><a href="http://stackoverflow.com/questions/4020419/why-arent-python-nested-functions-called-closures" target="_blank" rel="noopener">http://stackoverflow.com/questions/4020419/why-arent-python-nested-functions-called-closures</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-19/assertion-in-python-en/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-19/assertion-in-python-en/" class="post-title-link" itemprop="url">Improve Assertion In Python</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-20 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-20T00:00:00+08:00">2016-10-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Why-not-using-Python-Assert"><a href="#Why-not-using-Python-Assert" class="headerlink" title="Why not using Python Assert"></a>Why not using Python Assert</h3><p>Assertion in Python is pretty simple, you can assert any condition by <code>assert</code> statement.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> <span class="number">1</span> + <span class="number">1</span> == <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> isinstance(<span class="string">'Hello'</span>, str)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> isinstance(<span class="string">'Hello'</span>, int)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;input&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AssertionError</span><br></pre></td></tr></table></figure>
+
+<p>It is great that <code>assert</code> can stop your application/tests when something goes wrong. However, it is not good enough that the <strong>AssertionError</strong> does not expose more information. In above example, we received the error message only with file name and line number, you have to start debugger to discover more. </p>
+<h3 id="Improved-Solution-1"><a href="#Improved-Solution-1" class="headerlink" title="Improved Solution #1"></a>Improved Solution #1</h3><p>An improved solution is always appending message in your assertion.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">"nothin is impossible."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>key = <span class="string">"nothing"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> key <span class="keyword">in</span> s, <span class="string">"Key: '&#123;&#125;' is not in Target: '&#123;&#125;'"</span>.format(key, s)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;input&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AssertionError: Key: <span class="string">'nothing'</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">in</span> Target: <span class="string">'nothin is impossible.'</span></span><br></pre></td></tr></table></figure>
+
+<p>Well, it fixed the problem, but it not elegant.  If you are a QA engineer, you have to do a lot of assertions in thousands of test cases. With above solution, I would choose to die :-|</p>
+<h3 id="Improved-Solution-2"><a href="#Improved-Solution-2" class="headerlink" title="Improved Solution #2"></a>Improved Solution #2</h3><p>You might know about test frameworks, how do they do assertion? Yes, using test framework assertion is a nice alternation. </p>
+<h4 id="py-test"><a href="#py-test" class="headerlink" title="py.test"></a>py.test</h4><p>If you are running tests with <a href="https://pypi.python.org/pypi/pytest" target="_blank" rel="noopener">py.test</a>, you can keep everything unchanged in your code, the failure message will tell you what is going on in failed assertion.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pytest</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_case</span><span class="params">()</span>:</span></span><br><span class="line">    expected = <span class="string">"Hello"</span></span><br><span class="line">    actual = <span class="string">"hello"</span></span><br><span class="line">    <span class="keyword">assert</span> expected == actual</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    pytest.main()</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">================================== FAILURES ===================================</span></span><br><span class="line"><span class="string">__________________________________ test_case __________________________________</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def test_case():</span></span><br><span class="line"><span class="string">        expected = "Hello"</span></span><br><span class="line"><span class="string">        actual = "hello"</span></span><br><span class="line"><span class="string">&gt;       assert expected == actual</span></span><br><span class="line"><span class="string">E       assert 'Hello' == 'hello'</span></span><br><span class="line"><span class="string">E         - Hello</span></span><br><span class="line"><span class="string">E         ? ^</span></span><br><span class="line"><span class="string">E         + hello</span></span><br><span class="line"><span class="string">E         ? ^</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">assertion_in_python.py:7: AssertionError</span></span><br><span class="line"><span class="string">========================== 1 failed in 0.05 seconds ===========================</span></span><br><span class="line"><span class="string">"""</span><span class="string">"</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="unittest"><a href="#unittest" class="headerlink" title="unittest"></a>unittest</h4><p>Python <a href="https://docs.python.org/3/library/unittest.html" target="_blank" rel="noopener">unittest</a> module provides assertion feature in itself, it recommends <code>self.assertXXX()</code> methods, but not <code>assert XXX</code> statements.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestStringMethods</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_upper</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.assertEqual(<span class="string">'foo'</span>.upper(), <span class="string">'FoO'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    unittest.main()</span><br><span class="line">    </span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Failure</span></span><br><span class="line"><span class="string">Expected :'FOO'</span></span><br><span class="line"><span class="string">Actual   :'FoO'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Traceback (most recent call last):</span></span><br><span class="line"><span class="string">  File "assertion_in_python.py", line 6, in test_upper</span></span><br><span class="line"><span class="string">    self.assertEqual('foo'.upper(), 'FoO')</span></span><br><span class="line"><span class="string">AssertionError: 'FOO' != 'FoO'</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ptest"><a href="#ptest" class="headerlink" title="ptest"></a>ptest</h4><p>I like <a href="https://pypi.python.org/pypi/ptest" target="_blank" rel="noopener">ptest</a> very much, its assertion feature is more readable and smart. Thanks its author Karl :-)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ptest.decorator <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> ptest.assertion <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="meta">@TestClass()</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestCases</span>:</span></span><br><span class="line"><span class="meta">    @Test()</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test1</span><span class="params">(self)</span>:</span></span><br><span class="line">        actual = <span class="string">'foo'</span></span><br><span class="line">        expected = <span class="string">'bar'</span></span><br><span class="line">        assert_that(expected).is_equal_to(actual)</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Start to run following 1 tests:</span></span><br><span class="line"><span class="string">------------------------------</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">[demo.assertion_in_python.TestCases.test1@Test] Failed with following message:</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">AssertionError: Unexpectedly that the str &lt;bar&gt; is not equal to str &lt;foo&gt;.</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Improved-Solution-3"><a href="#Improved-Solution-3" class="headerlink" title="Improved Solution #3"></a>Improved Solution #3</h3><p>It is not only you and me are frustrating on python assertion, so people created packages to replace default assertion. I strongly recommend you should have a try for <a href="https://pypi.python.org/pypi/assertpy" target="_blank" rel="noopener">assertpy</a> package, which is high rating and powerful.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install assertpy</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> assertpy <span class="keyword">import</span> assert_that</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_something</span><span class="params">()</span>:</span></span><br><span class="line">    assert_that(<span class="number">1</span> + <span class="number">2</span>).is_equal_to(<span class="number">3</span>)</span><br><span class="line">    assert_that(<span class="string">'foobar'</span>)\</span><br><span class="line">        .is_length(<span class="number">6</span>)\</span><br><span class="line">        .starts_with(<span class="string">'foo'</span>)\</span><br><span class="line">        .ends_with(<span class="string">'bar'</span>)</span><br><span class="line">    assert_that([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>])\</span><br><span class="line">        .contains(<span class="string">'a'</span>)\</span><br><span class="line">        .does_not_contain(<span class="string">'x'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>From its <a href="https://github.com/ActivisionGameScience/assertpy" target="_blank" rel="noopener">github home page</a> you will see it supports assertion in most test scenarios.</p>
+<ul>
+<li>Strings</li>
+<li>Numbers</li>
+<li>Lists</li>
+<li>Tuples</li>
+<li>Dicts</li>
+<li>Sets</li>
+<li>Booleans</li>
+<li>Dates</li>
+<li>Files</li>
+<li>Objects</li>
+</ul>
+<p>The assertion message is really helpful, they looks like:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Expected &lt;foo&gt; to be of length &lt;4&gt;, but was &lt;3&gt;.</span><br><span class="line">Expected &lt;foo&gt; to be empty string, but was not.</span><br><span class="line">Expected &lt;False&gt;, but was not.</span><br><span class="line">Expected &lt;foo&gt; to contain only digits, but did not.</span><br><span class="line">Expected &lt;123&gt; to contain only alphabetic chars, but did not.</span><br><span class="line">Expected &lt;foo&gt; to contain only uppercase chars, but did not.</span><br><span class="line">Expected &lt;FOO&gt; to contain only lowercase chars, but did not.</span><br><span class="line">Expected &lt;foo&gt; to be equal to &lt;bar&gt;, but was not.</span><br><span class="line">Expected &lt;foo&gt; to be not equal to &lt;foo&gt;, but was.</span><br><span class="line">Expected &lt;foo&gt; to be case-insensitive equal to &lt;BAR&gt;, but was not.</span><br></pre></td></tr></table></figure>
+
+<p>Before I found this package I am thinking about writing common assertion package for Labs, but now, I don’t think I should spend time to invent the wheel again.</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>Assertion is pretty important to a system, it can increase stability and save your time in debugging. </p>
+<p>Replacing all built-in assertion to 3rd party assertion in your code is not a good idea, because IDE like PyCharm knows nothing about that, so it will not provide auto-completion for those assertion. </p>
+<p>So my suggestion is, using more powerful assert functions in scenarios that you really want to verify something, keeping built-in assertion where you might fall in a pitfall, and with essential message. Keep It Simple and Stupid.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-19/assertion-in-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-19/assertion-in-python/" class="post-title-link" itemprop="url">Python中不尽如人意的断言Assertion</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-20 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-20T00:00:00+08:00">2016-10-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Python-Assert-为何不尽如人意"><a href="#Python-Assert-为何不尽如人意" class="headerlink" title="Python Assert 为何不尽如人意"></a>Python Assert 为何不尽如人意</h3><p>Python中的断言用起来非常简单，你可以在<code>assert</code>后面跟上任意判断条件，如果断言失败则会抛出异常。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> <span class="number">1</span> + <span class="number">1</span> == <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> isinstance(<span class="string">'Hello'</span>, str)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> isinstance(<span class="string">'Hello'</span>, int)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;input&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AssertionError</span><br></pre></td></tr></table></figure>
+
+<p>其实<code>assert</code>看上去不错，然而用起来并不爽。就比如有人告诉你程序错了，但是不告诉哪里错了。很多时候这样的<code>assert</code>还不如不写，写了我就想骂娘。直接抛一个异常来得更痛快一些。</p>
+<h3 id="改进方案-1"><a href="#改进方案-1" class="headerlink" title="改进方案 #1"></a>改进方案 #1</h3><p>一个稍微改进一丢丢的方案就是把必要的信息也放到<code>assert</code>语句后面，比如这样。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">"nothin is impossible."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>key = <span class="string">"nothing"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">assert</span> key <span class="keyword">in</span> s, <span class="string">"Key: '&#123;&#125;' is not in Target: '&#123;&#125;'"</span>.format(key, s)</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;input&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AssertionError: Key: <span class="string">'nothing'</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">in</span> Target: <span class="string">'nothin is impossible.'</span></span><br></pre></td></tr></table></figure>
+
+<p>看上去还行吧，但是其实写的很蛋疼。假如你是一名测试汪，有成千上万的测试案例需要做断言做验证，相信你面对以上做法，心中一定有千万只那种马奔腾而过。</p>
+<h3 id="改进方案-2"><a href="#改进方案-2" class="headerlink" title="改进方案 #2"></a>改进方案 #2</h3><p>既然你是搞测试的，相比听过不少测试框架。你猜到我要说什么了吧？对，不用测试框架里的断言机制，你是不是洒。</p>
+<h4 id="py-test"><a href="#py-test" class="headerlink" title="py.test"></a>py.test</h4><p><a href="https://pypi.python.org/pypi/pytest" target="_blank" rel="noopener">py.test</a> 是一个轻量级的测试框架，所以它压根就没写自己的断言系统，但是它对Python自带的断言做了强化处理，如果断言失败，那么框架本身会尽可能多地提供断言失败的原因。那么也就意味着，用<strong>py.test</strong>实现测试，你一行代码都不用改。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pytest</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_case</span><span class="params">()</span>:</span></span><br><span class="line">    expected = <span class="string">"Hello"</span></span><br><span class="line">    actual = <span class="string">"hello"</span></span><br><span class="line">    <span class="keyword">assert</span> expected == actual</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    pytest.main()</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">================================== FAILURES ===================================</span></span><br><span class="line"><span class="string">__________________________________ test_case __________________________________</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def test_case():</span></span><br><span class="line"><span class="string">        expected = "Hello"</span></span><br><span class="line"><span class="string">        actual = "hello"</span></span><br><span class="line"><span class="string">&gt;       assert expected == actual</span></span><br><span class="line"><span class="string">E       assert 'Hello' == 'hello'</span></span><br><span class="line"><span class="string">E         - Hello</span></span><br><span class="line"><span class="string">E         ? ^</span></span><br><span class="line"><span class="string">E         + hello</span></span><br><span class="line"><span class="string">E         ? ^</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">assertion_in_python.py:7: AssertionError</span></span><br><span class="line"><span class="string">========================== 1 failed in 0.05 seconds ===========================</span></span><br><span class="line"><span class="string">"""</span><span class="string">"</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="unittest"><a href="#unittest" class="headerlink" title="unittest"></a>unittest</h4><p>Python自带的<a href="https://docs.python.org/3/library/unittest.html" target="_blank" rel="noopener">unittest</a>单元测试框架就有了自己的断言方法 <code>self.assertXXX()</code> ，而且不推荐使用<code>assert XXX</code>语句。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestStringMethods</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_upper</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.assertEqual(<span class="string">'foo'</span>.upper(), <span class="string">'FoO'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    unittest.main()</span><br><span class="line">    </span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Failure</span></span><br><span class="line"><span class="string">Expected :'FOO'</span></span><br><span class="line"><span class="string">Actual   :'FoO'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Traceback (most recent call last):</span></span><br><span class="line"><span class="string">  File "assertion_in_python.py", line 6, in test_upper</span></span><br><span class="line"><span class="string">    self.assertEqual('foo'.upper(), 'FoO')</span></span><br><span class="line"><span class="string">AssertionError: 'FOO' != 'FoO'</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ptest"><a href="#ptest" class="headerlink" title="ptest"></a>ptest</h4><p>我非常喜欢<a href="https://pypi.python.org/pypi/ptest" target="_blank" rel="noopener">ptest</a>，感谢Karl大神写了这么一个测试框架。ptest中的断言可读性很好，而且智能提示也很方便你通过IDE轻松完成各种断言语句。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ptest.decorator <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> ptest.assertion <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="meta">@TestClass()</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestCases</span>:</span></span><br><span class="line"><span class="meta">    @Test()</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test1</span><span class="params">(self)</span>:</span></span><br><span class="line">        actual = <span class="string">'foo'</span></span><br><span class="line">        expected = <span class="string">'bar'</span></span><br><span class="line">        assert_that(expected).is_equal_to(actual)</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">Start to run following 1 tests:</span></span><br><span class="line"><span class="string">------------------------------</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">[demo.assertion_in_python.TestCases.test1@Test] Failed with following message:</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">AssertionError: Unexpectedly that the str &lt;bar&gt; is not equal to str &lt;foo&gt;.</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="改进方案-3"><a href="#改进方案-3" class="headerlink" title="改进方案 #3"></a>改进方案 #3</h3><p>不仅仅是你和我对Python中的断言表示不满足，所以大家都争相发明自己的assert包。在这里我强烈推荐<a href="https://pypi.python.org/pypi/assertpy" target="_blank" rel="noopener">assertpy</a> 这个包，它异常强大而且好评如潮。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install assertpy</span><br></pre></td></tr></table></figure>
+
+<p><strong>看例子:</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> assertpy <span class="keyword">import</span> assert_that</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_something</span><span class="params">()</span>:</span></span><br><span class="line">    assert_that(<span class="number">1</span> + <span class="number">2</span>).is_equal_to(<span class="number">3</span>)</span><br><span class="line">    assert_that(<span class="string">'foobar'</span>)\</span><br><span class="line">        .is_length(<span class="number">6</span>)\</span><br><span class="line">        .starts_with(<span class="string">'foo'</span>)\</span><br><span class="line">        .ends_with(<span class="string">'bar'</span>)</span><br><span class="line">    assert_that([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>])\</span><br><span class="line">        .contains(<span class="string">'a'</span>)\</span><br><span class="line">        .does_not_contain(<span class="string">'x'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>从它的<a href="https://github.com/ActivisionGameScience/assertpy" target="_blank" rel="noopener">github 主页</a> 主页文档上你会发现它支持了几乎你能想到的所有测试场景，包括但不限于以下列表。</p>
+<ul>
+<li>Strings</li>
+<li>Numbers</li>
+<li>Lists</li>
+<li>Tuples</li>
+<li>Dicts</li>
+<li>Sets</li>
+<li>Booleans</li>
+<li>Dates</li>
+<li>Files</li>
+<li>Objects</li>
+</ul>
+<p>而且它的断言信息简洁明了，不多不少。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Expected &lt;foo&gt; to be of length &lt;4&gt;, but was &lt;3&gt;.</span><br><span class="line">Expected &lt;foo&gt; to be empty string, but was not.</span><br><span class="line">Expected &lt;False&gt;, but was not.</span><br><span class="line">Expected &lt;foo&gt; to contain only digits, but did not.</span><br><span class="line">Expected &lt;123&gt; to contain only alphabetic chars, but did not.</span><br><span class="line">Expected &lt;foo&gt; to contain only uppercase chars, but did not.</span><br><span class="line">Expected &lt;FOO&gt; to contain only lowercase chars, but did not.</span><br><span class="line">Expected &lt;foo&gt; to be equal to &lt;bar&gt;, but was not.</span><br><span class="line">Expected &lt;foo&gt; to be not equal to &lt;foo&gt;, but was.</span><br><span class="line">Expected &lt;foo&gt; to be case-insensitive equal to &lt;BAR&gt;, but was not.</span><br></pre></td></tr></table></figure>
+
+<p>在发现assertpy之前我也想写一个类似的包，尽可能通用一些。但是现在，我为毛要重新去造轮子？完全没必要！</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>断言在软件系统中有非常重要的作用，写的好可以让你的系统更稳定，也可以让你有更多真正面对对象的时间，而不是在调试代码。</p>
+<p>Python中默认的断言语句其实还有一个作用，如果你写了一个类型相关的断言，IDE会把这个对象当成这种类型，这时候智能提示就有如神助。</p>
+<p>要不要把内置的断言语句换成可读性更好功能更强大的第三方断言，完全取决于实际情况。比如你真的需要验证某个东西并且很关心验证结果，那么必须不能用简单的assert；如果你只是担心某个点可能有坑或者让IDE认识某个对象，用内置的assert既简单又方便。</p>
+<p>总之，你自己看着办。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-19/how-to-fix-TFS-workspace-mapping-error-in-Jenkins/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-19/how-to-fix-TFS-workspace-mapping-error-in-Jenkins/" class="post-title-link" itemprop="url">解决 Jenkins中TFS Plugin Mapping错误的问题</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-19 14:29:04" itemprop="dateCreated datePublished" datetime="2016-10-19T14:29:04+08:00">2016-10-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>Once you had update in TFS workspace for Jenkin TFS plugin, you might get error like bellow:</p>
+<p>如果你把 Jenkins 中TFS插件更新过，那么你有可能会遇到Mapping错误的问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[workspace] $ &quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\TF.exe&quot; workspaces -format:brief -server:http:&#x2F;&#x2F;tfs.xxx.com:8080&#x2F;tfs&#x2F;Default ********</span><br><span class="line">Collection: tfs.xxx.com\Default</span><br><span class="line">Workspace   Owner      Computer    Comment</span><br><span class="line">----------- ---------- ----------- --------------------------------------------</span><br><span class="line">MyServer newUser MyServer </span><br><span class="line">[workspace] $ &quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\TF.exe&quot; workspace -new &quot;Hudson-My build job-MASTER;nam\newUser&quot; -noprompt -server:http:&#x2F;&#x2F;tfs.xxx.com:8080&#x2F;tfs&#x2F;Default ********</span><br><span class="line">The path D:\hudson\jobs\My build job\workspace is already mapped in workspace Hudson-My build job-MASTER;NAM\oldUser.</span><br><span class="line">FATAL: Executable returned an unexpected result code [100]</span><br><span class="line">ERROR: null</span><br></pre></td></tr></table></figure>
+
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>You should follow bellow steps to fix it.</p>
+<p><strong>Step 1: Remove the TFS workspace</strong></p>
+<ul>
+<li><p>From VS:</p>
+<ol>
+<li>Open Team Explorer</li>
+<li>Click Source Control Explorer</li>
+<li>In the nav bar of the tool window there is a drop down labeled “Workspaces”.</li>
+<li>Extend it and click on the “Workspaces…” option (yeah, a bit un-intuitive)</li>
+<li>The “Manage Workspaces” window comes up. Click edit and you can add / remove / edit your workspace</li>
+</ol>
+</li>
+<li><p>From the command line</p>
+<ol>
+<li>Type “tf workspace” from a developer command promt. It will bring up the “Manage Workspaces” directly!</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 2: Remove cache on this computer</strong> </p>
+<p>Manually delete all the files in the TFS cache, they located at:</p>
+<ul>
+<li><p>C:\Users{UserName}\AppData\Local\Microsoft\Team Foundation\3.0\Cache</p>
+</li>
+<li><p>If there is a \4.0\Cache and \5.0\Cache existed, delete them all.</p>
+<p>​</p>
+</li>
+</ul>
+<p>你可以尝试通过以下步骤解决。</p>
+<p><strong>Step 1: 删除该 TFS workspace</strong></p>
+<ul>
+<li><p>从Visual Studo操作:</p>
+<ol>
+<li>打开 Team Explorer</li>
+<li>打开 Source Control Explorer</li>
+<li>从工具栏下拉列表中找到 “Workspaces”，展开 “Workspaces…” </li>
+<li>这时 “Manage Workspaces” 窗口会打开，在这里你可以编辑或者删除当前用户所有的 workspace</li>
+</ol>
+</li>
+<li><p>从命令提示符操作</p>
+<ol>
+<li>在VS命令提示符中输入 “tf workspace” 可以看到相关命令，不行就查一下MSDN</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 2: 删除TFS相关Cache</strong> </p>
+<p>手动清除TFS的Cache文件，参考以下路径。</p>
+<ul>
+<li>C:\Users{UserName}\AppData\Local\Microsoft\Team Foundation\3.0\Cache</li>
+<li>如果3.0找不到就4.0，如果4.0也没有就5.0，取决于你的VS版本。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-19/mirror-sites-in-china/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-19/mirror-sites-in-china/" class="post-title-link" itemprop="url">Chrome, Andriod, JRE, Selenium各种开源工具的国内镜像</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-19 13:29:04" itemprop="dateCreated datePublished" datetime="2016-10-19T13:29:04+08:00">2016-10-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在国内很多时候不翻墙真的很难做开发，本篇博客收集了一些知名工具和类库的国内镜像，当你没有VPN时，说不定能帮上你的大忙。</p>
+<h3 id="淘宝镜像"><a href="#淘宝镜像" class="headerlink" title="淘宝镜像"></a>淘宝镜像</h3><p>淘宝的镜像更新速度非常及时，安装它在官网上说的，大概没10分钟会同步一次。</p>
+<ul>
+<li><p><a href="https://npm.taobao.org/" target="_blank" rel="noopener">https://npm.taobao.org/</a></p>
+</li>
+<li><p><a href="https://npm.taobao.org/mirrors" target="_blank" rel="noopener">https://npm.taobao.org/mirrors</a> </p>
+</li>
+</ul>
+<p><strong>部分镜像列表</strong> </p>
+<ul>
+<li><p><a href="http://node.js/" target="_blank" rel="noopener">Node.js</a> 镜像: <a href="http://npm.taobao.org/mirrors/node" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/node</a></p>
+</li>
+<li><p>phantomjs 镜像: <a href="http://npm.taobao.org/mirrors/phantomjs" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/phantomjs</a></p>
+</li>
+<li><p>ChromeDriver 镜像: <a href="http://npm.taobao.org/mirrors/chromedriver" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/chromedriver</a></p>
+</li>
+<li><p>OperaDriver 镜像: <a href="http://npm.taobao.org/mirrors/operadriver" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/operadriver</a></p>
+</li>
+<li><p>Selenium 镜像: <a href="http://npm.taobao.org/mirrors/selenium" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/selenium</a></p>
+</li>
+<li><p>NPM 镜像: <a href="https://npm.taobao.org/mirrors/npm/" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/npm/</a></p>
+</li>
+<li><p>Python 镜像: <a href="https://npm.taobao.org/mirrors/python/" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/python/</a></p>
+</li>
+<li><p>Atom 镜像: <a href="https://npm.taobao.org/mirrors/atom/" target="_blank" rel="noopener">https://npm.taobao.org/mirrors/atom/</a></p>
+</li>
+</ul>
+<h3 id="中国科学院镜像"><a href="#中国科学院镜像" class="headerlink" title="中国科学院镜像"></a>中国科学院镜像</h3><p><a href="http://www.cstnet.cn/" target="_blank" rel="noopener">中国科技网</a>是中国科学院领导下的学术性、非盈利的科研计算机网络。提供了Linux和Android开发相关镜像。</p>
+<ul>
+<li><a href="https://npm.taobao.org/" target="_blank" rel="noopener">http://www.opencas.org/mirrors/</a></li>
+</ul>
+<p><strong>部分镜像列表</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="http://mirrors.opencas.cn/android" target="_blank" rel="noopener">android</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/anthonos" target="_blank" rel="noopener">anthonos</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/apache" target="_blank" rel="noopener">apache</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/archlinux" target="_blank" rel="noopener">archlinux</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/centos" target="_blank" rel="noopener">centos</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/chaos_calmer" target="_blank" rel="noopener">chaos_calmer</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/cran" target="_blank" rel="noopener">cran</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/ctan" target="_blank" rel="noopener">ctan</a></td>
+</tr>
+<tr>
+<td><a href="http://mirrors.opencas.cn/cygwin" target="_blank" rel="noopener">cygwin</a></td>
+</tr>
+</tbody></table>
+<h3 id="gmirror镜像"><a href="#gmirror镜像" class="headerlink" title="gmirror镜像"></a>gmirror镜像</h3><p>这好像是一个个人镜像点，能活多久不知道，提供了Google Chrome，Android和Java相关工具的镜像。</p>
+<ul>
+<li><a href="http://gmirror.org/" target="_blank" rel="noopener">http://gmirror.org/</a></li>
+</ul>
+<p><strong>部分镜像列表</strong></p>
+<ul>
+<li>Chrome</li>
+<li>Atom</li>
+<li>Android SDK Tools Only</li>
+<li>Android Studio</li>
+<li>Android NDK</li>
+<li>Go Lang</li>
+<li>JDK, JRE</li>
+<li>VirtualBox</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

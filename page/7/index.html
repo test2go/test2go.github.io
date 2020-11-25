@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/7/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-02-26/auto-document-flask-api/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-02-26/auto-document-flask-api/" class="post-title-link" itemprop="url">自动为Flask写的API生成帮助文档</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-02-27 00:00:00" itemprop="dateCreated datePublished" datetime="2018-02-27T00:00:00+08:00">2018-02-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Flask是Python一个非常轻量的库，可以让你毫不费力地写一个简单的网站。如果你需要写一些后台API或者准备自动化测试数据时，Flask是一个非常不错的选择。</p>
+<h2 id="一个API例子"><a href="#一个API例子" class="headerlink" title="一个API例子"></a>一个API例子</h2><p>举个例子，我们可以这样写几个API，具体实现暂时略过：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># views/api.py</span></span><br><span class="line"></span><br><span class="line">api = Blueprint(<span class="string">'api'</span>, __name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@api.route('/get_todo', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_todo</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""Get all todo tasks."""</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@api.route('/add_todo', methods=['POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_todo</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Add a todo task,  please post data in json format, e.g.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    data = &#123;</span></span><br><span class="line"><span class="string">              "name":"the title",</span></span><br><span class="line"><span class="string">              "task":"the detail"</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@api.route('/delete_todo', methods=['GET', 'POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_todo</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""Delete a todo task."""</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>一旦你的API完成，你可能需要和调用方沟通调用的细节，最好给一些例子。明明你已经在代码里给所有方法都写了注释，难道还要再把这些注释拿出来重新组织排版一下？</p>
+<p>我猜你和我一样，听过这么一句话。</p>
+<blockquote>
+<p><strong>read the fucking manual</strong>!</p>
+</blockquote>
+<p>可是谁会去翻代码去看你的注释呢，何况你的代码他们还不一定能看到。如果能自动生成一个帮助页面那就好了。</p>
+<h2 id="自动化API帮助文档"><a href="#自动化API帮助文档" class="headerlink" title="自动化API帮助文档"></a>自动化API帮助文档</h2><p>假设我们的API都是以 <code>http://127.0.0.1/api/*</code> 的形式书写的，那么最好把API的完整列表就放在根目录下面，比如这样：</p>
+<p><img src="https://tobyqin.github.io/images/api-demo-home.png" alt="api-demo-home"></p>
+<p>view 方法的实现主要依靠 <code>app.url_map</code> 来获取Flask中所有的API：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># views/api.py</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_api_map</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""Search API from rules, if match the pattern then we said it is API."""</span></span><br><span class="line">    <span class="keyword">for</span> rule <span class="keyword">in</span> get_app().url_map.iter_rules():</span><br><span class="line">        <span class="keyword">if</span> re.search(<span class="string">r'/api/.+'</span>, str(rule)):</span><br><span class="line">            <span class="keyword">yield</span> str(rule), rule.endpoint</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@api.route('/', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""List all API to this page, api_map contains each api url + endpoint."""</span></span><br><span class="line">    api_map = sorted(list(get_api_map()))</span><br><span class="line">    index_url = url_for(<span class="string">'main.index'</span>, _external=<span class="literal">True</span>)</span><br><span class="line">    api_map = [(index_url + x[<span class="number">0</span>][<span class="number">1</span>:], x[<span class="number">1</span>]) <span class="keyword">for</span> x <span class="keyword">in</span> api_map]</span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'api_index.html'</span>, api_map=api_map)</span><br></pre></td></tr></table></figure>
+
+<p>模板的实现：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"># templates/api_index.html</span><br><span class="line"></span><br><span class="line">&#123;% extends "./layout.html" %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block title %&#125;API Root&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block breadcrumb_nav %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for('api.index') &#125;&#125;"</span>&gt;</span>Api Root<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block page_header %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Api Root<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block content_area %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span>&#123;</span><br><span class="line">&#123;% for i in api_map %&#125;    "<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/docs/&#123;&#123; i[1] &#125;&#125;"</span>&gt;</span>&#123;&#123; i[0] &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span>"&#123;&#123; ",\n" if not loop.last &#125;&#125;&#123;% endfor %&#125;</span><br><span class="line">&#125;<span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接下来我们来文档化每个具体的API方法，最终的展示结果会是这样的。</p>
+<p><img src="https://tobyqin.github.io/images/api-demo-full.png" alt="api-demo-full"></p>
+<p>view 方法的实现思路其实也很明确，我们可以通过 <code>app.view_functions</code> 这个字典找到每个API 的endpoint所绑定的方法，然后访问方法的名字和文档即可。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># views/main.py</span></span><br><span class="line"></span><br><span class="line">main = Blueprint(<span class="string">'main'</span>, __name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@main.route('/', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""Redirect home page to docs page."""</span></span><br><span class="line">    <span class="keyword">return</span> redirect(url_for(<span class="string">'api.index'</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@main.route('/docs/&lt;endpoint&gt;', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">docs</span><span class="params">(endpoint)</span>:</span></span><br><span class="line">    <span class="string">"""Document page for an endpoint."""</span></span><br><span class="line">    api = &#123;</span><br><span class="line">        <span class="string">'endpoint'</span>: endpoint,</span><br><span class="line">        <span class="string">'methods'</span>: [],</span><br><span class="line">        <span class="string">'doc'</span>: <span class="string">''</span>,</span><br><span class="line">        <span class="string">'url'</span>: <span class="string">''</span>,</span><br><span class="line">        <span class="string">'name'</span>: <span class="string">''</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        func = get_app().view_functions[endpoint]</span><br><span class="line"></span><br><span class="line">        api[<span class="string">'name'</span>] = _get_api_name(func)</span><br><span class="line">        api[<span class="string">'doc'</span>] = _get_api_doc(func)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> rule <span class="keyword">in</span> get_app().url_map.iter_rules():</span><br><span class="line">            <span class="keyword">if</span> rule.endpoint == endpoint:</span><br><span class="line">                api[<span class="string">'methods'</span>] = <span class="string">','</span>.join(rule.methods)</span><br><span class="line">                api[<span class="string">'url'</span>] = str(rule)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        api[<span class="string">'doc'</span>] = <span class="string">'Invalid api endpoint: "&#123;&#125;"!'</span>.format(endpoint)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'api_docs.html'</span>, api=api)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">_get_api_name</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="string">"""e.g. Convert 'do_work' to 'Do Work'"""</span></span><br><span class="line">    words = func.__name__.split(<span class="string">'_'</span>)</span><br><span class="line">    words = [w.capitalize() <span class="keyword">for</span> w <span class="keyword">in</span> words]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">' '</span>.join(words)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">_get_api_doc</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> func.__doc__:</span><br><span class="line">        <span class="keyword">return</span> func.__doc__</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'No doc found for this API!'</span></span><br></pre></td></tr></table></figure>
+
+<p>模板的实现：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% extends "./layout.html" %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block title %&#125;API - &#123;&#123; api['name'] &#125;&#125;&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block breadcrumb_nav %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for('api.index') &#125;&#125;"</span>&gt;</span>Api Root<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; api['url'] &#125;&#125;"</span>&gt;</span>&#123;&#123; api['name'] &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block page_header %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123; api['name'] | upper &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block content_area %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>Target:<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; api['url'] &#125;&#125;"</span>&gt;</span>&#123;&#123; api['url'] &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>Allow :<span class="tag">&lt;/<span class="name">b</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; api['methods'] &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>Usage :<span class="tag">&lt;/<span class="name">b</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; api['doc'] &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="GitHub项目地址"><a href="#GitHub项目地址" class="headerlink" title="GitHub项目地址"></a>GitHub项目地址</h2><p>如果你想看完整的例子，可以到我的GitHub去拉一份代码。</p>
+<blockquote>
+<p><a href="https://github.com/tobyqin/flask_api_doc" target="_blank" rel="noopener">https://github.com/tobyqin/flask_api_doc</a></p>
+</blockquote>
+<p>只需要三步就可以在你的机器上运行Demo：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /path/to/flask_api/doc</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python main.py</span><br></pre></td></tr></table></figure>
+
+<p>如果你觉得Demo不错，欢迎给个Star。有建议或者想法也可以拿来讨论。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-01-25/setup-jekyll-environment-on-windows/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-01-25/setup-jekyll-environment-on-windows/" class="post-title-link" itemprop="url">在Windows上搭建Jekyll运行环境</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-26 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-26T00:00:00+08:00">2018-01-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Jekyll-和-Hexo"><a href="#Jekyll-和-Hexo" class="headerlink" title="Jekyll 和 Hexo"></a>Jekyll 和 Hexo</h2><p>静态博客目前最流行的也就是 Hexo 和 Jekyll，我一直都是 Hexo 的粉丝和用户，相对于 Jekyll 我想大多数人选择 Hexo 的原因跟我差不多：</p>
+<ol>
+<li>安装本地环境简单，只需要 nodejs 和一行命令即可</li>
+<li>官网文档非常优秀，极易上手</li>
+<li>众多优秀的主题可选，配置功能完善</li>
+<li>目录结构清晰易懂，内容和配置分离</li>
+</ol>
+<p>简单来说，Hexo 可以让你快速开始写文字，但是 Jekyll 却不见得，Jekyll 的罪状我大致列一下：</p>
+<ol>
+<li>本地环境在 Windows 上坑超多，很多人在这一步就放弃了，官方文档很挫</li>
+<li>没有专门的主题目录，导致使用新主题需要覆盖安装</li>
+<li>脚本和内容混合存放，不易管理和使用</li>
+<li>托管后部署如果有错无法获取报错信息，如果没有本地环境根本没法调查</li>
+</ol>
+<p>另外，据说 Jekyll 站点的生成效率也比 Hexo 慢很多，不过我相信这对大多数人都没影响，我们的文章数量也不多。</p>
+<p>但是，Jekyll 比 Hexo 有一个让你欲罢不能的优点，那就是天然被 GitHub Pages 支持，当然国内的 Coding Pages，OSC Pages 等等产商也直接支持 Jekyll，俨然这就是一个静态页面的标准。</p>
+<p>使用 Jekyll，你可以不用考虑编译生成的问题，写完直接 commit，几分钟后就能看到效果。然而使用Hexo，你要么在本地生成页面后上传，要么找一个持续集成的服务（比如 <a href="https://travis-ci.org/" target="_blank" rel="noopener">Travis CI</a>）帮你编译后上传，不是很简单。</p>
+<p>因为 Jekyll 那个欲罢不能的原因，今天就说说如果在 Windows 上用最快的速度准备一个Jekyll环境。</p>
+<p>参考资料： <a href="https://jekyllrb.com/docs/windows/" target="_blank" rel="noopener">https://jekyllrb.com/docs/windows/</a></p>
+<h2 id="通过Bash准备Jekyll环境"><a href="#通过Bash准备Jekyll环境" class="headerlink" title="通过Bash准备Jekyll环境"></a>通过Bash准备Jekyll环境</h2><p>如果你是 Windows 10，可以考虑使用 Bash 来运行Linux脚本和软件，详见 <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about" target="_blank" rel="noopener">Bash on Ubuntu on Windows</a>。</p>
+<p>启动 Bash 后，运行以下命令即可完成 Jekyll 的准备工作：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y</span><br><span class="line">sudo apt-add-repository ppa:brightbox/ruby-ng</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ruby2.3 ruby2.3-dev build-essential</span><br><span class="line">sudo gem update</span><br><span class="line">sudo gem install jekyll bundler</span><br></pre></td></tr></table></figure>
+
+<p>可能遇到的坑：</p>
+<ol>
+<li><p>在 Windows 10 启用 Bash 并不容易，不是所有系统版本都支持</p>
+</li>
+<li><p>就算版本支持，你的 Windows 如果是盗版或者不完整也有可能装不上</p>
+</li>
+<li><p>就算你能装上，这个 Bash 需要 Linux 子系统是一个大家伙，会吃掉你系统盘很多空间</p>
+</li>
+<li><p>就算你系统盘有足够的空间，从服务器下载数GB的文件网络不一定稳定，电脑还不能随便关机</p>
+</li>
+</ol>
+<p>不就是个Jekyll吗？至于嘛，Bash on Windows听起来简单，做起来就难了。</p>
+<h2 id="通过-Ruby-Installer-安装"><a href="#通过-Ruby-Installer-安装" class="headerlink" title="通过 Ruby Installer 安装"></a>通过 Ruby Installer 安装</h2><p>Ruby 的安装包可以从 <a href="https://rubyinstaller.org/" target="_blank" rel="noopener">https://rubyinstaller.org/</a> 下载安装，如果你了解Ruby或者运气很好，选择了正确Ruby版本，那么恭喜你，一切会非常顺利。</p>
+<p>不废话，直接说最佳答案。</p>
+<ol>
+<li>下载Ruby 2.3.3 x64 后双击运行安装。</li>
+<li>下载Development KIT x64 后解压到 c:\devkit 目录</li>
+<li>打开命令行工具，运行：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> c:\devkit</span><br><span class="line">ruby dk.rb init</span><br><span class="line">ruby dk.rb review</span><br><span class="line">ruby dk.rb install</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>安装Jekyll</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gem install jekyll bundler</span><br></pre></td></tr></table></figure>
+
+<h2 id="在本地运行-Jekyll"><a href="#在本地运行-Jekyll" class="headerlink" title="在本地运行 Jekyll"></a>在本地运行 Jekyll</h2><p>更多命令建议参考官方文档 <a href="https://jekyllrb.com/docs/quickstart/" target="_blank" rel="noopener">https://jekyllrb.com/docs/quickstart/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新博客 ./myblog</span></span><br><span class="line">jekyll new myblog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入新建博客目录</span></span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装必要的依赖</span></span><br><span class="line">bundle</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地启动预览</span></span><br><span class="line">jekyll serve</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开浏览器 http://localhost:4000 即可看到效果</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="可能遇到的坑"><a href="#可能遇到的坑" class="headerlink" title="可能遇到的坑"></a>可能遇到的坑</h2><h3 id="如果有错误信息"><a href="#如果有错误信息" class="headerlink" title="如果有错误信息"></a>如果有错误信息</h3><p>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ERROR:  While executing gem ... (Encoding::UndefinedConversionError)</span><br><span class="line">U+200F to IBM862 in conversion from UTF-16LE to UTF-8 to IBM862</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：</p>
+<p>从Ruby安装目录找到registry.rb，修改默认Encoding为UTF-8。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">LOCALE = Encoding::UTF_8</span><br><span class="line"><span class="comment">#LOCALE = Encoding.find(Encoding.locale_charmap)</span></span><br></pre></td></tr></table></figure>
+
+<p>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">compiling ruby_http_parser.c</span><br><span class="line">compiling ryah_http_parser.c</span><br><span class="line">linking shared-object ruby_http_parser.so</span><br><span class="line">c:&#x2F;devkit&#x2F;mingw&#x2F;bin&#x2F;..&#x2F;lib&#x2F;gcc&#x2F;x86_64-w64-mingw32&#x2F;4.7.2&#x2F;..&#x2F;..&#x2F;..&#x2F;..&#x2F;x86_64-w64-mingw32&#x2F;bin&#x2F;ld.exe: cannot find -lgmp</span><br><span class="line">collect2.exe: error: ld returned 1 exit status</span><br><span class="line">make: *** [ruby_http_parser.so] Error 1</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：</p>
+<p>Ruby版本不对，没有gmp这个库。建议卸载掉重装2.3.3。</p>
+<h3 id="其他的一些问题"><a href="#其他的一些问题" class="headerlink" title="其他的一些问题"></a>其他的一些问题</h3><ol>
+<li>不要安装Ruby2.5，除非你有强烈的需求。</li>
+<li>Ruby2.4 以后，在安装完成后会让你选择 MSYS2 Devkit，但是国内的网络环境你基本上装不了。</li>
+<li>Ruby2.4 以后，你可以通过 <code>ridk  install</code> 安装 Devkit，国内网络环境，难。</li>
+<li>Ruby2.4 以后，缺少Jekyll需要的依赖，目前我没办法解决。</li>
+</ol>
+<p>综上，不要使用Ruby2.4来准备Jekyll环境，不然你会很难过。</p>
+<h2 id="小贴士-amp-小技巧"><a href="#小贴士-amp-小技巧" class="headerlink" title="小贴士&amp;小技巧"></a>小贴士&amp;小技巧</h2><p>很多朋友可能不知道，如果你已经初始化了Hexo或者Jekyll，后面写博时就可以完全抛开本地环境，专注于内容就行。</p>
+<p>如果你是Hexo，安装完成后并且配置了自动化部署，以后写博客只需要在<code>/source/_posts/</code>目录下新建Markdown文件，完成后提交即可。新建的文章样式可以直接从该目录复制后修改，或者你从模板目录 <code>/scaffolds/</code> 中拷贝过来也行。</p>
+<p>如果你是Jekyll，直接从<code>/_posts/</code>新建文件即可，操作同上。</p>
+<p>新博客的文件名最好也都符合<code>yyyy-mm-dd-name.md</code>的样式，主要是方便排序和查阅，另外Jekyll也只认识这种样式。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-01-19/python-default-dict-intro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-01-19/python-default-dict-intro/" class="post-title-link" itemprop="url">认识 Python 中的 defaultdict</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-20 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-20T00:00:00+08:00">2018-01-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天我们的主角是<code>defaultdict</code>，同时也会介绍一下魔法方法<code>__missing__()</code>，本文主要来源于网友博客，分享给有需要的人。</p>
+<h3 id="默认值可以很方便"><a href="#默认值可以很方便" class="headerlink" title="默认值可以很方便"></a>默认值可以很方便</h3><p>众所周知，在Python中如果访问字典中不存在的键，会引发KeyError异常。但是有时候，字典中的每个键都存在默认值是非常方便的。例如下面的例子：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strings = (<span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>, <span class="string">'puppy'</span>,</span><br><span class="line">           <span class="string">'weasel'</span>, <span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>)</span><br><span class="line">counts = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> kw <span class="keyword">in</span> strings:</span><br><span class="line">    counts[kw] += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>该例子统计strings中某个单词出现的次数，并在counts字典中作记录。单词每出现一次，在counts相对应的键所存的值数字加1。但是事实上，运行这段代码会抛出KeyError异常，出现的时机是每个单词第一次统计的时候，因为Python的dict中不存在默认值的说法，可以在Python命令行中验证：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>counts = dict()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>counts</span><br><span class="line">&#123;&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>counts[<span class="string">'puppy'</span>] += <span class="number">1</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">KeyError: <span class="string">'puppy'</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用判断语句检查"><a href="#使用判断语句检查" class="headerlink" title="使用判断语句检查"></a>使用判断语句检查</h3><p>既然如此，首先可能想到的方法是在单词第一次统计的时候，在counts中相应的键存下默认值1。这需要在处理的时候添加一个判断语句：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strings = (<span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>, <span class="string">'puppy'</span>,</span><br><span class="line">           <span class="string">'weasel'</span>, <span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>)</span><br><span class="line">counts = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> kw <span class="keyword">in</span> strings:</span><br><span class="line">    <span class="keyword">if</span> kw <span class="keyword">not</span> <span class="keyword">in</span> counts:</span><br><span class="line">        counts[kw] = <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        counts[kw] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># counts:</span></span><br><span class="line"><span class="comment"># &#123;'puppy': 5, 'weasel': 1, 'kitten': 2&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用dict-setdefault-方法"><a href="#使用dict-setdefault-方法" class="headerlink" title="使用dict.setdefault()方法"></a>使用<code>dict.setdefault()</code>方法</h3><p>也可以通过<code>dict.setdefault()</code>方法来设置默认值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strings = (<span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>, <span class="string">'puppy'</span>,</span><br><span class="line">           <span class="string">'weasel'</span>, <span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>)</span><br><span class="line">counts = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> kw <span class="keyword">in</span> strings:</span><br><span class="line">    counts.setdefault(kw, <span class="number">0</span>)</span><br><span class="line">    counts[kw] += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p><code>dict.setdefault()</code>方法接收两个参数，第一个参数是健的名称，第二个参数是默认值。假如字典中不存在给定的键，则返回参数中提供的默认值；反之，则返回字典中保存的值。利用<code>dict.setdefault()</code>方法的返回值可以重写for循环中的代码，使其更加简洁：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strings = (<span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>, <span class="string">'puppy'</span>,</span><br><span class="line">           <span class="string">'weasel'</span>, <span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>)</span><br><span class="line">counts = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> kw <span class="keyword">in</span> strings:</span><br><span class="line">    counts[kw] = counts.setdefault(kw, <span class="number">0</span>) + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用collections-defaultdict类"><a href="#使用collections-defaultdict类" class="headerlink" title="使用collections.defaultdict类"></a>使用<code>collections.defaultdict</code>类</h3><p>以上的方法虽然在一定程度上解决了dict中不存在默认值的问题，但是这时候我们会想，有没有一种字典它本身提供了默认值的功能呢？答案是肯定的，那就是<code>collections.defaultdict</code>。</p>
+<p>defaultdict类就好像是一个dict，但是它是使用一个类型来初始化的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd = defaultdict(list)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd</span><br><span class="line">defaultdict(&lt;type <span class="string">'list'</span>&gt;, &#123;&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>defaultdict类的初始化函数接受一个类型作为参数，当所访问的键不存在的时候，可以实例化一个值作为默认值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'foo'</span>]</span><br><span class="line">[]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd</span><br><span class="line">defaultdict(&lt;type <span class="string">'list'</span>&gt;, &#123;<span class="string">'foo'</span>: []&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'bar'</span>].append(<span class="string">'quux'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd</span><br><span class="line">defaultdict(&lt;type <span class="string">'list'</span>&gt;, &#123;<span class="string">'foo'</span>: [], <span class="string">'bar'</span>: [<span class="string">'quux'</span>]&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，这种形式的默认值只有在通过<code>dict[key]</code>或者<code>dict.__getitem__(key)</code>访问的时候才有效，这其中的原因在下文会介绍。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd = defaultdict(list)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'something'</span> <span class="keyword">in</span> dd</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd.pop(<span class="string">'something'</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">KeyError: <span class="string">'pop(): dictionary is empty'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd.get(<span class="string">'something'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'something'</span>]</span><br><span class="line">[]</span><br></pre></td></tr></table></figure>
+
+<p>defaultdict类除了接受类型名称作为初始化函数的参数之外，还可以使用任何不带参数的可调用函数，到时该函数的返回结果作为默认值，这样使得默认值的取值更加灵活。下面用一个例子来说明，如何用自定义的不带参数的函数<code>zero()</code>作为defaultdict类的初始化函数的参数：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">zero</span><span class="params">()</span>:</span></span><br><span class="line"><span class="meta">... </span>    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd = defaultdict(zero)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd</span><br><span class="line">defaultdict(&lt;function zero at <span class="number">0xb7ed2684</span>&gt;, &#123;&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd[<span class="string">'foo'</span>]</span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dd</span><br><span class="line">defaultdict(&lt;function zero at <span class="number">0xb7ed2684</span>&gt;, &#123;<span class="string">'foo'</span>: <span class="number">0</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>利用<code>collections.defaultdict</code>来解决最初的单词统计问题，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"></span><br><span class="line">strings = (<span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>, <span class="string">'puppy'</span>,</span><br><span class="line">           <span class="string">'weasel'</span>, <span class="string">'puppy'</span>, <span class="string">'kitten'</span>, <span class="string">'puppy'</span>)</span><br><span class="line">counts = defaultdict(<span class="keyword">lambda</span>: <span class="number">0</span>)  <span class="comment"># 使用lambda来定义简单的函数</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> s <span class="keyword">in</span> strings:</span><br><span class="line">    counts[s] += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="defaultdict类是如何实现的"><a href="#defaultdict类是如何实现的" class="headerlink" title="defaultdict类是如何实现的"></a>defaultdict类是如何实现的</h3><p>通过上面的内容，想必大家已经了解了defaultdict类的用法，那么在defaultdict类中又是如何来实现默认值的功能呢？这其中的关键是使用了看<code>__missing__()</code>这个方法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> defaultdict.__missing__.__doc__</span><br><span class="line">__missing__(key) <span class="comment"># Called by __getitem__ for missing key; pseudo-code:</span></span><br><span class="line">  <span class="keyword">if</span> self.default_factory <span class="keyword">is</span> <span class="literal">None</span>: <span class="keyword">raise</span> KeyError(key)</span><br><span class="line">  self[key] = value = self.default_factory()</span><br><span class="line">  <span class="keyword">return</span> value</span><br></pre></td></tr></table></figure>
+
+<p>通过查看<code>__missing__()</code>方法的<code>docstring</code>，可以看出当使用<code>__getitem__()</code>方法访问一个不存在的键时<code>dict[key]</code>这种形式实际上是<code>__getitem__()</code>方法的简化形式)，会调用<code>__missing__()</code>方法获取默认值，并将该键添加到字典中去。</p>
+<p>关于<code>__missing__()</code>方法的具体介绍可以参考Python官方文档中的”<a href="http://docs.python.org/library/stdtypes.html#dict" target="_blank" rel="noopener">Mapping Types — dict</a>“一节。</p>
+<p>文档中介绍，从2.5版本开始，如果派生自dict的子类定义了<code>__missing__()</code>方法，当访问不存在的键时，dict[key]会调用<code>__missing__()</code>方法取得默认值。</p>
+<p>从中可以看出，虽然dict支持<code>__missing__()</code>方法，但是在dict本身是不存在这个方法的，而是需要在派生的子类中自行实现这个方法。可以简单的验证这一点：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> dict.__missing__.__doc__</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AttributeError: type object <span class="string">'dict'</span> has no attribute <span class="string">'__missing__'</span></span><br></pre></td></tr></table></figure>
+
+<p>同时，我们可以进一步的做实验，定义一个子类Missing并实现<code>__missing__()</code>方法:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="class"><span class="keyword">class</span> <span class="title">Missing</span><span class="params">(dict)</span>:</span></span><br><span class="line"><span class="meta">... </span>    <span class="function"><span class="keyword">def</span> <span class="title">__missing__</span><span class="params">(self, key)</span>:</span></span><br><span class="line"><span class="meta">... </span>        <span class="keyword">return</span> <span class="string">'missing'</span></span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = Missing()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d</span><br><span class="line">&#123;&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d[<span class="string">'foo'</span>]</span><br><span class="line"><span class="string">'missing'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d</span><br><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>返回结果反映了<code>__missing__()</code>方法确实发挥了作用。在此基础上，我们稍许修改<code>__missing__()</code>方法,使得该子类同defautldict类一样为不存在的键设置一个默认值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="class"><span class="keyword">class</span> <span class="title">Defaulting</span><span class="params">(dict)</span>:</span></span><br><span class="line"><span class="meta">... </span>    <span class="function"><span class="keyword">def</span> <span class="title">__missing__</span><span class="params">(self, key)</span>:</span></span><br><span class="line"><span class="meta">... </span>        self[key] = <span class="string">'default'</span></span><br><span class="line"><span class="meta">... </span>        <span class="keyword">return</span> <span class="string">'default'</span></span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = Defaulting()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d</span><br><span class="line">&#123;&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d[<span class="string">'foo'</span>]</span><br><span class="line"><span class="string">'default'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d</span><br><span class="line">&#123;<span class="string">'foo'</span>: <span class="string">'default'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="在旧版本的Python中实现defaultdict"><a href="#在旧版本的Python中实现defaultdict" class="headerlink" title="在旧版本的Python中实现defaultdict"></a>在旧版本的Python中实现defaultdict</h3><p>defaultdict类是从2.5版本之后才添加的，在一些旧版本中并不支持它，因此为旧版本实现一个兼容的defaultdict类是必要的。这其实很简单，虽然性能可能未必如2.5版本中自带的defautldict类好，但在功能上是一样的。</p>
+<p>首先，<code>__getitem__()</code>方法需要在访问键失败时，调用<code>__missing__()</code>方法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">defaultdict</span><span class="params">(dict)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">return</span> dict.__getitem__(self, key)</span><br><span class="line">        <span class="keyword">except</span> KeyError:</span><br><span class="line">            <span class="keyword">return</span> self.__missing__(key)</span><br></pre></td></tr></table></figure>
+
+<p>其次，需要实现<code>__missing__()</code>方法用来设置默认值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">defaultdict</span><span class="params">(dict)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">return</span> dict.__getitem__(self, key)</span><br><span class="line">        <span class="keyword">except</span> KeyError:</span><br><span class="line">            <span class="keyword">return</span> self.__missing__(key)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__missing__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        self[key] = value = self.default_factory()</span><br><span class="line">        <span class="keyword">return</span> value</span><br></pre></td></tr></table></figure>
+
+<p>然后，defaultdict类的初始化函数<code>__init__()</code>需要接受类型或者可调用函数参数:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">defaultdict</span><span class="params">(dict)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, default_factory=None, *a, **kw)</span>:</span></span><br><span class="line">        dict.__init__(self, *a, **kw)</span><br><span class="line">        self.default_factory = default_factory</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">return</span> dict.__getitem__(self, key)</span><br><span class="line">        <span class="keyword">except</span> KeyError:</span><br><span class="line">            <span class="keyword">return</span> self.__missing__(key)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__missing__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">        self[key] = value = self.default_factory()</span><br><span class="line">        <span class="keyword">return</span> value</span><br></pre></td></tr></table></figure>
+
+<p>最后，综合以上内容，通过以下方式完成兼容新旧Python版本的代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="keyword">except</span> ImportError:</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">defaultdict</span><span class="params">(dict)</span>:</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, default_factory=None, *a, **kw)</span>:</span></span><br><span class="line">          dict.__init__(self, *a, **kw)</span><br><span class="line">          self.default_factory = default_factory</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">          <span class="keyword">try</span>:</span><br><span class="line">              <span class="keyword">return</span> dict.__getitem__(self, key)</span><br><span class="line">          <span class="keyword">except</span> KeyError:</span><br><span class="line">              <span class="keyword">return</span> self.__missing__(key)</span><br><span class="line"></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">__missing__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">          self[key] = value = self.default_factory()</span><br><span class="line">          <span class="keyword">return</span> value</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://docs.python.org/2/library/collections.html#collections.defaultdict" target="_blank" rel="noopener">https://docs.python.org/2/library/collections.html#collections.defaultdict</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-01-15/chinese-text-ocr-via-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-01-15/chinese-text-ocr-via-python/" class="post-title-link" itemprop="url">识别图片中的文字 - Tesseract 和 百度云OCR的对比</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-16 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-16T00:00:00+08:00">2018-01-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>当今时代人工智能都已经是烂大街的词了，OCR应该也很多人都知道。</p>
+<blockquote>
+<p>OCR （Optical Character Recognition，<a href="https://baike.baidu.com/item/%E5%85%89%E5%AD%A6%E5%AD%97%E7%AC%A6%E8%AF%86%E5%88%AB" target="_blank" rel="noopener">光学字符识别</a>）是指电子设备（例如扫描仪或数码相机）检查纸上打印的字符，通过检测暗、亮的模式确定其形状，然后用字符识别方法将形状翻译成计算机文字的过程。</p>
+</blockquote>
+<p>本文主要记录了通过Python使用OCR的两次尝试。</p>
+<h2 id="Tesseract"><a href="#Tesseract" class="headerlink" title="Tesseract"></a>Tesseract</h2><p><strong>Tesseract</strong>，一款由HP实验室开发由Google维护的开源OCR（Optical Character Recognition , 光学字符识别）引擎，特点是开源，免费，支持多语言，多平台。</p>
+<p>项目地址：<a href="https://github.com/tesseract-ocr/tesseract" target="_blank" rel="noopener">https://github.com/tesseract-ocr/tesseract</a></p>
+<h3 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h3><p>Tesseract的安装比较简单，在mac可以通过brew安装。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install --with-training-tools tesseract</span><br></pre></td></tr></table></figure>
+
+<p>在windows可以通过exe安装包安装，下载地址可以从GitHub项目中的wiki找到。安装完成后记得将Tesseract 执行文件的目录加入到PATH中，方便后续调用。</p>
+<p>另外，默认安装会包含英文语言训练包，如果需要支持简体中文或者繁体中文，需要在安装时勾选。</p>
+<p><img src="https://tobyqin.github.io/images/tesseract-lang.png" alt="tesseract-lang"></p>
+<p>或者安装结束后到项目地址下载：<a href="https://github.com/tesseract-ocr/tessdata" target="_blank" rel="noopener">https://github.com/tesseract-ocr/tessdata</a></p>
+<p>下载好的语言包放入到安装目录中的testdata下即可。在windows系统你还需要将testdata目录也加入环境变量。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TESSDATA_PREFIX&#x3D;C:\Program Files (x86)\Tesseract-OCR\tessdata</span><br></pre></td></tr></table></figure>
+
+<p>如果一切就绪，你在命令行中就可以使用Tesseract命令。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># tesseract</span><br><span class="line">Usage:</span><br><span class="line">  tesseract --help | --help-psm | --help-oem | --version</span><br><span class="line">  tesseract --list-langs [--tessdata-dir PATH]</span><br><span class="line">  tesseract --print-parameters [options...] [configfile...]</span><br><span class="line">  tesseract imagename|stdin outputbase|stdout [options...] [configfile...]</span><br><span class="line"></span><br><span class="line">OCR options:</span><br><span class="line">  --tessdata-dir PATH   Specify the location of tessdata path.</span><br><span class="line">  --user-words PATH     Specify the location of user words file.</span><br><span class="line">  --user-patterns PATH  Specify the location of user patterns file.</span><br><span class="line">  -l LANG[+LANG]        Specify language(s) used for OCR.</span><br><span class="line">  -c VAR&#x3D;VALUE          Set value for config variables.</span><br><span class="line">                        Multiple -c arguments are allowed.</span><br><span class="line">  --psm NUM             Specify page segmentation mode.</span><br><span class="line">  --oem NUM             Specify OCR Engine mode.</span><br><span class="line">NOTE: These options must occur before any configfile.</span><br></pre></td></tr></table></figure>
+
+<p>通过命令行你就可以完成简单的图片文字识别任务。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tesseract test.png outfile -l chi_sim</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过Python调用"><a href="#通过Python调用" class="headerlink" title="通过Python调用"></a>通过Python调用</h3><p>Tesseract安装完成后可以很方便的被Python调用，你需要安装两个包。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pillow</span><br><span class="line">pip install pytesseract</span><br></pre></td></tr></table></figure>
+
+<p>一个简单的图片转文字的函数实现如下。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">import</span> pytesseract</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Languages</span>:</span></span><br><span class="line">    CHS = <span class="string">'chi_sim'</span></span><br><span class="line">    CHT = <span class="string">'chi_tra'</span></span><br><span class="line">    ENG = <span class="string">'eng'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">img_to_str</span><span class="params">(image_path, lang=Languages.ENG)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> pytesseract.image_to_string(Image.open(image_path), lang)</span><br><span class="line">  </span><br><span class="line">print(img_to_str(<span class="string">'image/test1.png'</span>, lang=Languages.CHS))</span><br><span class="line">print(img_to_str(<span class="string">'image/test2.png'</span>, lang=Languages.CHS))</span><br></pre></td></tr></table></figure>
+
+<p>测试图片- <code>test1.png</code>：</p>
+<p><img src="https://tobyqin.github.io/images/orc-test1.png" alt="test1"></p>
+<p>识别结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">process image file &quot;image&#x2F;test1.png&quot; in 1.4782530478747697 seconds</span><br><span class="line"></span><br><span class="line">8 所 调 人 , 在 - 方 。</span><br><span class="line">深 从 久 , 定 中 央</span><br><span class="line">。 所 澈 伊 人 , 圭 水 淳</span><br><span class="line">。 淇 渡 从 之 , 定 圭 北 中 坂 。</span><br><span class="line">。 所 澈 伊人 , 圭 水 浩</span><br><span class="line">从 丿 , 定 圭 水 中 沥 。</span><br></pre></td></tr></table></figure>
+
+<p>测试图片 - <code>test2.png</code></p>
+<p><img src="https://tobyqin.github.io/images/orc-test2.png" alt="test1"></p>
+<p>识别结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">process image file &quot;image&#x2F;test2.png&quot; in 1.2131140296607923 seconds</span><br><span class="line"></span><br><span class="line">清 明 时 节 雨 纷 纷 , 路 上 行 人 欲 断 魂</span><br><span class="line">信 问 酒 家 何 处 有 , 牧 奕 通 指 枪 花 村 。</span><br></pre></td></tr></table></figure>
+
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>Tesseract在识别清晰的标准中文字体效果还行，稍微复杂的情况就很糟糕，而且花费的时间也很多，我个人觉得唯一的优点就是免费了。如果你不介意多花时间，可以考虑使用它提供的训练功能自定义你的语言库，那样在特定场景下识别率应该能上一个台阶。</p>
+<h2 id="百度云OCR"><a href="#百度云OCR" class="headerlink" title="百度云OCR"></a>百度云OCR</h2><p>这是偶然的发现，百度云提供了一定额度的免费的OCR API，目前是每日500次，做做研究或者小应用还勉强够用，本文主要为了测试其效果。</p>
+<p>文档地址：<a href="https://cloud.baidu.com/doc/OCR/OCR-Python-SDK.html" target="_blank" rel="noopener">https://cloud.baidu.com/doc/OCR/OCR-Python-SDK.html</a></p>
+<h3 id="安装使用-1"><a href="#安装使用-1" class="headerlink" title="安装使用"></a>安装使用</h3><p>首先你需要注册一个<a href="https://cloud.baidu.com/" target="_blank" rel="noopener">百度云BCE账号</a>，然后从控制面板新建一个文字识别应用。<img src="https://tobyqin.github.io/images/baidu-ocr.png" alt="baidu-ocr"></p>
+<p>之后你就可以获得调用API需要的 AppID，API Key 和 Secret Key。后面只要根据官方文档一步一步走就可以了。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install baidu-aip</span><br></pre></td></tr></table></figure>
+
+<h3 id="封装和调用"><a href="#封装和调用" class="headerlink" title="封装和调用"></a>封装和调用</h3><p>参考文档： <a href="https://cloud.baidu.com/doc/OCR/OCR-Python-SDK.html#.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E" target="_blank" rel="noopener">https://cloud.baidu.com/doc/OCR/OCR-Python-SDK.html#.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E</a></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> aip <span class="keyword">import</span> AipOcr</span><br><span class="line"></span><br><span class="line">config = &#123;</span><br><span class="line">    <span class="string">'appId'</span>: <span class="string">'your-id'</span>,</span><br><span class="line">    <span class="string">'apiKey'</span>: <span class="string">'your-key'</span>,</span><br><span class="line">    <span class="string">'secretKey'</span>: <span class="string">'your-secret-key'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">client = AipOcr(**config)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_file_content</span><span class="params">(file)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(file, <span class="string">'rb'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">        <span class="keyword">return</span> fp.read()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">img_to_str</span><span class="params">(image_path)</span>:</span></span><br><span class="line">    image = get_file_content(image_path)</span><br><span class="line">    result = client.basicGeneral(image)</span><br><span class="line">    <span class="keyword">if</span> <span class="string">'words_result'</span> <span class="keyword">in</span> result:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'\n'</span>.join([w[<span class="string">'words'</span>] <span class="keyword">for</span> w <span class="keyword">in</span> result[<span class="string">'words_result'</span>]])</span><br></pre></td></tr></table></figure>
+
+<p>测试图片- <code>test1.png</code>：</p>
+<p><img src="https://tobyqin.github.io/images/orc-test1.png" alt="test1"></p>
+<p>识别结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">process image file &quot;image&#x2F;test1.png&quot; in 0.6331169034812572 seconds</span><br><span class="line"></span><br><span class="line">蒹葭</span><br><span class="line">先秦:佚名</span><br><span class="line">蒹葭苍苍,白露为霜。所谓伊人,在水一方。</span><br><span class="line">溯洄从之,道阻且长。溯游从之,宛在水中央。</span><br><span class="line">蒹葭萋萋,白露未晞。所谓伊人,在水之湄。</span><br><span class="line">溯洄从之,道阳且跻。溯游从之,宛在水中坻。</span><br><span class="line">蒹葭采采,白露未已。所谓伊人,在水之涘。</span><br><span class="line">溯洄从之,道阻且右。溯游从之,宛在水中沚。</span><br></pre></td></tr></table></figure>
+
+<p>测试图片 - <code>test2.png</code></p>
+<p><img src="https://tobyqin.github.io/images/orc-test2.png" alt="test1"></p>
+<p>识别结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">process image file &quot;image&#x2F;test2.png&quot; in 0.6621812639450142 seconds</span><br><span class="line"></span><br><span class="line">清明时节雨纷纷,路上行人欲断魂。</span><br><span class="line">借问酒家何处有,牧童遥指杏花村。</span><br></pre></td></tr></table></figure>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>测试结果很明显，我只能说百度云这个OCR真是挺厉害的，一个错别字都没有，不服不行。论中文，还是百度比谷歌更懂一点。而且百度OCR提供了更多的参数让你更灵活的处理图片，比如自定义旋转，返回可信度，特定类型证件识别等等。</p>
+<h2 id="更多的OCR"><a href="#更多的OCR" class="headerlink" title="更多的OCR"></a>更多的OCR</h2><p>除了本文提到的OCR，其实还是有不少其他选择。有一些直接提供Demo页面，你直接上传一张图片就可以直接看到识别效果，比如：</p>
+<ul>
+<li>微软Azure 图像识别：<a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/" target="_blank" rel="noopener">https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/</a></li>
+<li>有道智云文字识别：<a href="http://aidemo.youdao.com/ocrdemo" target="_blank" rel="noopener">http://aidemo.youdao.com/ocrdemo</a></li>
+<li>阿里云图文识别：<a href="https://www.aliyun.com/product/cdi/" target="_blank" rel="noopener">https://www.aliyun.com/product/cdi/</a></li>
+<li>腾讯OCR文字识别： <a href="https://cloud.tencent.com/product/ocr" target="_blank" rel="noopener">https://cloud.tencent.com/product/ocr</a></li>
+</ul>
+<p>你有没有发现所有的大公司都有这样的服务？以后我们买买买就行，花大力气去发明轮子就没多大意义了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-01-14/filter-string-by-keyword/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-01-14/filter-string-by-keyword/" class="post-title-link" itemprop="url">【问题】使用Python将字符串过滤并保留关键字</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-15 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-15T00:00:00+08:00">2018-01-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/quiz/" itemprop="url" rel="index">
+                    <span itemprop="name">Quiz</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给出一个关键词列表:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">keys &#x3D; [&#39;aaa&#39;,&#39;bbb&#39;,&#39;ccc&#39;]</span><br></pre></td></tr></table></figure>
+
+<p>给出一个字符串 <code>str</code>，如果字符串中有包含列表 <code>keys</code> 中的子串，则过滤并保留下来，其余部分则删除。请问可以如何实现？</p>
+<p>例子:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">str &#x3D; &#39;aaaawtf he heheccc&#39;</span><br></pre></td></tr></table></figure>
+
+<p>过滤后变成:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;aaa ccc&#39;</span><br></pre></td></tr></table></figure>
+
+<p>例子二：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">str &#x3D; &#39;aaabbb&#x2F;&amp;edfg cccaaa&#39;</span><br></pre></td></tr></table></figure>
+
+<p>过滤后变成：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;aaabbb cccaaa&#39;</span><br></pre></td></tr></table></figure>
+
+<p>要求尽可能保留原字符串的相对位置信息，比如aaa和bbb是连在一块的，就连在一块被保留下来。</p>
+<h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>解决这个问题可以分两步走，第一步，找出关键字位置并记录；第二步，重新组合拼接。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">str = <span class="string">'aaabbb/&amp;edfg cccaaa'</span></span><br><span class="line">keys = [<span class="string">'aaa'</span>, <span class="string">'bbb'</span>, <span class="string">'ccc'</span>]</span><br><span class="line"></span><br><span class="line">found = &#123;k: [] <span class="keyword">for</span> k <span class="keyword">in</span> keys&#125;</span><br><span class="line">total_length = len(str)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 按key依次遍历字符串，保存出现的位置</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys:</span><br><span class="line">    length, i = len(key), <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> i + length &lt;= total_length:</span><br><span class="line">        s = str[i:i + length]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> s == key:</span><br><span class="line">            found[key].append(i)</span><br><span class="line">            i += length</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(found)</span><br><span class="line"><span class="comment"># &#123;'aaa': [0, 16], 'bbb': [3], 'ccc': [13]&#125;</span></span><br><span class="line"></span><br><span class="line">result, next_match_index = <span class="string">''</span>, <span class="number">-1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新组合，如果坐标重叠连接符为空，否则为空格</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(total_length):</span><br><span class="line">    <span class="keyword">for</span> k, v <span class="keyword">in</span> found.items():</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">in</span> v:</span><br><span class="line">            split = <span class="string">''</span> <span class="keyword">if</span> next_match_index == i <span class="keyword">else</span> <span class="string">' '</span></span><br><span class="line"></span><br><span class="line">            result = result + split + k</span><br><span class="line">            next_match_index = i + len(k)</span><br><span class="line"></span><br><span class="line">print(result)</span><br><span class="line"><span class="comment"># aaabbb cccaaa</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="改进方案"><a href="#改进方案" class="headerlink" title="改进方案"></a>改进方案</h2><p>其实可以考虑以上两步可以合并一起做掉，不过代码就相对没那么好理解了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">str = <span class="string">'aaaabbb/&amp;edfg cccaaa'</span></span><br><span class="line">keys = [<span class="string">'aaa'</span>, <span class="string">'bbb'</span>, <span class="string">'ccc'</span>]</span><br><span class="line"></span><br><span class="line">total_length = len(str)</span><br><span class="line">result, next_match_index, skip = <span class="string">''</span>, <span class="number">-1</span>, <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(total_length):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> skip:</span><br><span class="line">        skip -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> keys:  <span class="comment"># 查找当前位置是否有match的key</span></span><br><span class="line">        length = len(key)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> i + length &lt;= total_length:  <span class="comment"># 确保index不越界</span></span><br><span class="line">            s = str[i:i + length]</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> s == key:  <span class="comment"># 如果有match的key，添加到结果</span></span><br><span class="line">                split = <span class="string">''</span> <span class="keyword">if</span> next_match_index == i <span class="keyword">else</span> <span class="string">' '</span></span><br><span class="line">                result = result + split + key</span><br><span class="line"></span><br><span class="line">                next_match_index = i + length <span class="comment">#预测相邻key的位置</span></span><br><span class="line">                skip = length - <span class="number">1</span> <span class="comment">#需要跳过当前key后匹配下一个key</span></span><br><span class="line">                <span class="keyword">break</span> <span class="comment"># 已经找到匹配key，可以结束keys的遍历</span></span><br><span class="line"></span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-01-02/get-repeat-digits-from-a-long-number/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-01-02/get-repeat-digits-from-a-long-number/" class="post-title-link" itemprop="url">【问题】从一长串数字中找到重复多次的三个数字</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-03 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-03T00:00:00+08:00">2018-01-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/quiz/" itemprop="url" rel="index">
+                    <span itemprop="name">Quiz</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><blockquote>
+<p><a href="https://stackoverflow.com/questions/47581326/given-a-string-of-a-million-numbers-return-all-repeating-3-digit-numbers" target="_blank" rel="noopener">https://stackoverflow.com/questions/47581326/given-a-string-of-a-million-numbers-return-all-repeating-3-digit-numbers</a></p>
+</blockquote>
+<p>假设给定一个很长的数字，比如PI精确到100万位，找到其中重复出现相邻三个数字。比如给定的数字是1233223332321234323123，那么结果应该是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">123 repeat 3 times</span><br><span class="line">233 repeat 2 times</span><br><span class="line">323 repeat 2 times</span><br><span class="line">332 repeat 2 times</span><br></pre></td></tr></table></figure>
+
+<h2 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h2><p>如果要统计相邻三个数字的重复次数，那么必然需要将其所有可能都列出来，通过Python的切片我们很容易实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">number = <span class="string">'1233223332321234323123'</span></span><br><span class="line">split = [number[position:position + <span class="number">3</span>] <span class="keyword">for</span> position <span class="keyword">in</span> range(len(number) - <span class="number">2</span>)]</span><br><span class="line"></span><br><span class="line">print(split)</span><br><span class="line"><span class="comment"># ['123', '233', '332', '322', '223', '233', '333', '332', '323', '232', '321', '212', '123', '234', '343', '432', '323', '231', '312', '123']</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来我们需要统计切好的序列里各个数字出现的次数，因为需要处理是3位数字，可以考虑新建一个长度为1000的空序列，如果数字出现就在对应位置加一，达到统计的目的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">seq = [<span class="number">0</span>] * <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> split:</span><br><span class="line">    seq[int(x)] += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>最后我们只要把新序列里统计值大于1的打印出来即可。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">    <span class="keyword">if</span> seq[i] &gt; <span class="number">1</span>:</span><br><span class="line">        print(<span class="string">'&#123;&#125; repeat &#123;&#125; times'</span>.format(i, seq[i]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 123 repeat 3 times</span></span><br><span class="line"><span class="comment"># 233 repeat 2 times</span></span><br><span class="line"><span class="comment"># 323 repeat 2 times</span></span><br><span class="line"><span class="comment"># 332 repeat 2 times</span></span><br></pre></td></tr></table></figure>
+
+<p>我们可以用更加优雅的方式来呈现以上算法，简洁但不简单。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">seq = [<span class="number">0</span>] * <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> val <span class="keyword">in</span> [int(number[pos:pos+<span class="number">3</span>]) <span class="keyword">for</span> pos <span class="keyword">in</span> range(len(number) - <span class="number">2</span>)]:</span><br><span class="line">    seq[val] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> ([(num, seq[num]) <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">1000</span>) <span class="keyword">if</span> seq[num] &gt; <span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+
+<p>以上便是Stack Overflow上原题的最佳答案。</p>
+<h2 id="拓展思考"><a href="#拓展思考" class="headerlink" title="拓展思考"></a>拓展思考</h2><p>如果这个问题给定的不是数字，而是字符串比如abccdbadfdaabc，依然是要找到相邻的3个重复字母，你有没有好办法？</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-12-13/hack-way-to-get-golden-coins-for-king-of-glory/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-12-13/hack-way-to-get-golden-coins-for-king-of-glory/" class="post-title-link" itemprop="url">教你使用50行Python代码刷王者荣耀金币</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-14 00:00:00" itemprop="dateCreated datePublished" datetime="2017-12-14T00:00:00+08:00">2017-12-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>王者荣耀的冒险模式里有个挑战模式，第一次过关可以获得比较多的金币，后面重新挑战还是会获得少量金币，这不算是bug，你不嫌烦手动蛮力也可以刷金币。</p>
+<blockquote>
+<p>推荐关卡：陨落的废都 - 魔女回忆</p>
+</blockquote>
+<p>此关卡使用纯输出英雄20秒左右可以打BOSS，50秒左右可以通关，每次重复通关可以获得奖励19金币。在开挂前建议你手动通关体验一下。此为游戏原理。</p>
+<p>简单来说，需要执行以下步骤：</p>
+<ol>
+<li>界面打开至挑战关卡：陨落的废都 - 魔女回忆 【点击下一步】</li>
+<li>进入阵容调整界面，提前安排好阵容。【点击闯关】</li>
+<li>进入挑战界面。【点击右上角-自动-等待挑战结束】</li>
+<li>进入挑战完成界面。【点击屏幕继续】</li>
+<li>进入关卡奖励界面。【点击再次挑战】</li>
+<li>进入阵容调整界面，循环至步骤1或步骤2【貌似取决于游戏区和版本】</li>
+</ol>
+<p>只要你能模拟屏幕点击就可以完成刷金币的脚本，在安卓模拟界面点击最简单的方式就是使用ADB发送命令，不需要root手机，不需要安装第三方软件，方便快捷。ADB命令点击屏幕坐标[x, y] 可以使用命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb shell input tap x y</span><br></pre></td></tr></table></figure>
+
+<p>IOS 是否有类似工具和命令，我不清楚，如果有那么实现自动刷金币也很简单。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>本脚本适用于安卓游戏区，需要真实安卓手机。</li>
+<li>手机需开启USB调试模式，允许电脑调试。</li>
+<li>电脑需安装好安卓驱动，一般豌豆荚或者各种管家可以自动帮你装好。</li>
+<li>电脑需要有ADB工具集，很多方式可以获取。</li>
+<li>ADB工具需要加入环境变量PATH中，方便随时调用。</li>
+<li>电脑上需要安装Python，因为这是我选择的脚本语言。</li>
+</ul>
+<p>专业的开发测试人员，也可以参考我的另外两篇博客：</p>
+<ul>
+<li><a href="https://betacat.online/posts/2017-05-03/setup-appium-automation-test-environment/">在 Windows 下搭建 Appium + Android 自动化测试环境</a></li>
+<li><a href="https://betacat.online/posts/2017-12-10/setup-appium-test-environment-on-mac-osx/">在Mac OSX 上配置Appium+Android自动化测试环境</a></li>
+</ul>
+<p>如果只是为了刷金币，只需要安装好驱动和ADB工具即可。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>如果万事具备，那么步骤就非常简单。</p>
+<h3 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h3><ol>
+<li>用USB连接手机，如果弹出警告，请允许电脑调试手机。</li>
+<li>使用命令 <code>adb devices</code> 检验adb和手机状态已经就绪。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ adb devices</span><br><span class="line">List of devices attached</span><br><span class="line">b******4        device</span><br></pre></td></tr></table></figure>
+<p>模拟点击屏幕，比如你可以打开画图软件，然后运行命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb shell input tap 500 500</span><br></pre></td></tr></table></figure>
+<p>如果如果一切OK，那么你将看到画图软件在坐标（500,500）的位置有一个点。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>通关需要点击的屏幕位置是固定的，加上注释我们只需要不到30行代码就可以完成。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">tap_screen</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    os.system(<span class="string">'adb shell input tap &#123;&#125; &#123;&#125;'</span>.format(x, y))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_money_work</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'#0 start the game'</span>)</span><br><span class="line">    tap_screen(<span class="number">1600</span>, <span class="number">970</span>)</span><br><span class="line">    sleep(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#1 ready, go!!!'</span>)</span><br><span class="line">    tap_screen(<span class="number">1450</span>, <span class="number">910</span>)</span><br><span class="line">    sleep(<span class="number">15</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#2 auto power on!'</span>)</span><br><span class="line">    tap_screen(<span class="number">1780</span>, <span class="number">40</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">25</span>):</span><br><span class="line">        tap_screen(<span class="number">1000</span>, <span class="number">500</span>)</span><br><span class="line">        sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'#3 do it again...\n'</span>)</span><br><span class="line">    tap_screen(<span class="number">1430</span>, <span class="number">980</span>)</span><br><span class="line">    sleep(<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<p>然后我们写一个主函数来循环刷钱。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(repeat_times):</span><br><span class="line">        print(<span class="string">'round #&#123;&#125;'</span>.format(i + <span class="number">1</span>))</span><br><span class="line">        do_money_work()</span><br></pre></td></tr></table></figure>
+
+<h3 id="拿来主义"><a href="#拿来主义" class="headerlink" title="拿来主义"></a>拿来主义</h3><p>如果你喜欢拿来主义，请访问本文项目地址： </p>
+<ul>
+<li><a href="https://github.com/tobyqin/kog-money" target="_blank" rel="noopener">https://github.com/tobyqin/kog-money</a></li>
+</ul>
+<p>然后：</p>
+<ol>
+<li>下载项目中的 <code>kog.py</code> 到本地。</li>
+<li>将游戏打开，进入挑战模式，魔女回忆，阵容调整界面。</li>
+<li>根据手机性能和分辨率，调整<code>kog.py</code>中的参数。（手机分辨率，刷金次数等等）</li>
+<li>运行以下命令，手机上就可以查看实时运行效果。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python kog.py</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ol>
+<li>每周金币上限4200，需要接近4个小时，不建议一次刷满，手机和你都要休息。</li>
+<li>铭文，手机性能，英雄选择都会影响通关速度，自己微调等待时间。</li>
+<li>如果你不想被USB数据线束缚，可以考虑<a href="/posts/2017-12-12/connect-adb-via-wifi/">使用无线连接Android真机</a>。</li>
+</ol>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本脚本纯属娱乐和探索的心得，如果你因为违反了游戏规则导致被封号，我概不负责。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-12-11/connect-adb-via-wifi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-12-11/connect-adb-via-wifi/" class="post-title-link" itemprop="url">使用ADB无线连接Android真机进行调试</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2017-12-12T00:00:00+08:00">2017-12-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>其实这已经是一个很古老的知识了，记录一下备忘。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>手机和电脑需要在同一个局域网内</li>
+<li>电脑上已经安装好ADB工具，可以是Mac或者Windows</li>
+</ul>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="1-打开手机端口"><a href="#1-打开手机端口" class="headerlink" title="1. 打开手机端口"></a>1. 打开手机端口</h3><p>让手机在指定的端口可以接收到TCP/IP连接。</p>
+<ol>
+<li>确保手机开启了usb调试</li>
+<li>用usb线把手机和电脑连接起来</li>
+<li>执行命令：<code>adb tcpip 5555</code></li>
+</ol>
+<p>执行成功后就可以把usb线拔掉了，端口可以不是5555，这个官方默认使用的。</p>
+<h3 id="2-找到手机的IP地址"><a href="#2-找到手机的IP地址" class="headerlink" title="2. 找到手机的IP地址"></a>2. 找到手机的IP地址</h3><p>一般在 设置-关于手机-状态信息-IP地址可以找到。</p>
+<p>比如，我这里看到手机的IP地址是192.168.1.100</p>
+<h3 id="3-通过IP地址连接手机"><a href="#3-通过IP地址连接手机" class="headerlink" title="3. 通过IP地址连接手机"></a>3. 通过IP地址连接手机</h3><p>执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb connect 192.168.1.100:5555</span><br></pre></td></tr></table></figure>
+
+<p>如果提示：</p>
+<blockquote>
+<p>connected to 192.160.1.100:5555</p>
+</blockquote>
+<p>则表示连接成功，如果端口号是5555可以省略，直接：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb connect 192.168.1.100</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-如果没有连接成功"><a href="#4-如果没有连接成功" class="headerlink" title="4. 如果没有连接成功"></a>4. 如果没有连接成功</h3><p>如果确定你的网络和端口都没问题，可以尝试重启一下adb服务：</p>
+<blockquote>
+<p>adb kill-server</p>
+</blockquote>
+<p>然后再进行连接，实在还是不行就Google吧。</p>
+<h3 id="5-连接成功"><a href="#5-连接成功" class="headerlink" title="5. 连接成功"></a>5. 连接成功</h3><p>如果连接成功的话，执行以下命令查看当前连接的设备列表：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
+<p>可以看到连接的设备，像这样</p>
+<blockquote>
+<p>$ adb devices<br>List of devices attached<br>192.168.1.100:5555    device</p>
+</blockquote>
+<p>以后没有数据线也可以调试手机或者在上面运行自动化测试了。</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>更换一个网络环境需要使用新IP重新connect即可。</li>
+<li>但是如果手机重启了，就需要重新连接数据线再次开启端口。</li>
+<li>开启端口可以通过adb，也可以直接在手机上打开，但一般需要root权限和特殊软件。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-12-09/setup-appium-test-environment-on-mac-osx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-12-09/setup-appium-test-environment-on-mac-osx/" class="post-title-link" itemprop="url">在Mac OSX 上配置 Appium + Android 自动化测试环境</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-10 00:00:00" itemprop="dateCreated datePublished" datetime="2017-12-10T00:00:00+08:00">2017-12-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h2><p>开始正文之前，你需要准备好一些基本条件：</p>
+<ol>
+<li>安装好Mac OSX 操作系统的设备</li>
+<li>能够访问中国局域网以外资源的方法（没有也行，但很痛苦）</li>
+<li>已经安装好 <a href="https://brew.sh/" target="_blank" rel="noopener">homebrew</a></li>
+<li>已经安装好 Python3.x，可以通过brew安装</li>
+<li>已经安装好 Java Runtime Environment，可以通过brew安装</li>
+</ol>
+<h2 id="安装-Android-Studio-SDK"><a href="#安装-Android-Studio-SDK" class="headerlink" title="安装 Android Studio / SDK"></a>安装 Android Studio / SDK</h2><p>本文主要为了测试安卓应用，那么这里我们就需要安装Android Studio或者Android SDK。</p>
+<ul>
+<li>Android Studio - 完整的开发以及测试工具，需要梯子</li>
+<li>Android SDK + Platform Tools - 足够完成自动化测试，通过homebrew安装</li>
+</ul>
+<p>如果只是为了自动化测试建议安装SDK足矣，使用brew命令轻松搞定。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew cask install android-sdk</span><br><span class="line">brew cask install android-platform-tools</span><br></pre></td></tr></table></figure>
+
+<p>在国内使用brew可以事先配置好国内源，速度会快很多。</p>
+<p>如果有梯子可以选择Android Studio，安装方法很简单，官网下载后一路Next，启动后会让你把SDK等等一系列依赖都装好，一步到位。</p>
+<h2 id="准备Android-模拟器或者使用真机"><a href="#准备Android-模拟器或者使用真机" class="headerlink" title="准备Android 模拟器或者使用真机"></a>准备Android 模拟器或者使用真机</h2><p>如果SDK已经安装完毕，应该可以使用adb命令来检查可用的模拟器或者已经连接到电脑上的实体手机。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
+<p>如果不知道adb工具在哪，可以先在命令行里通过find搜索。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">find &#x2F;Users -name adb  # 搜索用户目录</span><br><span class="line">find &#x2F; -name adb  # 搜索全盘</span><br></pre></td></tr></table></figure>
+
+<p>找到之后可以把 adb 目录加入PATH，方便后续使用。一般在 <code>~/Library/Android/sdk/platform-tools/adb</code>，如果通过brew安装，会自动建立软链接后加入PATH。</p>
+<p>模拟器可以使用官方模拟器（Android Studio自带），或者口碑较好的 <a href="https://www.genymotion.com/" target="_blank" rel="noopener">Genymotion</a>，具体请查阅其他文章，搭模拟器其实也挺不容易的。</p>
+<h2 id="安装Appium"><a href="#安装Appium" class="headerlink" title="安装Appium"></a>安装Appium</h2><p>Appium 可以通过多种方式安装。</p>
+<h3 id="方式一：使用-NodeJS-安装"><a href="#方式一：使用-NodeJS-安装" class="headerlink" title="方式一：使用 NodeJS 安装"></a>方式一：使用 NodeJS 安装</h3><p>首先通过brew安装nodejs：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<p>配置国内源，在个人目录下新建一个.npmrc文件，写入：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">registry=https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+
+<p>开始安装Appium：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install -g appium</span><br><span class="line">npm install -g appium-doctor</span><br></pre></td></tr></table></figure>
+
+<p>Appium-doctor 可以帮你诊断测试环境，建议安装。</p>
+<h3 id="方式二：下载Appium桌面版安装"><a href="#方式二：下载Appium桌面版安装" class="headerlink" title="方式二：下载Appium桌面版安装"></a>方式二：下载Appium桌面版安装</h3><p>官方的Appium桌面安装包可以从github下载，需要梯子。</p>
+<ul>
+<li><a href="https://github.com/appium/appium-desktop/releases" target="_blank" rel="noopener">https://github.com/appium/appium-desktop/releases</a></li>
+</ul>
+<p>下载到的dmg文件双击装载，把Appium拖到Application里完成安装。</p>
+<h2 id="安装-Appium-Client"><a href="#安装-Appium-Client" class="headerlink" title="安装 Appium-Client"></a>安装 Appium-Client</h2><p>本文只讨论Python实现的Appium测试，所以你只需要允许以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install Appium-Python-Client</span><br></pre></td></tr></table></figure>
+
+<p>如果需要使用其他编程语言，下表供参考：</p>
+<table>
+<thead>
+<tr>
+<th>语言/框架</th>
+<th>Github版本库以及安装指南</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ruby</td>
+<td><a href="https://github.com/appium/ruby_lib" target="_blank" rel="noopener">https://github.com/appium/ruby_lib</a></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><a href="https://github.com/appium/python-client" target="_blank" rel="noopener">https://github.com/appium/python-client</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a href="https://github.com/appium/java-client" target="_blank" rel="noopener">https://github.com/appium/java-client</a></td>
+</tr>
+<tr>
+<td>JavaScript (Node.js)</td>
+<td><a href="https://github.com/admc/wd" target="_blank" rel="noopener">https://github.com/admc/wd</a></td>
+</tr>
+<tr>
+<td>Objective C</td>
+<td><a href="https://github.com/appium/selenium-objective-c" target="_blank" rel="noopener">https://github.com/appium/selenium-objective-c</a></td>
+</tr>
+<tr>
+<td>PHP</td>
+<td><a href="https://github.com/appium/php-client" target="_blank" rel="noopener">https://github.com/appium/php-client</a></td>
+</tr>
+<tr>
+<td>C# (.NET)</td>
+<td><a href="https://github.com/appium/appium-dotnet-driver" target="_blank" rel="noopener">https://github.com/appium/appium-dotnet-driver</a></td>
+</tr>
+<tr>
+<td>RobotFramework</td>
+<td><a href="https://github.com/jollychang/robotframework-appiumlibrary" target="_blank" rel="noopener">https://github.com/jollychang/robotframework-appiumlibrary</a></td>
+</tr>
+</tbody></table>
+<h2 id="必要的环境变量设置"><a href="#必要的环境变量设置" class="headerlink" title="必要的环境变量设置"></a>必要的环境变量设置</h2><p>如果你已经安装了appium-doctor，那么你只要运行appium-doctor命令就可以知道你还需要设置哪些环境变量，比如：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tobyqin@CatBook ~&gt; appium-doctor</span><br><span class="line">info AppiumDoctor Appium Doctor v.1.4.3</span><br><span class="line">info AppiumDoctor ### Diagnostic starting ###</span><br><span class="line">info AppiumDoctor  ✔ The Node.js binary was found at: /usr/local/bin/node</span><br><span class="line">info AppiumDoctor  ✔ Node version is 7.10.0</span><br><span class="line">info AppiumDoctor  ✔ Xcode is installed at: /Applications/Xcode.app/Contents/Developer</span><br><span class="line">WARN AppiumDoctor  ✖ Xcode Command Line Tools are NOT installed!</span><br><span class="line">info AppiumDoctor  ✔ DevToolsSecurity is enabled.</span><br><span class="line">info AppiumDoctor  ✔ The Authorization DB is set up properly.</span><br><span class="line">WARN AppiumDoctor  ✖ Carthage was NOT found!</span><br><span class="line">info AppiumDoctor  ✔ HOME is set to: /Users/tobyqin</span><br><span class="line">info AppiumDoctor  ✔ ANDROID_HOME is set to: /Users/tobyqin/Library/Android/sdk/</span><br><span class="line">info AppiumDoctor  ✔ JAVA_HOME is set to: /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home</span><br><span class="line">info AppiumDoctor  ✔ adb exists at: /Users/tobyqin/Library/Android/sdk/platform-tools/adb</span><br><span class="line">info AppiumDoctor  ✔ android exists at: /Users/tobyqin/Library/Android/sdk/tools/android</span><br><span class="line">info AppiumDoctor  ✔ emulator exists at: /Users/tobyqin/Library/Android/sdk/tools/emulator</span><br><span class="line">info AppiumDoctor  ✔ Bin directory of $JAVA_HOME is set</span><br><span class="line">info AppiumDoctor ### Diagnostic completed, 2 fixes needed. ###</span><br><span class="line">info AppiumDoctor</span><br><span class="line">info AppiumDoctor ### Manual Fixes Needed ###</span><br><span class="line">info AppiumDoctor The configuration cannot be automatically fixed, please do the following first:</span><br><span class="line">WARN AppiumDoctor - Please install Carthage. Visit https://github.com/Carthage/Carthage#installing-carthage for more information.</span><br><span class="line">info AppiumDoctor ###</span><br><span class="line">info AppiumDoctor</span><br><span class="line">info AppiumDoctor Bye! Run appium-doctor again when all manual fixes have been applied!</span><br></pre></td></tr></table></figure>
+
+<p>其实你不一定需要把通过所有检查项，如果只是为了完成Android的Appium测试，只要确保ANDROID_HOME 和 JAVA_HOME 正确配置，另外SDK Tools 和Platform Tools都加入PATH就基本完成了。可以参考我个人目录下的.bash_profile设置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export ANDROID_HOME=~/Library/Android/sdk/</span><br><span class="line">export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home</span><br><span class="line"></span><br><span class="line">export PATH=~/bin:$PATH:/usr/local/bin:$ANDROID_HOME/platform-tools/:$JAVA_HOME/bin</span><br></pre></td></tr></table></figure>
+
+<h2 id="开始编写自动化测试"><a href="#开始编写自动化测试" class="headerlink" title="开始编写自动化测试"></a>开始编写自动化测试</h2><p>终于到了开始写代码的时候了，相信你已经迫不及待了，别急，你还要准备以下条件：</p>
+<ol>
+<li>模拟器或者测试机必须是Ready的状态，每次启动模拟器都很费时间，所以建议模拟器不要关闭，通过代码来启动模拟器是一个办法，但是时间成本有点高。</li>
+<li>如果是调试代码阶段，建议保持Appium桌面版长期运行，但是Appium和uiautomator有冲突，只能二选一。</li>
+<li>Appium会根据你的测试代码去寻找符合要求的设备，如果你启动了多台虚拟机或者连接了多台实体机，请显式地在代码中指定设备名称或者版本号。</li>
+</ol>
+<p>自动化测试代码例子如下，启动内置拨号软件，搜索关键字。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> appium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">desired_caps = &#123;&#125;</span><br><span class="line">desired_caps[<span class="string">'platformName'</span>] = <span class="string">'Android'</span></span><br><span class="line">desired_caps[<span class="string">'platformVersion'</span>] = <span class="string">'7.1.1'</span></span><br><span class="line">desired_caps[<span class="string">'deviceName'</span>] = <span class="string">'Android Emulator'</span></span><br><span class="line">desired_caps[<span class="string">'appPackage'</span>] = <span class="string">'com.android.dialer'</span></span><br><span class="line">desired_caps[<span class="string">'appActivity'</span>] = <span class="string">'DialtactsActivity'</span></span><br><span class="line"></span><br><span class="line">driver = webdriver.Remote(<span class="string">'http://localhost:4723/wd/hub'</span>, desired_caps)</span><br><span class="line">driver.find_element_by_id(<span class="string">'com.android.dialer:id/search_box_collapsed'</span>).click()</span><br><span class="line">search_box = driver.find_element_by_id(<span class="string">'com.android.dialer:id/search_view'</span>)</span><br><span class="line">search_box.click()</span><br><span class="line">search_box.send_keys(<span class="string">'hello toby'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>恭喜你，解锁了移动应用测试的新成就！</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="/posts/2017-05-03/setup-appium-automation-test-environment/">在 Windows 下搭建 Appium + Android 自动化测试环境</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-09-25/excellent-python-time-ultility-arrow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-09-25/excellent-python-time-ultility-arrow/" class="post-title-link" itemprop="url">如何使用Python优雅地处理时间数据</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2017-09-26T00:00:00+08:00">2017-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>很多时候我们不得不和时间打交道，但在Python标准库中处理时间的模块其实设计的不是很友好，为什么我会这么说？因为我相信大部分人几乎每次在处理时间数据时一而再，再而三的去查文档，比如时间和文本格式互转，时间增减等看起来非常基本的操作，在Python中处理起来并不轻松。</p>
+<p>最要命的是，在Python标准库中居然有两个名字差不多的模块可以处理时间，一个叫time，另外一个叫datetime，里面提供了类似的方法但是两个完全不是一回事。到这还没完，标准库里还有一个叫calendar的模块，也是用来处理时间的。你是不是纠结到底该用哪一个？</p>
+<p>今天我不带大家去理解他们三者的关系，因为现在你记住了不代表你以后不会忘记。今天的主角是一个优雅到我不能放弃的时间处理库 - arrow。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>arrow是一个专门处理时间和日期的轻量级Python库，它提供了一种<strong>合理、智能</strong>的方式来创建、操作、格式化、转换时间和日期。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install arrow</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>我们直接看代码，注释既分割线。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> arrow</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前时间</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>utc = arrow.utcnow()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>utc</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-11</span>T21:<span class="number">23</span>:<span class="number">58.970460</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调整时间</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>utc = utc.shift(days=+<span class="number">1</span>, hours=<span class="number">-1</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>utc</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-12</span>T20:<span class="number">23</span>:<span class="number">58.970460</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改时间</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>utc.replace(hour=<span class="number">4</span>, minute=<span class="number">40</span>)</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-12</span>T04:<span class="number">40</span>:<span class="number">58.970460</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 转换时区</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local = utc.to(<span class="string">'US/Pacific'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-11</span>T13:<span class="number">23</span>:<span class="number">58.970460</span><span class="number">-07</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从文本转为时间对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>arrow.get(<span class="string">'2017-05-11T21:23:58.970460+00:00'</span>)</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-11</span>T21:<span class="number">23</span>:<span class="number">58.970460</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>arrow.get(<span class="number">1367900664</span>)</span><br><span class="line">&lt;Arrow [<span class="number">2017</span><span class="number">-05</span><span class="number">-07</span>T04:<span class="number">24</span>:<span class="number">24</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>arrow.get(<span class="string">'June was born in May 1980'</span>, <span class="string">'MMMM YYYY'</span>)</span><br><span class="line">&lt;Arrow [<span class="number">1980</span><span class="number">-05</span><span class="number">-01</span>T00:<span class="number">00</span>:<span class="number">00</span>+<span class="number">00</span>:<span class="number">00</span>]&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取时间戳</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local.timestamp</span><br><span class="line"><span class="number">1368303838</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local.format()</span><br><span class="line"><span class="string">'2017-05-11 13:23:58 -07:00'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local.format(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>)</span><br><span class="line"><span class="string">'2017-05-11 13:23:58'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>local.humanize()</span><br><span class="line"><span class="string">'an hour ago'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 转为标准库对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.date()</span><br><span class="line">datetime.date(<span class="number">2017</span>, <span class="number">5</span>, <span class="number">7</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.time()</span><br><span class="line">datetime.time(<span class="number">4</span>, <span class="number">38</span>, <span class="number">15</span>, <span class="number">447644</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>arrow是不是很智能很易用？如果以后你的Python项目需要处理时间，请果断抛弃标准库，arrow将拯救你无数脑细胞。</p>
+<p>附上arrow官方文档，更多酷炫用法还是前往官网。</p>
+<ul>
+<li><a href="http://arrow.readthedocs.io/en/latest/" target="_blank" rel="noopener">http://arrow.readthedocs.io/en/latest/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

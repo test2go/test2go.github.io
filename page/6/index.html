@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/6/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-12-23/goodbye-my-2018/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-12-23/goodbye-my-2018/" class="post-title-link" itemprop="url">2018年，再见</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-12-24 00:00:00" itemprop="dateCreated datePublished" datetime="2018-12-24T00:00:00+08:00">2018-12-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://tobyqin.github.io/images/2018-bye.jpg" alt="2018年"></p>
+<p>去年的这个时候，我也想写一篇年底总结，无奈自己给自己找了各种理由借口，没写出来。</p>
+<h1 id="懒"><a href="#懒" class="headerlink" title="懒"></a>懒</h1><p>今年从8月份就不爱动笔了，内心里一直有两个小恶魔，争论不休想要干架。一个说，一周7天你能蹦出8个想法，不写出来谁知道你他娘的是个天才？另外一个说，别老想着当网红，你那屁大的idea毛线都不是，写出来自己都懒得看。</p>
+<p>其实内心并没什么小恶魔，只是因为懒。</p>
+<h1 id="羞"><a href="#羞" class="headerlink" title="羞"></a>羞</h1><p>怎么说呢？博客这东西写的好的可以字字珠玑，让人读的醉生梦死，醍醐灌顶。写的不好的也可以记个流水账。写了就不要后悔，它可以锻炼你的大脑，提前防止老年痴呆。而且多年以后自己翻翻很大概率还能把自己弄的一把鼻涕一把泪（羞的）。</p>
+<h1 id="戒"><a href="#戒" class="headerlink" title="戒"></a>戒</h1><p>2018年的社会已经是个相当浮躁的社会，每个人都说自己没时间，可是一刷手机能刷半天，碎片化的时间被各种应用塞满。</p>
+<p>年初给自己订的读书目标（每月一本），一半都没完成，马上就2019了。翻开kindle看到都是自己喜欢的书名标题，但是还没找回上次阅读的线索时，手边的手机就亮了，拿起手机开始不亦乐乎地处理各种推送，仿佛整个世界都非常需要我，我好忙啊？？</p>
+<p>还好，我读完了一本《受戒》，让我依稀感觉得到时光流逝，文字还是有感动人的魅力。</p>
+<blockquote>
+<p>在一起时，恩恩义义；分开时，潇潇洒洒。</p>
+<p>她挎着一篮子荸荠回去了，在柔软的田埂上留了一串脚印。明海看着她的脚印，傻了。五个小小的趾头，脚掌平平的，脚跟细细的，脚弓部分缺了一块。明海身上有一种从来没有过的感觉，他觉得心里痒痒的。这一串美丽的脚印把小和尚的心搞乱了。</p>
+<p>田彼南山， 荒秽不治， 种一顷豆， 落而为箕， 人生行乐耳， 须富贵何时。</p>
+</blockquote>
+<h1 id="点"><a href="#点" class="headerlink" title="点"></a>点</h1><p>2018年去了一趟南京，南京的老鸭粉丝汤真的是好吃，金陵是个风水宝地。</p>
+<p>2018年游了一次西湖，西湖的春风拂面很是惬意，和大橙子来回在苏堤上走了三遍还恋恋不舍。</p>
+<p>2018年回了一次老家，熟悉的鸡鸭叫声和虫鸣狗吠，让我感觉自己好像没出过远门。</p>
+<p>2018年南方酷热的夏天和没有空调的房间也让我意识到，我来自农村，但已渐渐不习惯农村。</p>
+<p>2018年大哥大嫂把侄子带到人间，父母的笑容因此增添了许多。</p>
+<p>2018年父亲大人第一次上手术台，岁月会无情带走容颜和健康，不允许商量。</p>
+<p>2018年给自己和大橙子办了健身卡。从第一次进健身房累到晕倒，到现在可以一口气跑6公里只经历了一个多月，我很感谢自己做的选择，流汗的感觉真好。</p>
+<p>2018年已过而立，在上海看了几次房子，最终还是没有成为房奴。</p>
+<p>2018年在Github提交了376次，相比去年的971次，着实少了许多。没有拿得出来说的项目，都是小猫小狗过家家。</p>
+<p>2018年打了至少2000场农药，上过王者，然而有什么意义？终于弃坑，毁我青春。</p>
+<p>2018年买了一个尤克里里，已经可以熟练弹唱小星星和生日快乐歌，从乐盲到明白了全全半全全全全半的含义，也知道了四大和弦原来这么厉害。</p>
+<p>2018年花了一个月时间系统学习了移动端自动化测试的原理还提了方案，但最后老板说没时间给你折腾了，公司暂时不打算招人。</p>
+<p>2018年我们公司也裁员了，我没有成为可以N+3的人，不知道是幸运还是不幸运。</p>
+<p>2018年公司把我们带来澳门开年会，让我看见了什么叫纸醉金迷，什么叫一掷千金，什么叫有钱真好。</p>
+<p>2018年混进各种测试群，原来大家都在努力用牛逼的技术解决多年以来一直都有的UI测试问题。在我看来，自动化测试真不应该测UI，但又不得不测。</p>
+<p>2018年开始摸索着使用docker去部署自己的项目，不骗你说，真的很好用。</p>
+<p>2018年用Vue去重构了几个项目，发现Vue真是个好东西，易学易用上手快，前端工程师也可以很快乐。</p>
+<p>2018年走了Ract的walkthrough，发现它不太适合我，前端工程师要纠结的东西真多，还好我不是前端。</p>
+<p>2018年写了第一个浏览器插件，第一个油猴脚本，感觉会JavaScript真的可以为所欲为。</p>
+<p>2018年我想把后端的代码部署到本地，可是还是停留在想的阶段。</p>
+<p>2018年在蚂蚁森林收了500个鸡蛋，种了2棵树，支付宝一直在怂恿我们使劲花钱。</p>
+<p>2018年初买了两万的基金，年底亏了五千，今年市场到底发生了什么。我开了股票账号，但啥也不敢买。</p>
+<p>2018年工资没怎么涨，但是5毛钱的硬币和纸币，已经开始花不出去了。</p>
+<p>2018年越来越发现选择远比努力重要，但努力也远比不努力好的多。</p>
+<p>2018年有很多伟大的人走了，但是还好身边的家人和朋友一个不少。</p>
+<p>2018年和大橙子在一起刚好十年，昨天一起看了照片，没啥变化，真好。</p>
+<p>2018年没有认识很多新面孔，也意味着不用告别很多老面孔。</p>
+<p>2018年平平淡淡，但也真真实实。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-09-15/python-switch-case/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-09-15/python-switch-case/" class="post-title-link" itemprop="url">用 Python 实现简单的 switch/case 语句</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-09-16 00:00:00" itemprop="dateCreated datePublished" datetime="2018-09-16T00:00:00+08:00">2018-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在Python中是没有Switch / Case语句的，很多人认为这种语句不够优雅灵活，在Python中用字典来处理多条件匹配问题字典会更简单高效，对于有一定经验的Python玩家不得不承认，的确如此。</p>
+<p>但今天我们还是来看看如果一定要用Python来Switch / Case，可以怎么玩。</p>
+<h2 id="语法约束"><a href="#语法约束" class="headerlink" title="语法约束"></a>语法约束</h2><p>我们先定义一下Switch/Case应该怎么表达，为了简单我们可以让它长成这样。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cn</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'cn'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">us</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'us'</span>)</span><br><span class="line"></span><br><span class="line">switch(lang).case(<span class="string">'cn'</span>,cn)</span><br><span class="line">truetruetrue.case(<span class="string">'us'</span>,us)</span><br><span class="line">   			.default(us)</span><br></pre></td></tr></table></figure>
+
+<h2 id="类实现一"><a href="#类实现一" class="headerlink" title="类实现一"></a>类实现一</h2><p>通过以上约束，我们可以把switch当成一个类来实现，传入的参数在构造函数里处理，然后再分别实现case和default方法即可。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">switch</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, case_path)</span>:</span></span><br><span class="line">        self.switch_to = case_path</span><br><span class="line">        self._invoked = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">case</span><span class="params">(self, key, method)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.switch_to == key <span class="keyword">and</span> <span class="keyword">not</span> self._invoked:</span><br><span class="line">            self._invoked = <span class="literal">True</span></span><br><span class="line">            method()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">default</span><span class="params">(self, method)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self._invoked:</span><br><span class="line">            self._invoked = <span class="literal">True</span></span><br><span class="line">            method()</span><br></pre></td></tr></table></figure>
+
+<p>在构造函数中我们记住了<code>case_path</code> 和执行状态<code>_invoked</code>，在<code>case()</code>里如果当前的<code>key</code>和<code>switch_to</code>匹配并且函数没有被执行过，那么就更新<code>_invoked</code>并执行对应的方法。在<code>default()</code>里检查一下<code>_invoked</code>，如果从没执行过，那么就调用<code>default</code>分支的函数。</p>
+<p>看上去还不错，我们来试用一下。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">switch(<span class="string">'cn'</span>).case(<span class="string">'cn'</span>,cn).case(<span class="string">'us'</span>,us).default(fail)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cn</span><br><span class="line">switch(<span class="string">'us'</span>).case(<span class="string">'cn'</span>,cn).case(<span class="string">'us'</span>,us).default(fail)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cn</span><br><span class="line">switch(<span class="string">'jp'</span>).case(<span class="string">'cn'</span>,cn).case(<span class="string">'us'</span>,us).default(fail)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fail</span><br><span class="line">switch(<span class="string">'cn'</span>).case(<span class="string">'cn'</span>,cn).case(<span class="string">'us'</span>,us)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cn</span><br></pre></td></tr></table></figure>
+
+<p>让我们来看几个奇葩一点的case。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># duplicate case</span></span><br><span class="line">switch(<span class="string">'us'</span>).case(<span class="string">'us'</span>,cn).case(<span class="string">'us'</span>,us).default(fail)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cn</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cn</span><span class="params">()</span> <span class="title">return</span> '<span class="title">cn</span>'</span></span><br><span class="line"><span class="function"><span class="title">def</span> <span class="title">us</span><span class="params">()</span> <span class="title">return</span> '<span class="title">us</span>'</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"># <span class="title">return</span> <span class="title">value</span></span></span><br><span class="line">result = switch('cn').case('cn',cn).case('us',us)</span><br><span class="line">result</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>&lt;python_switch_case.switch object at <span class="number">0x11034fb70</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>发现了没有，上面的实现不会处理重复的case，当然你可以加强一下case方法，最好是抛出异常，其他编程语言通常都这样做。</p>
+<p>第二个问题，你希望从case里拿到返回值，像上面的写法是没希望了，因为扔掉了。我们可以考虑在switch类里加一个result的变量来保存执行结果。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">switch</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, case_path)</span>:</span></span><br><span class="line">        ...</span><br><span class="line">        self.result = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">case</span><span class="params">(self, key, method)</span>:</span></span><br><span class="line">        ...</span><br><span class="line">        self.result = method()</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+
+<p>在调用结束后，就可以通过<code>result</code>拿到结果了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">_ = switch(<span class="string">'cn'</span>).case(<span class="string">'cn'</span>,cn).case(<span class="string">'us'</span>,us)</span><br><span class="line">_.result</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cn</span><br></pre></td></tr></table></figure>
+
+<h2 id="类实现二"><a href="#类实现二" class="headerlink" title="类实现二"></a>类实现二</h2><p>我大概在网上搜了一下，你还可以参考<a href="http://code.activestate.com/recipes/410692/" target="_blank" rel="noopener">Brian Beck</a>通过类来实现Swich/Case。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">switch</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, value)</span>:</span></span><br><span class="line">        self.value = value</span><br><span class="line">        self.fall = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""Return the match method once, then stop"""</span></span><br><span class="line">        <span class="keyword">yield</span> self.match</span><br><span class="line">        <span class="keyword">raise</span> StopIteration</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">match</span><span class="params">(self, *args)</span>:</span></span><br><span class="line">        <span class="string">"""Indicate whether or not to enter a case suite"""</span></span><br><span class="line">        <span class="keyword">if</span> self.fall <span class="keyword">or</span> <span class="keyword">not</span> args:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">elif</span> self.value <span class="keyword">in</span> args:</span><br><span class="line">            self.fall = <span class="literal">True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">c = <span class="string">'z'</span></span><br><span class="line"><span class="keyword">for</span> case <span class="keyword">in</span> switch(c):</span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'a'</span>): <span class="keyword">pass</span>  <span class="comment"># only necessary if the rest of the suite is empty</span></span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'c'</span>): <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'y'</span>): <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'z'</span>):</span><br><span class="line">        print(<span class="string">"c is lowercase!"</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'A'</span>): <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line">    <span class="keyword">if</span> case(<span class="string">'Z'</span>):</span><br><span class="line">        print(<span class="string">"c is uppercase!"</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> case():  <span class="comment"># default</span></span><br><span class="line">        print(<span class="string">"I dunno what c was!"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>这种实现相对复杂一点，而且用起来也不是很舒服，又需要for又需要if（还不如直接if/else痛快）。当然也有好处，就是可以把相同结果的case放一起，而且case里可以写更多东西，不仅仅是一个方法名。</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>最后我们还是回到Python推崇的方法来处理switch/case问题，一般我们可以通过字典来处理这种多分支的问题，举例说明。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">MAPPING = &#123;</span><br><span class="line">    <span class="string">'cn'</span>: cn,</span><br><span class="line">    <span class="string">'us'</span>: us</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">lang = <span class="string">'cn'</span></span><br><span class="line">result = MAPPING.get(lang, default=us)</span><br></pre></td></tr></table></figure>
+
+<p>是不是一目了然，不仅易于阅读也易于维护。在字典中key是唯一的，value可以是任意类型的数据，可以是类或者是方法，所以足够灵活。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-07-28/pypi-package-auto-update/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-07-28/pypi-package-auto-update/" class="post-title-link" itemprop="url">Auto Update Your Pypi Package</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-07-29 00:00:00" itemprop="dateCreated datePublished" datetime="2018-07-29T00:00:00+08:00">2018-07-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Sometimes we mgiht want to make our package update to latest version, let me show you how do I accomplish this.</p>
+<h2 id="Determine-Versions"><a href="#Determine-Versions" class="headerlink" title="Determine Versions"></a>Determine Versions</h2><p>We have to determine current installed package version.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_pkg_version</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="string">"""Get current version of a installed pip package."""</span></span><br><span class="line">    <span class="keyword">import</span> pkg_resources</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> pkg_resources.require(name)[<span class="number">0</span>].version</span><br><span class="line">    <span class="keyword">except</span> pkg_resources.DistributionNotFound:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<p>Then detemine latest published version, if this is an internal package, you have to implement a custom method like bellow.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_latest_version</span><span class="params">(name, server=<span class="string">'https://pypi.org'</span>)</span>:</span></span><br><span class="line">    <span class="keyword">import</span> re</span><br><span class="line">    <span class="keyword">import</span> urllib.request, urllib.error</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        content = str(urllib.request.urlopen(<span class="string">'&#123;&#125;/simple/&#123;&#125;/'</span>.format(server, name)).read())</span><br><span class="line">        versions = re.findall(<span class="string">'([^-&lt;&gt;]+).tar.gz'</span>, content)</span><br><span class="line">        <span class="keyword">return</span> versions[<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">except</span> urllib.error.HTTPError:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Update-Methods"><a href="#Update-Methods" class="headerlink" title="Update Methods"></a>Update Methods</h2><p>We will use pip to update the package, here is the implementation.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_python_cmd</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""Get current running python executable"""</span></span><br><span class="line">    <span class="keyword">return</span> sys.executable</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_pkg</span><span class="params">(name, *args)</span>:</span></span><br><span class="line">    <span class="string">"""Update a pypi package with pip."""</span></span><br><span class="line"></span><br><span class="line">    arguments = [get_python_cmd(), <span class="string">'-m pip install -U'</span>, name]</span><br><span class="line">    arguments.extend(args)</span><br><span class="line">    cmd = <span class="string">' '</span>.join(arguments)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'Update &#123;&#125;: \n&#123;&#125;\n'</span>.format(name, cmd))</span><br><span class="line">    os.system(cmd)</span><br></pre></td></tr></table></figure>
+
+<p>The update method leaves <code>*args</code> is for internal package, you might want to parse in <code>--extra-index-url</code> and <code>--trust-host</code>.</p>
+<h2 id="Combine-Together"><a href="#Combine-Together" class="headerlink" title="Combine Together"></a>Combine Together</h2><p>Finally, we implement the auto update method.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># auto_update.py</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> utility <span class="keyword">import</span> get_pkg_version, get_latest_version, update_pkg</span><br><span class="line"></span><br><span class="line">NAME = <span class="string">'your_pkg_name'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check_update</span><span class="params">(install=True)</span>:</span></span><br><span class="line">    <span class="string">"""Check update for the package."""</span></span><br><span class="line">    latest_version = get_latest_version(NAME)</span><br><span class="line">    installed_version = get_pkg_version(NAME)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> latest_version <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> install_version <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> latest_version != installed_version:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> install:</span><br><span class="line">            update_pkg(NAME)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'New version of &#123;&#125; is available, &#123;&#125;=&gt;&#123;&#125;.'</span>.</span><br><span class="line">                  format(NAME, installed_version, latest_version))</span><br></pre></td></tr></table></figure>
+
+<p>Then, we place it in <code>__init__.py</code> in root of package, every time the package be imported, it will run the auto checker.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># your_pkg/__init__.py</span></span><br><span class="line"><span class="keyword">from</span> auto_update <span class="keyword">import</span> check_update</span><br><span class="line"></span><br><span class="line">check_update()</span><br></pre></td></tr></table></figure>
+
+<p>OK, we have done the auto update.</p>
+<h2 id="Can-Be-Improved"><a href="#Can-Be-Improved" class="headerlink" title="Can Be Improved"></a>Can Be Improved</h2><p>In above example, we did not reload the module if there is an update, that depends on you. </p>
+<p>Another thing can be improved is, we might not want to update the pacakge when there is an update, we just want to update it if there is a major / breaking update, the updator should be smarter.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-06-30/parse-xmind-to-programmable-data-type/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-06-30/parse-xmind-to-programmable-data-type/" class="post-title-link" itemprop="url">将xmind文件转成可编程数据类型</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-07-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-07-01T00:00:00+08:00">2018-07-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近升级了一下<a href="https://github.com/tobyqin/xmind2testlink" target="_blank" rel="noopener">xmind2testlink</a>，顺带产生了一个中间轮子：<a href="https://github.com/tobyqin/xmindparser" target="_blank" rel="noopener">xmindparser</a>。</p>
+<p><a href="https://www.xmind.cn/" target="_blank" rel="noopener">xmind</a>是知名的思维导图软件，可以用来整理思路，设计测试案例等等。一旦完稿后软件本身支持导出为图片，PDF，Excel等等文件格式。免费版相对于Pro版能导出的文件种类少一些，但有时候你可能想我做的xmind能不能通过编程再加工一下，比如集成到某个网页，或者通过api和某某系统集成。</p>
+<p>那么<a href="https://github.com/tobyqin/xmindparser" target="_blank" rel="noopener">xmindparser</a>就是这么一个项目，了解一下。</p>
+<h2 id="安装xmindparser"><a href="#安装xmindparser" class="headerlink" title="安装xmindparser"></a>安装xmindparser</h2><p>这个项目已经打包到PyPI，可以通过pip安装。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install xmindparser</span><br></pre></td></tr></table></figure>
+
+<h2 id="Xmind-转Python-数据类型"><a href="#Xmind-转Python-数据类型" class="headerlink" title="Xmind 转Python 数据类型"></a>Xmind 转Python 数据类型</h2><p>xmindparser可以将xmind转成<code>dict</code>数据类型，比如下面这么一个xmind文件：</p>
+<p><img src="https://tobyqin.github.io/images/xmind-example.png" alt="xmind example"></p>
+<p>转换代码的示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> xmindparser <span class="keyword">import</span> xmind_to_dict</span><br><span class="line">out = xmind_to_dict(xmind_file)</span><br></pre></td></tr></table></figure>
+
+<p>例子中<code>out</code>的数据结构如下：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"Sheet 1"</span>,</span><br><span class="line">    <span class="attr">"topic"</span>: &#123;</span><br><span class="line">      <span class="attr">"makers"</span>: [</span><br><span class="line">        <span class="string">"star-orange"</span></span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">"topics"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">"link"</span>: <span class="string">"http://test.com"</span>,</span><br><span class="line">          <span class="attr">"topics"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">"topics"</span>: [...]</span><br><span class="line">              <span class="string">"title"</span>: <span class="string">"e"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            ...</span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">"title"</span>: <span class="string">"test"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"structure"</span>: <span class="string">"org.xmind.ui.map.unbalanced"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"Sheet 2"</span>,</span><br><span class="line">     ...</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>通过遍历sheet和topics就可以获取到xmind中每个节点的信息。</p>
+<h2 id="Xmind-转-JSON"><a href="#Xmind-转-JSON" class="headerlink" title="Xmind 转 JSON"></a>Xmind 转 JSON</h2><p>转成JSON非常简单，如果你还是使用Python编程，可以这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> xmindpraser <span class="keyword">import</span> xmind_to_json</span><br><span class="line">out_file = xmind_to_json(xmind_file)</span><br></pre></td></tr></table></figure>
+
+<p>或者你直接调用命令行工具：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xmindparser your.xmind -json</span><br></pre></td></tr></table></figure>
+
+<h2 id="Xmind-转-XML"><a href="#Xmind-转-XML" class="headerlink" title="Xmind 转 XML"></a>Xmind 转 XML</h2><p>转成XML是类似的，使用Python编程，这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> xmindpraser <span class="keyword">import</span> xmind_to_xml</span><br><span class="line">out_file = xmind_to_xml(xmind_file)</span><br></pre></td></tr></table></figure>
+
+<p>或者你直接调用命令行工具：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xmindparser your.xmind -xml</span><br></pre></td></tr></table></figure>
+
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>单个工具本身可能作用有限，但如果你能将各种工具融合起来，威力也许大很多。我们常说1+1，很多时候都是大于2的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-05-31/steps-to-start-nodejs-in-china/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-05-31/steps-to-start-nodejs-in-china/" class="post-title-link" itemprop="url">NodeJS起步两三事</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-06-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-01T00:00:00+08:00">2018-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>主要是为了备忘，开始接触NodeJS有一段时间，断断续续，年纪也大了时间一长容易忘事情，汗。</p>
+<h2 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h2><p>直接到<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">官网下载</a>LTS版本安装即可，没必要追新功能用最新版。安装Node基本没什么坑，记得加到PATH就好。</p>
+<p>Windows双击安装，macOS推荐使用brew安装，完成后在命令行里测试一下。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> node -v</span></span><br></pre></td></tr></table></figure>
+
+<p>后期如果没有啥breaking的API改动基本也不用升级。</p>
+<h2 id="必要的配置"><a href="#必要的配置" class="headerlink" title="必要的配置"></a>必要的配置</h2><p>NodeJS的包管理器<code>npm</code>，如果在墙内及有可能在使用过程中很不稳定，一般推荐使用国内的镜像源，目前最知名的也就是淘宝家的了。</p>
+<blockquote>
+<p> <a href="https://npm.taobao.org/" target="_blank" rel="noopener">https://npm.taobao.org/</a></p>
+</blockquote>
+<h3 id="npmrc"><a href="#npmrc" class="headerlink" title=".npmrc"></a>.npmrc</h3><p>你可以通过修改<code>~/.npmrc</code>来设置默认的包源:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">registry</span>=https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+
+<h3 id="cnpm"><a href="#cnpm" class="headerlink" title="cnpm"></a>cnpm</h3><p>你也可以安装 <code>cnpm</code> 来代替 <code>npm</code> ：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install cnpm -g</span><br></pre></td></tr></table></figure>
+
+<p>之后的大部分<code>npm</code> 都可以直接用 <code>cnpm</code> 代替（发布相关的除外）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install &lt;package&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h3><p>其实我还推荐你了解另外一种切换源的方式 <code>nrm</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nmp install nrm -g</span><br></pre></td></tr></table></figure>
+
+<p>使用方法如下，超级简单：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ nrm ls</span><br><span class="line"></span><br><span class="line">* npm ---- https:&#x2F;&#x2F;registry.npmjs.org&#x2F;</span><br><span class="line">  cnpm --- http:&#x2F;&#x2F;r.cnpmjs.org&#x2F;</span><br><span class="line">  taobao - https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span><br><span class="line">  nj ----- https:&#x2F;&#x2F;registry.nodejitsu.com&#x2F;</span><br><span class="line">  rednpm - http:&#x2F;&#x2F;registry.mirror.cqupt.edu.cn&#x2F;</span><br><span class="line">  npmMirror  https:&#x2F;&#x2F;skimdb.npmjs.com&#x2F;registry&#x2F;</span><br><span class="line">  edunpm - http:&#x2F;&#x2F;registry.enpmjs.org&#x2F;</span><br><span class="line">  </span><br><span class="line">$ nrm use taobao</span><br><span class="line"></span><br><span class="line">  Registry has been set to: https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>nrm ls</code> 列出可以切换的源，然后<code>nrm use &lt;name&gt;</code> 瞬间切换，爽！</p>
+<h3 id="proxy"><a href="#proxy" class="headerlink" title="proxy"></a>proxy</h3><p>镜像源毕竟是copy的，同步状态有可能你不甚满意，最近taobao的源可能还有以下错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm ERR! registry error parsing json</span><br></pre></td></tr></table></figure>
+
+<p>作为一个资深码农你也许有一个本地代理（SS懂？）让你无障碍访问国际互联网，那么你可以这么做：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;server:port</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure>
+
+<p>配置好 <code>npm</code> 的代理后你又可以开心地玩耍了。</p>
+<h2 id="Node入门须知"><a href="#Node入门须知" class="headerlink" title="Node入门须知"></a>Node入门须知</h2><p>三分钟入门NodeJS，如果你已经有其他语言的编程经验，是可以的。</p>
+<p>NodeJS的核心可执行程序<code>node[.exe]</code>你可以简单理解成代码解释器，类似于Java的虚拟机，C#的.net Framework，Python里的<code>python[.exe]</code>，作用是把你的代码翻译成计算机行为。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node hello.js</span><br></pre></td></tr></table></figure>
+
+<p>以上就是运行NodeJS代码的不二法则。</p>
+<h3 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h3><p>很多知名框架都会提供所谓的脚手架命令，但是对于萌新玩家，我是不建议直接去使用脚手架的，这些脚手架做出来的目录结构对于萌新玩家来说是懵逼的，虽然有可能都是最佳实践的结果，但没有1，2，3步骤和手拉手，萌新也许直接退出游戏了。</p>
+<p>新手真正的入门法则还是踏踏实实按照各种教程一步一步走，如果教程不好就换，没学会走路就想跑是不可能的。一般项目是这样开始的：</p>
+<ol>
+<li>明确项目需求（略）</li>
+<li>创建项目目录</li>
+<li>初始化项目信息</li>
+<li>安装必要的依赖</li>
+<li>模块划分，编码</li>
+<li>系统集成，测试</li>
+<li>项目发布，维护升级</li>
+</ol>
+<p>这个流程用NodeJS来实践大致是这样的：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> create project </span></span><br><span class="line">mkdir [project-name]</span><br><span class="line">cd [project-name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> init project</span></span><br><span class="line">npm init</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install dependencies</span></span><br><span class="line">npm install &lt;package...&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install dev dependencies</span></span><br><span class="line">npm install &lt;package...&gt; -D</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> coding</span></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> run and <span class="built_in">test</span></span></span><br><span class="line">npm run build</span><br><span class="line">npm run start</span><br><span class="line">npm run test</span><br><span class="line">npm run stop</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> publish project</span></span><br><span class="line">npm publish .</span><br></pre></td></tr></table></figure>
+
+<p>前面一节全都是在介绍<code>npm</code>，通过这个例子你应该明白它在NodeJS中的重要性了吧，所以让你的<code>npm</code>好用意义非凡。</p>
+<p>例子中安装了两次依赖可能你有点困惑，可以这样理解，第一次依赖是项目运行时必要的依赖<code>--save-prod</code>，在发布时必须安装的；第二次依赖主要是用于开发或者测试的<code>--save-dev</code>，比如某些debug包或者test框架，方便开发才需要的包，在项目部署时没必要安装。其实还可能安装第三种依赖<code>--save-optional</code>，比如是用来做数据分析或者别的enhancement的，目前Node支持区分对待这三类依赖包。</p>
+<h3 id="语法演示"><a href="#语法演示" class="headerlink" title="语法演示"></a>语法演示</h3><p>NodeJS里的JS就是JavaScript，属于动态语言，命名规则类似Java，但是语法更接近各种动态语言，比如Python或者Ruby。上手不难，了解一下标准库和数据基本类型，在IDE的加持下你就可以开始写代码了。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// index.js 项目的入口文件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);  <span class="comment">// 导入标准库模块</span></span><br><span class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'lodash'</span>); <span class="comment">// 导入已安装的包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> m = <span class="built_in">require</span>(<span class="string">'./hello'</span>);  <span class="comment">// 导入同目录下的模块</span></span><br><span class="line"><span class="keyword">import</span> hello <span class="keyword">from</span> <span class="string">'./test'</span>; <span class="comment">// 导入模块的部分对象</span></span><br><span class="line"></span><br><span class="line">m.say(<span class="string">'yo..'</span>); <span class="comment">// 调用模块方法</span></span><br><span class="line">hello(<span class="string">'toby'</span>);</span><br><span class="line"></span><br><span class="line">fs.copyFileSync(src,dst) <span class="comment">// 调用标准库方法</span></span><br></pre></td></tr></table></figure>
+
+<p>模块的编写范例：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// hello.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">'hello world!'</span>; <span class="comment">// 模块的全局变量不会被导出</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params">word</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.warn(<span class="string">'say '</span> + word);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params">word</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'hello, '</span> + word);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 导出就是对 module.exports 进行赋值</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    say: say,</span><br><span class="line">    hello: hello</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="包管理小贴士"><a href="#包管理小贴士" class="headerlink" title="包管理小贴士"></a>包管理小贴士</h2><p>对于<code>npm</code>包的安装的位置我们来了解一下，简单来说就是这个包所作用的范围。如果安装包不带<code>-g</code>参数那么默认就是安装在当前目录。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &lt;package&gt;</span><br><span class="line"># &#x3D;&gt; will install to .&#x2F;node_modules</span><br></pre></td></tr></table></figure>
+
+<p>这个包也就只有在当前目录（项目）里可用，这样方便做到环境隔离，不同项目可以用同样包的不同版本等等。</p>
+<h3 id="g"><a href="#g" class="headerlink" title="-g"></a>-g</h3><p>如果安装过程中带了<code>-g</code>参数那么就意味这个包是全局（global）安装的，在系统的任何位置都是可用的。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install &lt;package&gt; -g</span><br><span class="line"># &#x3D;&gt; will install to &#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules</span><br><span class="line"># &#x3D;&gt; or %AppData%\npm\node_modules</span><br></pre></td></tr></table></figure>
+
+<p>一般的包安装都是不用带<code>-g</code>的，除了一些工具类的包，例如第一节介绍那些，这样系统干净一些，也可以避免全局包污染项目导致各种灵异事件。</p>
+<h3 id="–depth"><a href="#–depth" class="headerlink" title="–depth"></a>–depth</h3><p>如果要查看安装了哪些global包可以用这个命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm list -g --depth&#x3D;0</span><br></pre></td></tr></table></figure>
+
+<p>如果不加<code>--depth</code>，哎我去真没法看，也不知设计这个<code>list</code>的人为啥不默认带上这个参数，脑子被门夹了。为了方便你可以配上以下两个alias。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alias ng&#x3D;&quot;npm list -g --depth&#x3D;0 2&gt;&#x2F;dev&#x2F;null&quot;</span><br><span class="line">alias nl&#x3D;&quot;npm list --depth&#x3D;0 2&gt;&#x2F;dev&#x2F;null&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ncu"><a href="#ncu" class="headerlink" title="ncu"></a>ncu</h3><p>使用NodeJS就是要面对各种各样的包，有些包升级很勤快，你也想升级怎么办呢？哪些是outdated哪些不是，<code>npm</code>的升级命令真的很难用（记）哎。我推荐你了解一下<code>npm-check-updates</code>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install npm-check-updates -g</span><br></pre></td></tr></table></figure>
+
+<p>这么好用的东西当然要全局安装啦，用法很简单，检查当前项目所有包的更新状态：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd my-project</span><br><span class="line">$ ncu</span><br><span class="line">Using &#x2F;Users&#x2F;tobyqin&#x2F;src&#x2F;blog&#x2F;package.json</span><br><span class="line">[..................] | :</span><br><span class="line">The following dependencies are satisfied by their declared version range, but the installed versions are behind. You can install the latest versions without modifying your package file by using npm update. If you want to update the dependencies in your package file anyway, run ncu -a.</span><br><span class="line"></span><br><span class="line"> hexo                   ^3.5.0  →  ^3.7.1</span><br><span class="line"> hexo-generator-search  ^2.1.1  →  ^2.2.5</span><br><span class="line"> hexo-server            ^0.3.1  →  ^0.3.2</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>ncu -a</code>就可以一键更新项目里的所有包，当然它也提供了一些过滤参数，你可以<a href="https://www.npmjs.com/package/npm-check-updates" target="_blank" rel="noopener">查阅文档</a>。如果要看全局的包有没有可以更新的，试试<code>ncu -g</code>，非常方便。</p>
+<p>有一点要注意，虽然命令是<code>ncu</code>但是包名不是，因为<code>ncu</code>的包名已经被一个天气预报的包占用了，无语。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>现在写NodeJS项目已经很容易了，JS经过了两三年的野蛮生长，诞生了成千上万个包（框架），其中不乏精品。</p>
+<p>作为搬砖的码农，经过一顿<code>npm install</code>操作就可以做出一个不错的demo，你还犹豫什么，赶快上车吧！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-05-17/automation-tests-with-selenium-and-headless/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-05-17/automation-tests-with-selenium-and-headless/" class="post-title-link" itemprop="url">使用浏览器的HEADLESS模式进行自动化测试</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-05-18 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-18T00:00:00+08:00">2018-05-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="了解HEADLESS模式"><a href="#了解HEADLESS模式" class="headerlink" title="了解HEADLESS模式"></a>了解HEADLESS模式</h2><p>HEADLESS BROWSER 指的是不需要用户界面的浏览器，这种浏览器在自动化测试和爬虫领域有着广泛的应用。</p>
+<p>例如你想在网页上运行一些测试，从网页抓取信息，检查浏览器访问某些资源的状态，定时截取网页等等，你需要的是浏览器处理网页但不一定需要浏览器界面，这些情况都是HEADLESS BROWSER的应用场景。</p>
+<p>Chrome 从 59.0 开始支持HEADLESS模式（2017年5月），Firefox从 55.0 开始也支持了HEADLESS模式（2017年9月）。也就是在今年2018年的4月份，老牌的无头浏览器 <a href="http://phantomjs.org/" target="_blank" rel="noopener">PhantomJS</a> 的核心开发者宣布不再维护该项目，因为Chrome 和Firefox的HEADLESS模式已经足够好并可以替代PhantomJS。</p>
+<h2 id="实践-Selenium-HEADLESS"><a href="#实践-Selenium-HEADLESS" class="headerlink" title="实践 Selenium + HEADLESS"></a>实践 Selenium + HEADLESS</h2><p>使用浏览器的HEADLESS模式进行自动化测试，你需要先满足以下前提：</p>
+<ul>
+<li>Python + Selenium 运行环境</li>
+<li>Chrome 59+ 或者 Firefox 55+</li>
+<li>ChromeDriver 或者 GeckoDriver 最新版已加入PATH</li>
+</ul>
+<p>万事俱备，废话不多说我们直接上演示代码。</p>
+<h3 id="Chrome版实例"><a href="#Chrome版实例" class="headerlink" title="Chrome版实例"></a>Chrome版实例</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">options = Options()</span><br><span class="line">options.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">options.add_argument(<span class="string">'--disable-gpu'</span>) <span class="comment"># 允许在无GPU的环境下运行，可选</span></span><br><span class="line">options.add_argument(<span class="string">'--window-size=1920x1080'</span>) <span class="comment"># 建议设置</span></span><br><span class="line"></span><br><span class="line">browser = webdriver.Chrome(chrome_options=options)</span><br><span class="line">browser.get(<span class="string">'https://www.baidu.com'</span>)</span><br><span class="line">browser.find_element_by_id(<span class="string">'kw'</span>).send_keys(<span class="string">'HELLO'</span>)</span><br><span class="line">browser.find_element_by_id(<span class="string">'su'</span>).click()</span><br><span class="line"></span><br><span class="line">sleep(<span class="number">1</span>) <span class="comment"># 简单粗暴的等待，实际项目中勿用</span></span><br><span class="line"><span class="keyword">assert</span> browser.title == <span class="string">u'HELLO_百度搜索'</span></span><br><span class="line">browser.save_screenshot(<span class="string">'chrome-headless-test.png'</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Firefox版实例"><a href="#Firefox版实例" class="headerlink" title="Firefox版实例"></a>Firefox版实例</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from time import sleep</span><br><span class="line">from selenium import webdriver</span><br><span class="line">from selenium.webdriver.firefox.options import Options</span><br><span class="line"></span><br><span class="line">options &#x3D; Options()</span><br><span class="line">options.add_argument(&#39;--headless&#39;)</span><br><span class="line"># options.add_argument(&#39;--window-size&#x3D;1920x1080&#39;) # Firefox无效</span><br><span class="line"></span><br><span class="line">browser &#x3D; webdriver.Firefox(firefox_options&#x3D;options)</span><br><span class="line">browser.set_window_size(1280, 1024) # 启动后设置浏览器大小，但是高度会随着访问的网页变化</span><br><span class="line"></span><br><span class="line">browser.get(&#39;https:&#x2F;&#x2F;www.baidu.com&#39;)</span><br><span class="line">browser.find_element_by_id(&#39;kw&#39;).send_keys(&#39;HELLO&#39;)</span><br><span class="line">browser.find_element_by_id(&#39;su&#39;).click()</span><br><span class="line"></span><br><span class="line">sleep(1)</span><br><span class="line">assert browser.title &#x3D;&#x3D; u&#39;HELLO_百度搜索&#39;</span><br><span class="line">browser.save_screenshot(&#39;firefox-headless-test.png&#39;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>浏览器HEADLESS模式可以让程序运行的环境更贴近用户访问的真实环境，相对于模拟UserAgent等方式得出的数据也会更加准确可靠。</p>
+<p>尤其在自动化测试领域，HEADLESS也有取代传统的带界面的自动化测试的趋势，有一些公司已经<a href="https://about.gitlab.com/2017/12/19/moving-to-headless-chrome/" target="_blank" rel="noopener">将实践投入生产</a>中。我们可以在调试自动化测试时使用用户界面，当部署到持续集成环境中是启用HEADLESS，并开启多线程使用并行的方式来运行测试案例，这样效率会大大提高，而且因为界面被干扰而导致测试失败的概率也会降低。</p>
+<p>总的来说，至少在端对端的自动化测试中，HEADLESS模式没有明显的缺点，甚至可以成为网页自动化测试进化的下一个目标。</p>
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
+<li><a href="https://developer.mozilla.org/en-US/Firefox/Headless_mode" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/Firefox/Headless_mode</a></li>
+<li><a href="https://intoli.com/blog/running-selenium-with-headless-firefox/" target="_blank" rel="noopener">https://intoli.com/blog/running-selenium-with-headless-firefox/</a></li>
+<li><a href="https://developers.google.com/web/updates/2017/04/headless-chrome" target="_blank" rel="noopener">https://developers.google.com/web/updates/2017/04/headless-chrome</a></li>
+<li><a href="https://about.gitlab.com/2017/12/19/moving-to-headless-chrome/" target="_blank" rel="noopener">https://about.gitlab.com/2017/12/19/moving-to-headless-chrome/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-05-10/collect-error-events-via-sentry/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-05-10/collect-error-events-via-sentry/" class="post-title-link" itemprop="url">Sentry - 处理异常日志的正确姿势</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-05-11 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-11T00:00:00+08:00">2018-05-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在各种系统和应用里，无论你的代码再完美也还是会抛异常，出错误。今天的主角是当今比较流行的异常记录框架 - Sentry，来了解一下。</p>
+<h2 id="关于日志管理"><a href="#关于日志管理" class="headerlink" title="关于日志管理"></a>关于日志管理</h2><p>应用越做越复杂，输出日志五花八门，有print的，有写stdout的，有写stderr的, 有写logging的，也有自定义xxx.log的。那么这将导致平台应用日志分布在各个地方，无法统一管理。而且可能用的还不止一种开发语言，想规范和统一日志不是一件容易的事。</p>
+<h2 id="为什么使用Sentry"><a href="#为什么使用Sentry" class="headerlink" title="为什么使用Sentry"></a>为什么使用Sentry</h2><p>Sentry是一个集中式日志管理系统。它具备以下优点：</p>
+<ul>
+<li>多项目，多用户</li>
+<li>界面友好</li>
+<li>可以配置异常出发规则，例如发送邮件</li>
+<li>支持主流语言接口</li>
+</ul>
+<p>从Sentry的文档首页截下来的一张图，可以看到它支持目前主流的编程语言。</p>
+<p><img src="https://tobyqin.github.io/images/sentry-supported-platform.png" alt="sentry-supported-platform"></p>
+<h2 id="安装和快速上手"><a href="#安装和快速上手" class="headerlink" title="安装和快速上手"></a>安装和快速上手</h2><p>Sentry支持部署到本地服务器，具体可以参考以下文档：</p>
+<ul>
+<li><a href="https://docs.sentry.io/server/installation/" target="_blank" rel="noopener">https://docs.sentry.io/server/installation/</a></li>
+</ul>
+<p>但作为大多数个人开发者和中小企业，我更建议使用Sentry官网（<a href="https://sentry.io/）提供的云服务，你只需要注册一个Sentry账号，就可以快速享受到集中处理异常日志的服务。" target="_blank" rel="noopener">https://sentry.io/）提供的云服务，你只需要注册一个Sentry账号，就可以快速享受到集中处理异常日志的服务。</a></p>
+<p>Sentry免费版可以：</p>
+<ul>
+<li>每月10k 错误日志上限</li>
+<li>支持所有平台和语言，功能无缩水</li>
+<li>无限项目数量，仅单用户访问，不提供团队功能</li>
+</ul>
+<p>具体的价格表可以看这里：</p>
+<ul>
+<li><a href="https://sentry.io/pricing/" target="_blank" rel="noopener">https://sentry.io/pricing/</a></li>
+</ul>
+<h2 id="开始配置DSN"><a href="#开始配置DSN" class="headerlink" title="开始配置DSN"></a>开始配置DSN</h2><p>你可以认为 DSN（Data Source Name）是Sentry 管理项目需要的<code>PROJECT_ID</code>，每个应用都需要对应一个 <code>PROJECT_ID</code>，以及用于身份认证的 <code>PUBLIC_KEY</code> 和 <code>SECRET_KEY</code>。由此组成一个这样的 DSN：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;PROTOCOL&#125;:&#x2F;&#x2F;&#123;PUBLIC_KEY&#125;:&#123;SECRET_KEY&#125;@&#123;HOST&#125;&#x2F;&#123;PATH&#125;&#123;PROJECT_ID&#125;</span><br></pre></td></tr></table></figure>
+
+<p>PROTOCOL 通常会是 <code>http</code> 或者 <code>https</code>，HOST 为 Sentry 服务的主机名和端口，PATH 通常为空。</p>
+<p>在你登入Sentry后台之后，你可以新建一个项目，之后就可以得到类似于下面这样一个DSN。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;e055040d5@sentry.io&#x2F;12345</span><br></pre></td></tr></table></figure>
+
+<p>有了DSN以后，你就可以在客户端中将错误日志上传到Sentry了。</p>
+<h2 id="配置客户端"><a href="#配置客户端" class="headerlink" title="配置客户端"></a>配置客户端</h2><p>这里我主要以Python为例，其他编程语言的客户端配置可以参考官网文档，步骤大同小异。</p>
+<ul>
+<li><a href="https://docs.sentry.io/quickstart/" target="_blank" rel="noopener">https://docs.sentry.io/quickstart/</a></li>
+</ul>
+<p>首先通过pip安装Sentry SDK。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install raven --upgrade</span><br></pre></td></tr></table></figure>
+
+<p>然后初始化客户端。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> raven <span class="keyword">import</span> Client</span><br><span class="line"></span><br><span class="line">DSN = <span class="string">'https://****@sentry.io/****'</span></span><br><span class="line">client = Client(DSN)</span><br></pre></td></tr></table></figure>
+
+<p>最后，在你需要记录异常的代码为止调用<code>client.captureException()</code>即可。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="number">1</span> / <span class="number">0</span></span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">    client.captureException()</span><br></pre></td></tr></table></figure>
+
+<p>很多时候我们的异常信息应该包含更多的上下文信息，这样对于我们做后续分析会有更多帮助，那么你可以在Sentry捕获异常前加入这些上下文。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    processing(user, data)</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    client.user_context(&#123;</span><br><span class="line">        <span class="string">'user'</span>: user.email,</span><br><span class="line">        <span class="string">'data'</span>: json.dumps(data)</span><br><span class="line">    &#125;)</span><br><span class="line">    client.captureException()</span><br></pre></td></tr></table></figure>
+
+<h3 id="一些经验之谈"><a href="#一些经验之谈" class="headerlink" title="一些经验之谈"></a>一些经验之谈</h3><p>当然，我们不可能在每处可能发生异常的代码为止都调用Sentry，也不可能去修补过去的代码将Sentry一一植入，一个好的建议是，无论何时，你的程序都有统一的异常处理机制，最好是全局的。这样的话，你只要将Sentry写在全局的异常处理器即可。</p>
+<p>另外Sentry还对流行的开发框架提供了特别的支持，比如Flask，Django等等，在这些应用中你只要配置就行，不需要你去写什么全局的异常处理（虽然写起来也不难）。</p>
+<p>Flask的例子：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sentry = Sentry(dsn=<span class="string">'http://public_key:secret_key@example.com/1'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_app</span><span class="params">()</span>:</span></span><br><span class="line">    app = Flask(__name__)</span><br><span class="line">    sentry.init_app(app)</span><br><span class="line">    <span class="keyword">return</span> app</span><br></pre></td></tr></table></figure>
+
+<p>Django的例子：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> raven</span><br><span class="line"></span><br><span class="line">INSTALLED_APPS = (</span><br><span class="line">    <span class="string">'raven.contrib.django.raven_compat'</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">RAVEN_CONFIG = &#123;</span><br><span class="line">    <span class="string">'dsn'</span>: <span class="string">'http://public_key:secret_key@example.com/1'</span>,</span><br><span class="line">    <span class="comment"># If you are using git, you can also automatically </span></span><br><span class="line">    <span class="comment"># configure the release based on the git info.</span></span><br><span class="line">    <span class="string">'release'</span>: raven.fetch_git_sha(os.path.abspath(os.pardir)),</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="异常报告和提醒"><a href="#异常报告和提醒" class="headerlink" title="异常报告和提醒"></a>异常报告和提醒</h2><p>一旦你完成上面的配置，以后系统发生的所有错误异常都会被自动记录到Sentry，查看报告就是一件轻松愉快的事情了。</p>
+<p>默认情况下，一旦异常发生，5分钟内就会有一封邮件送到你邮箱，包含了异常信息的大致描述。</p>
+<p><img src="https://tobyqin.github.io/images/sentry-email-alert.png" alt="sentry-email-alert"></p>
+<p>当然你还可以将异常报警集成到更多系统中，比如HICHAT，SLACK，IRC，WEBHOOKS，在Sentry后台提供了相应的入口。</p>
+<p>在Sentry的项目 Dashboard 你可以浏览到更详细的报告，比如按照异常信息的类别进行分类和过滤，也可以统计近期异常的状态和频率，非常方便。</p>
+<p><img src="https://tobyqin.github.io/images/sentry-dashboard.png" alt="sentry-dashboard"></p>
+<p>Sentry还提供了异常信息的聚合，同样的错误有可能在多处抛出，传统的日志统计起来就不是很方便，在Sentry一目了然。</p>
+<p>另外你还可以针对异常问题进行分配和跟踪，例如指派团队的某个成员去处理某一类问题，对于长时间没有再发生的问题自动标记为解决等等。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Sentry 还有有很多亮点，比如敏感信息过滤， release 版本跟踪，关键字查找，受影响用户统计，权限管理等。Sentry 的 plugin 模块还可以集成大量的第三方工具如： SLACK ， JIRA 。</p>
+<p>对我们来说最大的便利就是利用日志进行错误发现和排查的效率变高了。但是，我们能不能完全依赖Senry呢？有几点值得探讨：</p>
+<h3 id="不是日志的替代品"><a href="#不是日志的替代品" class="headerlink" title="不是日志的替代品"></a>不是日志的替代品</h3><p>Sentry 的目的是为了让我们专注于系统与程序的异常信息，目的是提高排查问题的效率，日志事件的量到达一个限制时甚至丢弃一些内容。官方也提倡正确设置 Sentry 接收的日志 level 的同时，用户也能继续旧的日志备份。</p>
+<h3 id="不是排查错误的万能工具"><a href="#不是排查错误的万能工具" class="headerlink" title="不是排查错误的万能工具"></a>不是排查错误的万能工具</h3><p>Sentry 是带有一定策略的问题分析工具，以样本的形式展示部分原始日志的信息。信息不全面的同时，使用过程中也可能出现 Sentry 聚合所带来的负面影响，特别是日志记录质量不够的情况下。</p>
+<h3 id="不是传统监控的替代品"><a href="#不是传统监控的替代品" class="headerlink" title="不是传统监控的替代品"></a>不是传统监控的替代品</h3><p>与传统的监控系统相比，Sentry 更依赖于发出的日志报告，而另外一些隐藏的逻辑问题或者业务问题很可能是不会得到反馈的。</p>
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
+<li><a href="https://docs.sentry.io/quickstart/" target="_blank" rel="noopener">https://docs.sentry.io/quickstart/</a></li>
+<li><a href="https://blog.csdn.net/bigsec/article/details/54091109" target="_blank" rel="noopener">https://blog.csdn.net/bigsec/article/details/54091109</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-04-07/unit-test-with-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-04-07/unit-test-with-python/" class="post-title-link" itemprop="url">说说Python中的单元测试</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-04-08 00:00:00" itemprop="dateCreated datePublished" datetime="2018-04-08T00:00:00+08:00">2018-04-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>单元测试是每种编程语言必学的课题，是保护开发者的强力护盾，每个程序员都在时间允许的情况下尽可能多的写单元测试，今天我们不讨论其必要性，只抛砖引玉聊一聊Python中的单元测试，本文仅代表个人看法。</p>
+<h2 id="标准库中难以忍受的-unittest"><a href="#标准库中难以忍受的-unittest" class="headerlink" title="标准库中难以忍受的 unittest"></a>标准库中难以忍受的 unittest</h2><p>很多时候我们总是认为标准库里的带的总是精挑细选的，如果不经过仔细打磨怎么可能入选为一等公民？但我要告诉你，Python标准库里的单元测试框架真不是最好的，随着你对Python的熟悉你甚至会讨厌这个unittest。</p>
+<p>Python一直崇尚简单，优雅，高效地完成事情，当你写完一个函数需要测试一下时，使用标准库的unittest你需要做这些事情：</p>
+<ul>
+<li>新建单元测试脚本</li>
+<li>导入单元测试依赖</li>
+<li><strong>继承单元测试类</strong></li>
+<li>实现单元测试方法</li>
+</ul>
+<p>具体的实例代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">IntegerArithmeticTestCase</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">testAdd</span><span class="params">(self)</span>:</span>  <span class="comment"># test method names begin with 'test'</span></span><br><span class="line">        self.assertEqual((<span class="number">1</span> + <span class="number">2</span>), <span class="number">3</span>)</span><br><span class="line">        self.assertEqual(<span class="number">0</span> + <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
+
+<p>看上去还行，不是很难。但是渐渐地你会吐槽：</p>
+<ul>
+<li>为啥我要新建一个文件来写测试？</li>
+<li>为啥我要继承一个类来写测试？</li>
+<li>为啥我要用unittest的Assertion来做断言？</li>
+<li>为啥unitunit的命名规则跟最佳实践不一样（<code>mixedCase</code> vs <code>lower_case</code>）？</li>
+</ul>
+<p>要回答以上问题，答案只有一个：<a href="https://www.quora.com/Will-Pythons-unittest-module-become-pythonic-anytime-soon" target="_blank" rel="noopener">历史原因</a>。</p>
+<p>很久很久以前，Python从Java借鉴了单元测试框架，包括命名规则和实现方式，一直沿用至今。不得不说这个框架没啥毛病，该有的功能的都有，想做的事都可以做，但是用起来总是没有爽的感觉。</p>
+<p>但是为啥伟大的社区力量为啥不把这个框架改的爽一点呢？没办法，我估计是为了世界和平，你要知道Python这个庞然大物能健康地活着，后面有无数的类库和方法在支撑，而这些类库和方法都被单元测试保护着，如果修改了单元测试框架导致兼容性问题，就成了千古罪人。</p>
+<h2 id="见识简洁的单元测试-pytest"><a href="#见识简洁的单元测试-pytest" class="headerlink" title="见识简洁的单元测试 pytest"></a>见识简洁的单元测试 pytest</h2><p>Python中很多大牛其实都有严重的强迫症，追求简洁和优雅的代码。必然的，他们会抛弃标准库中的unittest，使用或者发明自己心仪的单元测试框架。</p>
+<p>正如其名，pytest是一个无数人推荐并在使用的Python单元测试框架，它使用起来非常简单，只要你的方法名以 <code>test</code> 开头就可以，你可以和需要测试的方法放在一起，亦或是新建一个文件来专门整理单元测试，都可以。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">your_func</span><span class="params">()</span>:</span></span><br><span class="line">  <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_your_func</span><span class="params">()</span>:</span></span><br><span class="line">  <span class="keyword">assert</span> result</span><br></pre></td></tr></table></figure>
+<p>这样的设计，就让你写单元测试成了顺手拈来的事，假如你写完了一个方法，想看看是否工作，在旁边直接写上一个<code>test</code> 开头的方法，稍微准备一下数据就可以验证这个方法好不好用，岂不妙哉？</p>
+<blockquote>
+<p>The idioms that pytest first introduced brought a change in the Python community because they made it possible for test suites to be written in a very compact style, or at least far more compact than was ever possible before. Pytest basically introduced the concept that Python tests should be plain Python functions instead of forcing developers to include their tests inside large test classes.</p>
+</blockquote>
+<p>pytest 的发明让大家意识到单元测试原来可以这么轻松和随意，完全没有必要去继承一个所谓的测试类或者按照复杂的规则才能开始书写测试代码，这也是我选择和推荐它的理由。</p>
+<p>当然，如果原来你的单元测试时unittest写的话，pytest其实也是<a href="https://docs.pytest.org/en/latest/unittest.html" target="_blank" rel="noopener">有可能兼容的</a>的。</p>
+<p>pytest 能够识别 <code>unittest.TestCase</code> 子类中的测试方法，如果文件名符合 <code>test_*.py</code> 或者 <code>*_test.py</code> 这样的规则。</p>
+<p>并且大多数 <code>unittest</code> 的功能都是被支持的，例如：</p>
+<ul>
+<li><code>@unittest.skip</code> 装饰器;</li>
+<li><code>setUp/tearDown</code>;</li>
+<li><code>setUpClass/tearDownClass()</code>;</li>
+</ul>
+<p>我觉得，pytest有以下优点：</p>
+<ul>
+<li>上手和使用足够简单 </li>
+<li>当case失败时信息足够丰富和直观，比如最后导致失败的变量值会打印出来</li>
+<li>更丰富的运行参数</li>
+<li>可以使用 <code>assert</code> 而不是 <code>self.assert*</code> </li>
+<li>被广大IDE支持，社区资源丰富，用户群体大</li>
+</ul>
+<h2 id="让单元测试和IDE无缝集成"><a href="#让单元测试和IDE无缝集成" class="headerlink" title="让单元测试和IDE无缝集成"></a>让单元测试和IDE无缝集成</h2><p>毕竟我们大多数人都不是神，不能用记事本写代码，IDE才是我们正确搬砖的方式。Python的首选IDE毋庸置疑就是 JetBrain 公司出品的 <a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">PyCharm</a>。</p>
+<p>在PyCharm中只要你将默认的单元测试驱动改成pytest，就可以在任意<code>test</code>开头的方法上通过右键菜单运行或者调试这个测试案例，非常方便。</p>
+<p><img src="https://tobyqin.github.io/images/pytest-pycharm-settings.png" alt="更改PyCharm设置"></p>
+<p><img src="https://tobyqin.github.io/images/pytest-context-run.png" alt="右键菜单运行或者调试"></p>
+<p>如果你要运行当前文件的所有测试，只要从非<code>test</code>方法的其他区域点击右键即可。或者修改任意已经运行过的Configuration，添加你想要的参数，比如最多运行挂3个case就终止测试等等。</p>
+<p><img src="https://tobyqin.github.io/images/pytest-configuration.png" alt="自定义Run Configuration"></p>
+<h2 id="闲话和总结"><a href="#闲话和总结" class="headerlink" title="闲话和总结"></a>闲话和总结</h2><p>单元测试的重要性大家都知道，大名鼎鼎的TDD应该都听过，但是真正在实践的少之又少。</p>
+<p>究其原因，一些人会说时间写代码都不够，哪还有空写单元测试。还有一些人就是嫌麻烦，在绝大多数编程语言里单元测试都是需要单独建立工程和目录的，写单元测试需要很多基础工作要做，本以为顺手就可以写的单元测试，实际上需要费九牛二虎之力还是在搭架子，太沮丧了。</p>
+<p>Python的动态特性和灵活性让它有可能让单元测试超级简单，有可能你认为单元测试还是不要和业务代码混合在一起的好，那就多辛苦一点新建一个文件导入要测试的方法，写一个 <code>test</code> 开头的方法即可，不算太难，不要找推辞的理由。</p>
+<p>最后我的个人观点，单元测试其实还有一个非常重要的作用，就是替代函数文档注释。比如你写了一个函数，使用起来可能有那么一点复杂，你可以给它写一份清晰的注释文档，但是千言万语不如给我来个例子，单元测试可以充当例子的角色，什么样的输入，输出结果如何，一目了然。</p>
+<p>希望从今天起，你的代码也都有单元测试。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-03-31/find-duplicate-photos-by-photodup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-03-31/find-duplicate-photos-by-photodup/" class="post-title-link" itemprop="url">Python 查找重复文件升级版 - photodup</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-04-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-04-01T00:00:00+08:00">2018-04-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>之前写了一个简化版的<a href="/posts/2018-03-22/find-duplicate-files-by-python/">使用Python查找目录中的重复文件</a>，现在升级了一下，我们来提供一个友好的网页界面。</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>上一个版本我们非常简单粗暴地将所有文件的hash扫描后保存到一个字典中，字典结构大概是这样的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">files = [&#123;<span class="string">'hash1'</span>:[<span class="string">'file/path...'</span>,<span class="string">'file/path...'</span>]&#125;,</span><br><span class="line">         &#123;<span class="string">'hash2'</span>:[<span class="string">'file/path...'</span>,<span class="string">'file/path...'</span>,<span class="string">'file/path...'</span>]&#125;,</span><br><span class="line">         &#123;<span class="string">'hash3'</span>:[<span class="string">'file/path...'</span>]&#125;]</span><br></pre></td></tr></table></figure>
+
+<p>然后通过一个循环找出hash值对应的数组长度大于1的数组，现在我们把这个扫描结果保存到数据库中，之后只要查询数据库即可找到重复的文件。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>我们大致需要几个步骤就可以让程序跑起来：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/tobyqin/photodup.git # 克隆代码</span><br><span class="line"></span><br><span class="line">cd photodup</span><br><span class="line">pip install -r requirements.txt # 安装必要的依赖包</span><br><span class="line"></span><br><span class="line">python db.py # 创建DB表结构</span><br></pre></td></tr></table></figure>
+
+<p>表结构不需要太复杂：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>hash</th>
+<th>name</th>
+<th>path</th>
+<th>Existed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ab3d</td>
+<td>DCS_001.JPG</td>
+<td>path/to/DSC_001.JPG</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1d2c</td>
+<td>DCS_002.JPG</td>
+<td>path/to/DSC_002.JPG</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<p>然后开始扫描你要检查的目录。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python scan.py dir1 dir2</span><br></pre></td></tr></table></figure>
+
+<p>你可以传入一个或者多个目录，默认只检索jpg文件，也可以修改<code>config.py</code>里的配置项来自定义。扫描结束后，启动web服务即可。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python web.py</span><br></pre></td></tr></table></figure>
+
+<p>顺利的话用浏览器打开 <a href="http://127.0.0.1:5001/" target="_blank" rel="noopener">http://127.0.0.1:5001</a> 就可以看到一个友好的网页，可以通过文件hash或者文件名来清理重复文件，可以预览图片文件。</p>
+<p><img src="https://tobyqin.github.io/images/dup_by_hash.png" alt="dup_by_hash"></p>
+<p><img src="https://tobyqin.github.io/images/dup_by_name.png" alt="dup_by_name"></p>
+<h2 id="原理-amp-总结"><a href="#原理-amp-总结" class="headerlink" title="原理&amp;总结"></a>原理&amp;总结</h2><p>升级后的重复文件清理工具总共也不过两三百行代码，但是已经算是一个比较完整的程序，使用起来也方便了很多。升级过程中用到了前后端数据库各方面的知识，不管你的想法多简单，真正动手去实现才会有收获。</p>
+<blockquote>
+<p>项目地址：<a href="https://github.com/tobyqin/photodup" target="_blank" rel="noopener">https://github.com/tobyqin/photodup</a></p>
+<p>技术栈：Python, SQL, Flask, Bootstrap, Jquery, CSS.</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2018-03-21/find-duplicate-files-by-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2018-03-21/find-duplicate-files-by-python/" class="post-title-link" itemprop="url">使用Python查找目录中的重复文件</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-03-22 00:00:00" itemprop="dateCreated datePublished" datetime="2018-03-22T00:00:00+08:00">2018-03-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>是这样的，电脑上的堆积的照片有点多，而且重复的照片被放在了不同的目录，占用的空间越来越大，数量也多得已经不太适合人工分辨整理，写个Python脚本来处理吧。</p>
+<h2 id="文件的唯一标识-MD5"><a href="#文件的唯一标识-MD5" class="headerlink" title="文件的唯一标识 - MD5"></a>文件的唯一标识 - MD5</h2><p>假如你要处理的重复文件有不同的文件名，最简单的办法就是通过MD5来确定两个文件是不是一样的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">md5sum</span><span class="params">(filename, blocksize=<span class="number">65536</span>)</span>:</span></span><br><span class="line">    hash = hashlib.md5()</span><br><span class="line">    <span class="keyword">with</span> open(filename, <span class="string">"rb"</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> block <span class="keyword">in</span> iter(<span class="keyword">lambda</span>: f.read(blocksize), <span class="string">b""</span>):</span><br><span class="line">            hash.update(block)</span><br><span class="line">    <span class="keyword">return</span> hash.hexdigest()</span><br></pre></td></tr></table></figure>
+
+<p>这个方法可以快速获得一个文件的MD5值，<code>blocksize</code> 可以根据文件大小和CPU性能调整，一般选择的值约等于文件的平均大小。</p>
+<h2 id="保存所有文件标识和路径"><a href="#保存所有文件标识和路径" class="headerlink" title="保存所有文件标识和路径"></a>保存所有文件标识和路径</h2><p>接下来遍历所有文件，使用MD5作为key，路径作为value，保存起来。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dup = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">build_hash_dict</span><span class="params">(dir_path, pattern=<span class="string">'*.jpg'</span>)</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">save</span><span class="params">(file)</span>:</span></span><br><span class="line">        hash = md5sum(file)</span><br><span class="line">        <span class="keyword">if</span> hash <span class="keyword">not</span> <span class="keyword">in</span> dup.keys():</span><br><span class="line">            dup[hash] = [file]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            dup[hash].append(file)</span><br><span class="line"></span><br><span class="line">    p = Path(dir_path)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> p.glob(<span class="string">'**/'</span> + pattern):</span><br><span class="line">        save(str(item))</span><br></pre></td></tr></table></figure>
+
+<h2 id="处理重复文件"><a href="#处理重复文件" class="headerlink" title="处理重复文件"></a>处理重复文件</h2><p>最后一步非常简单，把上一步建立的字典做一个简单的过滤就能找到重复文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_duplicate</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> &#123;k: v <span class="keyword">for</span> k, v <span class="keyword">in</span> dup.items() <span class="keyword">if</span> len(v) &gt; <span class="number">1</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> hash, files <span class="keyword">in</span> get_duplicate().items():</span><br><span class="line">    print(<span class="string">"&#123;&#125;: &#123;&#125;"</span>.format(hash, files))</span><br></pre></td></tr></table></figure>
+
+<p>接下来你可以根据自己的需要删除或者保留某个路径下的文件，本文到此为止。</p>
+<blockquote>
+<p> 完整的脚本代码： <a href="https://gist.github.com/tobyqin/9299d27bdb429ffaa7713ed760a44fbb" target="_blank" rel="noopener">https://gist.github.com/tobyqin/9299d27bdb429ffaa7713ed760a44fbb</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

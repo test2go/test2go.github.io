@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/12/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/12/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-27/hightlight-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-27/hightlight-test/" class="post-title-link" itemprop="url">Code Syntax Highlight Test</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-27 13:14:53" itemprop="dateCreated datePublished" datetime="2016-09-27T13:14:53+08:00">2016-09-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>For javascript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">syntaxHighlighting</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = <span class="number">33</span>;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="string">"hello, javascript!"</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>also for C#</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">csharp_example</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">"Hello C#!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>also for python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">(name=None)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        name = <span class="string">'python!'</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello"</span>, name</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say_hello()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-27/from-csharp-to-python-overview/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-27/from-csharp-to-python-overview/" class="post-title-link" itemprop="url">从C#到Python - 语言特性和概览</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-27 09:35:13" itemprop="dateCreated datePublished" datetime="2016-09-27T09:35:13+08:00">2016-09-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>因为工作的原因，目前主力编程语言从C#转移到Python，所以在此记录这两种语言的一些异同点和自己的感悟收获。本系列文章数量不限，随想随写。</p>
+<h2 id="语言特性和特点"><a href="#语言特性和特点" class="headerlink" title="语言特性和特点"></a>语言特性和特点</h2><h3 id="C"><a href="#C" class="headerlink" title="C#"></a><code>C#</code></h3><p>C#是微软公司主推的编程语言，在Windows平台的首选开发语言，需要.net framework的支持，非微软平台支持目前并不完善。主要特点是语法简单，IDE强悍(VS是我用过最强悍和人性化的IDE，没有之一)，C#是强类型高级编程语言。</p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a><code>Python</code></h3><p>是开源的动态解释型语言，由Guido van Rossum于1989年发明。它天生具有跨平台的能力，默认集成在MacOS和Linux系统中。Windows平台需要单独安装。主要特点是语法简洁，第三方类库丰富强大，数据处理能力异常优秀。</p>
+<h3 id="漫谈瞎扯"><a href="#漫谈瞎扯" class="headerlink" title="漫谈瞎扯"></a>漫谈瞎扯</h3><p>我使用C#编程的时间大概有5年左右，对于它的各种特性还算比较了解。接触Python大概只有三个多月，不过三观已经被刷新。限于我个人水平，本文对C#和Python特别深入的东西不会特别介绍，仅从我个人的角度来帮助C#的程序猿认识Python。</p>
+<p>很明显我感觉C#是<strong>简单</strong>，但Python是<strong>简洁</strong>。两个不完全一样的概念，简洁之中蕴含了简单，但是简洁也意味着信息的省略和丢失。举一些具体的例子</p>
+<h4 id="标识语句块"><a href="#标识语句块" class="headerlink" title="标识语句块"></a>标识语句块</h4><p>C#用花括号，和大多数编程语言一样。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">csharp_example</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">"Hello C#!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>而Python用的是缩进。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">say_hello</span><span class="params">(name=None)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> name <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        name = <span class="string">'python!'</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"hello"</span>, name</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    say_hello()</span><br></pre></td></tr></table></figure>
+
+<h4 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h4><p>C#对文件系统的命名空间是System.IO。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.IO;</span><br></pre></td></tr></table></figure>
+<p>Python只有io，只有两个字母，还是小写的！</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br></pre></td></tr></table></figure>
+
+<h4 id="迭代语句"><a href="#迭代语句" class="headerlink" title="迭代语句"></a>迭代语句</h4><p>C#中for迭代是这样的，已经很简洁了。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> list = <span class="keyword">new</span> List&lt;<span class="keyword">int</span>&gt;() &#123; <span class="number">1</span>,, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">6</span> &#125;;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> item <span class="keyword">in</span> list)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Python是这样的，真的不能再简洁了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">    <span class="keyword">print</span> i</span><br></pre></td></tr></table></figure>
+
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>还有不少细节的地方在你接触Python之后也一定深有体会。</p>
+<ul>
+<li>比如为了不切换大小写，Python推荐使用全小写的命名规范（类命名除外）</li>
+<li>Python要求省略句尾的分号</li>
+<li>Python不推荐在逻辑判断后使用括号，比如 <code>if i &gt; 0:</code> 而不是 <code>if (i &gt; 0):</code></li>
+</ul>
+<p>这样的例子枚不胜举，如果语意可读性上来说，我比较喜欢C#的做法，因为使用驼峰命名规则，基本上一个语句就是一小段英文。而且从命名规范上来说，C#推荐使用完整的英文单词来命名变量和类名。</p>
+<p>Python就不见得了，很多类库和命名都是极度简洁的，比如<code>pytz</code>, <code>wrapt</code>, <code>isalnum()</code>。最令人发指的是居然连中间的下划线也省了，比如<code>altsep</code>, <code>execl</code>, <code>getcwdu</code>, <code>spawnle</code>，尼玛，这些是什么鬼，这一点也不考虑其他人的感受，很多时候你只能yy或者查文档，这就是简洁的代价。</p>
+<p>不过话说回来，正因为Python这也省布料，所以使用Python实现与C#，JAVA相同功能，至少可以少20%的代码量。夸张的说法甚至60%到80%，我保留意见，但不得不承认是极有可能的。</p>
+<p>最后从动态语言和非动态语言的角度简单说一下，动态语言的特点就是程序在运行时才能确定类型和行为，动态语言也叫鸭子类型<code>ducking typing</code>，源自于来自James Whitcomb Riley这句有名的话。</p>
+<blockquote>
+<p>If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.</p>
+<p>如果它看起来像一只鸭子，游起来也像鸭子，而且还会像鸭子一样叫，那么它极有可能就是一只鸭子。</p>
+</blockquote>
+<p>在动态语言里变量只是一个标记，具体的行为可以在程序运行时才确定，比如两个变量相加，Python可以这样写：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br></pre></td></tr></table></figure>
+
+<p>你不需要<strong>也不能</strong>指定这个a, b的类型，当程序在运行时，他们的相加行为会根据传入的具体类型确定。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="string">'hi '</span>, <span class="string">'toby'</span>)</span><br><span class="line"><span class="string">'hi toby'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="string">'hi'</span>, <span class="number">1</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#7&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    add(<span class="string">'hi'</span>, <span class="number">1</span>)</span><br><span class="line">  File <span class="string">"&lt;pyshell#2&gt;"</span>, line <span class="number">2</span>, <span class="keyword">in</span> add</span><br><span class="line">    <span class="keyword">return</span> a+b</span><br><span class="line">TypeError: cannot concatenate <span class="string">'str'</span> <span class="keyword">and</span> <span class="string">'int'</span> objects</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>反观C#，Visual Studio会对你的语法进行检查，没有泛型之前，你只能这样写。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">AddInt</span>(<span class="params"><span class="keyword">int</span> a, <span class="keyword">int</span> b</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">string</span> <span class="title">AddString</span>(<span class="params"><span class="keyword">string</span> a, <span class="keyword">string</span> b</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>有泛型和dynamic类型之后，情况好一些。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> T Add&lt;T&gt;(T a, T b)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">dynamic</span> x = a;</span><br><span class="line">    <span class="keyword">dynamic</span> y = b;            </span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然而这种和C#本身格格不入的编码方式并不流行，而且IDE支持也不好。或许你能从这个小例子明白动态语言的厉害之处。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>写了那么多，希望你对Python有一个比较直观的印象。</p>
+<p>两种语言各有特点，不能说谁好谁坏。具体用哪个一般只有一个原因，工作环境和项目需求。但就学习而言，如果已经熟悉C#，转而学习Python还是比较简单和容易接受的，因为做的的减法。但是如果之前是Python而后转到C#，就不是那么好受了，因为做的是加法。</p>
+<p>Python的作者有处女情节，所以处处都要追求优雅，简单，完美。想适应这种情节真的需要刷三观，费半条命。</p>
+<p>而且写Python的人一般都短命，因为喜欢Python的人都喜欢这句话。</p>
+<p><code>Life is short, I use Python. （人生苦短，我用Python）</code></p>
+<blockquote>
+<p>本文源码地址：<a href="https://github.com/tobyqin/csharp_vs_python" target="_blank" rel="noopener">https://github.com/tobyqin/csharp_vs_python</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-24/python-unpack-list-elements/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-24/python-unpack-list-elements/" class="post-title-link" itemprop="url">Python：将数组中的元素导出到变量中 (unpacking)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-24 23:03:34" itemprop="dateCreated datePublished" datetime="2016-09-24T23:03:34+08:00">2016-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>你需要将数组（list）或元组（tuple）中的一些元素导出到<code>N</code>个变量中。可能你并不希望通过遍历的方式。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>任何序列都可以通过简单的变量赋值方式将其元素分配到对应的变量中，唯一的要求就是变量的数量和结构需要和序列中的结构完全一致。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">p = (<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">x, y = p</span><br><span class="line"><span class="comment"># x = 1</span></span><br><span class="line"><span class="comment"># y = 2</span></span><br><span class="line"></span><br><span class="line">data = [<span class="string">'google'</span>, <span class="number">100.1</span>, (<span class="number">2016</span>, <span class="number">5</span>, <span class="number">31</span>)]</span><br><span class="line">name, price, date = data</span><br><span class="line"><span class="comment"># name = 'google'</span></span><br><span class="line"><span class="comment"># price = 100.1</span></span><br><span class="line"><span class="comment"># date = (2016, 5, 31)</span></span><br><span class="line"></span><br><span class="line">name, price, (year, month, day) = data</span><br><span class="line"><span class="comment"># name = 'google'</span></span><br><span class="line"><span class="comment"># price = 100.1</span></span><br><span class="line"><span class="comment"># year = 2016</span></span><br><span class="line"><span class="comment"># month = 5</span></span><br><span class="line"><span class="comment"># day = 31</span></span><br></pre></td></tr></table></figure>
+
+<p>如果变量结构和元素结构不一致，你将会遇到以下错误：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">p = (<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">x, y, z = p</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#12&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    x, y, z = p</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">3</span>, got <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其实这样的操作不限于元组和数组，在字符串中也是可以用的。Unpacking支持大多数我们常见的序列，比如文件迭代，各种生成器等等。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">'Hello'</span></span><br><span class="line">a,b,c,d,e = s</span><br><span class="line"><span class="comment"># a = 'H'</span></span><br><span class="line"><span class="comment"># b = 'e'</span></span><br></pre></td></tr></table></figure>
+<p>如果导出过程中你想丢掉一些元素，其实Python并不支持这样的语法，不过你可以指定一些不常用的变量来达到你的目的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data = [<span class="string">'google'</span>, <span class="number">100.1</span>, (<span class="number">2016</span>, <span class="number">5</span>, <span class="number">31</span>)]</span><br><span class="line">name, _, (_,month,_) = data</span><br><span class="line"><span class="comment"># name = 'google'</span></span><br><span class="line"><span class="comment"># month = '5'</span></span><br><span class="line"><span class="comment"># other fileds will be discarded</span></span><br></pre></td></tr></table></figure>
+
+<p>本文主要是为了测试Markdown排版工具，微信公众号里的高亮代码一直是很麻烦的事情，让我头疼了很长一段时间。现在看起来不错哦。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-24/Turn-off-logging-in-python-selenium-en/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-24/Turn-off-logging-in-python-selenium-en/" class="post-title-link" itemprop="url">Turn off logging in python selenium</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-24 22:14:44" itemprop="dateCreated datePublished" datetime="2016-09-24T22:14:44+08:00">2016-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python selenium will print a lot of debug info for selenium driver, which will mess up important information for your testing.</p>
+<p><img src="https://tobyqin.github.io/images/selenium-debug-logging.png" alt=""></p>
+<p>To turn it off, please add bellow code before test case.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.remote.remote_connection <span class="keyword">import</span> LOGGER</span><br><span class="line">LOGGER.setLevel(logging.WARNING)</span><br></pre></td></tr></table></figure>
+<p><strong>Note:</strong> above code should be put before webdriver initialization.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-24/Turn-off-logging-in-python-selenium/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-24/Turn-off-logging-in-python-selenium/" class="post-title-link" itemprop="url">设置 Python Selenium 中的Log显示信息</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-24 22:14:44" itemprop="dateCreated datePublished" datetime="2016-09-24T22:14:44+08:00">2016-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python Selenium默认会往控制台和Log文件里写入大量的DEBUG信息，比如下面这张图。这样的相信在测试过程中有一定帮助，但大部分情况下都是没有营养的，而且会把你自己打印的Log信息淹没在汪洋大海中。</p>
+<p><img src="https://tobyqin.github.io/images/selenium-debug-logging.png" alt=""></p>
+<p>如果想要停止显示或者关闭Selenium中的Log，你可以通过以下代码更改其默认LOGGER的级别。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.remote.remote_connection <span class="keyword">import</span> LOGGER</span><br><span class="line"></span><br><span class="line">LOGGER.setLevel(logging.WARNING)</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong>以上代码一定要在初始化<code>WebDriver</code>前进行。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-09-24/programming-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-09-24/programming-notes/" class="post-title-link" itemprop="url">编程语录</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-24 22:14:44" itemprop="dateCreated datePublished" datetime="2016-09-24T22:14:44+08:00">2016-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<ul>
+<li>编程语言的最终目的是什么？是为了让编程更容易。</li>
+<li>人们对编程语言有一个必然要求，就是能为公共的模式命名，建立抽象，然后直接在抽象的层次上工作。</li>
+<li>动态语言之所以很流行，就是因为人们可以在很短的时间内建立起一种原型。</li>
+<li>编程应该有一整套系统，包括人，技能，库，框架，工具。</li>
+<li>如何才能让程序功能更加丰富，如何才能让它更加有趣，如何组织代码。</li>
+<li>人们总是尝试做着软件的模块化结构，并且这种手段越来越先进。</li>
+<li>编程技术的历史，首先是使用机器码，然后是符号化的汇编语言，接下来是高级语言，后面是结构化编程，现在又来到了面向对象的时代。</li>
+<li>在我设计困难算法的经验中，我发现了一个扩展自己能力的方法。一个具有挑战性的问题解决之后，我从头再做一遍，回顾之前方法中的关键点。重复这么做，直到解决方案如我所希望的那样明确和直接。然后我们考虑类似问题的通用准则，这将促使我在起初的时候更有效的解决问题。通常，这样的法则具有永恒的价值。</li>
+<li>递归，编程工具库中一件最强大的工具。</li>
+<li>优秀程序员的一个衡量标准，必须有所进展，还得能加以改进。</li>
+<li>就基本技能而言，编程所包含的就是逻辑和数学，我们应当学会逻辑思考，学会清晰的思考。</li>
+<li>建设性的懒惰，坚持复用，遵循DRY（Don’t Repeat Yourself）原则，拒绝编写重复的胶合代码。</li>
+<li>所谓的主流，实际上是以实效为主导。</li>
+<li>培养构建大型应用程序的能力，因为写大程序非常耗时费力，这需要我们发明新方法，以减轻由于大程序的功能和细节而引起的沉重负担。</li>
+<li>实现复杂度——代码的数量很重要，因为开发一个程序所耗费的时间主要取决于程序的长度。</li>
+<li>面向对象编程只是程度不同的问题，事实上只有两种，某些语言允许以这种方式编程，另一些语言则强迫你一定要这样编程。</li>
+<li>有了对象，我们就可以对任何事物建模；用对象做模拟是威力强大的，因为它非常符合我们对身处其中并与之交互的世界的看法。</li>
+<li>Duck Typing (generic programming) ——如果它走路像鸭子，而且叫起来像鸭子，我就会称之为鸭子。</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2014-10-18/how-to-make-sure-system-is-stable/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2014-10-18/how-to-make-sure-system-is-stable/" class="post-title-link" itemprop="url">关于软件稳定性测试的思路</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2014-10-19 00:00:00" itemprop="dateCreated datePublished" datetime="2014-10-19T00:00:00+08:00">2014-10-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如何测试软件的稳定性其实是很难的，按照常规思路，只有长期的用户场景测试才能一定程度上保证软件的稳定性是可靠的，但并不能百分之百确定软件就是稳定的。软件测试本身就是由局限和尽头的，无穷的测试只能带来高成本的投入和无限期的计划延长。 </p>
+<p>其实，可以从反面角度来看待软件的稳定性，我们从一个简单的数学定理入手：</p>
+<blockquote>
+<p><strong>原命题成立，则逆否命题也成立。</strong></p>
+</blockquote>
+<ul>
+<li>原命题：软件没有明显缺陷，所以是足够稳定的。</li>
+<li>逆否命题：软件并不是很稳定，所以有明显的缺陷。</li>
+</ul>
+<p>假设原命题是正确的，那么你否命题应该也是正确的。 </p>
+<p>我们从原命题出发，很难说服团队去相信软件是足够稳定的，因为稳定的软件是没有明显缺陷的，没有数据的支撑和客观的事实，简单的例子就是，一我们不可能发现软件中所有的缺陷；二我们不可能花2~3个月不定地运行软件然后生成报告说经过长时间的实验软件十分稳定，时间不允许，就算时间允许我们也不敢保证3个月后程序是否还继续稳定如初。 </p>
+<p>从逆否命题出发会简单许多，我们可以短时间内投入足够的精力去想办法证明软件很不稳定，比如让软件在高负荷下持续运行，给不同的压力和并发请求，进行破坏操作等等，如果软件没有出现明显的缺陷那么说明原命题也是成立的，从这个角度思考就可以从容地解决软件稳定性验证的问题。</p>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>啊啊啊</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2013-07-15/do-the-right-thing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2013-07-15/do-the-right-thing/" class="post-title-link" itemprop="url">那些打鸡血的人生</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-07-16 00:00:00" itemprop="dateCreated datePublished" datetime="2013-07-16T00:00:00+08:00">2013-07-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>聊天的时候，总会有人一腔热血的向我推荐，“这部电影太励志了”，“这本书讲正能量诶”，或者是“昨天那个讲座我听得热血澎湃，讲的太有道理了”，刚开始我还会说，这些都是骗人的，后来，每次我都是摸摸我的狗头笑了，我明白，这些人都得了一种病，一种叫做鸡血狂躁症的沉疴，一种会间歇性发作的痼疾。这种病会让人免疫退化，犹如习武之人内力全失，让你在亢奋和低落之间跌宕起伏，而且传染力极强，会让你头脑发热。</p>
+<p>这样的病人，究竟是怎样的一群人呢？当我看到他们每次学习的时候书都是从第一页翻起的时候，我若有所思，有所悟。按照熵的社会学解释，人总是会慢慢衰落，消亡，可是这些人，总是在追赶最后一趟火车。他们有雄心壮志，最后往往半途夭折。他们拥有的是表面的热情，深藏的却是内心的狂躁，他们营造着自欺欺人的假象，让自己在岁月的杀猪刀下消亡殆尽。</p>
+<p>人生总是逃脱不了与生俱来的困境，很多打鸡血的人，往往深陷泥潭却不自知，他们从来不去思考自身的困境，把自己逼进了进退维谷的地步，最后却寄希望于天上掉馅饼，馅饼掉下来了，你接得住吗？期待着武侠小说的情怀，到头来却是拔剑四顾心茫然，欲渡黄河冰塞川，将登太行雪满山。总有那么一群人，在一个慵懒的午后，满心期待着通过一两本书，一两部电影，一两场讲座，希望从中得到所谓的真传，让自己脱胎换骨，顿悟法门，那你做梦去吧！</p>
+<blockquote>
+<p>“即便你真的能排除思想上的障碍，将计划付诸行动，在过个程中，也有无数这样那样的困难，挡住你前进的道路——这是一个漫长而艰苦的过程，决不是一时意气就能坚持下来的。”</p>
+</blockquote>
+<p>在现在这个糟糕的时代，打鸡血变换着各种戏法，作恶江湖，无孔不入，所谓的成功学，励志，正能量，不都是他披上的新装吗？ “只要有信心，人永远不会挫败”“人生的道路很长，但关键的时候，往往只有几步”，经常在海报上，网路上看到这样的文字，乍眼一看，觉得是无可辩驳的箴言，让人内心澎湃，仿佛是人生的福音书，仔细一想，又是如此的理所当然，用冯唐的话来讲，顿觉心头肿胀，然而，认真思考却是如此的荒谬与戏谑，就让他们扯淡去吧！</p>
+<p>看看你的身边，你会发现，那些过早放弃的人，往往是对于未来很乐观的人，现实世界的糟糕会让他们过早的退出循环，那些鸡血打得最多的人，呐喊得最强烈的人，往往是最先逃跑的人，而那些能够一直坚持到底的人，往往是清楚地认识到前路所会遇到的苦难但是坚信自己的人，就是我们所谓的“呆子”，“nerd”，我不知道为什么，世界总是偏爱青睐那些“偏执”的人，想到这里，不禁让我唏嘘的纳闷:上帝是nerd吗？如果上帝不是nerd，又为什么对于“nerd”钟爱有加呢？</p>
+<p>《大学》云：“知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。”不知止，何以定，不定不静不安，孰能得？知止者，又何用打鸡血？</p>
+<p>那些打了鸡血的人生终究会变得很狗血！</p>
+<p>想想那些昨天还跟你满腔热血，高谈阔论”励志“，”正能量“的人吧，大梦初醒时，天依旧清亮，风依旧分明，他应该都不记得他昨天说过什么吧，或许只记得昨天吃了什么吧！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2011-03-13/forget-why-start/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2011-03-13/forget-why-start/" class="post-title-link" itemprop="url">走得太远，忘记了为什么出发</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2011-03-14 00:00:00" itemprop="dateCreated datePublished" datetime="2011-03-14T00:00:00+08:00">2011-03-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>可以颠覆掉所有的春天<br>用一小片枯薄了的秋叶<br>而昨夜犹在梦中<br>所以围脖和小火炉<br>还搁在去年的架上<br>去年还搁在<br>小小的记忆里</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2008-07-17/love-is-far-away/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2008-07-17/love-is-far-away/" class="post-title-link" itemprop="url">暧昧很近，爱情很远</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2008-07-18 00:00:00" itemprop="dateCreated datePublished" datetime="2008-07-18T00:00:00+08:00">2008-07-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>文 / 蔚蓝</p>
+</blockquote>
+<p>忘了是谁曾经说过：这是个离暧昧很近，却离爱情很远的年代。这句话堪称经典！<br>　　　　 　　<br>是的，我们总是可以随意的暧昧，眼神的暧昧，双手的暧昧，言语的暧昧，甚至是同床共枕的暧昧。<br>　　　　 　　<br>可惜，却始终找寻不到真正感觉上的爱情。爱情离我们越来越远，我们却天真的以为它就在身边，触手可及。孰不知，其实它远在千里之外，也许根本未曾走近你。<br>　　　　 　　<br>或许它留下了它的影子——那就是我们喜欢哼唱的泛滥成灾的情歌。情歌之所以泛滥，是因为我们需要它来伪装我们内心深处的寡情并借它来宣泄难以排遣的歇斯底里的寂寞。可惜自古情歌伤情，所以越唱越悲。而我们共鸣的眼泪却越来越少，几近干涸；纤细的，伤感的心，更始越来越麻木。<br>　　　　 　　<br>爱情的远离使我们失落，失落又使我们伤感，伤感后我们失去了心灵的空灵，开始变得迟钝，变得愚笨。<br>　　 　　<br>我们为爱情而扼腕叹息，为它不惜流出珍藏已久的眼泪，那是因为我们知道其实爱情只有天人永隔才能永恒。这不是残忍，于最美的时候结束最美的爱情，这是最美的结局。况天意如此，岂可逆转？<br>　　　　 　　<br>可惜，现实中没有泰坦尼克了，沉没了的始终是沉寂的了。我们深深地向往《缘分天注定》的浪漫，在影片落幕之后仍久久不忍离去。他们一见钟情却受命运的捉弄；他们在历经辗转10年之后还能确定唯有对方是真爱。而且为了这份飘渺的爱各自离开了身边的恋人，在兜了一大圈之后，恰巧不期而遇靠的是一个信念一个冥冥之中的感觉，一张写着他的电话的美元，一本写着她的电话的早已脱销的书不是神话是什么？是的，因为是神话，而且神话得很唯美，即使有点小小的虚伪，也仍然令我们感慨。可惜电影与现实有差距，浪漫与坚持互不成立。我无法超凡脱俗，所以如果我是女主角，那么当我遇见他的时候，也许我正带着我的小BABY在公园里散布。<br>　　　　 　　<br>离爱情很远的年代，一些人早已经失去了信念，也没有余力再去坚持什么，只能随波逐流。<br>　　<br>是的，我们离暧昧越来越近，而爱情却始终没有向我们迈近半步。偶尔感觉到一丝丝一点点，伸出手去，却只是捕捉到空气，也许只是它无意中遗留下来的气息。<br>　　<br>仅此而已！<br>　　<br>所以一些人注定在暧昧中生活——不明的暧昧，模糊的暧昧，脆弱的暧昧，不堪一击的暧昧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

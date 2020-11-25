@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/10/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/10/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-18/get-chrome-full-installer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-18/get-chrome-full-installer/" class="post-title-link" itemprop="url">获取 Google Chrome 谷歌浏览器离线安装包</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 21:35:01" itemprop="dateCreated datePublished" datetime="2016-10-18T21:35:01+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>安装到个人用户目录，请使用以下链接：</p>
+<ul>
+<li><a href="http://www.google.com/chrome/eula.html?standalone=1" target="_blank" rel="noopener">Download Google Chrome Standalone Offline Installer (32-bit)</a></li>
+<li><a href="http://www.google.com/chrome/eula.html?standalone=1&platform=win64" target="_blank" rel="noopener">Download Google Chrome Standalone Offline Installer (64-bit)</a></li>
+</ul>
+<p>安装后所有用户可用，请使用以下链接：</p>
+<ul>
+<li><a href="http://www.google.com/chrome/eula.html?system=true&standalone=1" target="_blank" rel="noopener">Google Chrome Offline Installer for All User Accounts (32-bit)</a></li>
+<li><a href="http://www.google.com/chrome/eula.html?system=true&standalone=1&platform=win64" target="_blank" rel="noopener">Google Chrome Offline Installer for All User Accounts (64-bit)</a></li>
+</ul>
+<p>如果你需要安装Beta版本，请使用：</p>
+<ul>
+<li><a href="https://www.google.com/chrome/browser/beta.html?standalone=1" target="_blank" rel="noopener">Google Chrome Beta Version Offline Installer (32-bit)</a></li>
+<li><a href="https://www.google.com/chrome/browser/beta.html?platform=win64&standalone=1" target="_blank" rel="noopener">Google Chrome Beta Version Offline Installer (64-bit)</a></li>
+</ul>
+<p>如果你需要安装Dev版本，请使用：</p>
+<ul>
+<li><a href="https://www.google.com/chrome/browser/index.html?extra=devchannel&standalone=1" target="_blank" rel="noopener">Google Chrome Dev Version Offline Installer (32-bit)</a></li>
+<li><a href="https://www.google.com/chrome/browser/index.html?extra=devchannel&platform=win64&standalone=1" target="_blank" rel="noopener">Google Chrome Dev Version Offline Installer (64-bit)</a></li>
+</ul>
+<blockquote>
+<p>以上安装包适用于Windows平台。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-18/reverse-by-word-in-python-en/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-18/reverse-by-word-in-python-en/" class="post-title-link" itemprop="url">Reverse string by word with Python</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 09:46:00" itemprop="dateCreated datePublished" datetime="2016-10-18T09:46:00+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/quiz/" itemprop="url" rel="index">
+                    <span itemprop="name">Quiz</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>Reverse string by word</strong> is a very popular interview question. In python you can solve it easily with code like below.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">reverse_string_by_word</span><span class="params">(s)</span>:</span></span><br><span class="line">    lst = s.split()  <span class="comment"># split by blank space by default</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">' '</span>.join(lst[::<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">s = <span class="string">'Power of Love'</span></span><br><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># Love of Power</span></span><br><span class="line"></span><br><span class="line">s = <span class="string">'Hello    World!'</span></span><br><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># World! Hello</span></span><br></pre></td></tr></table></figure>
+
+<p>We can see above implementation is good but not enough, in 2nd string we are expecting the <code>!</code> symbol should be reversed as well, and keep original blank spaces between words. (multiple spaces between <code>Hello</code> and <code>World</code> in the example)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># Expected: !World  Hello</span></span><br></pre></td></tr></table></figure>
+
+<p>To improve the solution, a better choice should be <code>re</code> module. You might want to take a look at <a href="https://docs.python.org/2/library/re.html#re.split" target="_blank" rel="noopener"><code>re.split()</code></a> method.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Hello  World!'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'\s+'</span>, s)    <span class="comment"># will discard blank spaces</span></span><br><span class="line">[<span class="string">'Hello'</span>, <span class="string">'World!'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\s+)'</span>, s)  <span class="comment"># will keep spaces as a group</span></span><br><span class="line">[<span class="string">'Hello'</span>, <span class="string">'  '</span>, <span class="string">'World!'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'&lt; Welcome to EF.COM! &gt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'\s+'</span>, s)  <span class="comment"># split by spaces</span></span><br><span class="line">[<span class="string">'&lt;'</span>, <span class="string">'Welcome'</span>, <span class="string">'to'</span>, <span class="string">'EF.COM!'</span>, <span class="string">'&gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\w+)'</span>, s)  <span class="comment"># exactly split by word</span></span><br><span class="line">[<span class="string">'&lt; '</span>, <span class="string">'Welcome'</span>, <span class="string">' '</span>, <span class="string">'to'</span>, <span class="string">' '</span>, <span class="string">'EF'</span>, <span class="string">'.'</span>, <span class="string">'COM'</span>, <span class="string">'! &gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\s+|\w+)'</span>, s)  <span class="comment"># split by space and word</span></span><br><span class="line">[<span class="string">'&lt;'</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'Welcome'</span>, <span class="string">''</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'to'</span>, <span class="string">''</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'EF'</span>, <span class="string">'.'</span>, <span class="string">'COM'</span>, <span class="string">'!'</span>, <span class="string">' '</span>, <span class="string">'&gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\s+|\w+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'&gt; !COM.EF to Welcome &lt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\s+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'&gt; EF.COM! to Welcome &lt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\w+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'! &gt;COM.EF to Welcome&lt; '</span></span><br></pre></td></tr></table></figure>
+
+<p>If you would like to increase the readability a little bit, replacing list slicing to <code>reversed()</code> is a choice.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(reversed(re.split(<span class="string">r'(\s+|\w+)'</span>, s)))</span><br><span class="line"><span class="string">'&gt; !COM.EF to Welcome &lt;'</span></span><br></pre></td></tr></table></figure>
+
+<p>Bingo, so easy!</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-18/reverse-by-word-in-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-18/reverse-by-word-in-python/" class="post-title-link" itemprop="url">Python中的反转字符串问题</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-18 09:46:00" itemprop="dateCreated datePublished" datetime="2016-10-18T09:46:00+08:00">2016-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/quiz/" itemprop="url" rel="index">
+                    <span itemprop="name">Quiz</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>按单词反转字符串</strong>是一道很常见的面试题。在Python中实现起来非常简单。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">reverse_string_by_word</span><span class="params">(s)</span>:</span></span><br><span class="line">    lst = s.split()  <span class="comment"># split by blank space by default</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">' '</span>.join(lst[::<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">s = <span class="string">'Power of Love'</span></span><br><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># Love of Power</span></span><br><span class="line"></span><br><span class="line">s = <span class="string">'Hello    World!'</span></span><br><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># World! Hello</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的实现其实已经能满足大多数情况，但是并不完美。比如第二个字符串中的感叹号并没有被翻转，而且原字符串中的空格数量也没有保留。（在上面的例子里其实Hello和World之间不止一个空格）</p>
+<p>我们期望的结果应该是这样子的。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> reverse_string_by_word(s)</span><br><span class="line"><span class="comment"># Expected: !World  Hello</span></span><br></pre></td></tr></table></figure>
+
+<p>要改进上面的方案还不把问题复杂化，推荐使用<code>re</code>模块。你可以查阅<a href="https://docs.python.org/2/library/re.html#re.split" target="_blank" rel="noopener"><code>re.split()</code></a> 的官方文档。我们看一下具体例子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Hello  World!'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'\s+'</span>, s)    <span class="comment"># will discard blank spaces</span></span><br><span class="line">[<span class="string">'Hello'</span>, <span class="string">'World!'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\s+)'</span>, s)  <span class="comment"># will keep spaces as a group</span></span><br><span class="line">[<span class="string">'Hello'</span>, <span class="string">'  '</span>, <span class="string">'World!'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'&lt; Welcome to EF.COM! &gt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'\s+'</span>, s)  <span class="comment"># split by spaces</span></span><br><span class="line">[<span class="string">'&lt;'</span>, <span class="string">'Welcome'</span>, <span class="string">'to'</span>, <span class="string">'EF.COM!'</span>, <span class="string">'&gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\w+)'</span>, s)  <span class="comment"># exactly split by word</span></span><br><span class="line">[<span class="string">'&lt; '</span>, <span class="string">'Welcome'</span>, <span class="string">' '</span>, <span class="string">'to'</span>, <span class="string">' '</span>, <span class="string">'EF'</span>, <span class="string">'.'</span>, <span class="string">'COM'</span>, <span class="string">'! &gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(\s+|\w+)'</span>, s)  <span class="comment"># split by space and word</span></span><br><span class="line">[<span class="string">'&lt;'</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'Welcome'</span>, <span class="string">''</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'to'</span>, <span class="string">''</span>, <span class="string">' '</span>, <span class="string">''</span>, <span class="string">'EF'</span>, <span class="string">'.'</span>, <span class="string">'COM'</span>, <span class="string">'!'</span>, <span class="string">' '</span>, <span class="string">'&gt;'</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\s+|\w+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'&gt; !COM.EF to Welcome &lt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\s+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'&gt; EF.COM! to Welcome &lt;'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(re.split(<span class="string">r'(\w+)'</span>, s)[::<span class="number">-1</span>])</span><br><span class="line"><span class="string">'! &gt;COM.EF to Welcome&lt; '</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你觉得用切片将序列倒序可读性不高，那么其实也可以这样写。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">''</span>.join(reversed(re.split(<span class="string">r'(\s+|\w+)'</span>, s)))</span><br><span class="line"><span class="string">'&gt; !COM.EF to Welcome &lt;'</span></span><br></pre></td></tr></table></figure>
+
+<p>一句话搞定，so easy!</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-11/underscore-in-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-11/underscore-in-python/" class="post-title-link" itemprop="url">Python中的下划线和双下划线</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-11 22:26:46" itemprop="dateCreated datePublished" datetime="2016-10-11T22:26:46+08:00">2016-10-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="开门见山"><a href="#开门见山" class="headerlink" title="开门见山"></a>开门见山</h3><p>下划线在Python中有特殊的意义，简单来说，可以总结成两点。</p>
+<ol>
+<li>单下划线一般用于声明私有成员。</li>
+<li>双下划线一般被用于Python内置的特殊方法或者属性。</li>
+</ol>
+<p>更多细节的讨论，可以看StackOverflow上的这个主题 <a href="http://stackoverflow.com/questions/1301346/the-meaning-of-a-single-and-a-double-underscore-before-an-object-name-in-python。" target="_blank" rel="noopener">http://stackoverflow.com/questions/1301346/the-meaning-of-a-single-and-a-double-underscore-before-an-object-name-in-python。</a></p>
+<h3 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h3><p>下面是思维导图的总结</p>
+<p><img src="https://tobyqin.github.io/images/underscore-in-Python.png" alt=""></p>
+<h3 id="附录：-如何调用魔法方法"><a href="#附录：-如何调用魔法方法" class="headerlink" title="附录： 如何调用魔法方法"></a>附录： 如何调用魔法方法</h3><p>一些魔法方法直接和内建函数对应，这种情况下，如何调用它们是显而易见的。然而，另外的情况下，调用魔法方法的途径并不是那么明显。这个附录旨在展示那些不那么明显的调用魔法方法的语法。</p>
+<table>
+<thead>
+<tr>
+<th>魔法方法</th>
+<th>什么时候被调用</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>__new__(cls [,...])</code></td>
+<td><code>instance = MyClass(arg1, arg2)</code></td>
+<td><code>__new__</code>在实例创建时调用</td>
+</tr>
+<tr>
+<td><code>__init__(self [,...])</code></td>
+<td><code>instance = MyClass(arg1,arg2)</code></td>
+<td><code>__init__</code>在实例创建时调用</td>
+</tr>
+<tr>
+<td><code>__cmp__(self)</code></td>
+<td><code>self == other</code>, <code>self &gt; other</code> 等</td>
+<td>进行比较时调用</td>
+</tr>
+<tr>
+<td><code>__pos__(self)</code></td>
+<td><code>self</code></td>
+<td>一元加法符号</td>
+</tr>
+<tr>
+<td><code>__neg__(self)</code></td>
+<td><code>-self</code></td>
+<td>一元减法符号</td>
+</tr>
+<tr>
+<td><code>__invert__(self)</code></td>
+<td><code>~self</code></td>
+<td>按位取反</td>
+</tr>
+<tr>
+<td><code>__index__(self)</code></td>
+<td><code>x[self]</code></td>
+<td>当对象用于索引时</td>
+</tr>
+<tr>
+<td><code>__nonzero__(self)</code></td>
+<td><code>bool(self)</code></td>
+<td>对象的布尔值</td>
+</tr>
+<tr>
+<td><code>__getattr__(self, name)</code></td>
+<td><code>self.name</code> #name不存在</td>
+<td>访问不存在的属性</td>
+</tr>
+<tr>
+<td><code>__setattr__(self, name)</code></td>
+<td><code>self.name = val</code></td>
+<td>给属性赋值</td>
+</tr>
+<tr>
+<td><code>__delattr__(self, name)</code></td>
+<td><code>del self.name</code></td>
+<td>删除属性</td>
+</tr>
+<tr>
+<td><code>__getattribute__(self,name)</code></td>
+<td><code>self.name</code></td>
+<td>访问任意属性</td>
+</tr>
+<tr>
+<td><code>__getitem__(self, key)</code></td>
+<td><code>self[key]</code></td>
+<td>使用索引访问某个元素</td>
+</tr>
+<tr>
+<td><code>__setitem__(self, key)</code></td>
+<td><code>self[key] = val</code></td>
+<td>使用索引给某个元素赋值</td>
+</tr>
+<tr>
+<td><code>__delitem__(self, key)</code></td>
+<td><code>del self[key]</code></td>
+<td>使用索引删除某个对象</td>
+</tr>
+<tr>
+<td><code>__iter__(self)</code></td>
+<td><code>for x in self</code></td>
+<td>迭代</td>
+</tr>
+<tr>
+<td><code>__contains__(self, value)</code></td>
+<td><code>value in self, value not in self</code></td>
+<td>使用in进行成员测试</td>
+</tr>
+<tr>
+<td><code>__call__(self [,...])</code></td>
+<td><code>self(args)</code></td>
+<td>“调用”一个实例</td>
+</tr>
+<tr>
+<td><code>__enter__(self)</code></td>
+<td><code>with self as x:</code></td>
+<td>with声明的上下文管理器</td>
+</tr>
+<tr>
+<td><code>__exit__(self, exc, val, trace)</code></td>
+<td><code>with self as x:</code></td>
+<td>with声明的上下文管理器</td>
+</tr>
+<tr>
+<td><code>__getstate__(self)</code></td>
+<td><code>pickle.dump(pkl_file, self)</code></td>
+<td>Pickling</td>
+</tr>
+<tr>
+<td><code>__setstate__(self)</code></td>
+<td><code>data = pickle.load(pkl_file)</code></td>
+<td>Pickling</td>
+</tr>
+</tbody></table>
+<p>如果你还想了解关于魔方方法的更多细节，那么你一定不能错过：</p>
+<ul>
+<li>魔法方法指南 <a href="http://pyzh.readthedocs.io/en/latest/python-magic-methods-guide.html" target="_blank" rel="noopener">http://pyzh.readthedocs.io/en/latest/python-magic-methods-guide.html</a></li>
+<li>Magic method guide: <a href="http://www.rafekettler.com/magicmethods.html" target="_blank" rel="noopener">http://www.rafekettler.com/magicmethods.html</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-10/python-text-replacement-en/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-10/python-text-replacement-en/" class="post-title-link" itemprop="url">Find and replace text with Python</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-10 13:32:03" itemprop="dateCreated datePublished" datetime="2016-10-10T13:32:03+08:00">2016-10-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Basic-find-and-replace"><a href="#Basic-find-and-replace" class="headerlink" title="Basic find and replace"></a>Basic find and replace</h3><p>Search and replace text in Python is simple, you can find a specific string with <code>find()</code> or <code>index()</code> method, it will return the index of first match occasion.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.find(<span class="string">'Dog'</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.index(<span class="string">'Dog'</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.find(<span class="string">'Duck'</span>)</span><br><span class="line"><span class="number">-1</span></span><br></pre></td></tr></table></figure>
+
+<p>To replace <code>Cat</code> to <code>Dog</code>, you can simply call <code>replace()</code> method.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.replace(<span class="string">'Cat'</span>, <span class="string">'Dog'</span>)</span><br><span class="line"><span class="string">'Dog and Dog'</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Wildcards-matching"><a href="#Wildcards-matching" class="headerlink" title="Wildcards matching"></a>Wildcards matching</h3><p>So how about searching string with wildcards pattern? You should try <a href="https://docs.python.org/2/library/fnmatch.html" target="_blank" rel="noopener">fnmatch</a> library, it is built-in python.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> fnmatch</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'Cat*'</span>)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'C*and*D?'</span>)</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'C*and*D*'</span>)</span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Regex-find-and-replace"><a href="#Regex-find-and-replace" class="headerlink" title="Regex find and replace"></a>Regex find and replace</h3><p>To use advanced text search and replacement, regular expression is your best friend. To find string with pattern, here is an example:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'We will fly to Thailand on 2016/10/31'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pattern = <span class="string">r'\d+'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.findall(pattern, s)</span><br><span class="line">[<span class="string">'2016'</span>, <span class="string">'10'</span>, <span class="string">'31'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(pattern, s)</span><br><span class="line">&lt;_sre.SRE_Match object at <span class="number">0x03A8FD40</span>&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(pattern, s).group()</span><br><span class="line"><span class="string">'2016'</span></span><br></pre></td></tr></table></figure>
+
+<p>To replace string with pattern, hmm, it is an advanced feature, you might want to try <code>re.sub()</code> function(sub =&gt; substitution).</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">"I like &#123;color&#125; car."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">r'\&#123;color\&#125;'</span>,<span class="string">'blue'</span>,s)</span><br><span class="line"><span class="string">'I like blue car.'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'We will fly to Thailand on 10/31/2016'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">'(\d+)/(\d+)/(\d+)'</span>, <span class="string">r'\3-\1-\2'</span>, s)</span><br><span class="line"><span class="string">'We will fly to Thailand on 2016-10-31'</span></span><br></pre></td></tr></table></figure>
+
+<p>The <code>re.sub()</code> function is really powerful, in above example, <code>{color}</code> is a pattern that might be updated when string finally published. You can create pattern like this as a template. And <code>r&#39;\3-\1-\2&#39;</code> is the reference to regex matching groups.</p>
+<p>Let’s see another example:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">"Tom is talking to Jerry."</span></span><br><span class="line">name1 = <span class="string">"Tom"</span></span><br><span class="line">name2 = <span class="string">"Jerry"</span></span><br><span class="line"></span><br><span class="line">pattern = <span class="string">r'(.*)(&#123;0&#125;)(.*)(&#123;1&#125;)(.*)'</span>.format(name1, name2)</span><br><span class="line"><span class="keyword">print</span> re.sub(pattern, <span class="string">r'\1\4\3\2\5'</span>, s)</span><br><span class="line"><span class="comment"># Jerry is talking to Tom.</span></span><br></pre></td></tr></table></figure>
+
+<p>Let’s see how to customize the replace function.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">change_date</span><span class="params">(m)</span>:</span></span><br><span class="line">    <span class="keyword">from</span> calendar <span class="keyword">import</span> month_abbr</span><br><span class="line">    mon_name = month_abbr[int(m.group(<span class="number">1</span>))]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'&#123;&#125; &#123;&#125; &#123;&#125;'</span>.format(m.group(<span class="number">2</span>), mon_name, m.group(<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">s = <span class="string">'We will fly to Thailand on 10/31/2016'</span></span><br><span class="line">pattern = <span class="string">r'(\d+)/(\d+)/(\d+)'</span></span><br><span class="line"><span class="keyword">print</span> re.sub(pattern, change_date, s)</span><br><span class="line"><span class="comment"># We will fly to Thailand on 31 Oct 2016</span></span><br></pre></td></tr></table></figure>
+
+<p>OK, the ultimate example goes here. Hope you enjoy :)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">match_case</span><span class="params">(word)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">replace</span><span class="params">(m)</span>:</span></span><br><span class="line">        text = m.group()</span><br><span class="line">        <span class="keyword">if</span> text.isupper():</span><br><span class="line">            <span class="keyword">return</span> word.upper()</span><br><span class="line">        <span class="keyword">elif</span> text.islower():</span><br><span class="line">            <span class="keyword">return</span> word.lower()</span><br><span class="line">        <span class="keyword">elif</span> text[<span class="number">0</span>].isupper():</span><br><span class="line">            <span class="keyword">return</span> word.capitalize()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> word</span><br><span class="line">    <span class="keyword">return</span> replace</span><br><span class="line"></span><br><span class="line">s = <span class="string">"LOVE PYTHON, love python, Love Python"</span></span><br><span class="line"><span class="keyword">print</span> re.sub(<span class="string">'python'</span>, match_case(<span class="string">'money'</span>), s, flags=re.IGNORECASE)</span><br><span class="line"><span class="comment"># LOVE MONEY, love money, Love Money</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>Oh, last but not least, do you want to do use <code>re.sub()</code> for wildcards, yes, you can do it! <code>fnmatch</code> provide a function to let you <strong>translate</strong> wildcards pattern into regular expression pattern.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.translate(<span class="string">'C*and*D*'</span>)</span><br><span class="line"><span class="string">'C.*and.*D.*'</span></span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-10/python-text-replacement/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-10/python-text-replacement/" class="post-title-link" itemprop="url">在Python中查找和替换文本</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-10 13:32:03" itemprop="dateCreated datePublished" datetime="2016-10-10T13:32:03+08:00">2016-10-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="最简单的查找替换"><a href="#最简单的查找替换" class="headerlink" title="最简单的查找替换"></a>最简单的查找替换</h3><p>在Python中查找和替换非常简单，如果当前对象是一个字符串<code>str</code>时，你可以使用该类型提供的<code>find()</code>或者<code>index()</code>方法查找指定的字符，如果能找到则会返回字符第一次出现的索引，如果不存在则返回-1。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.find(<span class="string">'Dog'</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.index(<span class="string">'Dog'</span>)</span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.find(<span class="string">'Duck'</span>)</span><br><span class="line"><span class="number">-1</span></span><br></pre></td></tr></table></figure>
+
+<p>如果要替换目标字符串，用<code>replace()</code>方法就好了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s.replace(<span class="string">'Cat'</span>, <span class="string">'Dog'</span>)</span><br><span class="line"><span class="string">'Dog and Dog'</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="通配符查找匹配"><a href="#通配符查找匹配" class="headerlink" title="通配符查找匹配"></a>通配符查找匹配</h3><p>当然，如果你觉得上面的功能还不能满足你，你想使用通配符来查找字符串？没问题！<a href="https://docs.python.org/2/library/fnmatch.html" target="_blank" rel="noopener">fnmatch</a>这个库就能满足你的要求，看例子！</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'Cat and Dog'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> fnmatch</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'Cat*'</span>)</span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'C*and*D?'</span>)</span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.fnmatch(s,<span class="string">'C*and*D*'</span>)</span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="正则表达式查找替换"><a href="#正则表达式查找替换" class="headerlink" title="正则表达式查找替换"></a>正则表达式查找替换</h3><p>如果你需要查找比较复杂的字符规则，正则表达式是你不二的选择。下面是正则查找的简单示例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'We will fly to Thailand on 2016/10/31'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>pattern = <span class="string">r'\d+'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.findall(pattern, s)</span><br><span class="line">[<span class="string">'2016'</span>, <span class="string">'10'</span>, <span class="string">'31'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(pattern, s)</span><br><span class="line">&lt;_sre.SRE_Match object at <span class="number">0x03A8FD40</span>&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.search(pattern, s).group()</span><br><span class="line"><span class="string">'2016'</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来你可能需要用正则表达式去替换某些字符，那么你需要了解<code>re.sub()</code>方法，看例子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">"I like &#123;color&#125; car."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">r'\&#123;color\&#125;'</span>,<span class="string">'blue'</span>,s)</span><br><span class="line"><span class="string">'I like blue car.'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'We will fly to Thailand on 10/31/2016'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">'(\d+)/(\d+)/(\d+)'</span>, <span class="string">r'\3-\1-\2'</span>, s)</span><br><span class="line"><span class="string">'We will fly to Thailand on 2016-10-31'</span></span><br></pre></td></tr></table></figure>
+
+<p>其实<code>re.sub()</code>远比你相像的强大的多。在上面的例子里你可以替换类似于<code>{color}</code>这样的模板字符，也可以把正则匹配到的所有分组调换顺序，例如第二个例子一共匹配了3个分组，然后把第3个分组放到最前面 <code>r&#39;\3-\1-\2&#39;</code>，看明白了吗？</p>
+<p>接下来看另外一个例子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">"Tom is talking to Jerry."</span></span><br><span class="line">name1 = <span class="string">"Tom"</span></span><br><span class="line">name2 = <span class="string">"Jerry"</span></span><br><span class="line"></span><br><span class="line">pattern = <span class="string">r'(.*)(&#123;0&#125;)(.*)(&#123;1&#125;)(.*)'</span>.format(name1, name2)</span><br><span class="line"><span class="keyword">print</span> re.sub(pattern, <span class="string">r'\1\4\3\2\5'</span>, s)</span><br><span class="line"><span class="comment"># Jerry is talking to Tom.</span></span><br></pre></td></tr></table></figure>
+
+<p>其实你还可以自定义替换函数，也就是<code>re.sub()</code>的第二个参数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">change_date</span><span class="params">(m)</span>:</span></span><br><span class="line">    <span class="keyword">from</span> calendar <span class="keyword">import</span> month_abbr</span><br><span class="line">    mon_name = month_abbr[int(m.group(<span class="number">1</span>))]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'&#123;&#125; &#123;&#125; &#123;&#125;'</span>.format(m.group(<span class="number">2</span>), mon_name, m.group(<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">s = <span class="string">'We will fly to Thailand on 10/31/2016'</span></span><br><span class="line">pattern = <span class="string">r'(\d+)/(\d+)/(\d+)'</span></span><br><span class="line"><span class="keyword">print</span> re.sub(pattern, change_date, s)</span><br><span class="line"><span class="comment"># We will fly to Thailand on 31 Oct 2016</span></span><br></pre></td></tr></table></figure>
+
+<p>最后给大家一个终极版的例子，里面用到了函数的闭包，着酸爽，你懂的！</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">match_case</span><span class="params">(word)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">replace</span><span class="params">(m)</span>:</span></span><br><span class="line">        text = m.group()</span><br><span class="line">        <span class="keyword">if</span> text.isupper():</span><br><span class="line">            <span class="keyword">return</span> word.upper()</span><br><span class="line">        <span class="keyword">elif</span> text.islower():</span><br><span class="line">            <span class="keyword">return</span> word.lower()</span><br><span class="line">        <span class="keyword">elif</span> text[<span class="number">0</span>].isupper():</span><br><span class="line">            <span class="keyword">return</span> word.capitalize()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> word</span><br><span class="line">    <span class="keyword">return</span> replace</span><br><span class="line"></span><br><span class="line">s = <span class="string">"LOVE PYTHON, love python, Love Python"</span></span><br><span class="line"><span class="keyword">print</span> re.sub(<span class="string">'python'</span>, match_case(<span class="string">'money'</span>), s, flags=re.IGNORECASE)</span><br><span class="line"><span class="comment"># LOVE MONEY, love money, Love Money</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>其实正则表达式还有很多玩法，如果你想让正则和通配符混合着用，一点问题都没有，因为<code>fnmatch</code>还有一个<code>translate()</code>的方法，可以让你把通配符无痛转换成正则表达式，你爱怎么玩就怎么玩。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>fnmatch.translate(<span class="string">'C*and*D*'</span>)</span><br><span class="line"><span class="string">'C.*and.*D.*'</span></span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-08/use-logging-in-python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-08/use-logging-in-python/" class="post-title-link" itemprop="url">Python中的logging模块</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-08 20:57:43" itemprop="dateCreated datePublished" datetime="2016-10-08T20:57:43+08:00">2016-10-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近修改了项目里的logging相关功能，用到了python标准库里的logging模块，在此做一些记录。主要是从官方文档和stackoverflow上查询到的一些内容。</p>
+<ul>
+<li><a href="https://docs.python.org/2.7/library/logging.html" target="_blank" rel="noopener">官方文档</a></li>
+<li><a href="http://blog.csdn.net/balderfan/article/details/7644807" target="_blank" rel="noopener">技术博客</a></li>
+</ul>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>下面的代码展示了logging最基本的用法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取logger实例，如果参数为空则返回root logger</span></span><br><span class="line">logger = logging.getLogger(<span class="string">"AppName"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定logger输出格式</span></span><br><span class="line">formatter = logging.Formatter(<span class="string">'%(asctime)s %(levelname)-8s: %(message)s'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文件日志</span></span><br><span class="line">file_handler = logging.FileHandler(<span class="string">"test.log"</span>)</span><br><span class="line">file_handler.setFormatter(formatter)  <span class="comment"># 可以通过setFormatter指定输出格式</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 控制台日志</span></span><br><span class="line">console_handler = logging.StreamHandler(sys.stdout)</span><br><span class="line">console_handler.formatter = formatter  <span class="comment"># 也可以直接给formatter赋值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 为logger添加的日志处理器</span></span><br><span class="line">logger.addHandler(file_handler)</span><br><span class="line">logger.addHandler(console_handler)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定日志的最低输出级别，默认为WARN级别</span></span><br><span class="line">logger.setLevel(logging.INFO)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出不同级别的log</span></span><br><span class="line">logger.debug(<span class="string">'this is debug info'</span>)</span><br><span class="line">logger.info(<span class="string">'this is information'</span>)</span><br><span class="line">logger.warn(<span class="string">'this is warning message'</span>)</span><br><span class="line">logger.error(<span class="string">'this is error message'</span>)</span><br><span class="line">logger.fatal(<span class="string">'this is fatal message, it is same as logger.critical'</span>)</span><br><span class="line">logger.critical(<span class="string">'this is critical message'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 INFO    : this is information</span></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 WARNING : this is warning message</span></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 ERROR   : this is error message</span></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 CRITICAL: this is fatal message, it is same as logger.critical</span></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 CRITICAL: this is critical message</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 移除一些日志处理器</span></span><br><span class="line">logger.removeHandler(file_handler)</span><br></pre></td></tr></table></figure>
+
+<p>除了这些基本用法，还有一些常见的小技巧可以分享一下。</p>
+<h3 id="格式化输出日志"><a href="#格式化输出日志" class="headerlink" title="格式化输出日志"></a>格式化输出日志</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line">service_name = <span class="string">"Booking"</span></span><br><span class="line">logger.error(<span class="string">'%s service is down!'</span> % service_name)  <span class="comment"># 使用python自带的字符串格式化，不推荐</span></span><br><span class="line">logger.error(<span class="string">'%s service is down!'</span>, service_name)  <span class="comment"># 使用logger的格式化，推荐</span></span><br><span class="line">logger.error(<span class="string">'%s service is %s!'</span>, service_name, <span class="string">'down'</span>)  <span class="comment"># 多参数格式化</span></span><br><span class="line">logger.error(<span class="string">'&#123;&#125; service is &#123;&#125;'</span>.format(service_name, <span class="string">'down'</span>)) <span class="comment"># 使用format函数，推荐</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 ERROR   : Booking service is down!</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="记录异常信息"><a href="#记录异常信息" class="headerlink" title="记录异常信息"></a>记录异常信息</h3><p>当你使用logging模块记录异常信息时，不需要传入该异常对象，只要你直接调用<code>logger.error()</code> 或者 <code>logger.exception()</code>就可以将当前异常记录下来。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 记录异常信息</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="number">1</span> / <span class="number">0</span></span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    <span class="comment"># 等同于error级别，但是会额外记录当前抛出的异常堆栈信息</span></span><br><span class="line">    logger.exception(<span class="string">'this is an exception message'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2016-10-08 21:59:19,493 ERROR   : this is an exception message</span></span><br><span class="line"><span class="comment"># Traceback (most recent call last):</span></span><br><span class="line"><span class="comment">#   File "D:/Git/py_labs/demo/use_logging.py", line 45, in &lt;module&gt;</span></span><br><span class="line"><span class="comment">#     1 / 0</span></span><br><span class="line"><span class="comment"># ZeroDivisionError: integer division or modulo by zero</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="logging配置要点"><a href="#logging配置要点" class="headerlink" title="logging配置要点"></a>logging配置要点</h3><h4 id="GetLogger"><a href="#GetLogger" class="headerlink" title="GetLogger()"></a>GetLogger()</h4><p>这是最基本的入口，该方法参数可以为空，默认的logger名称是root，如果在同一个程序中一直都使用同名的logger，其实会拿到同一个实例，使用这个技巧就可以跨模块调用同样的logger来记录日志。</p>
+<p>另外你也可以通过日志名称来区分同一程序的不同模块，比如这个例子。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">logger = logging.getLogger(<span class="string">"App.UI"</span>)</span><br><span class="line">logger = logging.getLogger(<span class="string">"App.Service"</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="Formatter"><a href="#Formatter" class="headerlink" title="Formatter"></a>Formatter</h4><p>Formatter对象定义了log信息的结构和内容，构造时需要带两个参数：</p>
+<ul>
+<li>一个是格式化的模板<code>fmt</code>，默认会包含最基本的<code>level</code>和 <code>message</code>信息</li>
+<li>一个是格式化的时间样式<code>datefmt</code>，默认为 <code>2003-07-08 16:49:45,896 (%Y-%m-%d %H:%M:%S)</code></li>
+</ul>
+<p><code>fmt</code>中允许使用的变量可以参考下表。</p>
+<ul>
+<li><strong>%(name)s</strong>       Logger的名字</li>
+<li><strong>%(levelno)s</strong>    数字形式的日志级别</li>
+<li><strong>%(levelname)s</strong>  文本形式的日志级别</li>
+<li><strong>%(pathname)s</strong>    调用日志输出函数的模块的完整路径名，可能没有</li>
+<li><strong>%(filename)s</strong>       调用日志输出函数的模块的文件名</li>
+<li><strong>%(module)s</strong>      调用日志输出函数的模块名|</li>
+<li><strong>%(funcName)s</strong>   调用日志输出函数的函数名|</li>
+<li><strong>%(lineno)d</strong>           调用日志输出函数的语句所在的代码行</li>
+<li><strong>%(created)f</strong>         当前时间，用UNIX标准的表示时间的浮点数表示|</li>
+<li><strong>%(relativeCreated)d</strong>  输出日志信息时的，自Logger创建以来的毫秒数|</li>
+<li><strong>%(asctime)s</strong>     字符串形式的当前时间。默认格式是“2003-07-08 16:49:45,896”。逗号后面的是毫秒</li>
+<li><strong>%(thread)d</strong>         线程ID。可能没有</li>
+<li><strong>%(threadName)s</strong>     线程名。可能没有</li>
+<li><strong>%(process)d</strong>        进程ID。可能没有</li>
+<li><strong>%(message)s</strong>        用户输出的消息</li>
+</ul>
+<h4 id="SetLevel"><a href="#SetLevel" class="headerlink" title="SetLevel"></a>SetLevel</h4><p>Logging有如下级别: DEBUG，INFO，WARNING，ERROR，CRITICAL<br>默认级别是WARNING，logging模块只会输出指定level以上的log。这样的好处, 就是在项目开发时debug用的log，在产品release阶段不用一一注释，只需要调整logger的级别就可以了，很方便。</p>
+<h4 id="Handler"><a href="#Handler" class="headerlink" title="Handler"></a>Handler</h4><p>最常用的是StreamHandler和FileHandler, Handler用于向不同的输出端打log。<br>Logging包含很多handler, 可能用到的有下面几种</p>
+<ul>
+<li><strong>StreamHandler</strong> instances send error messages to streams (file-like objects).</li>
+<li><strong>FileHandler</strong> instances send error messages to disk files.</li>
+<li><strong>RotatingFileHandler</strong> instances send error messages to disk files, with support for maximum log file sizes and log file rotation.</li>
+<li><strong>TimedRotatingFileHandler</strong> instances send error messages to disk files, rotating the log file at certain timed intervals.</li>
+<li><strong>SocketHandler</strong> instances send error messages to TCP/IP sockets.</li>
+<li><strong>DatagramHandler</strong> instances send error messages to UDP sockets.</li>
+<li><strong>SMTPHandler</strong> instances send error messages to a designated email address.</li>
+</ul>
+<h4 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h4><p>logging的配置大致有下面几种方式。</p>
+<ol>
+<li>通过代码进行完整配置，参考开头的例子，主要是通过getLogger方法实现。</li>
+<li>通过代码进行简单配置，下面有例子，主要是通过basicConfig方法实现。</li>
+<li>通过配置文件，下面有例子，主要是通过 <code>logging.config.fileConfig(filepath)</code></li>
+</ol>
+<h5 id="logging-basicConfig"><a href="#logging-basicConfig" class="headerlink" title="logging.basicConfig"></a>logging.basicConfig</h5><p>basicConfig提供了非常便捷的方式让你配置logging模块并马上开始使用，可以参考下面的例子。具体可以配置的项目请查阅<a href="https://docs.python.org/2/library/logging.html#logging.basicConfig" target="_blank" rel="noopener">官方文档</a>。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line">logging.basicConfig(filename=<span class="string">'example.log'</span>,level=logging.DEBUG)</span><br><span class="line">logging.debug(<span class="string">'This message should go to the log file'</span>)</span><br><span class="line"></span><br><span class="line">logging.basicConfig(format=<span class="string">'%(levelname)s:%(message)s'</span>, level=logging.DEBUG)</span><br><span class="line">logging.debug(<span class="string">'This message should appear on the console'</span>)</span><br><span class="line"></span><br><span class="line">logging.basicConfig(format=<span class="string">'%(asctime)s %(message)s'</span>, datefmt=<span class="string">'%m/%d/%Y %I:%M:%S %p'</span>)</span><br><span class="line">logging.warning(<span class="string">'is when this event was logged.'</span>)</span><br></pre></td></tr></table></figure>
+<p>备注： 其实你甚至可以什么都不配置直接使用默认值在控制台中打log，用这样的方式替换print方法对日后项目维护会有很大帮助。</p>
+<h5 id="通过文件配置logging"><a href="#通过文件配置logging" class="headerlink" title="通过文件配置logging"></a>通过文件配置logging</h5><p>如果你希望通过配置文件来管理logging，可以参考这个<a href="https://docs.python.org/2/library/logging.config.html" target="_blank" rel="noopener">官方文档</a>。在log4net或者log4j中这是很常见的方式。</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment"># logging.conf</span></span><br><span class="line"><span class="section">[loggers]</span></span><br><span class="line"><span class="attr">keys</span>=root</span><br><span class="line"></span><br><span class="line"><span class="section">[logger_root]</span></span><br><span class="line"><span class="attr">level</span>=DEBUG</span><br><span class="line"><span class="attr">handlers</span>=consoleHandler</span><br><span class="line"><span class="comment">#,timedRotateFileHandler,errorTimedRotateFileHandler</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#################################################</span></span><br><span class="line"><span class="section">[handlers]</span></span><br><span class="line"><span class="attr">keys</span>=consoleHandler,timedRotateFileHandler,errorTimedRotateFileHandler</span><br><span class="line"></span><br><span class="line"><span class="section">[handler_consoleHandler]</span></span><br><span class="line"><span class="attr">class</span>=StreamHandler</span><br><span class="line"><span class="attr">level</span>=DEBUG</span><br><span class="line"><span class="attr">formatter</span>=simpleFormatter</span><br><span class="line"><span class="attr">args</span>=(sys.stdout,)</span><br><span class="line"></span><br><span class="line"><span class="section">[handler_timedRotateFileHandler]</span></span><br><span class="line"><span class="attr">class</span>=handlers.TimedRotatingFileHandler</span><br><span class="line"><span class="attr">level</span>=DEBUG</span><br><span class="line"><span class="attr">formatter</span>=simpleFormatter</span><br><span class="line"><span class="attr">args</span>=(<span class="string">'debug.log'</span>, <span class="string">'H'</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">[handler_errorTimedRotateFileHandler]</span></span><br><span class="line"><span class="attr">class</span>=handlers.TimedRotatingFileHandler</span><br><span class="line"><span class="attr">level</span>=WARN</span><br><span class="line"><span class="attr">formatter</span>=simpleFormatter</span><br><span class="line"><span class="attr">args</span>=(<span class="string">'error.log'</span>, <span class="string">'H'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#################################################</span></span><br><span class="line"><span class="section">[formatters]</span></span><br><span class="line"><span class="attr">keys</span>=simpleFormatter, multiLineFormatter</span><br><span class="line"></span><br><span class="line"><span class="section">[formatter_simpleFormatter]</span></span><br><span class="line"><span class="attr">format</span>= %(levelname)s %(threadName)s %(asctime)s:   %(message)s</span><br><span class="line"><span class="attr">datefmt</span>=%H:%M:%S</span><br><span class="line"></span><br><span class="line"><span class="section">[formatter_multiLineFormatter]</span></span><br><span class="line"><span class="attr">format</span>= ------------------------- %(levelname)s -------------------------</span><br><span class="line"> Time:      %(asctime)s</span><br><span class="line"> Thread:    %(threadName)s</span><br><span class="line"> File:      %(filename)s(line %(lineno)d)</span><br><span class="line"> Message:</span><br><span class="line"> %(message)s</span><br><span class="line"></span><br><span class="line"><span class="attr">datefmt</span>=%Y-%m-%d %H:%M:%S</span><br></pre></td></tr></table></figure>
+<p>假设以上的配置文件放在和模块相同的目录，代码中的调用如下。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">filepath = os.path.join(os.path.dirname(__file__), <span class="string">'logging.conf'</span>)</span><br><span class="line">logging.config.fileConfig(filepath)</span><br><span class="line"><span class="keyword">return</span> logging.getLogger()</span><br></pre></td></tr></table></figure>
+
+<h3 id="日志重复输出的坑"><a href="#日志重复输出的坑" class="headerlink" title="日志重复输出的坑"></a>日志重复输出的坑</h3><p>你有可能会看到你打的日志会重复显示多次，可能的原因有很多，但总结下来无非就一个，日志中多个重复的handler。</p>
+<h4 id="第一坑"><a href="#第一坑" class="headerlink" title="第一坑"></a>第一坑</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"></span><br><span class="line">logging.basicConfig(level=logging.DEBUG)</span><br><span class="line"></span><br><span class="line">fmt = <span class="string">'%(levelname)s:%(message)s'</span></span><br><span class="line">console_handler = logging.StreamHandler()</span><br><span class="line">console_handler.setFormatter(logging.Formatter(fmt))</span><br><span class="line">logging.getLogger().addHandler(console_handler)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">'hello!'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># INFO:root:hello!</span></span><br><span class="line"><span class="comment"># INFO:hello!</span></span><br></pre></td></tr></table></figure>
+
+<p>上面这个例子出现了重复日志，因为在第3行调用<code>basicConfig()</code>方法时系统会默认创建一个handler，如果你再添加一个控制台handler时就会出现重复日志。</p>
+<h4 id="第二坑"><a href="#第二坑" class="headerlink" title="第二坑"></a>第二坑</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_logger</span><span class="params">()</span>:</span></span><br><span class="line">    fmt = <span class="string">'%(levelname)s:%(message)s'</span></span><br><span class="line">    console_handler = logging.StreamHandler()</span><br><span class="line">    console_handler.setFormatter(logging.Formatter(fmt))</span><br><span class="line">    logger = logging.getLogger(<span class="string">'App'</span>)</span><br><span class="line">    logger.setLevel(logging.INFO)</span><br><span class="line">    logger.addHandler(console_handler)</span><br><span class="line">    <span class="keyword">return</span> logger</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">call_me</span><span class="params">()</span>:</span></span><br><span class="line">    logger = get_logger()</span><br><span class="line">    logger.info(<span class="string">'hi'</span>)</span><br><span class="line"></span><br><span class="line">call_me()</span><br><span class="line">call_me()</span><br><span class="line"></span><br><span class="line"><span class="comment"># INFO:hi</span></span><br><span class="line"><span class="comment"># INFO:hi</span></span><br><span class="line"><span class="comment"># INFO:hi</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个例子里<code>hi</code>居然打印了三次，如果再调用一次<code>call_me()</code>呢？我告诉你会打印6次。why? 因为你每次调用<code>get_logger()</code>方法时都会给它加一个新的handler，你是自作自受。正常的做法应该是全局只配置logger一次。</p>
+<h4 id="第三坑"><a href="#第三坑" class="headerlink" title="第三坑"></a>第三坑</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_logger</span><span class="params">()</span>:</span></span><br><span class="line">    fmt = <span class="string">'%(levelname)s: %(message)s'</span></span><br><span class="line">    console_handler = logging.StreamHandler()</span><br><span class="line">    console_handler.setFormatter(logging.Formatter(fmt))</span><br><span class="line">    logger = logging.getLogger(<span class="string">'App'</span>)</span><br><span class="line">    logger.setLevel(logging.INFO)</span><br><span class="line">    logger.addHandler(console_handler)</span><br><span class="line">    <span class="keyword">return</span> logger</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">()</span>:</span></span><br><span class="line">    logging.basicConfig(format=<span class="string">'[%(name)s]: %(message)s'</span>)</span><br><span class="line">    logging.warn(<span class="string">'some module use root logger'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    logger = get_logger()</span><br><span class="line">    logger.info(<span class="string">'App start.'</span>)</span><br><span class="line">    foo()</span><br><span class="line">    logger.info(<span class="string">'App shutdown.'</span>)</span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line"></span><br><span class="line"><span class="comment"># INFO: App start.</span></span><br><span class="line"><span class="comment"># [root]: some module use root logger</span></span><br><span class="line"><span class="comment"># INFO: App shutdown.</span></span><br><span class="line"><span class="comment"># [App]: App shutdown.</span></span><br></pre></td></tr></table></figure>
+
+<p>为嘛最后的<code>App shutdown</code>打印了两次？所以在Stackoverflow上很多人都问，我应该怎么样把root logger关掉，root logger太坑爹坑妈了。只要你在程序中使用过root logger，那么默认你打印的所有日志都算它一份。上面的例子没有什么很好的办法，我建议你招到那个没有经过大脑就使用root logger的人，乱棍打死他或者开除他。</p>
+<p>如果你真的想禁用root logger，有两个不是办法的办法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">logging.getLogger().handlers = []  <span class="comment"># 删除所有的handler</span></span><br><span class="line">logging.getLogger().setLevel(logging.CRITICAL)  <span class="comment"># 将它的级别设置到最高</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>Python中的日志模块作为标准库的一部分，功能还是比较完善的。个人觉得上手简单，另外也支持比如过滤，文件锁等高级功能，能满足大多数项目需求。</p>
+<p>不过切记，小心坑。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-04/book-love-in-the-time-of-cholera/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-04/book-love-in-the-time-of-cholera/" class="post-title-link" itemprop="url">读书 - 《霍乱时期的爱情》</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-04 14:35:21" itemprop="dateCreated datePublished" datetime="2016-10-04T14:35:21+08:00">2016-10-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/" itemprop="url" rel="index">
+                    <span itemprop="name">Reading</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <center>文/大橙子
+
+<p><img src="https://tobyqin.github.io/images/love-in-cholera.jpg" alt=""></p>
+</center>
+
+<p>作者歌颂的应该不是爱情，至于男女主最后终在一起，我也不认为那是爱情。</p>
+<p>文章开篇写了医生一个老朋友的自杀，有意的自杀，无非想表达，衰老，有些人不愿意面对，而像医生、女主、男主，都最终到了衰老的年纪，衰老会面临很多问题，最大的问题应该是孤独。老人需要陪伴，费尔明娜最后和男主在一起，是因为她需要最后的陪伴而已，不是爱情。</p>
+<p>纵观男主弗洛伦蒂诺一生，那扭曲的爱情观所，他对费尔明娜的爱情，他认为的永恒的忠诚和不渝的爱情，真让人唏嘘。弗洛伦蒂诺和费尔明娜只不过青春期有过信件往来嘛，没有任何现实基础啊，话也没正儿八经说过几句啊，都是幻想啊幻想啊，有木有！以至于最后费尔明娜在街头看见弗洛伦蒂诺的时候，不禁讶异：我怎么会喜欢这个人！才有了后来的索还信件，断绝往来之事。这哪里是真爱？</p>
+<p>弗洛伦蒂诺让我觉得恶心，他的一生都在意淫。不仅如此，他的桃色笔记，51年里的25个笔记本622个与他有较长情史的角色，大部分的寡妇，难道都是表达对费尔明娜的思念吗？对，寡妇，他看到过那些寡妇的饥渴，所以一直期望费尔明娜成为寡妇的那天，幻想着费尔明娜也会饥渴的扑向他的怀抱扑向他的床，Sick。还有他糟蹋的那个14岁的小萝莉，人家父母把孩子交给你，让你做监护人，你却把小朋友睡了，这搁现代，这就是嫖宿幼女啊，70多岁的老头和14岁的少女，最后还让人自杀的，良知何在？而当他们最终睡在一起时，不要脸的弗洛伦蒂诺还说我为你保留了童真，我呸，Sick。世人没能揭穿你这虚伪的面纱而已，在门后偷袭了女佣后，害怕被揭穿，还找了个替死鬼。</p>
+<p>相比较来说，费尔明娜同医生的感情到是让我觉得正常的多。虽然他们结婚时并没有感情基础，却有长达50多年的陪伴，人不是说嘛，陪伴是最长情的告白。两人后经历了热恋、生子、家庭矛盾、出轨，那难道不是人世间大多数夫妻所经历的嘛。看看人家医生，生活规律，专业上有建树，还不忘教书育人，参与公益，参与社会建设，虽也有短暂的出轨，但不会影响社会对他的评价。再看看弗洛伦蒂洛的一生，除了25本桃色日记，还留下了什么。</p>
+<p>最后72岁和费尔明娜和76的弗洛伦蒂洛终于睡在一起了，就像是现代社会的屌丝男终于泡上白富美，在白富美老公死后，在50多年后。有人这么说道：“被许多人津津乐道的半个多世纪的爱情等待，怎么看都像是一场’吃着碗里看着锅里的‘阴险猎捕计划’。踩过622朵浮云，弗洛伦蒂诺终于吃到了梦寐以求的终极猎物”。</p>
+<p>这个故事告诉我们，好好活着，别纱布垃圾就知道挣钱，你要是死的早，你的枕边人被别人睡了多可惜！还好故事里的医生活了80多岁，这让男主在垂暮之前，基本丧失生理能力的时候，才得以如愿以偿。再次证明，作者根本没有歌颂他的爱情的意思。</p>
+<p>马尔克斯的文章还是很精彩的，看过《百年孤独》，惊叹不已。有机会你自己也应该好好去看一遍吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-03/book-moon-and-peny/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-03/book-moon-and-peny/" class="post-title-link" itemprop="url">读书 - 《月亮与六便士》</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-03 14:35:21" itemprop="dateCreated datePublished" datetime="2016-10-03T14:35:21+08:00">2016-10-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/" itemprop="url" rel="index">
+                    <span itemprop="name">Reading</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <center>文/大橙子
+
+<p><img src="https://tobyqin.github.io/images/moon-and-peny.jpg" alt=""></p>
+</center>
+
+<p>一个伟大的艺术家，40岁时，有稳定的家庭及职业，却突然放弃了一切，只为追求自己心中所深信的真理：“我必须画画！”</p>
+<p>我必须得说，我等普通老板姓是无法理解伟大艺术家自私、奔放、狂野、无道德约束的灵魂的，更别说那些食不果腹的日子。</p>
+<p>有人说，这时高更人物传记。我也不了解。抛却不能理解的部分，故事本事还是很精彩的。</p>
+<p>不剧透，有兴趣自己了解。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2016-10-03/book-huo-zhe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2016-10-03/book-huo-zhe/" class="post-title-link" itemprop="url">读书 - 《活着》</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-03 13:35:21" itemprop="dateCreated datePublished" datetime="2016-10-03T13:35:21+08:00">2016-10-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/" itemprop="url" rel="index">
+                    <span itemprop="name">Reading</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <center>文/大橙子
+
+<p><img src="https://tobyqin.github.io/images/huo-zhe.jpg" alt=""></p>
+</center>
+
+<p>没什么好说的，白花花的语言，依托中国抗日战后至今的时代背景，以富贵的经历叙述了很多中国式悲哀。</p>
+<p>富二代的富贵，吃喝嫖赌，散尽家财，老爹气死。</p>
+<p>搬出豪宅，交出家财，开始辛勤劳作，不料老丈人八抬大轿把嫁出去的女儿接了回去。</p>
+<p>媳妇终究还是回来了，这时的母亲却生病了。</p>
+<p>去城里请医生，却被国民党抓了去做炮兵。</p>
+<p>仗也没怎么打。日本鬼子撤出中国，继而开始了国共内战。</p>
+<p>战场上的每个人都想活着，都想活着回家去。</p>
+<p>后国军被围，被俘虏。共军优待俘虏，给了路费，富贵回家了。</p>
+<p>回家后发现老母已不再，女儿凤霞不会说话了。</p>
+<p>想带着老婆儿女好好过日子，发现挣得太少，没法让儿子上学。</p>
+<p>心生一妙计，把女儿送给大户人家，就供得起儿子上学了。</p>
+<p>好不容易送走的女儿，最后还是偷偷跑回来了，心一横，还是自己养着吧。</p>
+<p>这时候，村里搞炼钢铁，收了每户人家的锅。还收了儿子的羊，说是从此以后吃食堂了，再也不用自己家做饭了，方便啊。</p>
+<p>儿子在学校跑步跑的好，体育老师说可以训练，日后出国比赛，为国争光。富贵不懂，硬是阻止了。</p>
+<p>富贵带着老婆、女儿，一家三个轻壮年劳动，日子倒也可以。</p>
+<p>不料老婆却病了，身体一天比一天差。</p>
+<p>国庆节来的时候，富贵一家守着锅炉，终于把铁给融化了。</p>
+<p>村长高高兴兴带着一帮人去县里汇报。富贵背着老婆去城里看病。</p>
+<p>天有不测风云，儿子学校的校长，县长的老婆，生孩子大出血。</p>
+<p>学校把他们年级的孩子都拉到医院，不料只有富贵儿子的血型匹配，医生心一横，抽血往死里抽，最后出了人命。</p>
+<p>儿子死了，老婆的病更加重了，眼看一天天不行了，却撑住了。</p>
+<p>村里人娶媳妇嫁女儿，看得凤霞眼红，虽然她不会说话，也是羡慕别人家的。</p>
+<p>富贵托村长给凤霞介绍婚事，村长还真找来了，就是头有点偏，人在城里还有正经工作。</p>
+<p>好在偏头对凤霞挺好，不久还怀上了。</p>
+<p>不料凤霞生孩子时难产，又挂了。</p>
+<p>到这时，富贵老婆终于顶不住，也归西了。</p>
+<p>富贵就经常去看偏头和外孙，没想一天偏头干活时被砸死，留下外孙一人。</p>
+<p>富贵把外孙接回家一同过。</p>
+<p>一天，收棉花时，外孙不舒服，富贵就把他送回家，还给他煮了好多豆子。</p>
+<p>真是，屋漏偏逢连夜雨，富贵回家发现外孙吃豆子噎死了，嘴里塞着豆子。</p>
+<p>最后，富贵买了头牛，相依相伴。</p>
+<p>不太愿意相信，富贵是集所有悲剧于一身的人。</p>
+<p>故事太刻意了些，不推荐。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/9/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/11/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/8/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-08-15/cookiecutter-intro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-08-15/cookiecutter-intro/" class="post-title-link" itemprop="url">让你的项目模板化和专业化 - Cookiecutter</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-08-16 00:00:00" itemprop="dateCreated datePublished" datetime="2017-08-16T00:00:00+08:00">2017-08-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Cookiecutter英文的意思大概是饼干模型这么一类东西，可以让你快速做出某种形状的饼干。实际上你在google搜索到的cookiecutter是一个托管在GitHub的开源项目。</p>
+<ul>
+<li><a href="https://github.com/audreyr/cookiecutter" target="_blank" rel="noopener">https://github.com/audreyr/cookiecutter</a></li>
+</ul>
+<p>这是一个就算你不用也应该了解的工具，cookiecutter可以让你快速从各种模板中建立工程，这个项目本身是python写的，但是支持的模板跨越了多种语言和各种领域，看图说话。</p>
+<p><img src="https://tobyqin.github.io/images/cookiecutter-categories.png" alt="cookiecutter-categories"></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>这是一个命令行工具，需要python支持，所以你要确保python已经正确安装，版本可以是2.x或者3.x。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install -U cookiecutter</span><br></pre></td></tr></table></figure>
+
+<h2 id="上手"><a href="#上手" class="headerlink" title="上手"></a>上手</h2><p>首先你要确定新建的项目是何种类型，这是一个很严肃的问题。一般IDE会提供新建项目的功能，为什么我们还要cookiecutter？此新建非彼新建。IDE的新建项目一般指的是空项目，而cookiecutter新建的项目一般是已经有一定完成度的框架。</p>
+<p>举一个简单例子，你可以从IDE新建一个django项目，新建的项目可以直接运行，但也仅仅是能运行。如果你从cookiecutter新建一个django项目你可以有很多选择，比如是否使用bootstrap，是否集成rest framework，是否要发布到aws，是否使用docker，测试框架使用什么等等。</p>
+<p>IDE建房子是从地基开始，cookiecutter可以帮你把架子也搭好。</p>
+<p>第一步，确定你要新建的项目类型，假设我要新建一个使用bootstrap的flask项目。从cookiecutter的GitHub页面找到我心仪的模板 （Ctrl + F）。 </p>
+<p>第二步，启动命令行，输入 <code>cookiecutter [template-path/url/zip]</code>，比如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cookiecutter https:&#x2F;&#x2F;github.com&#x2F;sloria&#x2F;cookiecutter-flask.git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tobyqin.github.io/images/cookiecutter-questions.png" alt="cookiecutter-flask"></p>
+<p>第三步，按照模板预设的问题一路next，你就新建了一个标准和专业的Flask工程。</p>
+<p><img src="https://tobyqin.github.io/images/cookiecutter-flask.png" alt="cookiecutter-flask"></p>
+<h2 id="优点和局限"><a href="#优点和局限" class="headerlink" title="优点和局限"></a>优点和局限</h2><p>cookiecutter的主要局限来自于它的优点，太模板化的东西会导致灵活性不足。而且目前可用的各种模板质量参差不齐，不过主流的项目模板都是非常棒的，比如各种前后端框架，机器学习等等，有很多人在维护和更新。</p>
+<p>一个框架搭到什么程度比较合适，这就不能一概而论了。</p>
+<p>如果你要做一个Django应用，模板里默认就集成了用户注册和登录功能，有时候你觉得太棒了我刚好需要，有时候你觉得我没这样的需求，还得从新建好的项目一点一点删掉没用的代码还可能改错导致跑不起来。</p>
+<p>其实我认为cookiecutter也是一个很好的学习渠道，使用cookiecutter新建项目你可以看到别人是如何组织代码，如何管理配置，如何管理依赖等等，比如Python写的项目，理论上你可以把代码扔在任何目录，大拿扔的好看，自己扔的就很丑。</p>
+<p>最后再提一点，cookiecutter支持自定义模板，你也可以把自己常用的项目功能打包成模板，后续只要有重用需求，cookiecutter一下，立马开始业务功能的cooding，岂不妙哉？</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-07-26/use-xmind-to-design-testcase/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-07-26/use-xmind-to-design-testcase/" class="post-title-link" itemprop="url">xmind2testlink - 快速设计测试案例并导入TestLink</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-27 00:00:00" itemprop="dateCreated datePublished" datetime="2017-07-27T00:00:00+08:00">2017-07-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前面我有介绍过思维导图和xmind，现在我们再往前一步，让生活再美好一些。</p>
+<blockquote>
+<p>上集回顾：<a href="https://betacat.online/posts/2017-07-26/the-power-of-mindmap/">你听说过思维导图吗？</a></p>
+<p>原文链接： <a href="https://betacat.online/posts/2017-07-26/the-power-of-mindmap/">https://betacat.online/posts/2017-07-26/the-power-of-mindmap/</a></p>
+</blockquote>
+<p>本文我们将使用xmind设计测试案例，并导入到TestCase管理系统TestLink。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Xmind生成的思维导图以 .xmind 为扩展名，其实这本质上是一个zip压缩文件。这里略带一点小知识。</p>
+<blockquote>
+<p>zip这一世界通用压缩标准是美国20世纪80年代著名程序员Phil Katz 发明的。当时为了对抗商业压缩软件ARC（缺钱买不起），Philip Katz 制作出了PKZIP，因为免费而且开放，越来越多的软件都内嵌支持zip，包括Windows操作系统。</p>
+<p>你可以使用任何一种文本编辑器打开zip文件，文件的头两个字母为 PK。</p>
+</blockquote>
+<p>xmind解压以后，里面主要由一些xml文件构成，解析content.xml 和 comment.xml 就可以获得思维导图的结构和主要文字内容。</p>
+<h2 id="xmind2testlink"><a href="#xmind2testlink" class="headerlink" title="xmind2testlink"></a>xmind2testlink</h2><p>这是一个我使用Python实现对xmind进行解析的PyPI包，有了它你可以很方便地将xmind转化成其他系统使用的格式，比如TestLink。</p>
+<h3 id="安装和使用"><a href="#安装和使用" class="headerlink" title="安装和使用"></a>安装和使用</h3><p>使用pip可以快速安装xmind2testlink。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install xmind2testlink -U</span><br></pre></td></tr></table></figure>
+
+<p>安装后默认就提供了命令行转换功能，可以将xmind转成可以导入testlink的xml文件。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xmind2testlink &#x2F;path&#x2F;to&#x2F;testcase.xmind</span><br><span class="line">Generated: testcase.xml</span><br></pre></td></tr></table></figure>
+
+<p>如果你想自己编程使用中间对象，可以导入xmind_parser或者testlink_parser中的方法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> xmind2testlink.xmind_parser <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> xmind2testlink.testlink_parser <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="comment"># do your stuff</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用须知-v1"><a href="#使用须知-v1" class="headerlink" title="使用须知 v1"></a>使用须知 v1</h3><p>并不是所有的xmind都可以顺利被xmind2testlink识别，因为我是按照一定规律去分析xmind结构的，所以如果你要使用这个小工具，那么请你遵循一些简单的游戏规则。</p>
+<p><img src="https://github.com/tobyqin/xmind2testlink/raw/master/web/static/guide/xmind2testlink_v1.png" alt="xmind2testlink_v1"></p>
+<p>输出结果：</p>
+<p><img src="https://github.com/tobyqin/xmind2testlink/raw/master/web/static/guide/xmind2testlink_v1_out.png" alt="xmind2testlink_v1_out"></p>
+<p>如图，你的xmind应该和上图结构一致：</p>
+<ol>
+<li>默认的中心主题不会被转换，默认从第一层子主题开始转换。</li>
+<li>第一层子主题会被识别为 TestSuite。</li>
+<li>TestSuite 的子主题 会被识别为 TestCase。</li>
+<li>TestCase 的下级分支为 TestStep 和 Expected Result。</li>
+<li>你可以给 TestSuite，TestCase加上 Note，这会被识别为Summary 字段。</li>
+<li>你可以给TestCase 加上 Comment，这会被识别为 Preconception 字段。</li>
+<li>你可以使用数字Marker来为TestCase定义优先级。</li>
+<li>你可以使用感叹号<code>!</code>来注释掉不想导入的任意分支。</li>
+</ol>
+<p>如果觉得太复杂了，可以下载示例的xmind文件（<a href="https://github.com/tobyqin/xmind2testlink/blob/master/web/static/guide/test_case_by_xmind_v1.xmind" target="_blank" rel="noopener">Test case by xmind v1.xmind</a>），看一眼就懂了。</p>
+<h3 id="使用须知-v2"><a href="#使用须知-v2" class="headerlink" title="使用须知 v2"></a>使用须知 v2</h3><p>在使用V1的规则一段时间后，发现不是特别xmind，xmind真正强大的地方在于发散思维整理，如果按照前面的规则使用xmind，会有很大的限制，于是我升级了xmind2testlink，称之为V2。看图：</p>
+<p><img src="https://github.com/tobyqin/xmind2testlink/raw/master/web/static/guide/xmind2testlink_v2.png" alt="xmind2testlink_v2"></p>
+<p>输出结果：</p>
+<p><img src="https://github.com/tobyqin/xmind2testlink/raw/master/web/static/guide/xmind2testlink_v2_out.png" alt="xmind2testlink_v2_out"></p>
+<p>基于V1，补充的规则如下：</p>
+<ol>
+<li>根主题必须加上一个小星星，这是用来区分V1和V2的标识。</li>
+<li>第一层子主题还是会被识别为 TestSuite。</li>
+<li>之后的主题可以自由扩展，如果一个主题被标记了priority那么意味着case到此结束。</li>
+<li>如果没有主题被标记priority，默认case取到最后一个主题。</li>
+<li>默认使用空格连接case子主题，你可以指定其他连接符（根主题的最后一个字符）。</li>
+<li>TestCase 的下级分支为 TestStep 和 Expected Result。</li>
+<li>所有case子主题的Summary和Preconception会被连接起来。</li>
+<li>你可以给 TestSuite，TestCase加上 Note，这会被识别为Summary 字段。</li>
+<li><code>!</code>开头的所有主题都会被自动忽略，可以用来隐藏或者注释某些不想导入的内容。</li>
+</ol>
+<p>照旧，这里有一个示例文件（<a href="https://github.com/tobyqin/xmind2testlink/blob/master/web/static/guide/test_case_by_xmind_v2.xmind" target="_blank" rel="noopener">Test case by xmind v2.xmind</a>），看一下就明白了。其实Github上的<a href="https://github.com/tobyqin/xmind2testlink" target="_blank" rel="noopener">英文文档</a>描述更清楚一下，有能力的你还是去看一下。</p>
+<h3 id="进阶用法"><a href="#进阶用法" class="headerlink" title="进阶用法"></a>进阶用法</h3><p>可能不是每个人都了解Python或者安装了Python，那么这是你可以将xmind2testlink部署成一个网站，步骤也非常简单。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># clone this git repo ahead</span><br><span class="line">cd &#x2F;path&#x2F;to&#x2F;xmind2testlink&#x2F;web</span><br><span class="line">pip install -r requirements.txt -U</span><br><span class="line">python application.py</span><br><span class="line"></span><br><span class="line">* Running on http:&#x2F;&#x2F;127.0.0.1:5000&#x2F; (Press CTRL+C to quit)</span><br><span class="line">* Restarting with stat</span><br></pre></td></tr></table></figure>
+
+<p>这时你启动浏览器就可以看到一个web版的转换界面。</p>
+<p><img src="https://raw.githubusercontent.com/tobyqin/xmind2testlink/master/web/static/guide/web.png" alt="xmind2testlink web"></p>
+<p>这是一个由Flask写的简单程序，你可以将其部署到专门的服务器，详情请查阅官方文档。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>其实在实现一个小工具的过程中，从构思想法到实现，有很多内容和未知需要去探索。xmind2testlink 涉及到的知识点也不少，比如 PyPI 打包发布，python读取zip文件，解析xml，Flask，网站前后期，服务器部署，持续集成，单元测试等等，我个人收获不小。</p>
+<p>如果你工作或生活也有各种想法，不如动手去做，失败了没啥大不了的，万一成功了呢。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-07-25/the-power-of-mindmap/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-07-25/the-power-of-mindmap/" class="post-title-link" itemprop="url">你听说过思维导图吗？</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-26 00:00:00" itemprop="dateCreated datePublished" datetime="2017-07-26T00:00:00+08:00">2017-07-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h2><p>如果你没听说过思维导图，那么你可能错过了很美妙的一个工具。不过没关系，现在了解一下也不算迟。</p>
+<blockquote>
+<p>思维导图又叫心智导图是表达发散性思维的有效的图形思维工具 ，它简单却又极其有效，是一种革命性的思维工具。</p>
+</blockquote>
+<p>名词解释大家都不爱看，所谓的思维导图其实就是类似于下面这样一张图。</p>
+<p><img src="https://tobyqin.github.io/images/mindmap.jpg" alt="传统思维导图"></p>
+<p>是不是觉得好复杂，徒手画图？我可没说。我们现在接触到的文档大多数都是电子化的，所以你经常看到的思维导图应该像这个样子。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-example.png" alt="电子化的思维导图"></p>
+<p>是不是挺清晰易懂的？思维导图也叫 MindMap，脑图等等。作为一个头脑风暴的工具，灵活运用「思维导图」将会对你在学习和工作帮助甚大！上面这张思维导图就是我在分享从Python2迁移到Python3的知识点总结。</p>
+<h2 id="思维导图有用吗"><a href="#思维导图有用吗" class="headerlink" title="思维导图有用吗"></a>思维导图有用吗</h2><p>这玩意有用吗？这是你在学习任何一个东西之前都必须弄明白的一件事。</p>
+<p>建议阅读知乎问答：<a href="https://www.zhihu.com/question/20273625" target="_blank" rel="noopener">思维导图真的有效吗？</a>。简单总结一下：</p>
+<ol>
+<li>作为一种工具它当然有效，但必然有它擅长和不擅长的事</li>
+<li>但不要高估它的价值，它不是万能的</li>
+<li>思维导图主要用于激发思维，整理思路，系统分析等脑力劳动上</li>
+</ol>
+<p>举例说明它擅长的事：</p>
+<ul>
+<li>问题解决，项目计划，知识管理，思考写作，做笔记，项目演示，做计划</li>
+</ul>
+<p>缺点也提一下：</p>
+<ul>
+<li>结构固定，一般用于主题或者树状信息整理，不适合交互复杂的信息处理</li>
+<li>制图费时，尤其是手动绘图，时间成本很高</li>
+</ul>
+<p>所以说，我们尽量用它的长处，避免用它的短处。说到绘制思维导图的学习和时间成本，其实不能一口咬死这玩意真的很难画，关键是你有没有选对工具。</p>
+<h2 id="思维导图工具"><a href="#思维导图工具" class="headerlink" title="思维导图工具"></a>思维导图工具</h2><p>当你在电脑上使用思维导图工具绘制思维导图时，你会发现，真的很不费事，甚至是自然而然，因为你只需要记住两个快捷键：</p>
+<ul>
+<li>TAB - 添加子主题</li>
+<li>ENTER - 发散思维</li>
+</ul>
+<p>基本上99%的思维导图软件都使用了以上两个快捷键，当你的手指放在键盘上时，你只要集中精力去整理思路，不需要去关心图是怎么画出来的。使用TAB进行大纲整理，使用ENTER添加平行内容。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-create.gif" alt="使用快捷键创建思维导图"></p>
+<p>在这里我推荐大家尝试使用Xmind来制作思维导图，它提供免费版，跨平台而且兼容很多其他同类软件的文件格式。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-intro.jpg" alt="xmind 简介"></p>
+<p>Xmind可谓是杀人越货，居家必备之良品，优点多多，可以用下面这张思维导图来总结。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-good.png" alt="xmind的优点"></p>
+<p>如果你不想或者没条件在每台电脑上都装Xmind，那么网页版也有不少选择方案。我特别推荐ProcessOn和百度脑图。</p>
+<ul>
+<li>ProcessOn：<a href="https://www.processon.com/" target="_blank" rel="noopener">https://www.processon.com/</a></li>
+<li>百度脑图：<a href="http://naotu.baidu.com/" target="_blank" rel="noopener">http://naotu.baidu.com/</a></li>
+</ul>
+<h2 id="思维导图实例"><a href="#思维导图实例" class="headerlink" title="思维导图实例"></a>思维导图实例</h2><p>思维导图主要还是用于思维发散或者思路整理，我举一些我在实际工作中用到思维导图的例子。</p>
+<h3 id="做工作计划"><a href="#做工作计划" class="headerlink" title="做工作计划"></a>做工作计划</h3><p>思维导图非常适合做规划类的事情，因为规划需要有条理和步骤，需要细化和调整。当你用Xmind做好一个初步计划后，可以通过鼠标去拖动子项目来调整顺序优先级，并且还可以添加一些图标来标注状态或者优先级，例如下图。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-plan.png" alt="xmind 做计划"></p>
+<h3 id="做知识梳理"><a href="#做知识梳理" class="headerlink" title="做知识梳理"></a>做知识梳理</h3><p>当你需要做读书笔记或者归纳总结知识点时，思维导图也十分有效。下图是我开始学习Python后做的思维导图，里面包含了读书笔记和经验总结，通过思维导图我能很方便的回顾各个知识点，查缺补漏。</p>
+<p><img src="https://tobyqin.github.io/images/xmind-learn-python.png" alt="xmind 做知识梳理"></p>
+<h3 id="协助软件开发"><a href="#协助软件开发" class="headerlink" title="协助软件开发"></a>协助软件开发</h3><p>软件开发过程中你需要了解业务，设计模型，整理API，其实思维导图也是一个不错的帮手。<br><img src="https://tobyqin.github.io/images/xmind-design-app.png" alt="xmind 协助软件开发"></p>
+<h3 id="设计测试案例"><a href="#设计测试案例" class="headerlink" title="设计测试案例"></a>设计测试案例</h3><p>不知道你发现没有，其实设计测试案例（TestCase Desgin）其实就是发散思维的一个典型应用。作为测试人员你需要尽可能多的考虑测试路径，如果用图来表示测试案例，那么其实就是一棵树，树的根节点就是你要测试的功能，发散出来的分支就是你要考虑的各种情况。用思维导图来设计测试案例再合适不过。</p>
+<p><img src="https://tobyqin.github.io/images/test_case_by_xmind.png" alt="xmind 设计测试案例"></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>写到这应该收尾了，如果你对思维导图感兴趣，不如现在就动手起来，应用到你的生活或者工作中去，实践才是检验真理的唯一办法。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-07-22/xpath-for-windows-desktop-ui-automation---wpath/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-07-22/xpath-for-windows-desktop-ui-automation---wpath/" class="post-title-link" itemprop="url">Windows UI自动化测试的XPATH实现 - WPATH</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-23 00:00:00" itemprop="dateCreated datePublished" datetime="2017-07-23T00:00:00+08:00">2017-07-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>从事Windows 桌面应用自动化测试也有一些年了，现在谈这个话题并不流行。因为除了企业级应用，很少有公司会只选择Windows桌面作为目标用户平台，一般都会考虑跨平台的浏览器解决方案，桌面应用的地位渐渐下降，这是事实。</p>
+<p>当年初入测试行业时就被外包公司看上了，在微软的圈子里一待就是4年，时间真快。不得不说，一个大学刚毕业的毛头小子看到微软里各种技术和工具真像极了刘姥姥进大观园，那时候还没有iPhone，也没有Android，微软一统天下。</p>
+<p>本文主要介绍一下我对Windows UI自动化的一些看法以及WPATH的实现和应用，如果你还在从事Windows桌面应用的自动化测试，应该能有一些帮助。</p>
+<h2 id="为何发明WPATH"><a href="#为何发明WPATH" class="headerlink" title="为何发明WPATH"></a>为何发明WPATH</h2><p>Windows UI 自动化，顾名思义就是在Windows平台实现软件的界面自动化，比如自动打开Excel填入一些数据，输入公式，获取结果。正经的用途就是软件自动化测试，避免重复的手工操作；不正经的用途就是写外挂，各种投机取巧的工具等等。</p>
+<p>最简单粗暴的实现方案就是录制回放，优点很明显，简单快速；缺点也一样明显，不可靠因素太多。主要的代表就是QTP，来自HP公司，这应该是很多同学都听过的一款测试工具。</p>
+<p>进阶的方案就是使用微软提供的自动化工具集：<a href="https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview" target="_blank" rel="noopener">UI Automation</a>。UI Automation是Microsoft .NET 3.0框架下提供的一种用于自动化测试的技术，是在MSAA基础上建立的，MSAA就是Microsoft Active Accessibility。</p>
+<p>如果你使用过.NET 提供的UI Automation相关的类库，应该有一个直观的感受，就是非常啰嗦，举一个例子：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">AutomationElement ControlTypeComboBox = grdClassBook.FindFirst(</span><br><span class="line">  TreeScope.Children,</span><br><span class="line">  <span class="keyword">new</span> PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.ComboBox));</span><br><span class="line"></span><br><span class="line">AutomationElement cellElement = ControlTypeComboBox.FindFirst(</span><br><span class="line">  TreeScope.Children,</span><br><span class="line">  <span class="keyword">new</span> PropertyCondition(AutomationElement.AutomationIdProperty, <span class="string">"ListBox"</span>));</span><br></pre></td></tr></table></figure>
+
+<p>每当你尝试去获取一个UI元素时，都需要使用<code>FindFirst</code>之类的方法去查询指定的<code>PropertyCondition</code>，而<code>PropertyCondition</code>使用起来也不简单，特别是当你需要拼接多个AND或者OR多个条件时。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> btnCondition = <span class="keyword">new</span> AndCondition(</span><br><span class="line">  <span class="keyword">new</span> PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button),</span><br><span class="line">  <span class="keyword">new</span> PropertyCondition(AutomationElement.NameProperty, <span class="string">"ok"</span>));</span><br></pre></td></tr></table></figure>
+
+<p>才两个条件就这么多代码了？你看看搞Web自动化的同学都可以用XPATH，快速定位和查询元素 <code>/div[@id=&#39;ok&#39;]</code>，多好。既然我们那么羡慕XPATH，那我们就搞一个出来，让做Windows桌面自动化的同学也可以High一把。</p>
+<h2 id="WPATH实现原理"><a href="#WPATH实现原理" class="headerlink" title="WPATH实现原理"></a>WPATH实现原理</h2><p>具体代码我就不在此展开，想刨根的同学可以直接移步至Github：<a href="https://github.com/tobyqin/wpath。" target="_blank" rel="noopener">https://github.com/tobyqin/wpath。</a></p>
+<p>WPATH的主要原理就是通过反射的方式去获取当前方法或者属性的Attribute，在Attribute中我们可以定义类似于XPATH的语法，我 且称之为WPATH。最后经过表达式解析转换成对应的Find方法和Condition，举一个例子说明：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">[<span class="meta">WPath(<span class="meta-string">"/Edit[@id='txtId' or @Class='TextBox']"</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> AutomationElement EditControl</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">get</span> &#123; <span class="keyword">return</span> <span class="keyword">this</span>.AppElement.FindByWPath(); &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当调用<code>FindByWPath()</code>时，该属性上的WPath Attribute就会被解析出来，其中的 <code>/</code>会被解析成FindFirst，<code>Edit</code>会被解析成ControlType.Edit，中括号里的条件最后被组合起来，调用的最终结果大致如下：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> AutomationElement EditControl</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">get</span></span><br><span class="line">   &#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="keyword">this</span>.AppElement.FindFirst(TreeScope.Children,</span><br><span class="line">       <span class="keyword">new</span> AndCondition(</span><br><span class="line">          <span class="keyword">new</span> PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Edit),</span><br><span class="line">          <span class="keyword">new</span> OrCondition(</span><br><span class="line">            <span class="keyword">new</span> PropertyCondition(AutomationElement.AutomationId, <span class="string">"txtId"</span>),</span><br><span class="line">            <span class="keyword">new</span> PropertyCondition(AutomationElement.Class, <span class="string">"TextBox"</span>))));</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 痛苦的感觉一下减轻许多，有没有？</p>
+<h2 id="更详细的WPATH用法"><a href="#更详细的WPATH用法" class="headerlink" title="更详细的WPATH用法"></a>更详细的WPATH用法</h2><p>如果你要在项目中使用WPATH，可以通过nuget包安装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PM&gt; Install-Package WPath</span><br></pre></td></tr></table></figure>
+
+<h3 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h3><ol>
+<li>WPath 和 XPath 类似，以 ‘/‘ 开头。</li>
+<li>可以使用多个 ‘/‘ 来定位目标元素。</li>
+<li>节点名字来自于MSDN定义好的 <a href="https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-control-types" target="_blank" rel="noopener">control type</a>。</li>
+<li>目前WPath支持的查询属性如下:</li>
+</ol>
+<ul>
+<li><code>Name</code> (NameProperty)</li>
+<li><code>ID</code> (AutomationIdProperty)</li>
+<li><code>Class</code> (ClassNameProperty)</li>
+<li><code>Enabled</code> (IsEnabledProperty)</li>
+<li><code>FrameworkID</code> (FrameworkIdProperty)</li>
+</ul>
+<h3 id="举例子"><a href="#举例子" class="headerlink" title="举例子"></a>举例子</h3><blockquote>
+<p><code>/Group/Button</code></p>
+</blockquote>
+<ul>
+<li>获取第一个Group下的第一个Button。</li>
+</ul>
+<blockquote>
+<p><code>//Button[@Name=&#39;Save&#39;]</code></p>
+</blockquote>
+<ul>
+<li>在子孙节点中获取第一个Name为 “Save” 的元素。</li>
+</ul>
+<blockquote>
+<p><code>/[@Name=&#39;TabContainer&#39;]/Button[2]</code></p>
+</blockquote>
+<ul>
+<li>获取Name为 “TabContainer”的控件下的第二个Button，注意，控件类型名称可以为空。</li>
+</ul>
+<blockquote>
+<p><code>/Button[@ID=&#39;AddButton&#39; and @Name=&#39;Add&#39;]</code></p>
+</blockquote>
+<ul>
+<li>获取一个automation ID 为 ‘AddButton’ <strong>且</strong> name 为 ‘Add’ 的Button。</li>
+</ul>
+<blockquote>
+<p><code>/Button[@ID=&#39;AddButton&#39; or @Name=&#39;Add&#39;]</code></p>
+</blockquote>
+<ul>
+<li>获取一个automation ID 为 ‘AddButton’ <strong>或</strong> name 为’Add’的Button。</li>
+</ul>
+<blockquote>
+<p><code>/Button[first()]</code></p>
+</blockquote>
+<ul>
+<li>获取当前元素下第一个Button。</li>
+</ul>
+<blockquote>
+<p><code>/Button[last()]</code></p>
+</blockquote>
+<ul>
+<li>获取当前元素下最后一个Button。</li>
+</ul>
+<h3 id="实际运用"><a href="#实际运用" class="headerlink" title="实际运用"></a>实际运用</h3><p>推荐使用Attribute的方式进行调用，可用于类方法或者属性。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">[<span class="meta">WPath(<span class="meta-string">"/Edit[@id='txtId' or @Class='TextBox']"</span>)</span>]</span><br><span class="line"><span class="keyword">public</span> AutomationElement EditControl</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">get</span> &#123; <span class="keyword">return</span> <span class="keyword">this</span>.AppElement.FindByWPath(); &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[<span class="meta">WPath(<span class="meta-string">"/Button[first()]"</span>)</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> AutomationElement <span class="title">GetFirstButton</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">this</span>.AppElement.FindByWPath();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>或者直接调用 <code>FindByWPath(path)</code> 来定位目标元素。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> path = <span class="string">"/Edit[3]"</span>;</span><br><span class="line"><span class="keyword">var</span> e = <span class="keyword">this</span>.AppElement.FindByWPath(path);</span><br><span class="line">Assert.AreEqual(<span class="string">"txtKey"</span>, e.Current.AutomationId);</span><br><span class="line">Assert.AreEqual(ControlType.Edit, e.Current.ControlType);</span><br><span class="line"></span><br><span class="line">path = <span class="string">"/Button[@name='OK']/Text[1]"</span>;</span><br><span class="line">e = <span class="keyword">this</span>.AppElement.FindByWPath(path);</span><br><span class="line">Assert.AreEqual(<span class="string">"OK"</span>, e.Current.Name);</span><br><span class="line">Assert.AreEqual(ControlType.Text, e.Current.ControlType);</span><br></pre></td></tr></table></figure>
+
+<h3 id="小贴士"><a href="#小贴士" class="headerlink" title="小贴士"></a>小贴士</h3><ul>
+<li>元素类型节点是大小写不敏感的，比如：<ul>
+<li>@name = @Name</li>
+<li>/edit = /Edit</li>
+</ul>
+</li>
+<li>父节点定位 <code>../</code> 目前不支持，因为有点复杂。</li>
+</ul>
+<p>更多的说明建议还是去看Github中的说明文档，或者直接看<a href="https://github.com/tobyqin/wpath/blob/master/WPath.Tests/UnitTests.cs" target="_blank" rel="noopener">单元测试</a>。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>Windows UI 自动化的坑还是挺深的，填坑的人也不少，我推荐有需要的同学去学习和了解一下 <a href="https://github.com/TestStack/White" target="_blank" rel="noopener">White</a>。White是一个非常好UI Automation 封装框架，相信我，能省下你不少时间。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-07-16/rainbow-js-highlight-lib/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-07-16/rainbow-js-highlight-lib/" class="post-title-link" itemprop="url">一款优秀的代码高亮库 - rainbow.js</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-17 00:00:00" itemprop="dateCreated datePublished" datetime="2017-07-17T00:00:00+08:00">2017-07-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>代码高亮的js库也不少，最知名的莫过于 <a href="https://highlightjs.org/" target="_blank" rel="noopener">highlightjs</a>，支持你听过的没听过的各种编程语言，兼容你用过没用过的各种浏览器，有着多姿多彩的配色方案。然而，唯有一点我还是选择放弃了它，因为它不能很方便的自定义高亮语言。</p>
+<p>现在我的需求是是这样的，有一个自动化测试结果的页面，里面会显示一个测试案例运行的数据，比如控制台输出 stdout， 我需要高亮控制台输出的一些信息，例如：INFO 级别是默认色，WARN 级别是橙色，ERROR 级别是红色。一句话，我需要自定义日志输出高亮。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">2017-07-14 11:53:55,668 INFO   : Go to my account page</span><br><span class="line">2017-07-14 11:53:58,071 DEBUG  : Now check: MyAccountPage</span><br><span class="line">2017-07-14 11:53:59,804 WARNING: Page loaded time &gt; 2000 ms</span><br><span class="line">2017-07-14 11:54:01,535 ERROR  : Test failed!!!</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>像这样的需求使用 highlightjs 来实现就显得不够灵活，甚至有点无从下手。</p>
+<h2 id="初试-RainbowJS"><a href="#初试-RainbowJS" class="headerlink" title="初试 RainbowJS"></a>初试 RainbowJS</h2><blockquote>
+<p>RainbowJS 项目地址： <a href="https://github.com/ccampbell/rainbow" target="_blank" rel="noopener">https://github.com/ccampbell/rainbow</a></p>
+</blockquote>
+<p>RainbowJS 虽然简单而且支持的编程语言也不多（压缩后大小只有不到3kb），但是恰恰能满足自定义高亮的需求。入门只需要三步即可：</p>
+<h3 id="1-导入配色文件-css"><a href="#1-导入配色文件-css" class="headerlink" title="1. 导入配色文件 - css"></a>1. 导入配色文件 - css</h3><p>官方的github 仓库里提供了 20 多种配色，常见主题配色都可以找到。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"/rainbow/css/theme.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用-lt-pre-gt-lt-code-gt-包住你的代码"><a href="#2-使用-lt-pre-gt-lt-code-gt-包住你的代码" class="headerlink" title="2. 使用 &lt;pre&gt;&lt;code&gt; 包住你的代码"></a>2. 使用 <code>&lt;pre&gt;&lt;code&gt;</code> 包住你的代码</h3><p>在 <code>code</code> 标签里你可以使用<code>data-language</code> 指定代码语言。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span> <span class="attr">data-language</span>=<span class="string">"python"</span>&gt;</span>def openFile(path):</span><br><span class="line">    file = open(path, "r")</span><br><span class="line">    content = file.read()</span><br><span class="line">    file.close()</span><br><span class="line">    return content<span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-开始高亮你的代码"><a href="#3-开始高亮你的代码" class="headerlink" title="3. 开始高亮你的代码"></a>3. 开始高亮你的代码</h3><p>如果整个过程是同步的，那么你只需要在页面最后导入RainbowJS和你需要的高亮语言库，就可以自动高亮代码块。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/rainbow.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/language/generic.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/language/python.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你的代码块是异步生成的，你可以选择提前引入Rainbow及相关语言的js文件，然后调用<code>Rainbow.color()</code>方法来给代码块着色。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// load rainbow js and language support</span></span><br><span class="line">...</span><br><span class="line"><span class="comment">// call your function to generate dyanmc code blocks</span></span><br><span class="line">...</span><br><span class="line"><span class="comment">// finally, highligh your code blocks</span></span><br><span class="line">Rainbow.color();</span><br><span class="line"><span class="comment">// optionally, you can pass in a callback function in color()</span></span><br><span class="line"><span class="comment">// for example:</span></span><br><span class="line">Rainbow.color(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'The new blocks are now highlighted!'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="高亮自定义语言"><a href="#高亮自定义语言" class="headerlink" title="高亮自定义语言"></a>高亮自定义语言</h2><p>从前面的例子可以看到rainbow的上手还是很简单的，如果要自定义高亮规则应该怎么办？非常简单，只要调用<code>extend</code>方法即可。比如给<code>True</code>，<code>False</code>，<code>None</code>添加<code>constant</code>的css类：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">Rainbow.extend(<span class="string">'python'</span>, [</span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'constant'</span>,</span><br><span class="line">        pattern: <span class="regexp">/True|False|None/g</span></span><br><span class="line">    &#125;</span><br><span class="line">], <span class="string">'generic'</span>);</span><br></pre></td></tr></table></figure>
+
+<p>用<code>extend</code>方法可以给指定语言添加高亮规则，规则的名字就是即将添加的css类的名字，只要匹配了规则中指定的正则表达式，RainbowJS就会给匹配的结果添加上对应的css类。</p>
+<p>接下来我们要给log添加高亮规则，为了避免去写新的css类，我们可以重用主题配色里已经存在的类，根据主题颜色我们暂定高亮规则如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. debug - 灰色 - css: comment</span><br><span class="line">2. info  - 白色 - css: support</span><br><span class="line">3. warn  - 橙色 - css: string</span><br><span class="line">4. error - 红色 - css: keyword</span><br><span class="line">5. 时间日期格式 - 灰色 - css: comment</span><br></pre></td></tr></table></figure>
+<p>对应的extend实现如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// log.js</span></span><br><span class="line">Rainbow.extend(<span class="string">'log'</span>, [</span><br><span class="line">    <span class="comment">// debug level</span></span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'comment'</span>,</span><br><span class="line">        pattern: <span class="regexp">/([^ ]*debug).*/gi</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// info level</span></span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'support.tag'</span>,</span><br><span class="line">        pattern: <span class="regexp">/([^ ]*info).*/gi</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// warn level</span></span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'string'</span>,</span><br><span class="line">        pattern: <span class="regexp">/([^ ]*warn).*/gi</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// error level</span></span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'keyword'</span>,</span><br><span class="line">        pattern: <span class="regexp">/([^ ]*error[^(]).*|([^ ]*fatal).*|([^ ]*failure).*|([^ ]*failed).*|([^ ]*exception[^(]).*/gi</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// time format</span></span><br><span class="line">    &#123;</span><br><span class="line">        name: <span class="string">'comment'</span>,</span><br><span class="line">        pattern: <span class="regexp">/\b([\d\-:,]+)\b/gi</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">], <span class="string">'python'</span>);</span><br></pre></td></tr></table></figure>
+
+<p>当log行正确匹配后就会被添加上对应规则的css类，并且所有高亮规则继承自python语言，因为我的log是从python程序中记录的，当中可能会有一些python代码，我希望这些代码也能正常被着色。</p>
+<p>最后就是在网页中生成对应的代码块，指定高亮语言为log：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span> <span class="attr">data-language</span>=<span class="string">"log"</span>&gt;</span></span><br><span class="line">...</span><br><span class="line">2017-07-14 11:53:55,668 INFO   : Go to my account page</span><br><span class="line">2017-07-14 11:53:58,071 DEBUG  : Now check: MyAccountPage</span><br><span class="line">2017-07-14 11:53:59,804 WARNING: Page loaded time &gt; 2000 ms</span><br><span class="line">2017-07-14 11:54:01,535 ERROR  : Test failed!!!</span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果图如下：</p>
+<p><img src="https://tobyqin.github.io/images/log-highlight.png" alt="自定义Log高亮"></p>
+<h2 id="一些改进方法"><a href="#一些改进方法" class="headerlink" title="一些改进方法"></a>一些改进方法</h2><p>在页面中加载多个js文件的写法挺不方便也不好维护，而且也会影响页面加载的速度。比如上文的例子中如果是直接把<code>&lt;script&gt;</code>片段写到页面里会是这个样子。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span> /&gt;</span><span class="tag">&lt;<span class="name">code</span> /&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/rainbow.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/language/generic.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/language/python.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/language/log.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>一个改进的建议是就是当页面加载完成后再加载RainbowJS，然后调用高亮函数，你可以这样写：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// page html</span></span><br><span class="line">&lt;script&gt;</span><br><span class="line">$(highlightLog);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ app.js</span></span><br><span class="line"><span class="regexp">function highlightLog()&#123;</span></span><br><span class="line"><span class="regexp">    $.getScript('/</span>libs/rainbow/rainbow.min.js<span class="string">', function () &#123;</span></span><br><span class="line"><span class="string">        $.getScript('</span>/libs/rainbow/language/generic.js<span class="string">', function () &#123;</span></span><br><span class="line"><span class="string">            $.getScript('</span>/libs/rainbow/language/python.js<span class="string">', function () &#123;</span></span><br><span class="line"><span class="string">                $.getScript('</span>/libs/rainbow/language/log.js<span class="string">', function () &#123;</span></span><br><span class="line"><span class="string">                    Rainbow.color();</span></span><br><span class="line"><span class="string">                    &#125;);</span></span><br><span class="line"><span class="string">                &#125;);</span></span><br><span class="line"><span class="string">            &#125;);</span></span><br><span class="line"><span class="string">        &#125;);</span></span><br><span class="line"><span class="string">    &#125;;</span></span><br></pre></td></tr></table></figure>
+
+<p>虽然有点丑，但是功能没问题。如果你使用的是比较流行的<a href="http://www.requirejs.org/" target="_blank" rel="noopener">requirejs</a>，那么可以这样使用RainbowJS：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// config.js</span></span><br><span class="line">requirejs.config(&#123;</span><br><span class="line">    baseUrl: <span class="string">'/libs'</span>,</span><br><span class="line">    shim: &#123;</span><br><span class="line">        rainbow: &#123;</span><br><span class="line">            exports: <span class="string">'Rainbow'</span></span><br><span class="line">        &#125;,</span><br><span class="line">        rainbow_generic: &#123;</span><br><span class="line">            deps: [<span class="string">'rainbow'</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        rainbow_python: &#123;</span><br><span class="line">            deps: [<span class="string">'rainbow_generic'</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        rainbow_log: &#123;</span><br><span class="line">            deps: [<span class="string">'rainbow_python'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    paths: &#123;</span><br><span class="line">        rainbow: <span class="string">'rainbow/rainbow'</span>,</span><br><span class="line">        rainbow_generic: <span class="string">'rainbow/language/generic'</span>,</span><br><span class="line">        rainbow_python: <span class="string">'rainbow/language/python'</span>,</span><br><span class="line">        rainbow_log: <span class="string">'rainbow/language/log'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// app.js</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">highlightLog</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">require</span>([<span class="string">'rainbow'</span>], <span class="function"><span class="keyword">function</span> (<span class="params">Rainbow</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.Rainbow = Rainbow; <span class="comment">// must</span></span><br><span class="line">        <span class="built_in">require</span>([<span class="string">'rainbow_log'</span>], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            Rainbow.color();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// page embeded</span></span><br><span class="line">&lt;script src=<span class="string">"/require.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">    require(['/config.js'], function () &#123;</span></span><br><span class="line"><span class="regexp">        require(['app'], function (app) &#123;</span></span><br><span class="line"><span class="regexp">            app.highlightLog();</span></span><br><span class="line"><span class="regexp">        &#125;);</span></span><br><span class="line"><span class="regexp">    &#125;);</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>再或者先通过js的压缩和打包工具将写好的代码进行优化，亦是目前比较流行和推荐的做法。本文旨在介绍和使用RainbowJS，不做过多拓展，希望对你有所启发和帮助。</p>
+<p>如果需要完整的演示代码，可以查看我得GitHub项目：<a href="https://github.com/tobyqin/testcube" target="_blank" rel="noopener">https://github.com/tobyqin/testcube</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-05-02/setup-appium-automation-test-environment/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-05-02/setup-appium-automation-test-environment/" class="post-title-link" itemprop="url">在 Windows 下搭建 Appium + Android 自动化测试环境</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-05-03 00:00:00" itemprop="dateCreated datePublished" datetime="2017-05-03T00:00:00+08:00">2017-05-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本来并不打算写这么一篇文章，但是实践下来发现网上的各种教程里大致有两个问题。一是文章有些跟不上时代，目前android开发和测试的技术更新都比较快，内容有些过期。二是细节部分不是太完整，拼拼凑凑也能完成，但对新手来说就比较痛苦。那么，我也来试着总结一下自己踩过的坑。</p>
+<p><strong>备注：</strong>Android自动化测试环境和开发环境并不完全相同，测试环境可以很简单粗暴，很多工具可以不用安装，比如JDK，SDK Tools，测试脚本用C#，Python都可以完成；但是开发环境一般都是需要JDK和不少编译工具。</p>
+<h2 id="实践平台"><a href="#实践平台" class="headerlink" title="实践平台"></a>实践平台</h2><p>Windows 10 Pro 64bit + Python 3.5.3</p>
+<h2 id="安装-JAVA-环境"><a href="#安装-JAVA-环境" class="headerlink" title="安装 JAVA 环境"></a>安装 JAVA 环境</h2><p>如果只是自动化测试用，安装JRE就可以了，如果需要开发或者调试APK，那么请安装JDK。</p>
+<ol>
+<li>JRE = JVM + Java SE 标准类库，相当于Java程序最基本的运行环境。</li>
+<li>JDK = JRE + 开发工具集，包括javac编译工具等等。</li>
+</ol>
+<p>JRE只有50多MB，JDK则接近200MB，请前往<a href="https://www.java.com/en/download/" target="_blank" rel="noopener">Java官网</a>下载最新版安装，选择64位。</p>
+<h2 id="安装-Android-Studio-SDK"><a href="#安装-Android-Studio-SDK" class="headerlink" title="安装 Android Studio / SDK"></a>安装 Android Studio / SDK</h2><p>以前的教程里都会让你去装 Android SDK，但现在你从Google或者Bing里很难搜索到 Android SDK的下载链接，因为目前<a href="https://developer.android.com" target="_blank" rel="noopener">官网</a>推荐的做法有两个：</p>
+<ol>
+<li>安装Android Studio （包含 Android SDK） – 推荐</li>
+<li>仅安装Android SDK 命令行工具</li>
+</ol>
+<p>新版本的Android SDK和以前也不太一样，以前我们有一个 SDK Manager.exe 的工具用于更新和下载各版本的API，还有一个 AVD Manager.exe 的工具可以模拟各种型号的安卓设备。最新的 SDK 工具把UI 界面基本都去掉了，只留下命令行工具，具体的使用可以参阅官方文档：</p>
+<ul>
+<li><a href="https://developer.android.com/studio/releases/sdk-tools.html" target="_blank" rel="noopener">https://developer.android.com/studio/releases/sdk-tools.html</a></li>
+</ul>
+<p>那么多一事不如少一事，我建议推荐你直接安装Android Studio，这样不仅省事，而且万一你想写个App玩玩，也是极其方便的。</p>
+<p><img src="https://tobyqin.github.io/images/android-sdk-download.png" alt="android-sdk-download"></p>
+<p>下载地址：<a href="https://developer.android.com/studio/index.html" target="_blank" rel="noopener">https://developer.android.com/studio/index.html</a></p>
+<p>安装过程非常简单，双击后一路Next，中间你也可以另外指定SDK的安装目标路径（不建议修改）。安装好之后，直接启动 Android Studio，首先会提示你联网下载一些必要的工具（你需要一个好的网络和梯子）。</p>
+<p>一切就绪后，你可以在启动界面就可以打开 SDK Manager。</p>
+<p><img src="https://tobyqin.github.io/images/sdk-manager-from-launch.png" alt="sdk-manager-from-launch"></p>
+<p>或者新建一个工程，从工程界面打开SDK Manager。</p>
+<p><img src="https://tobyqin.github.io/images/sdk-manager-from-project.png" alt="sdk-manager-from-project"></p>
+<p>SDK Manager 打开之后，使用的方法就一目了然了。这就是个让你更新API和各种开发工具的工具。</p>
+<p><img src="https://tobyqin.github.io/images/sdk-manager-usage.png" alt="sdk-manager-usage"></p>
+<p>如果只是为了自动化测试其实你只要记住SDK安装目录就可以了，不需要安装任何多余的工具。SDK的安装目录在配置环境变量时需要用到。</p>
+<p>如果你的网络不畅通，那么需要先设置代理。接下来才能安装你想要的SDK版本和开发者工具。</p>
+<h2 id="安装-Android-模拟器"><a href="#安装-Android-模拟器" class="headerlink" title="安装 Android 模拟器"></a>安装 Android 模拟器</h2><p>如果你已经安装了Android Studio，模拟器也已经有了，从工程界面找到AVD Manager的按钮，按照下图三个步骤就可以添加并启动一个模拟器。</p>
+<p><img src="https://tobyqin.github.io/images/avd-manager.png" alt="avd-manager"></p>
+<p>每当你安装新版本的模拟器都是需要翻墙或者代理的，最开始启动Android Studio时它已经给你下一个最新版的Android，我当前模拟器中的Android版本是7.1.1。</p>
+<p>如果一切顺利，那么当你启动模拟器后，你就可以看到一台虚拟的Android设备了，手动测试基本条件已经达成，自动化测试指日可待。</p>
+<p><img src="https://tobyqin.github.io/images/android-avd-start.png" alt="android-avd-start"></p>
+<p>多说几句，除了使用 Android SDK 自带的模拟器外，我们还有两个选择，一是使用真机，速度和体验上会更好。另外一个选择就选择别的模拟器产品，比如 <a href="">Genymotion</a>，因为是商业软件，所以对个人用户（免费）会有诸多限制，尽管如此，其成熟度也比Android SDK自带的模拟器高很多。因为这两个方案的具体实现涉及到的内容比较多，故不在本文讨论。</p>
+<h2 id="安装-Appium"><a href="#安装-Appium" class="headerlink" title="安装 Appium"></a>安装 Appium</h2><p>Appium是开源的自动化测试框架，主要用于iOS，Android以及Windows apps等移动平台的自动化测试。官网的介绍说是它实现一套适用于移动端的WebDriver协议，所以使用Appium时用的还是依赖于Selenium，和Web自动化测试的主要区别就在Driver不一样。</p>
+<p>举一个例子，如果我们需要用Google Chrome来跑Selenium的自动化测试，那么首先需要一个ChromeDriver。如果需要跑在IE上，那么需要一个IEDriver。那么现在需要在移动端比如Android里跑Selenium，这时候你需要一个Appium就够了，它担当了Driver的角色。Appium实现了一套标准的WebDriver，只要Appium服务起来之后，你的代码只需要和Appium交互，Appium会去告诉设备该干嘛干嘛。这里提到的设备可以是iOS或者Android，甚至是Windows Phone 和Firefox OS。</p>
+<p>Appium 官网： <a href="http://appium.io/" target="_blank" rel="noopener">http://appium.io/</a></p>
+<h3 id="安装方式一：-使用NodeJS-安装"><a href="#安装方式一：-使用NodeJS-安装" class="headerlink" title="安装方式一： 使用NodeJS 安装"></a>安装方式一： 使用NodeJS 安装</h3><p>首先到<a href="">NodeJS官网</a>下载安装最新的NodeJS，Windows下属于傻瓜安装。安装好之后你可以配置NodeJS的安装源，在国内一般都用taobao的镜像，速度还不错。</p>
+<p>在个人目录下新建一个 .npmrc 文件，写入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>然后使用npm命令安装 Appium</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g appium</span><br></pre></td></tr></table></figure>
+
+<p>建议顺便安装一下appium-doctor，通过运行appium-doctor命令可以快速检查appium的环境问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g appium-doctor</span><br></pre></td></tr></table></figure>
+
+<p>如果安装成功，那么就可以通过 <code>appium</code> 命令启动appium server。</p>
+<p><img src="https://tobyqin.github.io/images/appium-start.png" alt="appium-start"></p>
+<p>关闭命令行或者按 Ctrl - C 就可以停止 Appium Server。</p>
+<h3 id="安装方式二：-使用Appium安装包"><a href="#安装方式二：-使用Appium安装包" class="headerlink" title="安装方式二： 使用Appium安装包"></a>安装方式二： 使用Appium安装包</h3><p>网上很多教程所引导的Appium安装包一般在百度网盘或者bitbucket里，其实这两者都不是最新的。最新版的安装包应该从官网下载，Appium 目前托管在github，正确的下载地址应该为：</p>
+<ul>
+<li><a href="https://github.com/appium/appium-desktop/releases" target="_blank" rel="noopener">https://github.com/appium/appium-desktop/releases</a></li>
+</ul>
+<p>最新版的Appium 桌面安装后启动是这样的。</p>
+<p><img src="https://tobyqin.github.io/images/appium-desktop.png" alt="appium-desktop"></p>
+<p>功能上和老的版本没太大区别，但是日志和UI显示更加清晰，一旦错误发生让你更容易找到问题所在。</p>
+<p><img src="https://tobyqin.github.io/images/appium-desktop-error.png" alt="appium-desktop-error"></p>
+<p>注意，你可以不安装Appium 桌面版，但是命令行版应该还是需要安装的，因为自动化测试运行时一般都是通过命令启动和关闭Appium，桌面版并不提供命令行功能，只是为了调试方便。</p>
+<p>关于Appium的介绍，这里有一份非常好的文档：<a href="http://appium.io/slate/cn/master" target="_blank" rel="noopener">http://appium.io/slate/cn/master</a></p>
+<h3 id="安装-Appium-Client"><a href="#安装-Appium-Client" class="headerlink" title="安装 Appium-Client"></a>安装 Appium-Client</h3><p>本文只讨论Python实现的Appium测试，所以你只需要允许以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install Appium-Python-Client</span><br></pre></td></tr></table></figure>
+
+<p>如果需要使用其他编程语言，下表供参考：</p>
+<table>
+<thead>
+<tr>
+<th>语言/框架</th>
+<th>Github版本库以及安装指南</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ruby</td>
+<td><a href="https://github.com/appium/ruby_lib" target="_blank" rel="noopener">https://github.com/appium/ruby_lib</a></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><a href="https://github.com/appium/python-client" target="_blank" rel="noopener">https://github.com/appium/python-client</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a href="https://github.com/appium/java-client" target="_blank" rel="noopener">https://github.com/appium/java-client</a></td>
+</tr>
+<tr>
+<td>JavaScript (Node.js)</td>
+<td><a href="https://github.com/admc/wd" target="_blank" rel="noopener">https://github.com/admc/wd</a></td>
+</tr>
+<tr>
+<td>Objective C</td>
+<td><a href="https://github.com/appium/selenium-objective-c" target="_blank" rel="noopener">https://github.com/appium/selenium-objective-c</a></td>
+</tr>
+<tr>
+<td>PHP</td>
+<td><a href="https://github.com/appium/php-client" target="_blank" rel="noopener">https://github.com/appium/php-client</a></td>
+</tr>
+<tr>
+<td>C# (.NET)</td>
+<td><a href="https://github.com/appium/appium-dotnet-driver" target="_blank" rel="noopener">https://github.com/appium/appium-dotnet-driver</a></td>
+</tr>
+<tr>
+<td>RobotFramework</td>
+<td><a href="https://github.com/jollychang/robotframework-appiumlibrary" target="_blank" rel="noopener">https://github.com/jollychang/robotframework-appiumlibrary</a></td>
+</tr>
+</tbody></table>
+<h2 id="必要的环境变量设置"><a href="#必要的环境变量设置" class="headerlink" title="必要的环境变量设置"></a>必要的环境变量设置</h2><p>如果你已经安装了appium-doctor，那么你只要运行appium-doctor命令就可以知道你还需要设置哪些环境变量，比如：</p>
+<p><img src="https://tobyqin.github.io/images/appium-doctor.png" alt="appium-doctor"></p>
+<p>不要慌，其实你只需要设置以下环境变量：</p>
+<table>
+<thead>
+<tr>
+<th>环境变量</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ANDROID_HOME</td>
+<td>Android SDK 的安装位置</td>
+</tr>
+<tr>
+<td>JAVA_HOME</td>
+<td>JDK 或者 JRE 的安装位置</td>
+</tr>
+<tr>
+<td>加入 PATH</td>
+<td>%ANDROID_HOME%\tools</td>
+</tr>
+<tr>
+<td>加入 PATH</td>
+<td>%ANDROID_HOME%\platform-tools</td>
+</tr>
+<tr>
+<td>加入 PATH</td>
+<td>%JAVA_HOME%\bin</td>
+</tr>
+<tr>
+<td>加入 PATH</td>
+<td>%ANDROID_HOME%\build-tools??version?? (可选)</td>
+</tr>
+</tbody></table>
+<p>最后一个环境变量是为了更方便地使用aapt这个工具，完成环境变量配置后你可以再次运行appium-doctor进行检查。不出意外，你应该能通过检查。</p>
+<h2 id="完成第一个自动化测试"><a href="#完成第一个自动化测试" class="headerlink" title="完成第一个自动化测试"></a>完成第一个自动化测试</h2><p>终于来到了动真刀真枪的时候了，很多人一开始就放弃了，更多人开始了之后就放弃了，走到这一步真的挺不容易的。</p>
+<p>开始写代码之前有些事情你应该清楚：</p>
+<ol>
+<li>模拟器或者测试机必须是Ready的状态，每次启动模拟器都很费时间，所以建议模拟器不要关闭，通过代码来启动模拟器是一个办法，但是时间成本有点高。</li>
+<li>如果是调试代码阶段，建议保持Appium桌面版长期运行，远程运行时再通过代码自动启动和关闭Appium。</li>
+<li>Appium会根据你的测试代码去寻找符合要求的设备，如果你启动了多台虚拟机或者连接了多台实体机，请显式地在代码中指定设备名称或者版本号。</li>
+</ol>
+<p>第一个自动化测试需求很就简单，就是启动内置的拨号软件，搜索 “hello toby”。代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> appium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">desired_caps = &#123;&#125;</span><br><span class="line">desired_caps[<span class="string">'platformName'</span>] = <span class="string">'Android'</span></span><br><span class="line">desired_caps[<span class="string">'platformVersion'</span>] = <span class="string">'7.1.1'</span></span><br><span class="line">desired_caps[<span class="string">'deviceName'</span>] = <span class="string">'Android Emulator'</span></span><br><span class="line">desired_caps[<span class="string">'appPackage'</span>] = <span class="string">'com.android.dialer'</span></span><br><span class="line">desired_caps[<span class="string">'appActivity'</span>] = <span class="string">'DialtactsActivity'</span></span><br><span class="line"></span><br><span class="line">driver = webdriver.Remote(<span class="string">'http://localhost:4723/wd/hub'</span>, desired_caps)</span><br><span class="line">driver.find_element_by_id(<span class="string">'com.android.dialer:id/search_box_collapsed'</span>).click()</span><br><span class="line">search_box = driver.find_element_by_id(<span class="string">'com.android.dialer:id/search_view'</span>)</span><br><span class="line">search_box.click()</span><br><span class="line">search_box.send_keys(<span class="string">'hello toby'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行效果：</p>
+<p><img src="https://tobyqin.github.io/images/appium-hello.gif" alt="appium-hello"></p>
+<p>恭喜你，你已经开始进入移动端的自动化测试的大门了！</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="/posts/2017-12-10/setup-appium-test-environment-on-mac-osx/">在Mac OSX 上配置Appium+Android自动化测试环境</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-03-31/steps-to-create-a-pycharm-plugin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-03-31/steps-to-create-a-pycharm-plugin/" class="post-title-link" itemprop="url">如何开发一个 PyCharm 插件</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-04-01 00:00:00" itemprop="dateCreated datePublished" datetime="2017-04-01T00:00:00+08:00">2017-04-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>PyCharm 是很多 Python 开发者优先选择的 IDE，功能强大，跨平台，提供免费社区版，非常良心。如果你想自己给PyCharm添加一些功能怎么办呢？有两个办法：</p>
+<ol>
+<li>通过提需求实现，到 JetBrains 的 <a href="https://github.com/JetBrains/intellij-community/" target="_blank" rel="noopener">github</a> 去提issue或者自己发Pull Request请他们merge。</li>
+<li>通过安装插件实现，你可以查找现有的<a href="https://plugins.jetbrains.com/" target="_blank" rel="noopener">插件仓库</a>，或者，自己写一个。</li>
+</ol>
+<p>今天我们说说怎么搭建环境自己写一个 PyCharm 插件。</p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>先普及一下知识，开发 PyCharm 插件和开发 IntellJ IDEA 插件需要的环境是一样的，因为 PyCharm 本身就是 IDEA 的一个子集，说白了就是 IDEA 上套了一个 Python 语言支持的插件。其他系列的 IDEA IDE 其实也是一样的道理，都是套了对应语言支持的框架外加一点外观修改，就成了新的产品，比如 WebStrom，PhpStorm，RubyMine。到这里你应该有个印象，JetBrains 这个公司太能玩了，就一个 IDEA 能整出那么多产品来，很厉害吧？</p>
+<p><strong>开发 PyCharm 插件你需要：</strong></p>
+<ul>
+<li><p>对 Java  语言有一定了解，因为你只能用 Java 开发插件</p>
+</li>
+<li><p>安装最新版的 <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">IntelliJ IDEA</a></p>
+</li>
+<li><p>安装 PyCharm Community Edition 到本地</p>
+</li>
+<li><p>确保 IntelliJ 安装并启用了 <code>Plugin DevKit</code> 插件，默认自带</p>
+</li>
+<li><p>配置 IntelliJ Platform SDK， 下文会涉及相关步骤</p>
+</li>
+<li><p>（非必需）将<a href="https://github.com/JetBrains/intellij-community/" target="_blank" rel="noopener">IntellJ IDEA Community Edition</a> 的代码克隆到本地，方便调试</p>
+<p>​</p>
+</li>
+</ul>
+<p>如果你英文还可以，也可以阅读官方的帮助文档。</p>
+<ul>
+<li><a href="http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started.html" target="_blank" rel="noopener">http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started.html</a></li>
+</ul>
+<h2 id="新建插件工程"><a href="#新建插件工程" class="headerlink" title="新建插件工程"></a>新建插件工程</h2><p>从文件菜单选择 <strong>New Project</strong>， 选择 <strong>IntelliJ Platform Plugin</strong>，如果你没有配置<strong>SDK</strong>，点击<strong>New</strong> 菜单。</p>
+<p><img src="https://tobyqin.github.io/images/idea-plugin-sdk-1.png" alt="idea-plugin-sdk-1"></p>
+<p>选择你本地 PyCharm Community Edition（社区版）的安装路径作为SDK目录，Java SDK 选择 1.8 以上的版本。</p>
+<blockquote>
+<p>请注意，你也可以使用 PyCharm Professional (旗舰版) 的安装路径作为SDK目录，不过当你调试插件碰到核心代码时，社区版你可以一步一步跟到最里面，但旗舰版不行，因为旗舰版并不是开源的，你拿不到源代码。</p>
+</blockquote>
+<p><img src="https://tobyqin.github.io/images/idea-plugin-sdk-2.png" alt="idea-plugin-sdk-2"></p>
+<p>回到 <strong>New Project</strong> 的界面，点击 <strong>Next</strong>，输入 <strong>Project name</strong> 和 <strong>Project location</strong>，点击完成。</p>
+<p><img src="https://tobyqin.github.io/images/idea-new-project.png" alt="idea-new-project"></p>
+<p><strong>小贴士：</strong>如果你是打开别人的写的插件，那么你直接选择打开工程目录是没有用的，因为 IntelliJ IDEA 不认为这是个插件工程，所以你没法运行和调试这个插件，一个不怎么优雅的办法就是<strong>从现有代码新建一个插件工程</strong>，StackOverflow 关于这个的吐槽问题你搜到，如果你有更好的办法请告诉我。当你换一台机器把插件代码克隆下来之后应该就知道我在说什么了。</p>
+<h2 id="插件工程目录结构"><a href="#插件工程目录结构" class="headerlink" title="插件工程目录结构"></a>插件工程目录结构</h2><p>一个典型的插件目录结构就像下图。</p>
+<p><img src="https://tobyqin.github.io/images/idea-project-structure.png" alt="idea-project-structure"></p>
+<ul>
+<li><strong>.idea</strong> 目录 - JetBrains IDE 生成的工程都会有这么一个目录，存放用户配置和缓存，无需关心。</li>
+<li><strong>doc</strong> 目录 - 插件的文档，可选。</li>
+<li><strong>out</strong> 目录 - 编译后的代码字节，无需关心。</li>
+<li><strong>resources</strong> 目录 - 资源存放目录，插件的配置文件在此。</li>
+<li><strong>src</strong> 目录 - 代码存放的位置。</li>
+<li><strong>*.iml</strong> 文件 - 项目的配置文件。</li>
+</ul>
+<h2 id="修改插件信息"><a href="#修改插件信息" class="headerlink" title="修改插件信息"></a>修改插件信息</h2><p>打开 <code>/resources/META-INF/plugin.xml</code>， 更新插件信息，举例说明。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">idea-plugin</span> <span class="attr">version</span>=<span class="string">"2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>com.eflabs.plugin.efcommon<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>EF Common for PyCharm<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">vendor</span> <span class="attr">email</span>=<span class="string">"toby.qin@live.com"</span>&gt;</span>Toby Qin<span class="tag">&lt;/<span class="name">vendor</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">description</span>&gt;</span>&lt;![CDATA[</span><br><span class="line">      &lt;b&gt;Able to run and debug ef common tests easily.&lt;/b&gt;&lt;br&gt;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">      &lt;li&gt;Support run/debug ef-common tests via context menu.&lt;/li&gt;</span><br><span class="line">      &lt;li&gt;Show run button in the line of test case.&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;]]&gt;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">change-notes</span>&gt;</span>&lt;![CDATA[</span><br><span class="line">      &lt;b&gt;v3.0&lt;/b&gt;&lt;br&gt;</span><br><span class="line">      &lt;p&gt;Support PyCharm 171.*&lt;/p&gt;</span><br><span class="line">      &lt;p&gt;Support nested ef-common project.&lt;/p&gt;</span><br><span class="line">      &lt;br&gt;</span><br><span class="line"></span><br><span class="line">      &lt;b&gt;Early version&lt;/b&gt;&lt;br&gt;</span><br><span class="line">      &lt;p&gt;Bug fix: failed to get run.template in resource.&lt;/p&gt;</span><br><span class="line">      &lt;p&gt;The baby version.&lt;/p&gt;</span><br><span class="line">      &lt;br&gt;]]&gt;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">change-notes</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">idea-version</span> <span class="attr">since-build</span>=<span class="string">"171.1"</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products</span></span><br><span class="line"><span class="comment">         on how to target different products --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">depends</span>&gt;</span>com.intellij.modules.python<span class="tag">&lt;/<span class="name">depends</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">extensions</span> <span class="attr">defaultExtensionNs</span>=<span class="string">"com.intellij"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Add your extensions here --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configurationType</span> <span class="attr">implementation</span>=<span class="string">"com.eflabs.efcommon.runConfiguration.EfCommonConfigurationType"</span></span></span><br><span class="line"><span class="tag">                           <span class="attr">order</span>=<span class="string">"FIRST"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">runConfigurationProducer</span> <span class="attr">implementation</span>=<span class="string">"com.eflabs.efcommon.runConfiguration.EfCommonConfigurationProducer"</span></span></span><br><span class="line"><span class="tag">                                  <span class="attr">order</span>=<span class="string">"FIRST"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">runLineMarkerContributor</span></span></span><br><span class="line"><span class="tag">                <span class="attr">implementationClass</span>=<span class="string">"com.eflabs.efcommon.runLineMarker.EfCommonRunLineMarkerContributor"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">language</span>=<span class="string">"Python"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">extensions</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">actions</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Add your actions here --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">actions</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">idea-plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个配置文件里有几点要注意的：</p>
+<ol>
+<li><code>&lt;id&gt;</code>和<code>&lt;version&gt;</code> 用于声明你的插件唯一标识，同id和version的插件不能够重复上传。</li>
+<li><code>&lt;depends&gt;</code> 节点声明了此插件的依赖条件，如果是PyCharm 适用的，那么就写 <code>com.intellij.modules.python</code></li>
+<li><code>&lt;extenstions</code> 节点用于声明你要扩展的类，只要继承和实现对应的接口就可以了。</li>
+<li><code>&lt;actions&gt;</code> 节点用于注册你要实现的 Action，比如你先写一些 Action，然后<a href="http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/creating_an_action.html" target="_blank" rel="noopener">注册到某个菜单</a>。</li>
+</ol>
+<h2 id="实现具体的业务代码"><a href="#实现具体的业务代码" class="headerlink" title="实现具体的业务代码"></a>实现具体的业务代码</h2><p>这里我略过最核心的部分，因为每个人的需求和代码能力都不一样，这应该去查阅Java编程规范。</p>
+<p>简而言之，就是根据你自己的需求用Java实现一些接口和方法。</p>
+<h2 id="运行和调试你的插件"><a href="#运行和调试你的插件" class="headerlink" title="运行和调试你的插件"></a>运行和调试你的插件</h2><p>如果你的代码已经实现了，那么运行和调试就比较简单。</p>
+<ul>
+<li>使用 <strong>Run | Run</strong> 菜单来运行你的插件，这时候会启动一个新的PyCharm，默认安装好你的插件。</li>
+<li>使用 <strong>Run | Debug</strong>  菜单来调试你的插件，你可以设置断点进行调试。</li>
+</ul>
+<h2 id="发布你的插件"><a href="#发布你的插件" class="headerlink" title="发布你的插件"></a>发布你的插件</h2><p>你可以选择本地发布你的插件，也可以选择上传到 JetBrains 的插件仓库。</p>
+<h3 id="本地发布安装"><a href="#本地发布安装" class="headerlink" title="本地发布安装"></a>本地发布安装</h3><p>如果你的插件是内部小范围使用，并且可能带有敏感信息，那么这样的方式会比较适合你。从主菜单选择 <strong>Build &gt; Prepare plugin ‘my_plugin’ For Deployment</strong>。</p>
+<p><img src="https://tobyqin.github.io/images/idea-deploy-local.png" alt="idea-deploy-local"></p>
+<p>如果成功那么在工程目录就会生成一个同名的 jar 文件。</p>
+<p><img src="https://tobyqin.github.io/images/idea-deploy-local-2.png" alt="idea-deploy-local-2"></p>
+<p>将这个文件 copy 到目标机器就可以通过 *<em>Install Plugin from disk … *</em> 完成安装。</p>
+<h3 id="发布插件到-JetBrains-Plugin-仓库"><a href="#发布插件到-JetBrains-Plugin-仓库" class="headerlink" title="发布插件到 JetBrains Plugin 仓库"></a>发布插件到 JetBrains Plugin 仓库</h3><p>生成插件的步骤和本地发布是一样的，唯一不同的就是你需要到 JetBrains Plugins 网站去注册一个账号。</p>
+<ul>
+<li><a href="https://plugins.jetbrains.com/" target="_blank" rel="noopener">https://plugins.jetbrains.com/</a></li>
+</ul>
+<p>登录之后选择 <strong>UPLOAD PLUGIN</strong> 菜单，上传之后大概需要2个工作日审核。</p>
+<p><img src="https://tobyqin.github.io/images/idea-deploy-remote.png" alt="idea-deploy-remote"></p>
+<p>审核通过后其他用户就可以直接从 <strong>Browse Repositories…</strong> 里搜索到你的插件并安装。通过插件仓库安装的插件，一旦有新版本发布，用户将收到更新提示。</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>关于如何实现具体的插件业务代码，一个偷懒的办法就是去看现有功能大概是怎么实现的，你既然可以拿到 PyCharm Community Edition 的所有代码，还有啥看不到的，看懂只是时间问题。再或者去 github 搜搜看，万一有惊喜呢？</p>
+<p>就 PyCharm 本身来说，我觉得作为 IDE 提供的功能已经很丰富了，为啥还要写插件呢？对啊，哪里来的需求，会不会是一个伪需求呢。写插件前请你想一想这个问题。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-03-26/deploy-flask-to-iis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-03-26/deploy-flask-to-iis/" class="post-title-link" itemprop="url">在Windows平台使用IIS部署Flask网站</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-27 00:00:00" itemprop="dateCreated datePublished" datetime="2017-03-27T00:00:00+08:00">2017-03-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在 Windows 平台<strong>部署</strong>基于 Python 的网站是一件非常折腾的事情，Linux/Unix 平台下有很多选择，本文记录了 Flask 部署到 IIS 的主要步骤，希望对你有所帮助。</p>
+<h2 id="涉及工具和平台"><a href="#涉及工具和平台" class="headerlink" title="涉及工具和平台"></a>涉及工具和平台</h2><ul>
+<li>Windows 7 x64</li>
+<li>Python 3.4+</li>
+<li>Flask</li>
+</ul>
+<h2 id="完成-Hello-Flask-网站"><a href="#完成-Hello-Flask-网站" class="headerlink" title="完成 Hello Flask 网站"></a>完成 Hello Flask 网站</h2><p>这是一个最简单的 Flask 网站：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hello.py</span></span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/',methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello Flask!"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    app.run(debug=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<p>运行<code>python hello.py</code>后没有错误说明你的 Python 环境一切正常，可以继续后面的步骤。</p>
+<h2 id="安装-IIS，启用-CGI"><a href="#安装-IIS，启用-CGI" class="headerlink" title="安装 IIS，启用 CGI"></a>安装 IIS，启用 CGI</h2><p>在控制面板中找到<em>打开或者关闭 Windows 功能</em>，安装 IIS 和 CGI，如下图。</p>
+<p><img src="https://tobyqin.github.io/images/iis+cgi.png" alt="iis+cgi"></p>
+<h2 id="安装-URL-重写组件"><a href="#安装-URL-重写组件" class="headerlink" title="安装 URL 重写组件"></a>安装 URL 重写组件</h2><p>IIS 需要安装 URL 重写组件，这个可以通过<a href="https://www.microsoft.com/web/downloads/platform.aspx" target="_blank" rel="noopener">Microsoft Web Platform Installer</a>来安装。下载<a href="https://www.microsoft.com/web/downloads/platform.aspx" target="_blank" rel="noopener">Microsoft Web Platform Installer</a>后运行，搜索<code>url</code>，分别安装。</p>
+<p><img src="https://tobyqin.github.io/images/wpi-url.png" alt="wpi-url"></p>
+<p><em>注：据说 Windows10 上的 IIS 10 现在不支持 url 重写？待验证</em></p>
+<h2 id="安装-wfastcgi"><a href="#安装-wfastcgi" class="headerlink" title="安装 wfastcgi"></a>安装 wfastcgi</h2><p>通过pip就可以安装：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install wfastcgi</span><br></pre></td></tr></table></figure>
+
+<h2 id="启用-wfastcgi"><a href="#启用-wfastcgi" class="headerlink" title="启用 wfastcgi"></a>启用 wfastcgi</h2><p>剩下的事情就只有一些配置了。首先以管理员身份运行<code>wfastcgi-enable</code>来在IIS上启用wfastcgi，这个命令位于<code>c:\python_dir\scripts</code>，也就是你需要确保此目录在系统的PATH里，或者你需要cd到这个目录后再执行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">cd</span> to python_dir\scripts <span class="keyword">if</span> it is not <span class="keyword">in</span> PATH</span></span><br><span class="line">wfastcgi-enable</span><br></pre></td></tr></table></figure>
+
+<p>记住命令执行成功后返回的信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Python34\Scripts&gt; wfastcgi-enable</span><br><span class="line">Applied configuration changes to section &quot;system.webServer&#x2F;fastCgi&quot; for &quot;MACHINE&#x2F;WEBROOT&#x2F;APPHOST&quot; at configuration commit path &quot;MACHINE&#x2F;WEBROOT&#x2F;APPHOST&quot;</span><br><span class="line">&quot;C:\Python34\python.exe|C:\Python34\lib\site-packages\wfastcgi.py&quot; can now be used as a FastCGI script processor</span><br></pre></td></tr></table></figure>
+<p> “C:\Python34\python.exe|C:\Python34\lib\site-packages\wfastcgi.py” 在下文的配置文件中需要使用。</p>
+<p><em>Tips: 使用命令 <code>wfastcgi-disable</code> 可以将其移除。</em></p>
+<h2 id="创建-web-config-文件"><a href="#创建-web-config-文件" class="headerlink" title="创建 web.config 文件"></a>创建 web.config 文件</h2><p>下面是一个<code>web.config</code>文件的例子，你只需要修改对应部分就可以使用。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">system.webServer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">handlers</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- scriptProcessor 的值来自命令行工具 wfastcgi-enable --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">add</span> <span class="attr">name</span>=<span class="string">"FlaskFastCGI"</span> <span class="attr">path</span>=<span class="string">"*"</span> <span class="attr">verb</span>=<span class="string">"*"</span> <span class="attr">modules</span>=<span class="string">"FastCgiModule"</span> <span class="attr">scriptProcessor</span>=<span class="string">"C:\Python34\python.exe|C:\Python34\lib\site-packages\wfastcgi.py"</span> <span class="attr">resourceType</span>=<span class="string">"Unspecified"</span> <span class="attr">requireAccess</span>=<span class="string">"Script"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">handlers</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">security</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- URL 重写中的特殊字符，比如加号+等等 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">requestFiltering</span> <span class="attr">allowDoubleEscaping</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">requestFiltering</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">security</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">system.webServer</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">appSettings</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Required settings --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 在这里指定Falsk app在模块中的具体位置 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">add</span> <span class="attr">key</span>=<span class="string">"WSGI_HANDLER"</span> <span class="attr">value</span>=<span class="string">"hello.app"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">add</span> <span class="attr">key</span>=<span class="string">"PYTHONPATH"</span> <span class="attr">value</span>=<span class="string">"~/"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Optional settings --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 需要先创建日志目录，否则报错 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">add</span> <span class="attr">key</span>=<span class="string">"WSGI_LOG"</span> <span class="attr">value</span>=<span class="string">"C:\logs\oboeqa_web.log"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">add</span> <span class="attr">key</span>=<span class="string">"WSGI_RESTART_FILE_REGEX"</span> <span class="attr">value</span>=<span class="string">""</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">appSettings</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="配置-IIS-目录及权限"><a href="#配置-IIS-目录及权限" class="headerlink" title="配置 IIS 目录及权限"></a>配置 IIS 目录及权限</h2><p>假设你的 Flask 程序将部署在 C:\website\hello 下面，那么你的目录结构大致如此。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\WEBSITE</span><br><span class="line">└───hello</span><br><span class="line">        hello.py</span><br><span class="line">        web.config</span><br></pre></td></tr></table></figure>
+
+<p>现在你需要让IIS用户拥有访问和执行你的网站脚本的权限，进入 C:\website 目录，执行下面两条命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd C:\website</span><br><span class="line">icacls . &#x2F;grant &quot;NT AUTHORITY\IUSR:(OI)(CI)(RX)&quot;</span><br><span class="line">icacls . &#x2F;grant &quot;Builtin\IIS_IUSRS:(OI)(CI)(RX)&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建并访问你的网站"><a href="#创建并访问你的网站" class="headerlink" title="创建并访问你的网站"></a>创建并访问你的网站</h2><p>现在你离成功只差一步之遥，打开 IIS 管理面板，新建一个网站。</p>
+<p><img src="https://tobyqin.github.io/images/iis-add-web-site.png" alt="iis-add-web-site"></p>
+<p>你只需要填上网站名称，物理地址和相应的端口号，点击确认。</p>
+<p><img src="https://tobyqin.github.io/images/iis-website-config.png" alt="iis-website-config"></p>
+<p>打开浏览器，就可以访问你配置好的网站。如果有错误，可以去检查 <code>web.config</code> 中配置的日志文件。</p>
+<p><img src="https://tobyqin.github.io/images/iis-web-site-ok.png" alt="iis-web-site-ok"></p>
+<h2 id="简单总结"><a href="#简单总结" class="headerlink" title="简单总结"></a>简单总结</h2><p>写完之后发现其实要完成的步骤并不是特别复杂，但是从摸索到实践的过程确实不易。本文仅讨论了部署的主要步骤，其实真正的生产环境你要考虑的问题可能更多，比如使用virtualenv 对网站进行隔离，安全问题，静态文件解析等等。</p>
+<h2 id="最后的惊喜"><a href="#最后的惊喜" class="headerlink" title="最后的惊喜"></a>最后的惊喜</h2><p><strong>据说</strong>部署Python 网站到 IIS 还有更简单的办法，那就是安装宇宙最强的IDE - <a href="https://www.visualstudio.com/" target="_blank" rel="noopener">Visual Studio 2015</a> （VS2017 暂不支持 Python 开发），个人开发者可以免授权使用社区版。在 VS 中你可以使用 <a href="https://microsoft.github.io/PTVS/" target="_blank" rel="noopener">PTVS</a> 来快捷开发<strong>并部署</strong>Python 程序，真正让你一键无忧。</p>
+<p><img src="https://tobyqin.github.io/images/ptvs-web.png" alt="ptvs-web"></p>
+<p>PTVS 支持了常见的 Python Web 框架，比如 Flask，Django，Bottle，Jade 等等，调试的时候只需要按 F5，部署右键选择 publish，跟着向导一步两步你就可以完成魔鬼的步伐。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="http://stackoverflow.com/questions/5072166/how-do-i-deploy-a-flask-application-in-iis" target="_blank" rel="noopener">http://stackoverflow.com/questions/5072166/how-do-i-deploy-a-flask-application-in-iis</a></li>
+<li><a href="http://stackoverflow.com/questions/20134329/how-to-deploy-a-flask-application-in-iis-8-windows-server-2012" target="_blank" rel="noopener">http://stackoverflow.com/questions/20134329/how-to-deploy-a-flask-application-in-iis-8-windows-server-2012</a></li>
+<li><a href="http://blog.csdn.net/firefox1/article/details/46438769" target="_blank" rel="noopener">http://blog.csdn.net/firefox1/article/details/46438769</a></li>
+<li><a href="http://www.cnblogs.com/liulixiang/p/4999608.html" target="_blank" rel="noopener">http://www.cnblogs.com/liulixiang/p/4999608.html</a></li>
+<li><a href="http://www.cnblogs.com/xiaolecn/p/5111076.html" target="_blank" rel="noopener">http://www.cnblogs.com/xiaolecn/p/5111076.html</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-03-09/git-diff-tip/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-03-09/git-diff-tip/" class="post-title-link" itemprop="url">理解 Git Diff 命令</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-09 23:04:51" itemprop="dateCreated datePublished" datetime="2017-03-09T23:04:51+08:00">2017-03-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在git提交过程中，存在三大环节：</p>
+<ul>
+<li>working tree</li>
+<li>index file (staged)</li>
+<li>commit</li>
+</ul>
+<p>这三大环节中，你应该有一个大概的了解：</p>
+<ol>
+<li><strong>working tree</strong>：就是你所工作在的目录，每当你在代码中进行了修改，working tree的状态就改变了。</li>
+<li><strong>index file</strong>：是索引文件，它是连接<code>working tree</code>和<code>commit</code>的桥梁，每当我们使用<code>git add</code>命令来登记修改的文件后，<code>index file</code>的内容就改变了，此时<code>index file</code>就和<code>working tree</code>同步了。</li>
+<li><strong>commit</strong>：这是提交更改完成的最后阶段，commit后我们的代码才真正进入了git仓库。我们使用<code>git commit</code>就是将<code>index file</code>里的内容提交到<code>commit</code>中。</li>
+</ol>
+<p>总结一下：</p>
+<ul>
+<li><strong>git diff</strong>：是查看<code>working tree</code>与<code>index file</code>的差别。</li>
+<li><strong>git diff –cached</strong>：是查看<code>index file</code>与<code>commit</code>的差别。</li>
+<li><strong>git diff HEAD</strong>：是查看<code>working tree</code>和<code>commit</code>的差别。（你一定没有忘记，HEAD代表的是最近的一次commit的信息）</li>
+</ul>
+<p>参考文档： <a href="http://www.cnblogs.com/Alight/p/3571042.html" target="_blank" rel="noopener">http://www.cnblogs.com/Alight/p/3571042.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2017-03-08/upload-your-pypi-package/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2017-03-08/upload-your-pypi-package/" class="post-title-link" itemprop="url">上传并发布你自己发明的轮子 - Python PyPI 实践</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-09 00:00:00" itemprop="dateCreated datePublished" datetime="2017-03-09T00:00:00+08:00">2017-03-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本文仅讨论上传相关的步骤，关于如何给写一个<code>setup.py</code> 请参阅官方文档：</p>
+<ul>
+<li><a href="https://docs.python.org/2/distutils/setupscript.html" target="_blank" rel="noopener">https://docs.python.org/2/distutils/setupscript.html</a></li>
+</ul>
+<h2 id="上传前的注意事项"><a href="#上传前的注意事项" class="headerlink" title="上传前的注意事项"></a>上传前的注意事项</h2><ul>
+<li>假设你的包已经开发完成，并且根目录必须要有一个<a href="https://github.com/pypa/sampleproject/blob/master/setup.py" target="_blank" rel="noopener">setup.py</a>。</li>
+<li>最好有一个<a href="https://github.com/pypa/sampleproject/blob/master/README.rst" target="_blank" rel="noopener">README.rst</a> 用来描述你的轮子，虽然这不是必须的，但文档就像内裤，你最好还是要有的。</li>
+<li>如果你需要打包代码文件夹以外的文件，比如版权信息等等，你还需要写一个 <a href="https://github.com/pypa/sampleproject/blob/master/MANIFEST.in" target="_blank" rel="noopener">MANIFEST.in</a>。</li>
+</ul>
+<h2 id="关于setup-py的补充说明"><a href="#关于setup-py的补充说明" class="headerlink" title="关于setup.py的补充说明"></a>关于<code>setup.py</code>的补充说明</h2><ul>
+<li><code>name</code> 必须是唯一的，允许使用数字和字母，推荐使用中划线（-）而不是下划线（_），因为pip安装只支持中划线，比如<code>pip install my-pkg</code>，为了不给自己找麻烦请听话。</li>
+<li><code>version</code>推荐遵循<a href="https://packaging.python.org/distributing/#semantic-versioning-preferred" target="_blank" rel="noopener">语义化版本号</a>规则，简单说就像这样：1.2.0</li>
+<li>作者姓名和邮箱地址不一定要和你的PyPI账号一致。</li>
+</ul>
+<h2 id="测试本地打包命令"><a href="#测试本地打包命令" class="headerlink" title="测试本地打包命令"></a>测试本地打包命令</h2><p>如果上面的都没问题，在本地目录执行以下命令应该能成功在dist目录下生成*.tar.gz的包文件。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">python setup.py sdist</span><br></pre></td></tr></table></figure>
+
+<h2 id="上传并发布包文件到PyPI"><a href="#上传并发布包文件到PyPI" class="headerlink" title="上传并发布包文件到PyPI"></a>上传并发布包文件到PyPI</h2><h3 id="创建-PyPI账号"><a href="#创建-PyPI账号" class="headerlink" title="创建 PyPI账号"></a>创建 PyPI账号</h3><p>非常简单，直接通过官网注册 <a href="https://pypi.python.org/pypi?%3Aaction=register_form，" target="_blank" rel="noopener">https://pypi.python.org/pypi?%3Aaction=register_form，</a> 但是需要验证邮件并确认激活。</p>
+<h3 id="创建用户验证文件-pypirc"><a href="#创建用户验证文件-pypirc" class="headerlink" title="创建用户验证文件 ~/.pypirc"></a>创建用户验证文件 <code>~/.pypirc</code></h3><p>在自己的用户目录下新建一个空白文件命名为<code>.pypirc</code>，内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[distutils]</span><br><span class="line">index-servers&#x3D;pypi</span><br><span class="line"></span><br><span class="line">[pypi]</span><br><span class="line">repository &#x3D; https:&#x2F;&#x2F;upload.pypi.org&#x2F;legacy&#x2F;</span><br><span class="line">username &#x3D; &lt;username&gt;</span><br><span class="line">password &#x3D; &lt;password&gt;</span><br></pre></td></tr></table></figure>
+
+<p>用户名和密码就是上一步骤所创建的，直接明文输入。如果你觉得明文密码不安全也可以留空，在后面的上传过程中会提示你手动输入。</p>
+<h3 id="注册你的包"><a href="#注册你的包" class="headerlink" title="注册你的包"></a>注册你的包</h3><p>你需要到PyPI注册并验证你的包，之后才能开始真正上传，注册的方式有以下几种。</p>
+<ol>
+<li>使用命令<code>python setup.py register</code>，最简单但官网不推荐，因为使用的是HTTP未加密，有可能会被攻击人嗅探到你的密码。</li>
+<li>通过<a href="https://pypi.python.org/pypi?%3Aaction=submit_form" target="_blank" rel="noopener">PyPI网站提交表单</a>完成注册验证。</li>
+<li>安装 <code>pip install twine</code> 然后在通过命令 <code>twine register dist/mypkg.whl</code> 完成注册。</li>
+</ol>
+<h3 id="上传并完成发布"><a href="#上传并完成发布" class="headerlink" title="上传并完成发布"></a>上传并完成发布</h3><p>你可以任选以下两种方式之一发布你的轮子。</p>
+<ol>
+<li>使用命令：<code>python setup.py sdist upload</code>，还是和上面一样，最简单但是有安全隐患。</li>
+<li>使用 <a href="https://packaging.python.org/key_projects/#twine" target="_blank" rel="noopener">twine</a>： <code>twine upload dist/*</code></li>
+</ol>
+<h3 id="管理你的包"><a href="#管理你的包" class="headerlink" title="管理你的包"></a>管理你的包</h3><p>如果你的包已经上传成功，那么当你登录PyPI网站后应该能在右侧导航栏看到管理入口。</p>
+<p><img src="https://tobyqin.github.io/images/pypi_manage.png" alt="pypi_manage"></p>
+<p>点击包名进去后你可以对你的包进行管理，当然你也可以从这里删除这个包。</p>
+<h3 id="让别人使用你的包"><a href="#让别人使用你的包" class="headerlink" title="让别人使用你的包"></a>让别人使用你的包</h3><p>包发布完成后，其他人只需要使用pip就可以安装你的包文件。比如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install package-name</span><br></pre></td></tr></table></figure>
+
+<p>如果你更新了包，别人可以可以通过<code>--update</code>参数来更新：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install package-name --update</span><br></pre></td></tr></table></figure>
+
+<h2 id="可能遇到的错误"><a href="#可能遇到的错误" class="headerlink" title="可能遇到的错误"></a>可能遇到的错误</h2><h3 id="Upload-failed-403-Invalid-or-non-existent-authentication-information"><a href="#Upload-failed-403-Invalid-or-non-existent-authentication-information" class="headerlink" title="Upload failed (403): Invalid or non-existent authentication information."></a>Upload failed (403): Invalid or non-existent authentication information.</h3><p>错误的用户验证信息，你需要创建一个用户验证文件 <code>~/.pypirc</code>。请参阅上文。</p>
+<h3 id="Upload-failed-403-You-are-not-allowed-to-edit-‘xxx’-package-information"><a href="#Upload-failed-403-You-are-not-allowed-to-edit-‘xxx’-package-information" class="headerlink" title="Upload failed (403): You are not allowed to edit ‘xxx’ package information"></a>Upload failed (403): You are not allowed to edit ‘xxx’ package information</h3><p>你需要先注册你的包才可以开始上传，运行注册命令：<code>python setup.py register</code></p>
+<h3 id="Server-response-401-Incomplete-registration-check-your-email"><a href="#Server-response-401-Incomplete-registration-check-your-email" class="headerlink" title="Server response (401): Incomplete registration; check your email"></a>Server response (401): Incomplete registration; check your email</h3><p>你的PyPI账户还没完成邮箱验证，你需要去注册邮箱找到一封验证邮件完成验证后再重试失败的步骤。</p>
+<h3 id="Server-response-400-Invalid-classifier-“Topic-Software-Development-Utilities”"><a href="#Server-response-400-Invalid-classifier-“Topic-Software-Development-Utilities”" class="headerlink" title="Server response (400): Invalid classifier “Topic :: Software Development :: Utilities”"></a>Server response (400): Invalid classifier “Topic :: Software Development :: Utilities”</h3><p>你的setup.py文件中的<strong>classifier</strong>信息有误，请按<a href="https://pypi.python.org/pypi?%3Aaction=browse" target="_blank" rel="noopener">官网</a>的正确分类书写<strong>classifier</strong>.</p>
+<h3 id="error-No-dist-file-created-in-earlier-command"><a href="#error-No-dist-file-created-in-earlier-command" class="headerlink" title="error: No dist file created in earlier command"></a>error: No dist file created in earlier command</h3><p>你还没打包就开始了上传命令，建议打包和上传的操作放在一起做，比如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python setup sdist upload</span><br></pre></td></tr></table></figure>
+
+<h3 id="error-Upload-failed-499-Client-Disconnected"><a href="#error-Upload-failed-499-Client-Disconnected" class="headerlink" title="error: Upload failed (499): Client Disconnected"></a>error: Upload failed (499): Client Disconnected</h3><p>这应该是网络问题，多重试几次。</p>
+<h3 id="Upload-failed-400-File-already-exists"><a href="#Upload-failed-400-File-already-exists" class="headerlink" title="Upload failed (400): File already exists"></a>Upload failed (400): File already exists</h3><p>文件已经存在了，你每一次上次都应该更新版本号。</p>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ul>
+<li><a href="https://packaging.python.org/distributing/" target="_blank" rel="noopener">https://packaging.python.org/distributing/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo/logo.png">
+  <link rel="mask-icon" href="/logo/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"betacat.online","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"padding":18},"copycode":{"enable":false,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="BetaCat 测试喵">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetaCat 未上线的猫">
+<meta property="og:url" content="https://betacat.online/page/5/index.html">
+<meta property="og:site_name" content="BetaCat 未上线的猫">
+<meta property="og:description" content="BetaCat 测试喵">
+<meta property="article:author" content="Toby Qin">
+<meta property="article:tag" content="BetaCat">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="未上线的猫">
+<meta property="article:tag" content="测试喵">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://betacat.online/page/5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>BetaCat 未上线的猫</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7fc537dfd82db5d382767b00660d77a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta custom-logo">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BetaCat 未上线的猫</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">未上线的猫</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works/" rel="section"><i class="fa fa-fw fa-coffee"></i>作品</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-23/build-chrome-extension-with-vuejs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-23/build-chrome-extension-with-vuejs/" class="post-title-link" itemprop="url">用VueJS写一个Chrome浏览器插件</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-24T00:00:00+08:00">2019-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>浏览器基本已经天下大统了，放眼望去都是Chromium的天下。那么，能写一个浏览器插件也算是一种回报率不错的技能。</p>
+<h2 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h2><p>浏览器插件官方的说法叫扩展程序，允许你为浏览器增加各种功能，但不需要深入研究浏览器本身的代码。你可以用HTML，CSS和JavaScript创建新的扩展程序，如果你曾经写过网页，那么写一个插件是非常轻松的事情。</p>
+<p>常见的插件一般就是地址栏后面的一个图标，点击后给你当前网页提供各种功能，或者在你点击网页右键时弹出额外的菜单。</p>
+<h3 id="扩展程序目录结构"><a href="#扩展程序目录结构" class="headerlink" title="扩展程序目录结构"></a>扩展程序目录结构</h3><p>最简单的扩展程序只需要3个文件，或者更少。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">my-addon</span><br><span class="line">  |- manifest.json</span><br><span class="line">  |- icon.png</span><br><span class="line">  └─ popup.html</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>manifest.json：清单文件，用来描述插件本身，必须。</li>
+<li>icon.png：图标文件，如果你不想用默认图标这也是必须的。</li>
+<li>popup.html：算是插件的功能页吧，你至少得有点功能才有存在的意义吧。</li>
+</ul>
+<p>当然上面的例子是最精简的情况了，一般的插件会有多个html，还有js目录，css目录等等，你可以把插件当成一个静态网站，唯一的区别是多了一个manifest文件用来描述这个静态网站。</p>
+<h3 id="清单文件的示例"><a href="#清单文件的示例" class="headerlink" title="清单文件的示例"></a>清单文件的示例</h3><p>下面是一个精简版的manifest.json。</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"manifest_version"</span>: <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"One-click Kittens"</span>,</span><br><span class="line">  <span class="attr">"description"</span>: <span class="string">"This extension demonstrates a browser action with kittens."</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"1.0"</span>,</span><br><span class="line"></span><br><span class="line">  <span class="attr">"permissions"</span>: [</span><br><span class="line">    <span class="string">"https://secure.flickr.com/"</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">"browser_action"</span>: &#123;</span><br><span class="line">    <span class="attr">"default_icon"</span>: <span class="string">"icon.png"</span>,</span><br><span class="line">    <span class="attr">"default_popup"</span>: <span class="string">"popup.html"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>看上去是不是很直观，名字，版本，描述，权限，行为。如果要深入再查查官方文档就OK了。</p>
+<h2 id="做一个Hello-World插件"><a href="#做一个Hello-World插件" class="headerlink" title="做一个Hello World插件"></a>做一个Hello World插件</h2><p>有了基础知识，我们速度来个Hello World，先写manifest.json。</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"manifest_version"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">"name"</span>: <span class="string">"Hello"</span>,</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"1.0.0"</span>,</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"Hello, Chrome extension."</span>,</span><br><span class="line">    <span class="attr">"icons"</span>:</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"16"</span>: <span class="string">"img/icon.png"</span>,</span><br><span class="line">        <span class="attr">"48"</span>: <span class="string">"img/icon.png"</span>,</span><br><span class="line">        <span class="attr">"128"</span>: <span class="string">"img/icon.png"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"browser_action"</span>: </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"default_icon"</span>: <span class="string">"img/icon.png"</span>,</span><br><span class="line">        <span class="attr">"default_title"</span>: <span class="string">"Hello World"</span>,</span><br><span class="line">        <span class="attr">"default_popup"</span>: <span class="string">"popup.html"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"permissions"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"&lt;all_urls&gt;"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"homepage_url"</span>: <span class="string">"https://github.com/tobyqin/"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>再补一下图标文件和popup.html。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器插件页面，右上角打开开发者模式，加载插件目录。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224211641535.png" alt="image-20190224211641535"></p>
+<p>这时我们的第一个插件就好了，点击插件图标就可以显示Hello World。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224211834725.png" alt="image-20190224211834725"></p>
+<h2 id="把Vue加进来"><a href="#把Vue加进来" class="headerlink" title="把Vue加进来"></a>把Vue加进来</h2><p>好像很容易嘛，我们直接用CDN的Vue，改造一下popup.html。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    &#123;&#123; message &#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.bootcss.com/vue/2.6.6/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">'#app'</span>,</span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message: <span class="string">'Hello Vue!'</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>不用卸载刚才安装的插件目录，只要再点击一下插件按钮就会自动加载最新的代码。不过好像不对，和期望的结果不一样。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224213132801.png" alt="image-20190224213132801"></p>
+<p>而且注意看插件页面，出现错误了。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224213239330.png" alt="image-20190224213239330"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Refused to load the script &#39;https:&#x2F;&#x2F;cdn.bootcss.com&#x2F;vue&#x2F;2.6.6&#x2F;vue.js&#39; because it violates the following Content Security Policy directive: &quot;script-src &#39;self&#39; blob: filesystem: chrome-extension-resource:&quot;. Note that &#39;script-src-elem&#39; was not explicitly set, so &#39;script-src&#39; is used as a fallback.</span><br><span class="line"></span><br><span class="line">Refused to execute inline script because it violates the following Content Security Policy directive: &quot;script-src &#39;self&#39; blob: filesystem: chrome-extension-resource:&quot;. Either the &#39;unsafe-inline&#39; keyword, a hash (&#39;sha256-fMtOu4CF&#x2F;4bYGHZuo6ltgNQyLcxFW9rBnAYSk3yz53w&#x3D;&#39;), or a nonce (&#39;nonce-...&#39;) is required to enable inline execution.</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，浏览器插件权限是非常低的，不允许访问除了插件本身的文件以外的文件，不能调用页面内脚本（inline script），也不能使用eval之类的函数。</p>
+<p>你需要在manifest文件中配置好Content Security Policy（CSP）才能使用Vue。</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"manifest_version"</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="attr">"browser_action"</span>: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"content_security_policy"</span>: <span class="string">"style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval' https://cdn.bootcss.com; object-src 'self' ;"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>因为这个CSP写起来实在不怎么友好，伟大的网友做了一个工具可以帮你一把。</p>
+<ul>
+<li><a href="https://github.com/foundeo/content-security-policy.com/" target="_blank" rel="noopener">https://github.com/foundeo/content-security-policy.com/</a></li>
+</ul>
+<p>接下来，把页面内的script内容搬到单独的文件。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// popup.html</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    &#123;&#123; message &#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.bootcss.com/vue/2.6.6/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"app.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// app.js</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">    el: '#app',</span><br><span class="line">    data: &#123;</span><br><span class="line">        message: 'Hello Vue!'</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>刷新一下插件，搞定了。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224215911240.png" alt="image-20190224215911240"></p>
+<h2 id="如何调试插件"><a href="#如何调试插件" class="headerlink" title="如何调试插件"></a>如何调试插件</h2><p>调试插件和调试一个普通的网页一样简单，右键选择审查元素就好了。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224220344298.png" alt="image-20190224220344298"></p>
+<p>包括插件的配置页面，新弹出的页面等等，都可以用一样的方法调试。</p>
+<h2 id="如何发布插件"><a href="#如何发布插件" class="headerlink" title="如何发布插件"></a>如何发布插件</h2><p>当你完成插件开发后，在启用开发者模式的插件中心就可以看到打包插件按钮，这个按钮可以帮你快速打包crx文件，第一次打包你不需要提供密钥，它会帮你生成一个密钥，之后的版本升级你需要用同一个密钥打包，否则就被认为是一个新的插件了，所以切记保存好密钥。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190224220845746.png" alt="image-20190224220845746"></p>
+<p>拿着打包好的crx文件你就可以到商店发布啦，不过发布到谷歌商店是要交钱的，一年9.9美刀的开发者会员。国内的各种商店收不收费不知道。</p>
+<p>比较恶心的是，如果你的插件没有在谷歌浏览器的商店里上架，Chrome浏览器是不认的，以前还可以拖到插件页面安装，现在怎么都绕不过去了。但基于Chromium开发的第三方浏览器还是可以装的，比如Opera，QQ，360等等。</p>
+<h2 id="一些技巧"><a href="#一些技巧" class="headerlink" title="一些技巧"></a>一些技巧</h2><h3 id="他山之石"><a href="#他山之石" class="headerlink" title="他山之石"></a>他山之石</h3><p>可能你要做的插件别人已经做过了，或者你想借鉴别人的插件，有两个方法。</p>
+<ol>
+<li>右键审查别人的插件页面，看看代码怎么工作的。</li>
+<li>安装一个下载crx的插件，然后把别人的插件从商店下载到本地，重命名为zip并解压，就可以看到源码了。</li>
+</ol>
+<p>当然啦，别人的源码可能做过混淆加密。</p>
+<h3 id="插件页面大小"><a href="#插件页面大小" class="headerlink" title="插件页面大小"></a>插件页面大小</h3><p>如果你的插件会弹出一个页面，浏览器默认会根据内容自适应页面大小，就像上面例子里的那个hello world，很丑是吧。一般插件页面都是限制body高度和宽度的，这样才不会歪。</p>
+<h3 id="安全请求"><a href="#安全请求" class="headerlink" title="安全请求"></a>安全请求</h3><p>现在很难找到不是https的页面里，所以你的插件里如果会往后台发送请求的话，也是需要支持https协议的，否则会被拦截的。</p>
+<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h3><p>如果你的插件是可配置的，怎么保存配置信息呢？直接用<code>localStorage</code>就行了。<code>localStorage</code>对每个站点都是独立的，每一个插件可以看成独立的站点，所以当你在插件里调用<code>localStorage</code>对象时就是当前插件的<code>localStorage</code>。如果你希望配置是可同步的，那么请考虑<code>chrome.storage</code>对象，里面提供了<code>storage.local</code>和 <code>storage.sync</code>。</p>
+<h3 id="完整的例子"><a href="#完整的例子" class="headerlink" title="完整的例子"></a>完整的例子</h3><p>不想推荐文档什么的，自己需要会去搜索的。那么有没有一个完整的例子？当然有啦，去看我的github吧，觉得不错就点个赞。</p>
+<ul>
+<li><a href="https://github.com/tobyqin/chrome_vue_ext_demo" target="_blank" rel="noopener">https://github.com/tobyqin/chrome_vue_ext_demo</a></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/tobyqin/chrome_vue_ext_demo/master/capture.png" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-21/reverse-proxy-and-intranet-through/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-21/reverse-proxy-and-intranet-through/" class="post-title-link" itemprop="url">反向代理和内网穿透</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-22 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-22T00:00:00+08:00">2019-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>反向代理看上去看深奥，其实不然，只是因为汉语言文化的差异导致它看上去深奥。一般反派感觉都比较厉害和神秘。</p>
+<p>要理解反向代理，我们就不得不说一下正向代理。</p>
+<h3 id="正向代理-（Forward-Proxy）"><a href="#正向代理-（Forward-Proxy）" class="headerlink" title="正向代理 （Forward Proxy）"></a>正向代理 （Forward Proxy）</h3><p>所谓正向代理，就是大家通常说的代理。打个通俗的比方，你想跟你舅舅借钱，但不好开口（或者你舅妈会设法阻拦），就跟你妈说。这时母亲大人就是个正向代理。此时代理本质就是个桥的作用，这个桥让你能和桥对面的人交换信息。</p>
+<p><img src="https://tobyqin.github.io/images/1550823489351.png" alt=""></p>
+<p>正向代理是多对一的概念，例如你姐，你妹你可以通过你妈去跟舅舅借钱，但舅舅只有一个舅舅。舅舅有可能并不知道到底是谁真正在借钱，只知道钱给了你妈。</p>
+<h3 id="反向代理-（Reserve-Proxy）"><a href="#反向代理-（Reserve-Proxy）" class="headerlink" title="反向代理 （Reserve Proxy）"></a>反向代理 （Reserve Proxy）</h3><p>大家都有打客服电话的经历，比如10086，一般上来就是个语音系统，转接人工服务后嘟嘟嘟好几声才有人接听，说我是工号xxx，很高兴为你服务。这个客服总机号码10086就是个反向代理，</p>
+<p><img src="https://tobyqin.github.io/images/1550824448581.png" alt=""></p>
+<p>反向代理隐藏了真实的服务端，有可能有N个客服对应N个号码，但你只需要记一个10086，它会平衡客服之间的压力给你安排合适的人。</p>
+<p>反向代理是一对多的概念，刚好和正向代理反过来了。</p>
+<ul>
+<li>正向代理<strong>代理的对象是客户端</strong></li>
+<li>反向代理<strong>代理的对象是服务端</strong></li>
+</ul>
+<p>反向代理最常见的作用就是负载均衡。比如你访问baidu的域名后，baidu会根据你的ip地址和网络情况给你分配最快的服务器，这个分配服务器的服务器就是反向代理。</p>
+<p><img src="https://tobyqin.github.io/images/1550825022784.png" alt=""></p>
+<p>反向代理还有一个场景就是内网穿透，因为服务对象是在内网里，你需要通过代理才能访问到。</p>
+<h2 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h2><p>从外网是没办法直接访问到内网的资源的，因为内网是一个局域网不在一个网段，而且还有防火墙在。</p>
+<p><img src="https://tobyqin.github.io/images/1550826381553.png" alt="1550826381553"></p>
+<p>这时候你弄个反向代理就可以解决这个问题：</p>
+<ul>
+<li>内网服务器访问代理服务器</li>
+<li>握手，建立<strong>通道</strong></li>
+<li>外网用户访问代理，代理通过<strong>通道</strong>和内网通信</li>
+</ul>
+<p><img src="https://tobyqin.github.io/images/1550848043738.png" alt="1550848043738"></p>
+<p>举一个具体例子，TeamViewer的服务端（外网）就是个反向代理，它需要和TeamViewer客户端（内网）一直保持通信，建立一个通道（TeamViewer ID）。当远程连接这台机器时，你需要登录到TeamViewer服务器，然后通过代理通道（TeamViewer ID）和远程机器连接。</p>
+<h2 id="一些反向代理服务"><a href="#一些反向代理服务" class="headerlink" title="一些反向代理服务"></a>一些反向代理服务</h2><p>远程连接内网机器的桌面服务是最常见的需求，有时候我们希望做的是自己的机器上跑一些服务能够从外网访问，比如demo，博客，甚至私有云等等。</p>
+<p>TeamViewer和向日葵大家可能都知道，我说一些不一样的。</p>
+<h3 id="frp"><a href="#frp" class="headerlink" title="frp"></a>frp</h3><p>开源界最流行的反向代理之一，frp全称FaskReverseProxy，它的目标是做最快速可靠的反向代理，用GO语言实现，在Github上正在快速迭代中。安装和配置都非常简单，只需要几个命令就可以完成。frp支持的客户端非常丰富，树莓派，路由器，安卓手机等等，可玩性很高。</p>
+<p>frp服务可以让你本地的web项目提供给外网访问，特别适合向别人展示你本机的web demo 以及调试一些远程的API (比如微信公众号，企业号的开发)。</p>
+<p>FRP还可以轻松代理TCP，HTTPS，SSH等等协议，你需要有一台具有公网IP的机器，最好加一个域名。</p>
+<h3 id="ngrok"><a href="#ngrok" class="headerlink" title="ngrok"></a>ngrok</h3><p>曾经是开源界反向代理软件的老大，到2.0以后选择闭源，最后开源的版本2016年后就没有再更新，止于1.7。基于C语言实现，配置略复杂，不过据说灵活性和稳定性超好。</p>
+<p>ngrok也可以代理常见的各种协议，自己搭建只能用早期的开源版本。或者选择商业公司提供的收费服务，国内外可以搜到很多提供NGROK服务的网站，可不可靠不太敢说，但真的很多。</p>
+<p>这里列举一些知乎推荐过的，你也可以通过ngrok这个关键字搜索到很多。</p>
+<ul>
+<li>natapp.cn</li>
+<li>小米球</li>
+<li>Sunny-Ngrok</li>
+<li>echosite</li>
+</ul>
+<h3 id="dog-tunnel"><a href="#dog-tunnel" class="headerlink" title="dog-tunnel"></a>dog-tunnel</h3><p>翻译过来就是狗洞吧，国人做的，基于GO语言开发，在GitHub上活跃度还不错，有1k+的星星，有兴趣可以试一下。</p>
+<h3 id="serveo-net"><a href="#serveo-net" class="headerlink" title="serveo.net"></a>serveo.net</h3><p>无需注册，无需配置，只需要 ssh 就行，没有客户端，支持多端口映射，支持自定义子域名，只要一行代码。</p>
+<p><code>ssh -R 80:localhost:3000 http://serveo.net</code></p>
+<p>我试了一下，临时用一下真的很棒！</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>内网服务本来就是比较敏感的，所以从数据安全的角度看我觉得还是自己搭建代理服务更可靠。用不靠谱的服务有很大风险，还有可能很坑，非常坑。</p>
+<p>比如nat123和花生壳，一步一步诱导你付费，协议，端口，流量，速度，域名每个细节都要收费，还不一次说清楚，你付完钱才知道后面还要付钱的，别问我怎么知道的。</p>
+<p>更多讨论，你也可以去看知乎：<a href="https://www.zhihu.com/question/49629610/" target="_blank" rel="noopener">https://www.zhihu.com/question/49629610/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-12/sync-screenshots-from-mobile-devices-to-pc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-12/sync-screenshots-from-mobile-devices-to-pc/" class="post-title-link" itemprop="url">从手机截图报Bug扯到工具论</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-13 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-13T00:00:00+08:00">2019-02-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我发现手机端的测试怎么截图报bug是个不可忽视的小问题，传统的做法真的很烦。在这里我提供一些思路给大家。</p>
+<h2 id="自动同步截图文件夹"><a href="#自动同步截图文件夹" class="headerlink" title="自动同步截图文件夹"></a>自动同步截图文件夹</h2><p>这是一个看上去很不错的思路，现成有个工具可以达到这个目的：坚果云。</p>
+<p>在手机端安装一个坚果云，配置好要同步的截图目录，每次截图后它会帮你自动同步。在电脑端安装客户端后直接就能看到新同步的文件，也可以直接在网页端刷新就能预览。</p>
+<p>这个方案的问题：</p>
+<ol>
+<li>多台手机将登录同一个账号（实际情况必然如此，便于测试多台设备）</li>
+<li>多台手机同步的截图目录会混在一起（N到1）， 图片很混乱</li>
+<li>老设备很久以前的截图也会同步进来，数据量更大更混乱，你还不想删</li>
+<li>同步的App在后台很有可能也很容易被杀掉</li>
+</ol>
+<p>所以这个方案适合新手机或者只用一台手机测试的情况，不是特别推荐。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/201901051013491325.JPG" alt=""></p>
+<h2 id="手动分享新图片"><a href="#手动分享新图片" class="headerlink" title="手动分享新图片"></a>手动分享新图片</h2><p>这是目前大家私人手机上很常用的方式，在测试机就不太合适了。</p>
+<p>比如你不会在测试机登录自己的微信QQ，就算有公共的账号，在电脑上也只能登录一个实例，你用了其他人就用不了了。N台设备需要N个账号，明显不合适。</p>
+<p>所以这个方案的关键是，找到一个合适的<strong>可以多设备登录，分享后能在网页端预览内容的App</strong>，并且还不能是公开分享，我的建议还是坚果云。</p>
+<p>在手机端登录坚果云后，截图后直接分享到坚果云的某个目录，电脑上网页端刷新一下就可以看到截图，整个流程很顺畅。很多手机还可以在分享前编辑一下图片，这时候你还能用涂鸦工具标注bug区域等等。</p>
+<p>再退一步，也可以考虑用邮箱来代替这样的App，截图，分享到邮件，填收件人，不算太爽还凑合，还有延迟可能比较高。</p>
+<p>这个方案我用下来没有太大问题，支持安卓和苹果设备。唯一的问题是弄一个公共账号，不难。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/201901051004382311.JPG" alt=""></p>
+<h2 id="集成截图工具到被测应用"><a href="#集成截图工具到被测应用" class="headerlink" title="集成截图工具到被测应用"></a>集成截图工具到被测应用</h2><p>这是不少大厂的做法，比如支付宝应用截图后就会提示你是否要反馈问题，还有一些App在你摇一摇后就自动截屏反馈问题。</p>
+<p>如果你们的开发团队有精力并且愿意为质量部门添砖加瓦，那么这个世界将会非常美好。这需要各部门的通力合作和强力支持，最主要还是老板和业务部门的点头，给资源和时间。</p>
+<p>这样的集成可以做的很深入，不仅截图，还有日志，当前运行数据等等一并捕获提交到bug管理工具，省心啊。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/4abeb57ffe.jpg" alt=""></p>
+<h2 id="DIY一个同步工具"><a href="#DIY一个同步工具" class="headerlink" title="DIY一个同步工具"></a>DIY一个同步工具</h2><p>这是最后考虑的方案，简单来说就是自己写一个App，比如安装后在状态栏加一个同步按钮，或者贴在屏幕边缘等等。当你需要时点击一下进行同步，同时也提供个分享接口。做这样的一个App不算太难，不过还是需要时间和精力的投入，如果你有兴趣我们可以聊一聊。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/201901141355323283.png" alt=""></p>
+<p>基本功能大概是这样的：</p>
+<ul>
+<li>监控指定文件夹（截图目录），自动上传到远程设备目录</li>
+<li>提供分享接口</li>
+<li>收集设备状态</li>
+<li>提供Web管理端，方便访问截图，查看设备信息</li>
+<li>不需要连接数据线</li>
+</ul>
+<p>或许已经有类似的工具了，我没找到。但如果外部工具都不顺手的时候，自己做一个可能更符合需求。</p>
+<p><img src="https://tobyqin.github.io/images/bee265372c.jpg" alt=""></p>
+<h2 id="关于坚果云"><a href="#关于坚果云" class="headerlink" title="关于坚果云"></a>关于坚果云</h2><p>坚果云是目前唯一值得推荐的云盘，不限速只限流量，每月上传1G下载3G，没广告不推销，作为效率软件完全足够。每个项目组可以自己申请一个公用账号。</p>
+<p>国内外的网盘因为各种原因都已经不值得推荐了，各种笔记类App也已经加上很很多限制，比如多端登录和流量限制等等。</p>
+<p>坚果云作为一个要盈利的公司将来怎么样也不好说，而且是公网软件，敏感数据还是不要全往里面放。有朋友说可以考虑搭建私有云，我稍微对比总结了一下：</p>
+<ol>
+<li>seafile - 国内团队开发的开源企业级云存储方案，提供全平台客户端，口碑较好。</li>
+<li>owncloud - 开源的个人云解决方案，貌似吐槽比较多，占资源，不太推荐。</li>
+<li>nextcloud - 据说是从owncloud团队分出来的，核心差不多，颜值比较高，口碑也一般。</li>
+</ol>
+<p>如果将来公有云都挂了，那么我们就整一个。</p>
+<p><img src="https://tobyqin.github.io/images/201901051016009569.jpg" alt=""></p>
+<h2 id="我的工具论"><a href="#我的工具论" class="headerlink" title="我的工具论"></a>我的工具论</h2><p>有一些同学认为不能用太顺手的工具，因为会形成依赖，一旦离开就会浑身难受。</p>
+<p>我认为这种担心是多余的，工具用得好，下班回家早。只有你工作效率提高了，才能更深入去了解业务和提高自己，如果总是忙于繁琐的事物，日复一日终将被工具替代。</p>
+<p>古人云了，工欲善其事必先利其器。</p>
+<p>古人还云了，磨刀不误砍柴工。</p>
+<p>好的工具是不会消失的，但有可能收费。当你觉得值的话，就买下它吧，免费的有可能更贵。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-11/leetcode-add-two-numbers/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-11/leetcode-add-two-numbers/" class="post-title-link" itemprop="url">LeetCode第二题 - 两数相加</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-12 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-12T00:00:00+08:00">2019-02-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定两个非空的链表，分别代表两个正整数。链表中存储的数字和实际的位数刚好相反，要求将这两个数字相加并以链表的结构返回。</p>
+<p>举例说明：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span><br><span class="line">Output: 7 -&gt; 0 -&gt; 8</span><br><span class="line">Explanation: 342 + 465 &#x3D; 807.</span><br></pre></td></tr></table></figure>
+
+<p>假设给定的数字没有0开头（链表末位数肯定不是0），并且任意相加数也不为0。</p>
+<h2 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h2><p>这道题目基本上就是模拟学生时代的加法，主要考虑遍历和进位的问题。</p>
+<p>比较直接的做法就是：</p>
+<ol>
+<li>先遍历链表1，同时加上链表2对应数位的数字存入结果，暂时不考虑进位的问题。</li>
+<li>如果链表1遍历结束后，链表2还没结束就直接剩下的直接加入结果。</li>
+<li>遍历结果集，大于10的进位取余，直至结束。</li>
+</ol>
+<p>且看代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"># class ListNode(object):</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.next = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">addTwoNumbers</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">         <span class="comment"># 相加结果集</span></span><br><span class="line">        r = []</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 遍历链表1</span></span><br><span class="line">        <span class="keyword">while</span> l1:</span><br><span class="line">            <span class="keyword">if</span> l2: </span><br><span class="line">                <span class="comment"># 加上链表2相同位数的数字，忽略进位</span></span><br><span class="line">                r.append(l1.val + l2.val)</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="comment"># 如果链表2已经结束，直接补位链表1</span></span><br><span class="line">                r.append(l1.val)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 处理下一位数</span></span><br><span class="line">            l1 = l1.next</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 如果链表2没结束，直接补位</span></span><br><span class="line">        <span class="keyword">while</span> l2:</span><br><span class="line">            r.append(l2.val)</span><br><span class="line">            l2 = l2.next</span><br><span class="line">        </span><br><span class="line">        head = ListNode(<span class="number">0</span>) <span class="comment"># 结果链表</span></span><br><span class="line">        current = head</span><br><span class="line">        carry =<span class="number">0</span> <span class="comment"># 进位数</span></span><br><span class="line">        length = len(r)</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#遍历结果集</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">            current.val = r[i] + carry</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 大于10需要进位</span></span><br><span class="line">            carry = current.val // <span class="number">10</span></span><br><span class="line">            <span class="comment"># 取余为当前位数</span></span><br><span class="line">            current.val = current.val % <span class="number">10</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 只处理到倒数第2位，重置current</span></span><br><span class="line">            <span class="keyword">if</span> i &lt; length - <span class="number">1</span>:</span><br><span class="line">                current.next = ListNode(<span class="number">0</span>)</span><br><span class="line">                current = current.next</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 如果末位数还有进位，补一下</span></span><br><span class="line">        <span class="keyword">if</span> carry:</span><br><span class="line">            current.next = ListNode(carry)</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> head</span><br></pre></td></tr></table></figure>
+
+<p>提交看看，68ms，打败92%的玩家，还不错。</p>
+<h2 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h2><p>加法我们当然可以自己算啦，也可以让CPU给我们算啊。所以解法二是一种赖皮的做法，就是把两个链表变成真正的整数，然后相加，然后再转成链表，你猜猜速度是更快还是更慢？</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">addTwoNumbers</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type l1: ListNode</span></span><br><span class="line"><span class="string">        :type l2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        data_1 = <span class="string">""</span> <span class="comment"># 字符串</span></span><br><span class="line">        data_2 = <span class="string">""</span> <span class="comment"># 字符串</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 链表1转字符串</span></span><br><span class="line">        <span class="keyword">while</span> (l1 != <span class="literal">None</span>):</span><br><span class="line">            data_1 += str(l1.val)</span><br><span class="line">            l1 = l1.next</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 链表2转字符串</span></span><br><span class="line">        <span class="keyword">while</span> (l2 != <span class="literal">None</span>):</span><br><span class="line">            data_2 += str(l2.val)</span><br><span class="line">            l2 = l2.next</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 字符串翻转后转整数</span></span><br><span class="line">        data_1 = int(data_1[::<span class="number">-1</span>])</span><br><span class="line">        data_2 = int(data_2[::<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 相加后再转成字符串然后翻转</span></span><br><span class="line">        ans = str(data_1 + data_2)[::<span class="number">-1</span>]</span><br><span class="line">truetrue</span><br><span class="line">        <span class="comment"># 字符串拆开存放到数组</span></span><br><span class="line">        ret = []</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(ans)):</span><br><span class="line">            ret.append(ListNode(int(ans[i])))</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 遍历数组生成链表</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(ret) - <span class="number">1</span>):</span><br><span class="line">            ret[i].next = ret[i+<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+<p>提交看看，80ms，打败了52%的玩家！看来这个来回倒腾的过程挺费CPU的，但是不费脑子啊。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-10/joke-about-eating/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-10/joke-about-eating/" class="post-title-link" itemprop="url">关于吃的几个段子</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-11 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-11T00:00:00+08:00">2019-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">Life</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://tobyqin.github.io/images/image-20190211215953837.png" alt=""></p>
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>不论台湾，还是西藏新疆，</p>
+<p>一寸一厘的国土都不能让，</p>
+<p>谁知道上面能长出什么好吃的来。</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>我这辈子，</p>
+<p>唯一拿得起放不下的，</p>
+<p>就是筷子了。</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>作为入侵物种，</p>
+<p>小龙虾在中国颜面扫地，</p>
+<p>居然沦落到要靠人工养殖才能活下去……</p>
+<p>如果有外来物种入侵中国成功了，</p>
+<p>一定是因为它不好吃。</p>
+<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p>在我国，东西分三类，</p>
+<p>直接吃的，</p>
+<p>看着好像可以吃的，</p>
+<p>得想点办法才能吃的。</p>
+<h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><p>“说，你除了吃还会什么？”</p>
+<p>“还会饿。”</p>
+<h2 id="六"><a href="#六" class="headerlink" title="六"></a>六</h2><p>亚当和夏娃吃了蛇给他们的禁果，</p>
+<p>遭到了上帝的惩罚！</p>
+<p>被逐出伊甸园，所以有了人类。</p>
+<p>如果亚当和夏娃是中国人，</p>
+<p>那被吃的，应该是那条蛇。</p>
+<h2 id="七"><a href="#七" class="headerlink" title="七"></a>七</h2><p>你们吃是为了活着，</p>
+<p>我们活着是为了吃。</p>
+<h2 id="八"><a href="#八" class="headerlink" title="八"></a>八</h2><p>晚上睡不着觉就开始数羊：</p>
+<p>一只羊、两只羊、三只羊、</p>
+<p>喜羊羊，美羊羊，懒羊羊，</p>
+<p>沸羊羊，小肥羊，海底捞，</p>
+<p>麻酱，小料，金针菇，虾滑，宽粉，</p>
+<p>海带，豆芽，大海螺，茼蒿，菠菜……</p>
+<p>TMD，下楼！不睡了！！！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-09/leetcode-two-sum/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-09/leetcode-two-sum/" class="post-title-link" itemprop="url">LeetCode第一题 - 两数之和</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-10 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-10T00:00:00+08:00">2019-02-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个整数数组，找出和为指定值的两个元素的下标。举例说明：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Given nums &#x3D; [2, 7, 11, 15], target &#x3D; 9,</span><br><span class="line"></span><br><span class="line">Because nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9,</span><br><span class="line">return [0, 1].</span><br></pre></td></tr></table></figure>
+
+<p>假设数组中有且只有一种组合可以得到正确答案，并且相同元素不可以重复使用。</p>
+<h2 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h2><p>很容易想到暴力破解，只要做两层循环就可以搜索出答案。实现起来和冒泡排序类似。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">        length = len(nums)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>,length):</span><br><span class="line">                <span class="keyword">if</span> nums[i] + nums[j] == target:</span><br><span class="line">                    <span class="keyword">return</span> [i,j]</span><br></pre></td></tr></table></figure>
+
+<p>这个解法效率很低，运行2900ms，只打败了全球20%的玩家。</p>
+<h2 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h2><p>我们可以优化一下，用哈希表（字典）来保存数字的索引和值，这样搜索的复杂度就变成了O(1)，而遍历的复杂度是N。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">        length = len(nums)</span><br><span class="line">        <span class="comment"># 建立index和value的反向索引</span></span><br><span class="line">        d = &#123;x:i <span class="keyword">for</span> i,x <span class="keyword">in</span> enumerate(nums)&#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">            part = target - nums[i] <span class="comment"># 取差值</span></span><br><span class="line">            <span class="keyword">if</span> part <span class="keyword">in</span> d <span class="keyword">and</span> <span class="keyword">not</span> d[part]==i: <span class="comment"># 在字典中搜索差值</span></span><br><span class="line">                <span class="keyword">return</span> [i,d[part]]</span><br></pre></td></tr></table></figure>
+
+<p>提交看疗效，20ms，打败全球100%玩家。</p>
+<h2 id="解法三"><a href="#解法三" class="headerlink" title="解法三"></a>解法三</h2><p>其实还可以优化一下，这个哈希表可以延迟建立，这样可以省掉建表时的那次遍历。但效果嘛，不一定是优化，且看代码。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">        length = len(nums)</span><br><span class="line">        d = &#123;&#125; <span class="comment"># 空字典</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">            part = target - nums[i]</span><br><span class="line">            <span class="keyword">if</span> part <span class="keyword">in</span> d:  <span class="comment"># 检索字典，有则直接返回</span></span><br><span class="line">                <span class="keyword">return</span> [i,d[part]]</span><br><span class="line">            <span class="keyword">else</span>: <span class="comment"># 没找到，加入字典</span></span><br><span class="line">                d[nums[i]]=i</span><br></pre></td></tr></table></figure>
+
+<p>提交，也是20ms，依然打败100%全球玩家。不过要注意一点，这种算法返回的下标都是反的，比如上面两种算法返回的是<code>[0,1]</code>，但是这里返回的就是<code>[1,0]</code>了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-08/book-list-for-2019-jan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-08/book-list-for-2019-jan/" class="post-title-link" itemprop="url">2019年1月书单</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-09 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-09T00:00:00+08:00">2019-02-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/" itemprop="url" rel="index">
+                    <span itemprop="name">Reading</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>##《凤凰项目，一个IT运维的传奇故事》</p>
+<p><strong>作者：Gene Kim，Kevin Behr，George Spafford，软件工程</strong></p>
+<p>以小说的形式讲述了主人公如何将一个公司曾经痛苦的业务，开发，测试，运维混乱互相撕逼的状况，实现浴火重生的故事。纯理论的絮叨很多人没办法看下去，故事化以后我只花了3天时间就看完了，而且大概也明白了三步工作法的套路：</p>
+<ol>
+<li>第一工作法是从开发到技术运营，再到客户的整个自左向右的工作流。主要依赖自动化。</li>
+<li>第二工作法是建立各阶段自右向左的快速持续<strong>反馈</strong>流，以确保防治问题再次发生或者更快发现问题。主要为了保证上游质量，依赖价值指标。</li>
+<li>第三工作法是创造公司文化，不断尝试，这需要承担风险并从成功和失败中吸取经验教训。主要为了持续改进。</li>
+</ol>
+<p>这本书评价还挺高，不管是外行还是内行都可以宏观了解到到开发运维的必要性。开发运维并不仅仅是简单的自动化工具的集成，虽然自动化是开发运维的很大一部分内容。更重要的是价值流导向，自始至终拥有共同的目标并共同解决问题。</p>
+<h2 id="《北京折叠》《弦歌》《繁华中央》"><a href="#《北京折叠》《弦歌》《繁华中央》" class="headerlink" title="《北京折叠》《弦歌》《繁华中央》"></a>《北京折叠》《弦歌》《繁华中央》</h2><p><strong>作者：郝景芳，科幻</strong></p>
+<p>这是第二次读《北京折叠》，作者通过科幻的主题去映射社会和阶级问题，二刷依然能让人反思很久。这也是中国第二个雨果奖获得者的获奖作品，不管你喜不喜欢，现实纵然是挺无奈的，在折叠的北京里三个阶层的人不公平地分着一样的城市和时间，跟现在社会一样，科幻版的朱门酒肉臭，路有冻死骨。</p>
+<p>标题里的三部小说都是长篇《孤独深处》里的选篇，整部我并没有看完，可能以后也不想看完，毕竟它就是个小说集，喜欢的我就看，不喜欢的就不看。</p>
+<p>《弦歌》和《繁华中央》其实是下上篇，嗯，先下后上。脑洞挺大，文明也可以成为最厉害的武器。如果地球上只允许文明存在，任何的武力抵抗都被消灭殆尽，想象一下。豆瓣上很多人认为这两篇才应该是雨果奖作品。</p>
+<h2 id="《地球往事-三体I》"><a href="#《地球往事-三体I》" class="headerlink" title="《地球往事 - 三体I》"></a>《地球往事 - 三体I》</h2><p><strong>作者：刘慈欣，科幻</strong></p>
+<p>第二次读《三体》，感觉没有第一次那么强烈了。还记得第一次读的时候，恨不得马上把整部一下读完，几个星期上班都想着剧情会怎么发展，宇宙社会学，宇宙哲学这些跟自己没关系的事情。</p>
+<p>再读就淡定很多，难道是我年纪上去了？随着时间的推进，我觉得《三体I》会越来越难被接受，按现在的看法里面的背景设定的确有点out。这也是为什么很多人没办法体会三体迷们对作者的崇拜，因为三体最值得阅读的是后面两部，读完后面两部才算读过。</p>
+<blockquote>
+<p>给岁月以文明，而不是给文明以岁月。</p>
+</blockquote>
+<p>无论如何，这也不影响我对刘慈欣的敬佩，雨果奖实至名归。</p>
+<h2 id="《流浪地球》"><a href="#《流浪地球》" class="headerlink" title="《流浪地球》"></a>《流浪地球》</h2><p><strong>作者：刘慈欣，科幻</strong></p>
+<p>大年初二看完电影后去补了一下原著，中篇，不是很长，2个多小时就能看完。相对于电影情节来说，原著里表达的东西更丰富，涉及到了社会，生存这些问题。</p>
+<p>人总归是很难一直保持理智的，尤其是在危难的时候。大多数科幻都是以灾难和悲剧收场的，因为作者或者说我们自己对人的本质都是质疑的，如果人都是无私的，那么还哪来的战争杀戮。</p>
+<p>正义的出现是因为反派的存在，如果没有邪恶，就无所谓正义。</p>
+<p>最后地球是不是真的要流浪我不知道，但是人类的未来一定是孤独的，当他足够强大的时候。</p>
+<h2 id="《乌合之众》"><a href="#《乌合之众》" class="headerlink" title="《乌合之众》"></a>《乌合之众》</h2><p><strong>作者：古斯塔夫・勒庞，哲学，心理学</strong></p>
+<p>这是我读的第一本哲学著作？不太确定了。</p>
+<p>这本书主要对比了个体和群体的各方各面，1984年的观点在现在看来依然针针见血。所以这本书在社会心理学领域也是最有影响力的一本。</p>
+<p>其实哲学的书挺枯燥的，里面说的你看都是对的（或者说没错）。我读的过程就是，哦，知道了，是这样的，的确是这样的，可是我能怎样，心灵也不会震动。</p>
+<p>我来引用一些大家感受一下。</p>
+<blockquote>
+<p>形成集体的个人会感觉到一种势不可挡的力量，使他敢于发泄出自本能的欲望。</p>
+<p>群体在智力上总是低于孤立的个人，但是从感情及其激发的行动这个角度看，群体可以比个人表现得更好或更差，这全看环境如何。</p>
+<p>孤立的个人很清楚，在孤身一人时，他不能焚烧宫殿或洗劫商店，即使受到这样做的诱惑，他也很容易抵制这种诱惑。但是在成为群体的一员时，他就会意识到人数赋予他的力量，这足以让他生出杀人劫掠的念头，并且会立刻屈从于这种诱惑</p>
+<p>群体表现出来的感情不管是好是坏，其突出的特点就是极为简单而夸张。</p>
+<p>群体因为夸大自己的感情，因此它只会被极端感情所打动。希望感动群体的演说家，必须出言不逊，信誓旦旦。</p>
+<p>群体可以杀人放火，无恶不作，但是也能表现出极崇高的献身、牺牲和不计名利的举动，即孤立的个人根本做不到的极崇高的行为。</p>
+</blockquote>
+<p>不知道以后我还会不会读哲学，也许是我阅历还不够。</p>
+<p>但是你看，多少小说的终极问题都是哲学问题，我们看的津津有味。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-02-07/pycharm-tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-02-07/pycharm-tips/" class="post-title-link" itemprop="url">一些 PyCharm 的使用和设置建议</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-08 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-08T00:00:00+08:00">2019-02-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>PyCharm是笔者强烈推荐的Python IDE，如果你有EDU的邮箱可以直接<a href="https://betacat.online/posts/2016-09-27/get-jetbrains-student-licence/">申请专业版授权</a>，或者就使用社区版，功能上并没有太多缩减，日常开发也完全够用。</p>
+<p>如果是首次安装PyCharm，有一些设置项建议还是按照自己习惯修改掉，所谓磨刀不误砍柴工。</p>
+<h2 id="显示工具栏"><a href="#显示工具栏" class="headerlink" title="显示工具栏"></a>显示工具栏</h2><p>默认PyCharm并不显示工具栏（Toolbar），在大多数IDE工具栏都放了最常用的操作，你可以通过主菜单-显示-菜单栏来显示工具栏。工具栏显示出来后你还可以通过右键定制上面的按钮，我会把一些跟VCS相关的操作放到上面，比如Fetch，Push，默认它只加了Pull和Commit。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208162340.png" alt=""></p>
+<h2 id="智能提示匹配大小写"><a href="#智能提示匹配大小写" class="headerlink" title="智能提示匹配大小写"></a>智能提示匹配大小写</h2><p>可能是出于动态语言和性能的考虑，PyCharm的代码提示默认是大小写敏感的。例如你敲<code>b</code>会提示你<code>back</code>但不会提示你<code>BACK</code>，坦白讲挺不方便的，你可以改掉它。在设置里搜索<code>match case</code>就可以进行调整。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208163613.png" alt=""></p>
+<h2 id="鼠标滚轮调整字体大小"><a href="#鼠标滚轮调整字体大小" class="headerlink" title="鼠标滚轮调整字体大小"></a>鼠标滚轮调整字体大小</h2><p>有时候我们讨论或者分享代码时，已经设置好的字体大小可能不太合适，很多IDE或者软件都是支持使用鼠标滚轮实时调整字体大小的，PyCharm中你需要手动启用这个功能。在设置中搜索<code>zoom</code>就可以找到对应设置项。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208170026.png" alt=""></p>
+<p>##修改单元测试框架</p>
+<p>如果你也有写单元测试的习惯，想必一定知道pytest，PyCharm可以很好地和很多知名的测试框架，但是默认它配置的是unittest，在设置中搜索<code>test</code>就可以调整成你常用的框架。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208164442.png" alt=""></p>
+<p>比如调整成pytest之后，只要你的方法名前缀是<code>test_</code>，那么IDE就会提示你这是一个test，在前面会多出一个小三角形，让你很方便地运行或者调试。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208165147.png" alt=""></p>
+<p>PyCharm支持的测试框架很多，但我喜欢的还是pytest。</p>
+<p>顺带一提的是，PyCharm可以自定义的类似配置还有很多，比如terminal使用的shell，虚拟环境选用的工具，Flask模板语言等等。</p>
+<h2 id="提交代码前的选项"><a href="#提交代码前的选项" class="headerlink" title="提交代码前的选项"></a>提交代码前的选项</h2><p>假设你已经默认显示工具栏，那么以后你提交代码只需要点击工具栏里的Commit按钮即可，这时候会弹出一个对话框，你在这里可以很方便地看到你要提交的文件，可以随意diff，add, remove甚至直接edit。很多时候我们在diff时发现有些旮旯里总漏点东西，一般的流程时关掉diff，回到编辑器，找到那个地方改掉，在PyCharm这个提交对话框，你可以一气呵成，爽歪歪。</p>
+<p>更厉害的是，你还可以选择提交前格式化代码，优化import区等等。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190208172622399.png" alt="image-20190208172622399"></p>
+<h2 id="其他可以调整的设置"><a href="#其他可以调整的设置" class="headerlink" title="其他可以调整的设置"></a>其他可以调整的设置</h2><ol>
+<li>外观和主题，包括编辑器字体，背景等等。</li>
+<li>快捷键，如果你记不住它默认的快捷键，那么就改成你能记住的。</li>
+<li>隐藏某些项目文件，治愈强迫症患者。（设置中搜索“ignore files”）</li>
+<li>安装自己顺手的插件。（设置中搜索“plugins”）</li>
+</ol>
+<h2 id="一些使用心得总结"><a href="#一些使用心得总结" class="headerlink" title="一些使用心得总结"></a>一些使用心得总结</h2><p><strong>内置的VCS很好用</strong></p>
+<p>内置的Version Control提供了日常操作需要的所有功能，而且触手可及，关键是非常直观，用过之后欲罢不能。它还提供了changlist和shelvset功能，让你在合并或者提交代码前暂存不想处理的修改，这是很多开发者都想要的功能。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190208173827240.png" alt="image-20190208173827240"></p>
+<p><strong>内置的命令行工具很好用</strong></p>
+<p>IDE内置命令行工具其实是一个硬需求，你看现在，几乎你找不到一个不带命令行的IDE。PyCharm带的IDE最方便的地方在于，可以自动识别项目里的虚拟环境并启用它，这是外部命令行工具没法比拟的。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208174528.png" alt=""></p>
+<p><strong>内置的Python Console很好用</strong></p>
+<p>写Python肯定是离不开即时解释器的，在PyCharm里你随手就可以用Python Console测试代码片段，它不仅提供了智能提示，还可以查看运行中的变量，甚至还能绘图画表，集成iPython Notebook。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208174959.png" alt=""></p>
+<p><strong>修改运行时状态很爽</strong></p>
+<p>当你用PyCharm调试代码时，可以直接在Variables窗口看到运行变量，也可以直接修改这些变量的值，更厉害的是，你可以直接执行语句，点那个计算器一样的图标就行。</p>
+<p><img src="https://tobyqin.github.io/images/2019-02/20190208175713.png" alt=""></p>
+<p>这个功能Visual Studio里也有，叫ImmediateWindow，可以节约你大把的调试时间。然而PyCharm少了一个Visual Studio里我非常喜欢的功能，拖拽当前断点。假设当前断点停在第40行，VS里可以直接拖到前面几行，例如第30行，人为控制这块代码反复运行。</p>
+<p><strong>总是为新项目建立虚拟环境</strong></p>
+<p>千万不要只用默认的Python环境写多个项目，2个也不行，以后你会后悔的。如果你能真的确定这台机器的Python只跑一个项目，那你可以不用虚拟环境。在PyCharm建立一个新的虚拟环境只需要点几下，不麻烦的。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190208195643324.png" alt="image-20190208195643324"></p>
+<p><strong>导入导出配置最靠谱</strong></p>
+<p>前面我们说了很多配置选择，如果你有N台机器都安装了PyCharm，每台都重新配置一遍多累啊，特别是快捷键如果不用默认的，换机器都想哭。</p>
+<p>PyCharm提供了一个同步配置的方案，你可以新建一个空的git repo，填到 Tools / Settings / Repository 里就可以自动上传配置。别的机器也同样配置一样，理论上配置就云同步了。但是我亲身体验告诉你，这个真不靠谱，Mac和Windows多倒腾几次就错乱了，想哭啊。还好我有方案B。</p>
+<p><img src="https://tobyqin.github.io/images/image-20190208195752742.png" alt="image-20190208195752742"></p>
+<p>方案B很简单，在某一台机器配置好后，选择主菜单 - 文件 - 导出配置。导出的配置是一个jar文件，随便扔到印象笔记或者坚果云里，新机器里用主菜单 - 文件 - 导入配置即可。</p>
+<p><strong>专业版和社区版的区别</strong></p>
+<p>刚好两个版本我都在用，大概说说专业版多出来可能会用到的东西。</p>
+<ol>
+<li>和Flask，Django深度集成，智能提示到你惊讶的级别。</li>
+<li>支持调试多线程，提供性能优化工具。</li>
+<li>快速获得和显示单元测试覆盖率。</li>
+<li>集成数据库工具，可以在IDE里直接连接任何数据库。</li>
+<li>支持Live Edit，让你在编辑代码同时，实时在浏览器中展示。</li>
+<li>支持一键部署docker。</li>
+</ol>
+<p>专业版还是很厉害的，不过也很贵。多出来的功能挺方便，但也不是必须的，大家可以酌情选择。</p>
+<p>最后，祝大家happy coding。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-01-28/about-devops-we-may-not-be-talking-about-the-same-thing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-01-28/about-devops-we-may-not-be-talking-about-the-same-thing/" class="post-title-link" itemprop="url">关于 DevOps ，咱们聊的可能不是一回事</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-29 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-29T00:00:00+08:00">2019-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reprint/" itemprop="url" rel="index">
+                    <span itemprop="name">Reprint</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>原文： <a href="https://www.jianshu.com/p/645bb1283a77" target="_blank" rel="noopener">https://www.jianshu.com/p/645bb1283a77</a></p>
+</blockquote>
+<p>在过去的三年中，我作为 DevOps 的咨询师参与了很多企业的 DevOps 转型咨询以及技术实施，也在不同的社区活动中分享了自己在 DevOps 上的实践、理解和观点。</p>
+<p>随着 DevOps 的盛行，我在很多场合和越来越多的人聊起 DevOps。也在不同的渠道听到了很多人在讲 DevOps。然而，讨论的背后，我发现每个人对 DevOps 所指并不是同一件事情，也由于各执一词导致不欢而散。</p>
+<p>于是我通过 DevOpsDays 的官方网站整理所有 DevOps 的有关材料，随着学习和了解的不断增多，我也渐渐的对 DevOps 有了更进一步的认识。我把学到的材料经过整理后把陆续放在了简书上，形成了” DevOps 前世今生” 这个系列，这个系列还在不断补充新的材料。</p>
+<h2 id="含义越来越丰富的-DevOps"><a href="#含义越来越丰富的-DevOps" class="headerlink" title="含义越来越丰富的 DevOps"></a>含义越来越丰富的 DevOps</h2><p>DevOps 至今都缺乏一个清晰和统一的认识。对于一场运动来说，这是一件好事，也同样是一件坏事。虽然 Patrick 曾经在自己的博客里一再提到自己对 DevOps 的”正确认识’’，但社区似乎不以为然。</p>
+<p>缺乏“官方定义”好处是人人都可以定义，因此没有一个人或者组织可以垄断 DevOps 定义权。所以每个人都自己可以参与到这一运动中去，不断为其增加新的概念、新的实践和新的工具。这会使 DevOps 社区不断的繁荣。</p>
+<p>而坏处也很明显，对于 DevOps 的后来者 —— 那些没有参与进来的人，需要学习和理解的 DevOps 知识的广度和深度也越来越大。</p>
+<p>以至于后来出现了这幅众所周知的“盲人摸象图”：</p>
+<p><img src="https://tobyqin.github.io/images/2019-01/274927-9e9fe4421aa97735.png" alt=""></p>
+<p>这幅图中包含了很多概念，但主要表现的意义 DevOps 是一系列概念的总和，任何一个单方面的定义只是 DevOps 的一个部分，而不是 DevOps 的整体，随着 DevOps 这个概念的不断膨胀，人们就更难理解 DevOps 了。</p>
+<h2 id="那么，你理解的-DevOps-是指的什么？"><a href="#那么，你理解的-DevOps-是指的什么？" class="headerlink" title="那么，你理解的 DevOps 是指的什么？"></a>那么，你理解的 DevOps 是指的什么？</h2><p>在接触了各类客户和社区之后，我开始尝试理解每个人谈到 DevOps 的时候，他们分别指的是什么，以及所指内容背后的目标和动机。渐渐的，我把我所听到的 DevOps 概念分成如下四类，分别是：</p>
+<ul>
+<li>DevOps 是一组技术/实践</li>
+<li>DevOps 是一个角色</li>
+<li>DevOps 是一种工作方式</li>
+<li>DevOps 是一种组织结构</li>
+</ul>
+<p>那么，我们分别来谈谈这四类 DevOps。</p>
+<h2 id="当-DevOps-是一组技术-实践"><a href="#当-DevOps-是一组技术-实践" class="headerlink" title="当 DevOps 是一组技术/实践"></a>当 DevOps 是一组技术/实践</h2><p>在工程师文化的组织里，对先进技术的渴望是最常见的学习动机。可以促进工程师用更有效率，更优雅的方式解决问题。而对于非工程师文化的组织，新的技术往往是提升其 KPI 的工具。以下是我听到 DevOps 的时候，经常触及的话题：</p>
+<ul>
+<li>高频部署</li>
+<li>持续交付</li>
+<li>云计算/虚拟化技术</li>
+<li>基础设施即代码</li>
+<li>Docker</li>
+<li>自动化运维</li>
+</ul>
+<h4 id="高频部署"><a href="#高频部署" class="headerlink" title="高频部署"></a>高频部署</h4><p>曾经和某跨国著名银行的外汇交易产品的 IT 产品负责人交流 DevOps。对方很自豪的告诉我，他们产品每天的部署频率超过500次，我听了不以为然。因为，部署频率高不见得是件好事。于是我问了以下几个问题：</p>
+<ol>
+<li>为什么你们需要这么频繁的部署？有这么频繁变动的业务需求吗？</li>
+<li>在这么多次部署里，是发布业务价值的部署更多，还是修复问题的部署更多？</li>
+<li>这些生产环境的变更难道完全是不可规划的吗？</li>
+</ol>
+<p>由于对方的金融业务有相应的法律法规，理论上没有这么频繁的变更需求，除非清理技术债，否则没有很强烈的变更动机。但对方并没有直接回答我的问题，而是换到了其它问题上，因此我最终也不清楚对方这么频繁变更的驱动力。</p>
+<p>这对我有一个重要的：指标导向的 DevOps 往往是一种 DevOps 的反模式，它会忽略和掩盖真正的问题。</p>
+<p>指标的背后是某种度量，如果部署频率一直很高，一定反应了某种现象。而这些现象不一定是个好现象：不是业务的变动很频繁，就是技术的变动很频繁。但如果二者都频繁，我们应该衡量变更带来的价值和风险（当然，DevOps 可以降低变更的风险），并优先变更价值较高的请求。有可能新的业务尝试让我们从市场上获得了更多的关注，也有可能新的技术提升了生产率。但无论是哪一种，部署频率应该是一个有多到少不断循环的过程。这表明系统在走向成熟和稳定的同时，能够及时响应变化，无论是对技术还是对业务，对变更产生的影响都需要一段时间去积累和总结数据。</p>
+<p>此外，DevOps 绝不是为了提升部署频率而牺牲了软件质量和业务价值，甚至是安全措施。换句话说，DevOps 不是一种对质量的平衡和妥协，它是一种全局改进。全局的改进就意味着以价值为最高原则所度量的相关指标是不能有所下降的。</p>
+<h4 id="持续交付"><a href="#持续交付" class="headerlink" title="持续交付"></a>持续交付</h4><p>持续交付是 DevOps 中非常重要的实践，持续交付的思想远早于 DevOps 。但直到第二届欧洲的 DevOpsDays 才有了持续交付这个重量级话题。因为持续交付本身也通过技术手段和实践解决了 DevOps 最初所面临的 Dev 和 Ops 的合作问题。</p>
+<p>不夸张的说，如果 Patrick Debois 早一点读到持续交付中运维相关的话题，说不定就没有 DevOps 了。</p>
+<p>然而，随着 DevOps 的理念的发展比持续交付融汇了更多的概念（这就是没有一个人能垄断定义的好处），使得 DevOps 更加广泛和盛行。因此， DevOps 所涵盖的范围已经超出了持续交付本身。</p>
+<p>我把 持续交付 列为 DevOps 的核心实践之一，因为如果你没有实践 持续交付。那么根本不能称之为 DevOps，但是如果你完整实践了持续交付，那么你离完整的 DevOps 也不远了。</p>
+<h4 id="云计算-虚拟化技术"><a href="#云计算-虚拟化技术" class="headerlink" title="云计算/虚拟化技术"></a>云计算/虚拟化技术</h4><p>随着分布式应用的井喷式发展。基础设施的管理成为了分布式应用的新瓶颈。在集中式管理的时代，大型应用只能运行在昂贵的小型机上，只有微软，SAP， IBM ，Oracle 和 EMC 这样的企业才有能力提供相应的产品完成这样复杂度很高的架构。因此企业需要单独的运维部门（Ops）来管理这些软件和设备。</p>
+<p>而随着虚拟技术和云计算的兴起，企业的基础设施管理工作往往变得很简单。VMWare 这样的虚拟技术企业和 AWS 这样的云计算供应商提供了更加成熟和稳定的产品。大大的节约了企业机房管理的开支。</p>
+<p>而 Ops 也不再需要进出机房，只需要通过远程桌面的方式就可以使用各种 SDK 开发工具去完成过去很多只有在机房才能做到的操作。</p>
+<p>然而，即使云计算和虚拟化技术提升了 Ops 的生产率，减轻了 Ops 的痛苦。但仍没有解决 Dev 和 Ops 之间的矛盾 —— 开发团队和维护团队仍然各自为政，仍然通过制度谈判而不是合作共赢来工作，毕竟目标是相对立的。</p>
+<h4 id="基础设施即代码"><a href="#基础设施即代码" class="headerlink" title="基础设施即代码"></a>基础设施即代码</h4><p>随着设备和网络的持续增多，加之更加复杂的应用部署和初始化。基础设施的管理成为了一个十分尖锐的问题。当复杂度上升一个量级，就需要专业的管理工具来管理这类问题。于是 Puppet 这样的框架顺势而出。以至于在 《DevOps Handbook》中，合著者之一的 John Willis 在理解了 PuppetLab 的创始人 Luke Kanies 的想法之后，才有了 DevOps 的最初理解。</p>
+<p>基础设施即代码利用了编程语言和虚拟化工具 API 的无缝连接达到这一目的。它在很大程度上把基础设施的管理当做其问题域，采用正确的面向对象方式，让开发人员和运维人员能够理解并设计出更加稳定和灵活的基础设施。大大降低基础设施变更的风险：提升了运维知识的透明度并使基础设施变更具备幂等性。</p>
+<p>此外，它在一定程度上解决了不同环境（开发，测试，生产）之间的不一致问题，也让开发人员能够学习到 Ops 领域的知识并用软件开发的优秀思想解决运维领域的问题。</p>
+<p>因此，基础设施即代码除了工具以外，更是一种 Dev 和 Ops 之间相互沟通的媒介，能够让开发人员和运维人员相互理解。所以，基础设施即代码毫无疑问的是 DevOps 的核心实践之一。</p>
+<h4 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h4><p>Docker 是含着 DevOps 的金钥匙出生的，它诞生的第一天就带着 DevOps 的基因：更简单的解决了基础设施即代码和虚拟化在实践中的问题，进一步提升了自动化能力以提升效率，并且对开发人员和运维人员都十分友好。</p>
+<p>甚至很多地方都会以是否采用 docker 来评判是否采用了 DevOps 的相关技术。</p>
+<p>Docker 一定程度上简化了基础设施的初始化和状态管理问题。通过镜像和运行时容器封装了应用运行时的复杂度。并通过容器的编排实现轻量级的分布式架构，也更加经济快捷。</p>
+<p>但是，Docker 和任何一种工具一样，都不是”黄金锤“。当用错了场景，使用 docker 可能是一场灾难。我曾经参与并帮客户完成了一个数据中心迁移的项目，就是采用的 docker 作为统一的运行时容器。最初是因为 docker 镜像的移植性好，在各种异构 Linux 系统上可以正确执行，且镜像构建过程透明。但是客户为了能让这个业务场景更加通用，又分别采用了另外两种工具对其部署场景进行封装，并写出了第三个工具。由于这个工具并没有很好的分离其业务关注点和技术关注点，导致这个工具使用异常繁琐，需要增加更多额外的配置去定制化容器运行环境。原本为了提升生产效率的手段反而成为了阻碍效率的绊脚石。</p>
+<h4 id="自动化运维"><a href="#自动化运维" class="headerlink" title="自动化运维"></a>自动化运维</h4><p>看了以上那么多的工具和技术，很多对 DevOps 望文生义�或有些技术了解的运维工程师认为提高了自动化运维的水平，就是 DevOps。虽然 DevOps 里的一个重要特征是“自动化”，但拥有自动化运维，并不代表你就正在实践 DevOps，很可能你仅仅提升了运维部门的效率，但并没有从全局的角度提升开发和运维之间的效率和端到端价值的流动。因此，仅仅有自动化运维，还不足以称之为 DevOps。</p>
+<h4 id="关于-“-DevOps-技术”"><a href="#关于-“-DevOps-技术”" class="headerlink" title="关于 “ DevOps 技术”"></a>关于 “ DevOps 技术”</h4><p>以上列举了很多所谓 “DevOps 技术”，是从技术的角度来认识 DevOps。然而，不探索 DevOps 真正的问题，以及技术背后的目的和最佳实践。往往会使导致对 DevOps 的片面了解而适得其反。</p>
+<p>从 DevOps 运动发展的历史上来看，DevOps 相关技术是解决 DevOps 相关问题的结果，而非起因。因此，对于 DevOps 的理解如果本末倒置，则很有可能起到东施效颦的结果。你会发现你拿着一堆 DevOps 的锤子，看见了可能并不存在的钉子。</p>
+<p>此外，我相信掌握工具对于工程师群体来说不是一件难事，并且随着技术的发展，工具和平台的使用会越来越容易。但是，能够跳出自己的舒适区和思维习惯，从全局的角度观察并解决问题的能力则是很多工程师所欠缺的。</p>
+<h2 id="当-DevOps-是一个岗位角色"><a href="#当-DevOps-是一个岗位角色" class="headerlink" title="当 DevOps 是一个岗位角色"></a>当 DevOps 是一个岗位角色</h2><p>当 DevOps 传播开来，大家都会倾向于去找叫做 “DevOps” 的人，希望通过招聘和培训来提升自己的 DevOps 能力。 于是设置了一些称之为 “DevOps 工程师” 的岗位和角色。通过对这些招聘需求以及客户对 DevOps 的需求，我发现了四个不同但是相关的 “ DevOps 工程师 “ ：</p>
+<ul>
+<li>作为 Dev 的 Ops（会开发技能的运维工程师）</li>
+<li>作为 Ops 的 Dev（会运维技能的开发工程师）</li>
+<li>基础设施开发工程师</li>
+<li>全栈工程师</li>
+</ul>
+<h4 id="作为-Dev-的-Ops"><a href="#作为-Dev-的-Ops" class="headerlink" title="作为 Dev 的 Ops"></a>作为 Dev 的 Ops</h4><p>有很多人也会认为，只要让开发工程师掌握运维技能，运维工程师掌握开发技能，就做到了 DevOps。这招来了很多运维工程师的反感。我采访过一些运维工程师，当初他们就是不喜欢也不想写代码，才选择了运维方向。</p>
+<p>这种想法的其中一个动机是在于架构的逐渐稳定带来的运维工作减少，特别是使用了云计算技术和虚拟化技术的企业。这会让管理层有一种错觉，认为运维团队的空闲状态，一定程度上是浪费。因此，为了达到“人尽其用”，让运维工程师进入开发团队去写业务代码。并用“DevOps”作为对这种措施这一合理化的幌子。</p>
+<p>这种想法的天真在于忽视了开发和运维的专业性和差异性。这让我想起一个段子：</p>
+<blockquote>
+<p>老板：“我怎么觉得在公司的运营中你们部门没起多大作用？”</p>
+<p>运维经理：“你走过大桥吗？”</p>
+<p>老板：“走过。“</p>
+<p>运维经理：“桥上有栏杆吗？”</p>
+<p>老板：“有。”</p>
+<p>运维经理：“您过桥的时候扶栏杆吗？”</p>
+<p>老板：“不扶。”</p>
+<p>运维经理：“那么，栏杆对您来说就没用了？”</p>
+<p>老板：“那当然有用了，没用栏杆护着，掉下去怎么办？”</p>
+<p>运维经理：“可是您没有扶栏杆啊！？”</p>
+<p>老板：“…… 可是 …… 可是没有栏杆，我会害怕！“</p>
+<p>运维经理：“那么，运维就是桥上的栏杆。“</p>
+</blockquote>
+<p>虽然我不否认技术的发展对二者来说难度和门槛在不断降低。而且掌握一定开发技能的运维工程师前景更加光明。但是强人所难并不会让事情变好。此外，这类人才可遇不可求，也不要因为招不到这样的人而阻止了 DevOps 实践。</p>
+<h4 id="作为-Ops-的-Dev"><a href="#作为-Ops-的-Dev" class="headerlink" title="作为 Ops 的 Dev"></a>作为 Ops 的 Dev</h4><p>同样的误解也会发生在开发工程师身上。对于开发工程师来说，其实难度并没有增加。无非是把 Ops 的工作当做需要通过别的工具完成的开发需求而已，甚至很多开发工程师自己也这么认为。</p>
+<p>运维除了知识以外，很大一部分的不可替代性来源于生产环境的维护经验。然而这些经验不可复制，因为有些问题作为开发人员来说你很难碰到。我曾打趣的说，当你听到有人说“这不可能啊”，他一定是个运维新手。</p>
+<p>就像我在上文强调的，软件开发和软件维护是相互关联但是各自独立的专业领域。DevOps 并不是要消除任何一方，而是要通过更加深入的合作成为彼此工作的润滑剂而非绊脚石。</p>
+<p>对于开发工程师来说，掌握更多的技能绝对是一件好事。但也不要低估运维的专业性和经验性。</p>
+<h4 id="基础设施开发工程师"><a href="#基础设施开发工程师" class="headerlink" title="基础设施开发工程师"></a>基础设施开发工程师</h4><p>由于有了虚拟化和基础设施即代码这样的技术，“通过 Dev 的方式完成 Ops 的工作，就是 DevOps “ 也很自然的成为了很多 Ops 对 DevOps 的认识。指的是通过 SDK，相关工具和配置文件，利用现有的平台资源，为应用程序构建基础设施。而他们往往有一个新的称谓：基础设施开发者 （Infrastructure Developer）或这 云计算工程师 （Cloud Engineer）。</p>
+<p>有一次到马来西亚出差，我称自己是 Infrastructure Developer 被 Uber 司机当做政府基建项目开发商�问了一堆稀奇古怪的问题，当然我并没有澄清，而是继续逗他 ;-D</p>
+<p>在一些企业里，基础设施开发工程师都会肩负着推行企业 DevOps 的责任。但很少有企业能够明确 DevOps 是要做什么（这就是 DevOps 缺乏基准定义的坏处），而这些基础设施开发工程师会慢慢变成一个孤立的“平台团队”，这对 DevOps 是不利的。</p>
+<h4 id="全栈工程师"><a href="#全栈工程师" class="headerlink" title="全栈工程师"></a>全栈工程师</h4><p>当然绝对不排除有些工程师是既懂开发也懂运维的”复合型人才”。但这样的人才的成本也十分高昂：一方面是寻找这样的人所花费的时间。另一方面是雇用这样的人所花费的资金。此外，对于某些企业来说还有培养这样人才的成本。</p>
+<p>但是，仅仅认为有了这样的人才就具备 DevOps 的能力也并不现实。首先，DevOps 是一个团队属性，而不是一个人属性。一个人的力量相较于一个团队来说，还是很有限。其次，招聘这样的人主要还是为了胜任纷繁多变的工作，创业公司尤其如此。因此，我有时候会戏称全栈工程师为“全干工程师”，听起来很厉害，但工作境遇并不见的很好。</p>
+<h4 id="你可能只需要一个-“DevOps-晃动器”"><a href="#你可能只需要一个-“DevOps-晃动器”" class="headerlink" title="你可能只需要一个 “DevOps 晃动器”"></a>你可能只需要一个 “DevOps 晃动器”</h4><p>软件开发和软件运维，是两类不同但联系很密切的事务，在过去很长的时间里。由于专业性和责任的不同从甲乙双方的矛盾变成了企业内部的矛盾。这是企业在互联网转型过程中的必经阶段，因为运维的开发不密切合作带来的问题日渐突出。而如何平滑的过渡，则是 DevOps 成败关键所在。你所需要不光是工程人才，你还需要新型的管理人才或者外部顾问来推动这项改进。</p>
+<p>一般来说，DevOps 的变革一定会调整组织的制度和做事方式。而制度层面的改变从企业内部是很难做到的。企业越大，“不求有功，但求无过”的鸵鸟心态普遍存在，因此越是大型的组织，所面临的组织僵化会越严重。组织僵化不见得是一件坏事，这意味着你的企业组织形态更加的问题和高效，这是长时间积累的结果。但由于过于高效，组织僵化的负面效应就是缺乏创新。</p>
+<p>所以，要推动企业的 DevOps 转型，特别是制度方面的创新，往往需要从组织外部引入“晃动器”（无论是聘用新的管理人才，还是外部顾问）来松动一下过于高效的组织，这都是能够帮助组织解除僵化的方式。</p>
+<h2 id="DevOps-是一种工作方式"><a href="#DevOps-是一种工作方式" class="headerlink" title="DevOps 是一种工作方式"></a>DevOps 是一种工作方式</h2><p>这算是最贴近 DevOps 的目标的定义。但是在理解和时间上也是问题百出，片面的理解和机械的模仿都会造成 DevOps 之痛。对于 DevOps 的工作方式，有以下四个常见的理解：</p>
+<ul>
+<li>用 Dev 的方法做 Ops 的事</li>
+<li>换了名字的 Ops 团队</li>
+<li>一个有 Ops 的 Dev 团队</li>
+<li>一个 Dev 和 Ops 合作的团队</li>
+</ul>
+<h4 id="用-Dev-的方式做-Ops-的事"><a href="#用-Dev-的方式做-Ops-的事" class="headerlink" title="用 Dev 的方式做 Ops 的事"></a>用 Dev 的方式做 Ops 的事</h4><p>当你采用了上文中的 “基础设施即代码”，或者你有了“基础设施开发工程师”的时候。很自然的会想“我已经做到 DevOps 了”。然而，如果你并没有注意我在上述概念中特别提到的情况，那么你可能得到的只是下面所述的”换了名字的 Ops 团队“。</p>
+<h4 id="换了名字的-Ops-团队"><a href="#换了名字的-Ops-团队" class="headerlink" title="换了名字的 Ops 团队"></a>换了名字的 Ops 团队</h4><p>这其实是很多公司的做法，认为 DevOps 所做的事情只是技术的更新，并无其它。</p>
+<p>在 2016 年底我在悉尼的一个 DevOps 项目上做转型咨询，客户的应用系统是基于 AWS 构建的。并且客户始终认为 DevOps 工程师就是上文所述的基础设施开发团队，只是工作的内容全都在 AWS 上面，并没有什么变化。而且给这个团队一个很高大上的名字：Enablers。然而，这个团队仅仅用新工具是清偿了之前运维工程师留下的技术债，并没有帮助开发团队、测试团队甚至是业务团队从自己的角度提供帮助来提升价值的流动速度和工作效率。</p>
+<p>不光如此，因为这个团队掌握了关键的基础设施资源，成为了所有团队前进的阻力，导致其它部门有更多积压的工作并需要更多人的人来处理。由于出现了这样的结果，“DevOps doesn’t work in my orgnization”（DevOps 在我的组织里不好使）的批评也不绝于耳。</p>
+<p>在 DevOps 转型的初期，我们需要一个这样的团队从运维的角度提出统一的方案并提供统一的服务支持。但随着 DevOps 能力和成熟度的提升，这样一个实体团队而不是虚拟团队的存在则会成为 DevOps 继续发展的阻力。</p>
+<h4 id="一个有-Ops-的-Dev-团队"><a href="#一个有-Ops-的-Dev-团队" class="headerlink" title="一个有 Ops 的 Dev 团队"></a>一个有 Ops 的 Dev 团队</h4><p>最天真的想法莫不如把两类工程师放在一个团队里，在同一个负责人的范围内消化 Dev 和 Ops 的问题。这样，Dev 和 Ops 就能统一目标，平衡矛盾和冲突，共同解决问题。</p>
+<p>但实际上很少有企业能够走出这一步，一方面是 IT 部门的岗位设置和预算归属，另一方面是团队变更后的 KPI 考核。一件很小的举动就会牵扯更多的问题，使 DevOps 难以进行下去。此外，如果缺乏有效的 DevOps 实践或者外部教练d 额指引，那么使 Dev 和 Ops 的融合将是一个漫长的旅程。</p>
+<p>在这种情况下，我建议采用 DevOps 项目制的方式来进行 DevOps 的体验：</p>
+<ol>
+<li>首先根据项目汇聚资源，在项目中预留 Ops 角色。</li>
+<li>从运维部门借调运维工程师到项目中。运维部门要提前安排好运维工作的交接，或者至少把日常性的运维任务的80%剥离出来，分配给现有团队。保证进入项目团队的运维工程师的工作不被打扰</li>
+<li>Ops 所在的部门绩效分为两块：一块为常规运维绩效（保证系统稳定性），另一块为 DevOps 项目绩效（保证开发顺利性），可以根据具体工作状况来设置这样的工作比率。</li>
+<li>保证运维团队人员能够有机会进入项目实践 DevOps ，同时要把项目开发中的运维痛点带回给运维团队处理。</li>
+</ol>
+<p>在上述 2的悉尼项目里，我就成为了加入到了产品开发团队中的运维工程师。一方面解决开发团队痛点，一方面和 Enablers 团队沟通。一方面解决 开发团队的痛点，另一方面获得相应的权限和知识，并把 开发团队的反馈及时传达给 Enablers 团队。</p>
+<h4 id="一个-Dev-和-Ops-合作的团队"><a href="#一个-Dev-和-Ops-合作的团队" class="headerlink" title="一个 Dev 和 Ops 合作的团队"></a>一个 Dev 和 Ops 合作的团队</h4><p>这就是 DevOps 所要达到的目标，它不是一个人的属性，而是一个团队的属性。它让利益相关方坐在一起解决问题，而不是相互甩锅。然而，由于”合作“的定义很简单，也很空泛，导致”合作“难以落地。以下是我认为”关键”的 DevOps 合作方式：</p>
+<ol>
+<li>共同进行架构设计</li>
+<li>共同进行技术决策</li>
+<li>持续交付流水线的建立</li>
+<li>共同 Pair 和 Review 代码和环境的配置</li>
+<li>共同参与回顾会议</li>
+<li>通过定期的内部 Session 增加相互的理解</li>
+<li>共同处理运维的问题</li>
+</ol>
+<p>此外，还有很多其他的合作方式能够提升 DevOps 的效果，在此不一一列举，这里仅做参考。如果你是一个敏捷的团队，只需要把 Ops 作为团队的一份子，参加所有的活动就可以了。</p>
+<h2 id="DevOps-是一种组织文化"><a href="#DevOps-是一种组织文化" class="headerlink" title="DevOps 是一种组织文化"></a>DevOps 是一种组织文化</h2><p>在著名在 Velocity 09 大会上，来自 Flicker 的著名演讲”10+ Deploys Per Day: Dev and Ops Cooperation“ 明确的指出工具和文化是他们成功的原因。这也第一届 DevOpsDays 也将工具和文化这两个话题进一步细化。在会后 Patrick Debois 把 DevOps 定义为“管理改进”和技术提升“。</p>
+<p>John Willis 和 Damon Edwards 也在 2010 年 MoutainView 举办的 DevOpsDays 中重新强调了文化的重要性。</p>
+<p>相对于可以看得见的工具，文化显得华而不实，也有人认为 DevOps 文化是一种“空谈陷阱”。</p>
+<p>有一篇关于企业文化的文章写的非常好，这篇文章叫做”Culture is the Behavior You Reward and Punish“。翻译过来就是：文化就是你奖励和惩罚的行为。就是说对行为的惩罚和奖励构成了你的文化，对 DevOps 也一样。奖励符合 DevOps 的行为（而不仅仅是鼓励），惩罚不符合 DevOps 的行为。就形成了 DevOps 的文化。</p>
+<p>而我所说的“建立 DevOps 的文化“则是建立一种规则约束，这种约束不但包含了 DevOps 的行为准则，而且包含了奖励和惩罚的机制。而这种规则约束不能变成一纸空文，更要切实执行下去，形成一种行为习惯。</p>
+<p>习惯的力量则能够保证一种好的制度和实践顺利的延续下去。当然这种规则约束不是一成不变的，这些约束和规则也需要根据团队的发展不断的变化以适应新的状况。</p>
+<p>然而，就如上文所说的，由于企业并不存在产生 DevOps 的基因（否则你早就有 DevOps 了）。这些制度很难从内部产生，必须要的话，请引入外部资源，例如 DevOps 顾问或者 DevOps 教练。</p>
+<p>我经常看到一些 ”KTV式转型”，这种转型就像是唱 KTV：当人们在 KTV 里面对歌词字幕你总能唱出来，也能唱对。但如果没有歌词，人们往往就唱不出来了。这里的歌词字幕就相当于是转型教练，当教练在的时候，每个人都知道怎么做。当教练不在，什么都没有了。</p>
+<p>很多情况下，顾问和教练在短期内起到从”0到1“的转变，然而从”1-100“则不是一朝一夕就能实现的。文化的形成是一个长期的塑造过程，不是能够买来的。你需要有足够的耐心来不断的评估和反馈当前的状况。</p>
+<p>以下是 DevOps 所鼓励的行为。尽管每个人都鼓励以下的行为，但实际效果则千差万别，往往抓住了形式而不是本质。</p>
+<ul>
+<li>信任</li>
+<li>沟通</li>
+<li>学习</li>
+<li>分享/共担</li>
+<li>不要指责</li>
+</ul>
+<h4 id="信任"><a href="#信任" class="headerlink" title="信任"></a>信任</h4><p>你的团队里的 Dev 和 Ops 之间是相互信任的吗？你信任你的团队成员吗？如果回答是。那么你的团队成员信任你吗？信任是相互的，而且是高效团队成功的基石。获得信任很难，需要时间去建立。信任同样也很脆弱，很容易就会失去。你是否明确哪些行为对信任有帮助，而哪些行为会伤害信任？你能说出那些帮助构建信任和伤害信任的行为吗？你的团队都清楚吗？</p>
+<p>当想到以上这些问题，你还信任你自己和你的团队吗？</p>
+<p>这里有一个很重要的原理：没有无条件的信任，信任是需要建立的。</p>
+<p>除了《凤凰项目》中所介绍的构建信任的方式——把自己最脆弱的一面告诉大家——以外，这里我推荐一种构建信任的方式：</p>
+<ol>
+<li>回顾团队中的每一个人。</li>
+<li>把你不信任的人说出来，并且说出你不信任的点。</li>
+<li>为了消除这种不信任，你自己愿意做什么事情（而不是让对方做什么事情）</li>
+<li>其它人为了消除团队中的不信任，也可以轮流发言。</li>
+<li>如果消除了这种不信任，也请说出来。并为之前你不信任的人和整个团队故障欢呼。</li>
+</ol>
+<p>第三点最为重要，我们给出的建议往往不起效的原因就在于你在对别人提要求，而不是提供帮助。而人们对于提要求的感受都不会很好，只有提供自己的帮助，才是真正能解决问题的有效方式。另外，作为同一个团队的成员，你也必须想办法相信对方，并且让对方相信自己，没有选择。</p>
+<p>很多人都觉得难以启齿，难以启齿的原因就是因为人们不愿意相信对方能够接纳这些不信任。而这么做恰恰能表明你对对方的信任，相信经历过一系列的措施之后，能改善当前的状况。</p>
+<p>如果你觉得信任很难达成，那么这就是一个风险点，他会影响团队成员的行为和判断，造成不利的影响。所以，请多检查团队内部的信任情况，及时排除风险。</p>
+<h4 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h4><p>沟通是一个泛滥的话题，各种打着“高效沟通”的方法也层出不穷，但人们虽然都懂各种道理，也知道沟通的重要性，可沟通仍然被用作为”命令“的幌子，或用来实施语言暴力。</p>
+<p>沟通的主要目的在于对齐交换意见和看法，达成理解。</p>
+<p>沟通不仅仅是信息交流的通道，同样也是情绪宣泄的出口。我们在沟通中，有多少是发泄情绪占了很大的比重，但我们往往没有察觉。人们对表达自己的情绪是难以启齿的，因此用各种各样的“道理”来掩盖真实的意图。如果团队成员的大脑被不良情绪占据，那么无论如何他在团队中都不会有很好的表现的。人们往往会用其它的方式宣泄自己的情绪，而缺乏正确的发泄渠道则会导致灾难。</p>
+<p>你的团队里有没有比较沉默的人或者是不喜欢主动沟通的人？由于信任的逐渐缺失，有些人往往不再沟通。而这类不再沟通的人，往往是项目中的定时炸弹。而情绪积累到某一个点后，这个炸弹就会爆炸，造成很恶劣的影响。所以，尽早的介入并让每个人能够很顺畅的沟通，对降低情绪风险，尤为重要。</p>
+<p>此外，在沟通里，你是听的多？还是说的多？如果作为听者，你真正明白对方讲的是什么吗？如果作为说者，你在沟通之前，你是否有计划，是否明确沟通的目的，沟通后如何确认达到了沟通的目的？</p>
+<p>如果不确认这些问题，那么沟通往往就是没有意义的闲聊。</p>
+<h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><p>在英文里， 学习是一个词——Learn 。而在中文里“学习”是两个词，对应的英文分别是 Learn （学）和 Practice（习）。比如：learnt 就可以因为上下文的不同表示两种意思。一种是”经历过学习的过程，但不一定掌握”，另一种则是真正学会了。</p>
+<p>当说到学习，往往想到的都是“输入”：看书（虽然买了也未必会看），看博客，看代码，看视频…… 然后练习，直到掌握。</p>
+<p>然而，仅有输入是不够的，学习还应当有”输出“：形成博客、开源软件、演讲甚至是培训工作坊。有一句很著名的话叫做：“教是检验学习成果的唯一标准。”是不是真的掌握了，教一下别人，你会意识到“学习的错觉”。</p>
+<p>在这里，我要强调一种重要的输入途径：从过往的经验教训中反思，总结，并形成团队的经验。很多事情过去了，无论成败，往往缺乏总结。这无法让团队成长，因为成败全凭”运气“。</p>
+<p>学习的目的在于指导今后的实践，无论成败，都会降低未来失败的概率，多做“正确的事”，少做“错误的事”。</p>
+<p>而只有学，没有习。只有输入，没有输出，或者只向外看，不向内看，都是片面的学习方式。我推荐的学习方式则是以输出作为学习目标，对知识和信息进行加工，思考，实践，提炼的过程。</p>
+<p>毕竟，判断一个人的知识不再于他的输入，而在于他的输出。因为讲出来，才是自己的。</p>
+<h4 id="不要指责"><a href="#不要指责" class="headerlink" title="不要指责"></a>不要指责</h4><p>很多问题棘手是因为人们不关注如何解决问题，而关注这个问题究竟是谁该负责。如果团队在责任归属的问题上花的时间很多，那么这就是一个指责文化的制度。在这种情况下，团队成员为了自保，会避免承担责任和解决问题。因此，很多事情没有进展，于是，整个组织沉浸在一种”不求有功，但求无过“的氛围下慢慢凝结，最后僵化。</p>
+<p>我们常常听到“零容忍”，然而对问题的”零容忍“往往是很漂亮的口号。但它往往指的是”发现问题掩盖问题“。以前人们都说，不怕有问题，就怕看不见问题。而现在很多问题的出现并不是“黑天鹅””事件，而是”灰犀牛”事件。恰恰是对问题的选择性失明导致了不可挽回的结果。</p>
+<p>在实践 DevOps 的时候，需要先测试一下有多少装睡的人。因为没有解决不了的问题，只有不愿承担的责任。</p>
+<h4 id="分享-共担"><a href="#分享-共担" class="headerlink" title="分享/共担"></a>分享/共担</h4><p>Share 在英文里有两个意思，一个和别人分享，另一个是和别人共同承担。在 DevOps 的上下文里二者兼有，一方面是作为学习的结果的产出。另一方面是避免组织陷入不愿承担责任的文化。对于团队作战来说，一个人犯错，不是他一个人的责任，而是集体的责任。”当你用一个指头指着别人的同时，另外四个指头也指着自己。</p>
+<p>我们要相信没有不良的人，只有不良的制度。当出现了问题，从制度上而不是从个人的角度分析问题出现的原因。而且要能总结原因，形成新的制度。如果一个问题不在制度上去避免，那么还会发成下一次。</p>
+<h2 id="如果什么都是-DevOps-，那么-DevOps-实际上什么也不是"><a href="#如果什么都是-DevOps-，那么-DevOps-实际上什么也不是" class="headerlink" title="如果什么都是 DevOps ，那么 DevOps 实际上什么也不是"></a>如果什么都是 DevOps ，那么 DevOps 实际上什么也不是</h2><p>如果把所有 DevOps 相关的内容加总就能得到 DevOps，那和没有定义 DevOps 一样。如果我们没办法确定”什么不是 DevOps“，那同理我们也很难定义 DevOps 是什么。</p>
+<p>我试图从上文中的认识里，提取出一些 DevOps 的必要元素来构成 DevOps 的概念。这些元素缺一不可，但单独拿出来又不能构成完整 DevOps 的概念。这样既可以保证对 DevOps 的完整理解，又避免 DevOps 概念过大难以下手。</p>
+<p>根据我自己的实践，我认为 DevOps 包括以下几点原则：</p>
+<ol>
+<li>DevOps 有一个明确的目标：通过充分的合作解决由于责任模糊而相互推诿的问题。（没有 DevOps 痛点的团队自然也没有 DevOps 的动力）</li>
+<li>DevOps 是一个团队属性而不是个人属性，这个团队需要处理开发和维护任务。（有单一任务都不算是 DevOps 团队，因为没有合作解决 DevOps 痛点的动机）</li>
+<li>DevOps 是一种团队改进，对于团队的表现有明确目标和度量。（没有度量的改进就是耍流氓）</li>
+<li>DevOps 是一种团队工作方式和文化，它包括了一系列促进 Dev 和 Ops 合作的具体技术和实践以达到上述目标。（ DevOps 也不是缺乏技术的理论空谈 ）</li>
+</ol>
+<p>因此，以下的描述都不是 DevOps：</p>
+<ol>
+<li>DevOps 不是一个职务或者角色，因为 DevOps 是团队属性。</li>
+<li>不存在” DevOps 团队“，只存在”以 DevOps 方式工作的团队“。</li>
+</ol>
+<p>以上是我过去三年的 DevOps 实践和咨询经历，希望能给正在做 DevOps 的你一些参考和提示，并祝愿你在 DevOps 的实践过程中更加顺利。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://betacat.online/posts/2019-01-24/what-happens-when-you-type-googlecom-into-your-browser-and-return/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/14037644">
+      <meta itemprop="name" content="Toby Qin">
+      <meta itemprop="description" content="BetaCat 测试喵">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BetaCat 未上线的猫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2019-01-24/what-happens-when-you-type-googlecom-into-your-browser-and-return/" class="post-title-link" itemprop="url">当你在浏览器中输入“google.com”并回车，会发生什么？</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-25 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-25T00:00:00+08:00">2019-01-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-25 11:16:34" itemprop="dateModified" datetime="2020-11-25T11:16:34+08:00">2020-11-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reprint/" itemprop="url" rel="index">
+                    <span itemprop="name">Reprint</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>原文： <a href="https://www.cnbeta.com/articles/tech/808191.htm" target="_blank" rel="noopener">https://www.cnbeta.com/articles/tech/808191.htm</a></p>
+</blockquote>
+<p>我遇到过的最喜欢的面试问题是：”你键入’google. com’到一个浏览器的地址栏中, 并点击<code>Enter</code>, 之后会发生什么呢？”</p>
+<p>有人可以滔滔不绝几天, 试图以某种形式的完备性来回答此问题。他们会走多深？纯粹出于兴趣, 我要把我的答案罗列在此。当我在一次实际面试中被问到这个问题时, 在他们阻止我之前我漫谈了10分钟。之后即使在面试结束后，我一直记得当时我所遗漏的东西。</p>
+<p>我将把这个格式化为文本墙, 因为在谈话中回答这个问题就是这样的感觉.</p>
+<h2 id="那么发生了什么呢"><a href="#那么发生了什么呢" class="headerlink" title="那么发生了什么呢?"></a>那么发生了什么呢?</h2><p>浏览器将分析输入。通常情况下, 如果输入中有”. com”, 它不会认为你在输入搜索词。一旦它决定其必定是一个url时, 它会检查输入是否有协议头，如果没有, 它会在其开头添加”http://“。由于你没有指定一系列http协议功能, 因此它将假定使用默认值, 如端口80、GET方法和无基本身份认证。</p>
+<p>然后, 它将创建一个http请求并发送该请求。我对我的底层网络知识没有信心, 但如果我确实要说, 我会说一些关于MAC地址, TCP数据包传输, 丢包处理等。但无论如何, 一个对”google. com”DNS的查找将会发生, 如果它还没有对此的缓存，DNS服务将应答一系列IP地址列表, 因为”google. com”不只单IP的。我认为在默认情况下浏览器会选择第一个。不确定它们是区域性的以及它是如何工作的, 但我知道它就在那里。</p>
+<p>因此, http 请求从一个节点跳转到另一个节点, 直到它找到google. com负载均衡器的IP地址。这不会持续很久, 谷歌会回应说, 你需要使用https-假定是301永久重定向。因此, 它会原路返回到你的浏览器, 浏览器将协议更改为 https, 默认使用443端口并重新发送。这一次,TLS握手将在负载均衡器和浏览器客户端之间进行。我不是100%确定其工作原理, 但我知道该请求会告诉谷歌, 它支持什么协议 (TLS 1.0, 1.1, 1.2) ，然后谷歌将响应 “让我们使用1.2吧”。之后使用TLS加密发送请求。</p>
+<p>我认为谷歌接下来要做的是将其放到负载均衡器上的网络应用程序防火墙规则集上, 看看它是否是一个恶意请求。当这通过之后, 安全连接可能已被终止 (因为PCI-DSS规则规定你不需要加密内部流量), 请求将被分配到其CDN中的某个池上, 而google端缓存主页将在http响应中返回。可能是预先压缩的。</p>
+<p>谷歌的响应头将由浏览器读取，根据响应头的缓存策略进行缓存，然后正文将被解压缩。而且因为这是谷歌，它可能是超优化的：压缩，可能是许多预渲染内容、内联CSS、JavaScript和图像，以减少网络请求和首次渲染时间。但该请求将触发一系列其他请求，所有这些请求都是并发的，因为它应该运行HTTP/2。当这些请求正在进行时，JavaScript会被解析，可能没有阻塞，因为他们在标签上使用了defer属性 - 或者async，我从来没有单独阅读过这里他们做了些什么的资料。</p>
+<p>但浏览器可能已经渲染了搜索框并且正在顶部的工具栏上工作，这将需要一些额外的网络请求 - 我可能已经有一个cookie或可能是带有OAuth令牌的本地存储 - 或我可能是使用Chrome并且它已经知道我是谁，并且使用auth的请求会被发送到他们的Google+ API上，告诉Google搜索页面的应用程序我的身份。</p>
+<p>另一个请求将被发送, 以获取我的头像图像。在这一点上, 他们已经浏览器可嗅探的, 看看我是否未使用 chrome, 在这种情况下, 他们会有弹出一个工具栏提示, 告诉我：chrome 是真棒, 我应该使用它, 而不是其他任何浏览器。</p>
+<p>我想此时需要冷静下来。所有这些都发生在一秒的时间内。</p>
+<p>何为显著地不同?让我们看看对应的DNS:</p>
+<p><img src="https://tobyqin.github.io/images/2019-01/116c69b7fb0b665.jpg" alt=""></p>
+<p>我知道我以前见过google.com返回包中带有多个IP地址，但似乎不再是这种情况了。似乎他们之前常常使用轮巡策略，但现在不再使用了。 这个<a href="https://stackoverflow.com/questions/10257969/is-it-possible-that-one-domain-name-has-multiple-corresponding-ip-addresses" target="_blank" rel="noopener">StackOverflow</a>提问涉及了此情况。我已忘记了它被称为轮2。</p>
+<h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><p>在一个正式结构化回答中，你可能会参考我有所了解但并不精通的OSI模型。在查阅资料之后，我将它视为如下的网络分层映射：</p>
+<ol>
+<li>应用 - 触发请求的逻辑</li>
+<li>表示层 - HTTP</li>
+<li>会话 - TLS</li>
+<li>传输 - TCP</li>
+<li>网络 - 路由 (IP)</li>
+<li>数据链路 - 帧 (可看做数据包的容器)</li>
+<li>物理层 - 比特流</li>
+</ol>
+<p>我记得在TLS中他们会在协议协商时交换证书。网络并不是我的强项。在我的浏览器中打开google.com，并禁用缓存：</p>
+<p><img src="https://tobyqin.github.io/images/2019-01/d1eee285e02ff7b.jpg" alt=""></p>
+<p>我记得主机名规范化——这是一个301。</p>
+<p>从HTTP到HTTPS的校正是一个307内部重定向。</p>
+<p>然后它下载字体、商标图像和我的头像图像。如果没有API调用，这意味着他们会在页面中推送我的个人资料信息并将其与返回数据捆绑在一起 - 因此当你点击google.com而不仅仅是提供缓存资产时，他们会进行实际的数据检索。</p>
+<h2 id="响应"><a href="#响应" class="headerlink" title="响应"></a>响应</h2><p><img src="https://tobyqin.github.io/images/2019-01/db31097ca290ccc.jpg" alt=""></p>
+<p>以上是IE 11和Chrome响应数据的对比——所有都处于退出状态。</p>
+<ul>
+<li>IE11和Chrome之间没有太大的差别。但这意味着他们是用户代理嗅探服务器端而不是客户端。在我的答案中可能提到了这一点。</li>
+<li>出乎意料的是，Chrome的响应体大了22kB。我想知道它是否是由在IE 11中明显缺席的语音搜索功能引起的。IE11可能需要polyfill和Chrome的广告，但它都被混淆了，我不会再进一步折磨自己了。</li>
+<li>即使我在Chrome中清除了Cookie，它仍会在第一次请求时发送Cookie。它在IE 11中并没有这样做。</li>
+</ul>
+<h2 id="深入理解渲染"><a href="#深入理解渲染" class="headerlink" title="深入理解渲染!"></a>深入理解渲染!</h2><p><img src="https://tobyqin.github.io/images/2019-01/6e53d8e5af24b27.jpg" alt=""></p>
+<p>上图是Chrome将为你提供的第一个屏幕截图。</p>
+<ul>
+<li>脚本标签中没有任何async或defer属性，只有nonce属性。我目前正在学习有关nonce的知识，这似乎与安全性有关。我估计他们想要那些阻塞式脚本。我确信他们在某些方面尝试过有/无aync/defer的情况，并决定反对之。</li>
+<li>自我提示：完全响应是对JavaScript、CSS和HTML的乱七八糟的混合体。相比于其独立性，他们没有遵守任何控制其位置的规则。</li>
+</ul>
+<h2 id="问题本身是什么呢"><a href="#问题本身是什么呢" class="headerlink" title="问题本身是什么呢?"></a>问题本身是什么呢?</h2><p>你知道吗？ 对于人员而言，这可能不是一个很好的面试问题，因为答案涉及到如此多的网络知识。这是我喜欢的问题的格式，一些开放的事物，包括一些猜测。这使得面试官有机会跟进诸如“你认为TLS是如何建立的？”之类的问题，以查看候选人如何思考，看看他们有多少创意，看看他们的极限何在（有多耐心？）。</p>
+<p>你最喜欢的面试问题是什么？</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Toby Qin"
+      src="https://avatars1.githubusercontent.com/u/14037644">
+  <p class="site-author-name" itemprop="name">Toby Qin</p>
+  <div class="site-description" itemprop="description">BetaCat 测试喵</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">121</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">128</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tobyqin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tobyqin" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:me@betacat.online" title="E-Mail → mailto:me@betacat.online"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://betacat.online/links" title="Links → https:&#x2F;&#x2F;betacat.online&#x2F;links"><i class="fa fa-fw fa-link"></i>Links</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Toby Qin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.1
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>
